@@ -1,0 +1,99 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_scale_mae_lr0.0001_concat_3.log
+⏰ Time: 2026-02-28 10:24:37
+============================================================
+
+🚀 Training scale_mae on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: scale_mae (scalemae)
+   🔍 Auditing weights for [scale_mae]...
+   ⚠️ [PARTIAL MATCH] 344/435 layers loaded (79.1%)
+
+   🔍 [Structure Check] scale_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+      📏 ScaleMAE GSD: 0.3 m/px
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.6517 | Val Accuracy: 78.48%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.5132 | Val Accuracy: 84.39%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.4516 | Val Accuracy: 86.52%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.4103 | Val Accuracy: 87.21%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.3890 | Val Accuracy: 87.05%
+   📅 Epoch 6 | Loss: 0.3766 | Val Accuracy: 87.46%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.3632 | Val Accuracy: 87.94%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.3550 | Val Accuracy: 88.05%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.3422 | Val Accuracy: 88.34%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.3338 | Val Accuracy: 88.59%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.3260 | Val Accuracy: 88.91%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.3239 | Val Accuracy: 88.95%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.3157 | Val Accuracy: 89.16%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 0.3130 | Val Accuracy: 88.95%
+   📅 Epoch 15 | Loss: 0.3102 | Val Accuracy: 89.26%
+      ⭐ New Best! Saved.
+   📅 Epoch 16 | Loss: 0.3095 | Val Accuracy: 89.74%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 0.3063 | Val Accuracy: 89.55%
+   📅 Epoch 18 | Loss: 0.3013 | Val Accuracy: 89.59%
+   📅 Epoch 19 | Loss: 0.2978 | Val Accuracy: 89.97%
+      ⭐ New Best! Saved.
+   📅 Epoch 20 | Loss: 0.2944 | Val Accuracy: 89.97%
+   📅 Epoch 21 | Loss: 0.2900 | Val Accuracy: 90.24%
+      ⭐ New Best! Saved.
+   📅 Epoch 22 | Loss: 0.2934 | Val Accuracy: 90.26%
+      ⭐ New Best! Saved.
+   📅 Epoch 23 | Loss: 0.2919 | Val Accuracy: 90.51%
+      ⭐ New Best! Saved.
+   📅 Epoch 24 | Loss: 0.2823 | Val Accuracy: 90.24%
+   📅 Epoch 25 | Loss: 0.2833 | Val Accuracy: 90.07%
+   📅 Epoch 26 | Loss: 0.2811 | Val Accuracy: 90.64%
+      ⭐ New Best! Saved.
+   📅 Epoch 27 | Loss: 0.2785 | Val Accuracy: 90.54%
+   📅 Epoch 28 | Loss: 0.2797 | Val Accuracy: 90.79%
+      ⭐ New Best! Saved.
+   📅 Epoch 29 | Loss: 0.2759 | Val Accuracy: 90.47%
+   📅 Epoch 30 | Loss: 0.2742 | Val Accuracy: 90.89%
+      ⭐ New Best! Saved.
+   📅 Epoch 31 | Loss: 0.2748 | Val Accuracy: 90.72%
+   📅 Epoch 32 | Loss: 0.2660 | Val Accuracy: 90.85%
+   📅 Epoch 33 | Loss: 0.2687 | Val Accuracy: 90.56%
+   📅 Epoch 34 | Loss: 0.2683 | Val Accuracy: 90.95%
+      ⭐ New Best! Saved.
+   📅 Epoch 35 | Loss: 0.2680 | Val Accuracy: 90.89%
+   📅 Epoch 36 | Loss: 0.2623 | Val Accuracy: 91.02%
+      ⭐ New Best! Saved.
+   📅 Epoch 37 | Loss: 0.2624 | Val Accuracy: 90.89%
+   📅 Epoch 38 | Loss: 0.2638 | Val Accuracy: 91.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 39 | Loss: 0.2584 | Val Accuracy: 91.12%
+      ⭐ New Best! Saved.
+   📅 Epoch 40 | Loss: 0.2641 | Val Accuracy: 90.97%
+
+========================================
+🏆 Best Val Accuracy: 91.12%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_scale_mae_lr0.0001_concat_3.pth
+========================================
+

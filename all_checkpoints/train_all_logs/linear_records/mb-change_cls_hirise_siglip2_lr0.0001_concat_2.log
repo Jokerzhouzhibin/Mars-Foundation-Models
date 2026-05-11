@@ -1,0 +1,87 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-change_cls_hirise_siglip2_lr0.0001_concat_2.log
+⏰ Time: 2026-02-28 21:29:49
+============================================================
+
+🚀 Training siglip2 on mb-change_cls_hirise | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6206 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.2832 | Val Accuracy: 91.94%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2513 | Val Accuracy: 91.94%
+   📅 Epoch 3 | Loss: 0.2371 | Val Accuracy: 91.94%
+   📅 Epoch 4 | Loss: 0.2256 | Val Accuracy: 91.94%
+   📅 Epoch 5 | Loss: 0.2159 | Val Accuracy: 91.94%
+   📅 Epoch 6 | Loss: 0.2076 | Val Accuracy: 92.09%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.2006 | Val Accuracy: 92.54%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.1955 | Val Accuracy: 92.99%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.1931 | Val Accuracy: 93.43%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.1846 | Val Accuracy: 93.36%
+   📅 Epoch 11 | Loss: 0.1799 | Val Accuracy: 94.10%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.1771 | Val Accuracy: 94.25%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.1699 | Val Accuracy: 94.40%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 0.1677 | Val Accuracy: 94.48%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.1663 | Val Accuracy: 94.40%
+   📅 Epoch 16 | Loss: 0.1710 | Val Accuracy: 94.48%
+   📅 Epoch 17 | Loss: 0.1707 | Val Accuracy: 94.55%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 0.1624 | Val Accuracy: 94.55%
+   📅 Epoch 19 | Loss: 0.1649 | Val Accuracy: 94.55%
+   📅 Epoch 20 | Loss: 0.1628 | Val Accuracy: 94.48%
+   📅 Epoch 21 | Loss: 0.1615 | Val Accuracy: 94.78%
+      ⭐ New Best! Saved.
+   📅 Epoch 22 | Loss: 0.1611 | Val Accuracy: 94.93%
+      ⭐ New Best! Saved.
+   📅 Epoch 23 | Loss: 0.1630 | Val Accuracy: 94.63%
+   📅 Epoch 24 | Loss: 0.1640 | Val Accuracy: 94.85%
+   📅 Epoch 25 | Loss: 0.1641 | Val Accuracy: 94.78%
+   📅 Epoch 26 | Loss: 0.1613 | Val Accuracy: 94.55%
+   📅 Epoch 27 | Loss: 0.1574 | Val Accuracy: 95.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 28 | Loss: 0.1612 | Val Accuracy: 95.00%
+   📅 Epoch 29 | Loss: 0.1553 | Val Accuracy: 95.00%
+   📅 Epoch 30 | Loss: 0.1530 | Val Accuracy: 94.93%
+   📅 Epoch 31 | Loss: 0.1556 | Val Accuracy: 95.00%
+   📅 Epoch 32 | Loss: 0.1562 | Val Accuracy: 95.07%
+      ⭐ New Best! Saved.
+   📅 Epoch 33 | Loss: 0.1566 | Val Accuracy: 95.00%
+   📅 Epoch 34 | Loss: 0.1566 | Val Accuracy: 95.22%
+      ⭐ New Best! Saved.
+   📅 Epoch 35 | Loss: 0.1561 | Val Accuracy: 95.15%
+   📅 Epoch 36 | Loss: 0.1587 | Val Accuracy: 95.07%
+   📅 Epoch 37 | Loss: 0.1539 | Val Accuracy: 95.07%
+   📅 Epoch 38 | Loss: 0.1511 | Val Accuracy: 95.15%
+   📅 Epoch 39 | Loss: 0.1537 | Val Accuracy: 95.22%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.22%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_hirise_siglip2_lr0.0001_concat_2.pth
+========================================
+

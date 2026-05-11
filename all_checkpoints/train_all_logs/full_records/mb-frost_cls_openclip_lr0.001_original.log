@@ -1,0 +1,50 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-frost_cls_openclip_lr0.001_original.log
+⏰ Time: 2026-03-03 00:16:19
+============================================================
+
+🚀 Training openclip on mb-frost_cls | Mode: FULL | LR: 0.001
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: openclip (transformers_clip)
+
+   🔍 [Structure Check] openclip Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.5477 | Val Accuracy: 81.01%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2610 | Val Accuracy: 94.91%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1770 | Val Accuracy: 94.73%
+   📅 Epoch 4 | Loss: 0.1656 | Val Accuracy: 92.80%
+   📅 Epoch 5 | Loss: 0.1493 | Val Accuracy: 94.86%
+   📅 Epoch 6 | Loss: 0.1417 | Val Accuracy: 93.13%
+   📅 Epoch 7 | Loss: 0.1366 | Val Accuracy: 95.59%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.1221 | Val Accuracy: 95.35%
+   📅 Epoch 9 | Loss: 0.1219 | Val Accuracy: 94.94%
+   📅 Epoch 10 | Loss: 0.1135 | Val Accuracy: 93.68%
+   📅 Epoch 11 | Loss: 0.1157 | Val Accuracy: 94.06%
+   📅 Epoch 12 | Loss: 0.1025 | Val Accuracy: 95.43%
+   📅 Epoch 13 | Loss: 0.1064 | Val Accuracy: 92.31%
+   📅 Epoch 14 | Loss: 0.1065 | Val Accuracy: 93.33%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.59%
+💾 Best Checkpoint: ./checkpoints/full_mb-frost_cls_openclip_lr0.001_original.pth
+========================================
+

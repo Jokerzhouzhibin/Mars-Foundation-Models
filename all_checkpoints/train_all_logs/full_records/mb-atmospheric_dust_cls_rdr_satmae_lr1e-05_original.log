@@ -1,0 +1,58 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-atmospheric_dust_cls_rdr_satmae_lr1e-05_original.log
+⏰ Time: 2026-02-28 05:23:51
+============================================================
+
+🚀 Training satmae on mb-atmospheric_dust_cls_rdr | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: satmae (timm_mae)
+   ℹ️  Config: in_chans=3
+   🔍 Auditing weights for [satmae]...
+   ✅ [PERFECT MATCH] 294/294 layers loaded (100.0%)
+
+   🔍 [Structure Check] satmae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.2574 | Val Accuracy: 95.34%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1426 | Val Accuracy: 96.55%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1161 | Val Accuracy: 95.80%
+   📅 Epoch 4 | Loss: 0.1124 | Val Accuracy: 96.26%
+   📅 Epoch 5 | Loss: 0.0947 | Val Accuracy: 96.72%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.0998 | Val Accuracy: 96.57%
+   📅 Epoch 7 | Loss: 0.0958 | Val Accuracy: 96.39%
+   📅 Epoch 8 | Loss: 0.0906 | Val Accuracy: 94.44%
+   📅 Epoch 9 | Loss: 0.0895 | Val Accuracy: 96.32%
+   📅 Epoch 10 | Loss: 0.0850 | Val Accuracy: 95.80%
+   📅 Epoch 11 | Loss: 0.0852 | Val Accuracy: 96.80%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.0835 | Val Accuracy: 95.88%
+   📅 Epoch 13 | Loss: 0.0823 | Val Accuracy: 95.59%
+   📅 Epoch 14 | Loss: 0.0741 | Val Accuracy: 95.82%
+   📅 Epoch 15 | Loss: 0.0740 | Val Accuracy: 96.64%
+   📅 Epoch 16 | Loss: 0.0768 | Val Accuracy: 95.55%
+   📅 Epoch 17 | Loss: 0.0743 | Val Accuracy: 96.07%
+   📅 Epoch 18 | Loss: 0.0754 | Val Accuracy: 95.65%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.80%
+💾 Best Checkpoint: ./checkpoints/full_mb-atmospheric_dust_cls_rdr_satmae_lr1e-05_original.pth
+========================================
+

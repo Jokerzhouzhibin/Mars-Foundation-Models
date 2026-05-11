@@ -1,0 +1,52 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-atmospheric_dust_cls_rdr_swin_v2_lr0.0001_original.log
+⏰ Time: 2026-02-28 08:03:53
+============================================================
+
+🚀 Training swin_v2 on mb-atmospheric_dust_cls_rdr | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.1765 | Val Accuracy: 95.68%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.0846 | Val Accuracy: 96.03%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.0836 | Val Accuracy: 96.01%
+   📅 Epoch 4 | Loss: 0.0777 | Val Accuracy: 95.05%
+   📅 Epoch 5 | Loss: 0.0746 | Val Accuracy: 96.14%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.0761 | Val Accuracy: 96.36%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.0680 | Val Accuracy: 96.05%
+   📅 Epoch 8 | Loss: 0.0698 | Val Accuracy: 95.82%
+   📅 Epoch 9 | Loss: 0.0660 | Val Accuracy: 95.13%
+   📅 Epoch 10 | Loss: 0.0654 | Val Accuracy: 95.82%
+   📅 Epoch 11 | Loss: 0.0655 | Val Accuracy: 95.93%
+   📅 Epoch 12 | Loss: 0.0564 | Val Accuracy: 95.76%
+   📅 Epoch 13 | Loss: 0.0591 | Val Accuracy: 96.18%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.36%
+💾 Best Checkpoint: ./checkpoints/full_mb-atmospheric_dust_cls_rdr_swin_v2_lr0.0001_original.pth
+========================================
+

@@ -1,0 +1,106 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_swin_v2_lr0.0001_concat_2.log
+⏰ Time: 2026-03-01 13:58:39
+============================================================
+
+🚀 Training swin_v2 on mb-domars16k | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 2.3739 | Val Accuracy: 55.33%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 1.8114 | Val Accuracy: 65.99%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 1.4796 | Val Accuracy: 70.01%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 1.2820 | Val Accuracy: 71.38%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 1.1727 | Val Accuracy: 72.55%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 1.0754 | Val Accuracy: 73.48%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 1.0098 | Val Accuracy: 73.67%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.9769 | Val Accuracy: 74.47%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.9311 | Val Accuracy: 75.03%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.9081 | Val Accuracy: 75.77%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.8768 | Val Accuracy: 76.58%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.8554 | Val Accuracy: 76.64%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.8319 | Val Accuracy: 77.14%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 0.8163 | Val Accuracy: 77.63%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.8001 | Val Accuracy: 77.88%
+      ⭐ New Best! Saved.
+   📅 Epoch 16 | Loss: 0.7880 | Val Accuracy: 78.07%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 0.7799 | Val Accuracy: 78.19%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 0.7656 | Val Accuracy: 78.25%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 0.7590 | Val Accuracy: 78.38%
+      ⭐ New Best! Saved.
+   📅 Epoch 20 | Loss: 0.7417 | Val Accuracy: 78.81%
+      ⭐ New Best! Saved.
+   📅 Epoch 21 | Loss: 0.7281 | Val Accuracy: 78.87%
+      ⭐ New Best! Saved.
+   📅 Epoch 22 | Loss: 0.7333 | Val Accuracy: 78.93%
+      ⭐ New Best! Saved.
+   📅 Epoch 23 | Loss: 0.7263 | Val Accuracy: 79.31%
+      ⭐ New Best! Saved.
+   📅 Epoch 24 | Loss: 0.7193 | Val Accuracy: 79.37%
+      ⭐ New Best! Saved.
+   📅 Epoch 25 | Loss: 0.7102 | Val Accuracy: 79.37%
+   📅 Epoch 26 | Loss: 0.7021 | Val Accuracy: 79.43%
+      ⭐ New Best! Saved.
+   📅 Epoch 27 | Loss: 0.6867 | Val Accuracy: 79.86%
+      ⭐ New Best! Saved.
+   📅 Epoch 28 | Loss: 0.6882 | Val Accuracy: 79.93%
+      ⭐ New Best! Saved.
+   📅 Epoch 29 | Loss: 0.6875 | Val Accuracy: 79.55%
+   📅 Epoch 30 | Loss: 0.6760 | Val Accuracy: 79.93%
+   📅 Epoch 31 | Loss: 0.6744 | Val Accuracy: 79.86%
+   📅 Epoch 32 | Loss: 0.6604 | Val Accuracy: 79.99%
+      ⭐ New Best! Saved.
+   📅 Epoch 33 | Loss: 0.6794 | Val Accuracy: 80.30%
+      ⭐ New Best! Saved.
+   📅 Epoch 34 | Loss: 0.6694 | Val Accuracy: 80.30%
+   📅 Epoch 35 | Loss: 0.6585 | Val Accuracy: 80.55%
+      ⭐ New Best! Saved.
+   📅 Epoch 36 | Loss: 0.6566 | Val Accuracy: 80.24%
+   📅 Epoch 37 | Loss: 0.6463 | Val Accuracy: 80.67%
+      ⭐ New Best! Saved.
+   📅 Epoch 38 | Loss: 0.6513 | Val Accuracy: 80.73%
+      ⭐ New Best! Saved.
+   📅 Epoch 39 | Loss: 0.6583 | Val Accuracy: 81.10%
+      ⭐ New Best! Saved.
+   📅 Epoch 40 | Loss: 0.6461 | Val Accuracy: 81.04%
+
+========================================
+🏆 Best Val Accuracy: 81.10%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_swin_v2_lr0.0001_concat_2.pth
+========================================
+

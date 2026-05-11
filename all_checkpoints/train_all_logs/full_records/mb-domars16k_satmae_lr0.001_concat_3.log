@@ -1,0 +1,87 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-domars16k_satmae_lr0.001_concat_3.log
+⏰ Time: 2026-03-01 06:32:11
+============================================================
+
+🚀 Training satmae on mb-domars16k | Mode: FULL | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: satmae (timm_mae)
+   ℹ️  Config: in_chans=3
+   🔍 Auditing weights for [satmae]...
+   ✅ [PERFECT MATCH] 294/294 layers loaded (100.0%)
+
+   🔍 [Structure Check] satmae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 2.2087 | Val Accuracy: 40.09%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 1.6281 | Val Accuracy: 51.30%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 1.3297 | Val Accuracy: 65.06%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 1.1854 | Val Accuracy: 65.68%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 1.0626 | Val Accuracy: 66.11%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.9959 | Val Accuracy: 71.87%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.9108 | Val Accuracy: 74.16%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.8671 | Val Accuracy: 73.92%
+   📅 Epoch 9 | Loss: 0.8484 | Val Accuracy: 77.82%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.7941 | Val Accuracy: 76.46%
+   📅 Epoch 11 | Loss: 0.7515 | Val Accuracy: 79.55%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.7227 | Val Accuracy: 78.25%
+   📅 Epoch 13 | Loss: 0.7224 | Val Accuracy: 80.11%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 0.6867 | Val Accuracy: 77.26%
+   📅 Epoch 15 | Loss: 0.6934 | Val Accuracy: 79.31%
+   📅 Epoch 16 | Loss: 0.6613 | Val Accuracy: 81.04%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 0.6371 | Val Accuracy: 82.22%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 0.6130 | Val Accuracy: 79.68%
+   📅 Epoch 19 | Loss: 0.6082 | Val Accuracy: 83.52%
+      ⭐ New Best! Saved.
+   📅 Epoch 20 | Loss: 0.5909 | Val Accuracy: 81.10%
+   📅 Epoch 21 | Loss: 0.6027 | Val Accuracy: 80.24%
+   📅 Epoch 22 | Loss: 0.5685 | Val Accuracy: 80.36%
+   📅 Epoch 23 | Loss: 0.5717 | Val Accuracy: 80.30%
+   📅 Epoch 24 | Loss: 0.5514 | Val Accuracy: 84.70%
+      ⭐ New Best! Saved.
+   📅 Epoch 25 | Loss: 0.5257 | Val Accuracy: 80.05%
+   📅 Epoch 26 | Loss: 0.5375 | Val Accuracy: 83.27%
+   📅 Epoch 27 | Loss: 0.5313 | Val Accuracy: 81.41%
+   📅 Epoch 28 | Loss: 0.5069 | Val Accuracy: 83.21%
+   📅 Epoch 29 | Loss: 0.5035 | Val Accuracy: 84.82%
+      ⭐ New Best! Saved.
+   📅 Epoch 30 | Loss: 0.4941 | Val Accuracy: 78.31%
+   📅 Epoch 31 | Loss: 0.5089 | Val Accuracy: 83.27%
+   📅 Epoch 32 | Loss: 0.4987 | Val Accuracy: 84.45%
+   📅 Epoch 33 | Loss: 0.4550 | Val Accuracy: 80.92%
+   📅 Epoch 34 | Loss: 0.4862 | Val Accuracy: 82.09%
+   📅 Epoch 35 | Loss: 0.4831 | Val Accuracy: 83.40%
+   📅 Epoch 36 | Loss: 0.4614 | Val Accuracy: 82.22%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 84.82%
+💾 Best Checkpoint: ./checkpoints/full_mb-domars16k_satmae_lr0.001_concat_3.pth
+========================================
+

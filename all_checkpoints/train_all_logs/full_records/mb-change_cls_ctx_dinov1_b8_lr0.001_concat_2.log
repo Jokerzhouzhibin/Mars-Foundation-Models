@@ -1,0 +1,54 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-change_cls_ctx_dinov1_b8_lr0.001_concat_2.log
+⏰ Time: 2026-02-28 09:58:11
+============================================================
+
+🚀 Training dinov1_b8 on mb-change_cls_ctx | Mode: FULL | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 72 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 20 samples.
+   ⚙️  Config: Workers=0, BS=32, SmallData=True
+
+>>> Loading Model: dinov1_b8 (dinov1)
+
+   🔍 [Structure Check] dinov1_b8 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 784, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 1536
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   ⚠️ Skipping torch.compile (Small dataset or Windows detected).
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.9407 | Val Accuracy: 80.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 1.8691 | Val Accuracy: 80.00%
+   📅 Epoch 3 | Loss: 1.0225 | Val Accuracy: 60.00%
+   📅 Epoch 4 | Loss: 1.3643 | Val Accuracy: 80.00%
+   📅 Epoch 5 | Loss: 1.3374 | Val Accuracy: 80.00%
+   📅 Epoch 6 | Loss: 1.0088 | Val Accuracy: 80.00%
+   📅 Epoch 7 | Loss: 0.7188 | Val Accuracy: 85.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.4723 | Val Accuracy: 85.00%
+   📅 Epoch 9 | Loss: 0.3088 | Val Accuracy: 80.00%
+   📅 Epoch 10 | Loss: 0.5750 | Val Accuracy: 85.00%
+   📅 Epoch 11 | Loss: 0.4776 | Val Accuracy: 90.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.4168 | Val Accuracy: 90.00%
+   📅 Epoch 13 | Loss: 0.3840 | Val Accuracy: 85.00%
+   📅 Epoch 14 | Loss: 0.2884 | Val Accuracy: 80.00%
+   📅 Epoch 15 | Loss: 0.3254 | Val Accuracy: 80.00%
+   📅 Epoch 16 | Loss: 0.3998 | Val Accuracy: 80.00%
+   📅 Epoch 17 | Loss: 0.3915 | Val Accuracy: 80.00%
+   📅 Epoch 18 | Loss: 0.4409 | Val Accuracy: 80.00%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 90.00%
+💾 Best Checkpoint: ./checkpoints/full_mb-change_cls_ctx_dinov1_b8_lr0.001_concat_2.pth
+========================================
+

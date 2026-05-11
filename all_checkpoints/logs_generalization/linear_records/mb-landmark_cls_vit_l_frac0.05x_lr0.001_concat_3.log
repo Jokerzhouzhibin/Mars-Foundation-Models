@@ -1,0 +1,44 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_vit_l_frac0.05x_lr0.001_concat_3.log
+⏰ Time: 2026-04-15 06:16:03
+============================================================
+
+🚀 Training vit_l on mb-landmark_cls | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 349 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 2.1479 | Val Accuracy: 83.10%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 1.3727 | Val Accuracy: 13.39%
+   📅 Epoch 3 | Loss: 0.9636 | Val Accuracy: 35.92%
+   📅 Epoch 4 | Loss: 0.6620 | Val Accuracy: 79.14%
+   📅 Epoch 5 | Loss: 0.5121 | Val Accuracy: 52.26%
+   📅 Epoch 6 | Loss: 0.4316 | Val Accuracy: 62.91%
+   📅 Epoch 7 | Loss: 0.3793 | Val Accuracy: 58.23%
+   📅 Epoch 8 | Loss: 0.3661 | Val Accuracy: 54.55%
+   📅 Epoch 9 | Loss: 0.3179 | Val Accuracy: 63.97%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 83.10%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_vit_l_lr0.001_concat_3.pth
+========================================
+

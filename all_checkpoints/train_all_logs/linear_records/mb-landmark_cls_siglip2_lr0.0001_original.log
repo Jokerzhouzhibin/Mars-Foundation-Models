@@ -1,0 +1,40 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_siglip2_lr0.0001_original.log
+⏰ Time: 2026-03-03 20:01:51
+============================================================
+
+🚀 Training siglip2 on mb-landmark_cls | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 1.9250 | Val Accuracy: 82.77%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 1.1867 | Val Accuracy: 82.65%
+   📅 Epoch 3 | Loss: 0.8573 | Val Accuracy: 82.65%
+   📅 Epoch 4 | Loss: 0.7389 | Val Accuracy: 82.65%
+   📅 Epoch 5 | Loss: 0.6861 | Val Accuracy: 82.65%
+   📅 Epoch 6 | Loss: 0.6557 | Val Accuracy: 82.65%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 82.77%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_siglip2_lr0.0001_original.pth
+========================================
+

@@ -1,0 +1,53 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_scale_mae_lr0.01_concat_2.log
+⏰ Time: 2026-02-28 09:26:05
+============================================================
+
+🚀 Training scale_mae on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: scale_mae (scalemae)
+   🔍 Auditing weights for [scale_mae]...
+   ⚠️ [PARTIAL MATCH] 344/435 layers loaded (79.1%)
+
+   🔍 [Structure Check] scale_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+      📏 ScaleMAE GSD: 0.3 m/px
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.7439 | Val Accuracy: 87.13%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.3271 | Val Accuracy: 87.96%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.3885 | Val Accuracy: 84.14%
+   📅 Epoch 4 | Loss: 0.3567 | Val Accuracy: 85.37%
+   📅 Epoch 5 | Loss: 0.2745 | Val Accuracy: 89.18%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.3110 | Val Accuracy: 89.53%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.2748 | Val Accuracy: 90.68%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.3080 | Val Accuracy: 88.26%
+   📅 Epoch 9 | Loss: 0.2609 | Val Accuracy: 88.91%
+   📅 Epoch 10 | Loss: 0.2681 | Val Accuracy: 88.22%
+   📅 Epoch 11 | Loss: 0.2813 | Val Accuracy: 89.93%
+   📅 Epoch 12 | Loss: 0.2737 | Val Accuracy: 88.09%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 90.68%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_scale_mae_lr0.01_concat_2.pth
+========================================
+

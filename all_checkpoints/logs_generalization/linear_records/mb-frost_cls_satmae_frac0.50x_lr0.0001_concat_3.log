@@ -1,0 +1,76 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_satmae_frac0.50x_lr0.0001_concat_3.log
+⏰ Time: 2026-04-14 11:50:29
+============================================================
+
+🚀 Training satmae on mb-frost_cls | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 2 shards...
+   ✅ Loaded 15062 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: satmae (timm_mae)
+   ℹ️  Config: in_chans=3
+   🔍 Auditing weights for [satmae]...
+   ✅ [PERFECT MATCH] 294/294 layers loaded (100.0%)
+
+   🔍 [Structure Check] satmae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.4682 | Val Accuracy: 92.14%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.3417 | Val Accuracy: 93.18%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.2939 | Val Accuracy: 94.69%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.2686 | Val Accuracy: 94.87%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.2473 | Val Accuracy: 94.60%
+   📅 Epoch 6 | Loss: 0.2328 | Val Accuracy: 95.12%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 7 | Loss: 0.2191 | Val Accuracy: 95.22%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 0.2153 | Val Accuracy: 95.18%
+   📅 Epoch 9 | Loss: 0.2062 | Val Accuracy: 95.43%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 10 | Loss: 0.2043 | Val Accuracy: 95.69%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 11 | Loss: 0.1938 | Val Accuracy: 95.80%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 12 | Loss: 0.1930 | Val Accuracy: 95.85%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 13 | Loss: 0.1861 | Val Accuracy: 95.78%
+   📅 Epoch 14 | Loss: 0.1827 | Val Accuracy: 95.71%
+   📅 Epoch 15 | Loss: 0.1817 | Val Accuracy: 95.66%
+   📅 Epoch 16 | Loss: 0.1774 | Val Accuracy: 95.63%
+   📅 Epoch 17 | Loss: 0.1717 | Val Accuracy: 95.11%
+   📅 Epoch 18 | Loss: 0.1692 | Val Accuracy: 96.05%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 19 | Loss: 0.1673 | Val Accuracy: 96.05%
+   📅 Epoch 20 | Loss: 0.1598 | Val Accuracy: 95.64%
+   📅 Epoch 21 | Loss: 0.1612 | Val Accuracy: 96.20%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 22 | Loss: 0.1567 | Val Accuracy: 96.04%
+   📅 Epoch 23 | Loss: 0.1610 | Val Accuracy: 94.25%
+   📅 Epoch 24 | Loss: 0.1588 | Val Accuracy: 95.69%
+   📅 Epoch 25 | Loss: 0.1575 | Val Accuracy: 95.91%
+   📅 Epoch 26 | Loss: 0.1544 | Val Accuracy: 96.00%
+   📅 Epoch 27 | Loss: 0.1499 | Val Accuracy: 95.50%
+   📅 Epoch 28 | Loss: 0.1463 | Val Accuracy: 95.93%
+   📅 Epoch 29 | Loss: 0.1530 | Val Accuracy: 95.95%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.20%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_satmae_lr0.0001_concat_3.pth
+========================================
+

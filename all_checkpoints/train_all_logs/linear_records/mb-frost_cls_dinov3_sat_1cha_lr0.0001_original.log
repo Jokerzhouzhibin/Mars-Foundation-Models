@@ -1,0 +1,50 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_dinov3_sat_1cha_lr0.0001_original.log
+⏰ Time: 2026-04-09 16:09:48
+============================================================
+
+🚀 Training dinov3_sat_1cha on mb-frost_cls | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: dinov3_sat_1cha (dinov3_hub)
+   🔍 Auditing weights for [dinov3_sat_1cha]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_sat_1cha Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.6197 | Val Accuracy: 93.37%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.5048 | Val Accuracy: 96.50%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.4305 | Val Accuracy: 97.12%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.3817 | Val Accuracy: 97.40%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.3456 | Val Accuracy: 97.50%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.3195 | Val Accuracy: 97.48%
+   📅 Epoch 7 | Loss: 0.2986 | Val Accuracy: 97.36%
+   📅 Epoch 8 | Loss: 0.2808 | Val Accuracy: 97.38%
+   📅 Epoch 9 | Loss: 0.2660 | Val Accuracy: 97.32%
+   📅 Epoch 10 | Loss: 0.2531 | Val Accuracy: 97.30%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 97.50%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_dinov3_sat_1cha_lr0.0001_original.pth
+========================================
+

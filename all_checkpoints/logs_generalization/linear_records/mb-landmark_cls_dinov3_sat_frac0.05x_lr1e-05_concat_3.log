@@ -1,0 +1,45 @@
+
+============================================================
+📄 Log File: ./logs/linear_records_new/mb-landmark_cls_dinov3_sat_frac0.05x_lr1e-05_concat_3.log
+⏰ Time: 2026-04-16 03:32:28
+============================================================
+
+🚀 Training dinov3_sat on mb-landmark_cls | Mode: LINEAR | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 349 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: dinov3_sat (dinov3_hub)
+  ℹ️  DINOv3 Config: in_chans=3
+   🔍 Auditing weights for [dinov3_sat]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_sat Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 2.1088 | Val Accuracy: 78.64%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 2.1101 | Val Accuracy: 77.19%
+   📅 Epoch 3 | Loss: 2.1011 | Val Accuracy: 76.24%
+   📅 Epoch 4 | Loss: 2.0899 | Val Accuracy: 74.23%
+   📅 Epoch 5 | Loss: 2.0867 | Val Accuracy: 72.67%
+   📅 Epoch 6 | Loss: 2.0583 | Val Accuracy: 70.27%
+   📅 Epoch 7 | Loss: 2.0592 | Val Accuracy: 68.43%
+   📅 Epoch 8 | Loss: 2.0541 | Val Accuracy: 65.42%
+   📅 Epoch 9 | Loss: 2.0506 | Val Accuracy: 62.30%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 78.64%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_dinov3_sat_lr1e-05_concat_3.pth
+========================================
+

@@ -1,0 +1,52 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_dinov1_b8_frac0.05x_lr0.001_concat_3.log
+⏰ Time: 2026-04-15 08:14:51
+============================================================
+
+🚀 Training dinov1_b8 on mb-landmark_cls | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 349 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: dinov1_b8 (dinov1)
+
+   🔍 [Structure Check] dinov1_b8 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 784, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 2304
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 4.4160 | Val Accuracy: 5.02%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 2.1552 | Val Accuracy: 23.93%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.6890 | Val Accuracy: 45.40%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.7085 | Val Accuracy: 66.42%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.3538 | Val Accuracy: 42.72%
+   📅 Epoch 6 | Loss: 0.3468 | Val Accuracy: 51.31%
+   📅 Epoch 7 | Loss: 0.2960 | Val Accuracy: 75.35%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 0.2476 | Val Accuracy: 47.07%
+   📅 Epoch 9 | Loss: 0.1793 | Val Accuracy: 56.89%
+   📅 Epoch 10 | Loss: 0.2067 | Val Accuracy: 61.80%
+   📅 Epoch 11 | Loss: 0.1436 | Val Accuracy: 50.59%
+   📅 Epoch 12 | Loss: 0.1466 | Val Accuracy: 64.42%
+   📅 Epoch 13 | Loss: 0.1053 | Val Accuracy: 58.11%
+   📅 Epoch 14 | Loss: 0.1239 | Val Accuracy: 54.55%
+   📅 Epoch 15 | Loss: 0.0886 | Val Accuracy: 70.16%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 75.35%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_dinov1_b8_lr0.001_concat_3.pth
+========================================
+

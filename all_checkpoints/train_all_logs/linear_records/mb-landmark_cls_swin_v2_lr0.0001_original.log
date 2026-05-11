@@ -1,0 +1,105 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_swin_v2_lr0.0001_original.log
+⏰ Time: 2026-03-03 16:53:29
+============================================================
+
+🚀 Training swin_v2 on mb-landmark_cls | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 1.7127 | Val Accuracy: 82.43%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 1.2120 | Val Accuracy: 82.60%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.9274 | Val Accuracy: 82.65%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.7903 | Val Accuracy: 82.65%
+   📅 Epoch 5 | Loss: 0.7139 | Val Accuracy: 82.71%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.6667 | Val Accuracy: 82.71%
+   📅 Epoch 7 | Loss: 0.6230 | Val Accuracy: 82.82%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.5942 | Val Accuracy: 82.88%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.5644 | Val Accuracy: 83.05%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.5436 | Val Accuracy: 83.55%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.5276 | Val Accuracy: 83.88%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.5048 | Val Accuracy: 84.38%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.4921 | Val Accuracy: 84.66%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 0.4758 | Val Accuracy: 84.83%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.4608 | Val Accuracy: 85.33%
+      ⭐ New Best! Saved.
+   📅 Epoch 16 | Loss: 0.4490 | Val Accuracy: 85.67%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 0.4408 | Val Accuracy: 85.95%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 0.4261 | Val Accuracy: 86.22%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 0.4124 | Val Accuracy: 86.45%
+      ⭐ New Best! Saved.
+   📅 Epoch 20 | Loss: 0.4019 | Val Accuracy: 86.67%
+      ⭐ New Best! Saved.
+   📅 Epoch 21 | Loss: 0.3934 | Val Accuracy: 87.17%
+      ⭐ New Best! Saved.
+   📅 Epoch 22 | Loss: 0.3903 | Val Accuracy: 87.51%
+      ⭐ New Best! Saved.
+   📅 Epoch 23 | Loss: 0.3791 | Val Accuracy: 87.51%
+   📅 Epoch 24 | Loss: 0.3740 | Val Accuracy: 87.62%
+      ⭐ New Best! Saved.
+   📅 Epoch 25 | Loss: 0.3733 | Val Accuracy: 88.06%
+      ⭐ New Best! Saved.
+   📅 Epoch 26 | Loss: 0.3603 | Val Accuracy: 88.12%
+      ⭐ New Best! Saved.
+   📅 Epoch 27 | Loss: 0.3619 | Val Accuracy: 88.18%
+      ⭐ New Best! Saved.
+   📅 Epoch 28 | Loss: 0.3483 | Val Accuracy: 88.51%
+      ⭐ New Best! Saved.
+   📅 Epoch 29 | Loss: 0.3475 | Val Accuracy: 88.68%
+      ⭐ New Best! Saved.
+   📅 Epoch 30 | Loss: 0.3440 | Val Accuracy: 88.90%
+      ⭐ New Best! Saved.
+   📅 Epoch 31 | Loss: 0.3384 | Val Accuracy: 88.90%
+   📅 Epoch 32 | Loss: 0.3281 | Val Accuracy: 89.12%
+      ⭐ New Best! Saved.
+   📅 Epoch 33 | Loss: 0.3282 | Val Accuracy: 89.18%
+      ⭐ New Best! Saved.
+   📅 Epoch 34 | Loss: 0.3179 | Val Accuracy: 89.18%
+   📅 Epoch 35 | Loss: 0.3215 | Val Accuracy: 89.35%
+      ⭐ New Best! Saved.
+   📅 Epoch 36 | Loss: 0.3103 | Val Accuracy: 89.35%
+   📅 Epoch 37 | Loss: 0.3137 | Val Accuracy: 89.57%
+      ⭐ New Best! Saved.
+   📅 Epoch 38 | Loss: 0.3048 | Val Accuracy: 89.51%
+   📅 Epoch 39 | Loss: 0.3046 | Val Accuracy: 89.57%
+   📅 Epoch 40 | Loss: 0.3058 | Val Accuracy: 89.68%
+      ⭐ New Best! Saved.
+
+========================================
+🏆 Best Val Accuracy: 89.68%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_swin_v2_lr0.0001_original.pth
+========================================
+

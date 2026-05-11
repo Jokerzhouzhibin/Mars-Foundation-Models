@@ -1,0 +1,87 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-landmark_cls_dinov3_sat_1cha_lr1e-05_concat_2.log
+⏰ Time: 2026-04-11 01:08:16
+============================================================
+
+🚀 Training dinov3_sat_1cha on mb-landmark_cls | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: dinov3_sat_1cha (dinov3_hub)
+   🔍 Auditing weights for [dinov3_sat_1cha]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_sat_1cha Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 1.5243 | Val Accuracy: 82.65%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.8446 | Val Accuracy: 82.65%
+   📅 Epoch 3 | Loss: 0.7300 | Val Accuracy: 82.65%
+   📅 Epoch 4 | Loss: 0.6727 | Val Accuracy: 82.65%
+   📅 Epoch 5 | Loss: 0.6108 | Val Accuracy: 82.65%
+   📅 Epoch 6 | Loss: 0.5505 | Val Accuracy: 82.65%
+   📅 Epoch 7 | Loss: 0.4920 | Val Accuracy: 82.99%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 0.4411 | Val Accuracy: 83.49%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 0.3957 | Val Accuracy: 84.83%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 10 | Loss: 0.3579 | Val Accuracy: 86.00%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 11 | Loss: 0.3277 | Val Accuracy: 86.78%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 12 | Loss: 0.3006 | Val Accuracy: 87.34%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 13 | Loss: 0.2816 | Val Accuracy: 87.34%
+   📅 Epoch 14 | Loss: 0.2637 | Val Accuracy: 88.51%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 15 | Loss: 0.2485 | Val Accuracy: 88.73%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 16 | Loss: 0.2402 | Val Accuracy: 89.01%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 17 | Loss: 0.2262 | Val Accuracy: 89.96%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 18 | Loss: 0.2167 | Val Accuracy: 89.51%
+   📅 Epoch 19 | Loss: 0.2028 | Val Accuracy: 90.24%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 20 | Loss: 0.1938 | Val Accuracy: 90.57%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 21 | Loss: 0.1855 | Val Accuracy: 90.74%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 22 | Loss: 0.1808 | Val Accuracy: 90.74%
+   📅 Epoch 23 | Loss: 0.1729 | Val Accuracy: 90.69%
+   📅 Epoch 24 | Loss: 0.1685 | Val Accuracy: 91.08%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 25 | Loss: 0.1623 | Val Accuracy: 91.75%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 26 | Loss: 0.1594 | Val Accuracy: 91.52%
+   📅 Epoch 27 | Loss: 0.1527 | Val Accuracy: 91.69%
+   📅 Epoch 28 | Loss: 0.1503 | Val Accuracy: 91.97%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 29 | Loss: 0.1473 | Val Accuracy: 91.75%
+   📅 Epoch 30 | Loss: 0.1470 | Val Accuracy: 91.91%
+   📅 Epoch 31 | Loss: 0.1437 | Val Accuracy: 91.91%
+   📅 Epoch 32 | Loss: 0.1368 | Val Accuracy: 91.91%
+   📅 Epoch 33 | Loss: 0.1345 | Val Accuracy: 91.69%
+   📅 Epoch 34 | Loss: 0.1331 | Val Accuracy: 91.47%
+   📅 Epoch 35 | Loss: 0.1321 | Val Accuracy: 91.58%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 91.97%
+💾 Best Checkpoint: ./checkpoints/full_mb-landmark_cls_dinov3_sat_1cha_lr1e-05_concat_2.pth
+========================================
+

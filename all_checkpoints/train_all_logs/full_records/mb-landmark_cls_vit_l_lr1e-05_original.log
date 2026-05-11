@@ -1,0 +1,81 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-landmark_cls_vit_l_lr1e-05_original.log
+⏰ Time: 2026-03-04 01:48:08
+============================================================
+
+🚀 Training vit_l on mb-landmark_cls | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 1.0413 | Val Accuracy: 82.71%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.4765 | Val Accuracy: 84.66%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.3617 | Val Accuracy: 87.40%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.2846 | Val Accuracy: 88.12%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.2426 | Val Accuracy: 89.63%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.2141 | Val Accuracy: 90.69%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.1920 | Val Accuracy: 90.80%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.1736 | Val Accuracy: 91.02%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.1643 | Val Accuracy: 91.30%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.1545 | Val Accuracy: 91.69%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.1432 | Val Accuracy: 91.69%
+   📅 Epoch 12 | Loss: 0.1331 | Val Accuracy: 91.86%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.1236 | Val Accuracy: 91.86%
+   📅 Epoch 14 | Loss: 0.1267 | Val Accuracy: 91.86%
+   📅 Epoch 15 | Loss: 0.1243 | Val Accuracy: 92.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 16 | Loss: 0.1218 | Val Accuracy: 91.75%
+   📅 Epoch 17 | Loss: 0.1103 | Val Accuracy: 92.08%
+   📅 Epoch 18 | Loss: 0.1043 | Val Accuracy: 91.80%
+   📅 Epoch 19 | Loss: 0.1001 | Val Accuracy: 91.86%
+   📅 Epoch 20 | Loss: 0.0982 | Val Accuracy: 91.97%
+   📅 Epoch 21 | Loss: 0.0960 | Val Accuracy: 91.80%
+   📅 Epoch 22 | Loss: 0.0928 | Val Accuracy: 92.36%
+      ⭐ New Best! Saved.
+   📅 Epoch 23 | Loss: 0.0900 | Val Accuracy: 92.02%
+   📅 Epoch 24 | Loss: 0.0885 | Val Accuracy: 92.02%
+   📅 Epoch 25 | Loss: 0.0798 | Val Accuracy: 92.53%
+      ⭐ New Best! Saved.
+   📅 Epoch 26 | Loss: 0.0782 | Val Accuracy: 92.14%
+   📅 Epoch 27 | Loss: 0.0796 | Val Accuracy: 91.75%
+   📅 Epoch 28 | Loss: 0.0739 | Val Accuracy: 92.19%
+   📅 Epoch 29 | Loss: 0.0693 | Val Accuracy: 92.08%
+   📅 Epoch 30 | Loss: 0.0722 | Val Accuracy: 92.30%
+   📅 Epoch 31 | Loss: 0.0697 | Val Accuracy: 92.47%
+   📅 Epoch 32 | Loss: 0.0637 | Val Accuracy: 92.30%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 92.53%
+💾 Best Checkpoint: ./checkpoints/full_mb-landmark_cls_vit_l_lr1e-05_original.pth
+========================================
+

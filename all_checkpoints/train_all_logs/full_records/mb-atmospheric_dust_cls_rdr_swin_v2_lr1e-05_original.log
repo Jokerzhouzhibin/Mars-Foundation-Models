@@ -1,0 +1,50 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-atmospheric_dust_cls_rdr_swin_v2_lr1e-05_original.log
+⏰ Time: 2026-02-28 08:13:14
+============================================================
+
+🚀 Training swin_v2 on mb-atmospheric_dust_cls_rdr | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.4622 | Val Accuracy: 96.03%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2091 | Val Accuracy: 96.43%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1273 | Val Accuracy: 96.49%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1055 | Val Accuracy: 96.68%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.0939 | Val Accuracy: 96.24%
+   📅 Epoch 6 | Loss: 0.0865 | Val Accuracy: 96.26%
+   📅 Epoch 7 | Loss: 0.0877 | Val Accuracy: 96.01%
+   📅 Epoch 8 | Loss: 0.0874 | Val Accuracy: 96.03%
+   📅 Epoch 9 | Loss: 0.0795 | Val Accuracy: 95.90%
+   📅 Epoch 10 | Loss: 0.0822 | Val Accuracy: 95.99%
+   📅 Epoch 11 | Loss: 0.0796 | Val Accuracy: 95.93%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.68%
+💾 Best Checkpoint: ./checkpoints/full_mb-atmospheric_dust_cls_rdr_swin_v2_lr1e-05_original.pth
+========================================
+

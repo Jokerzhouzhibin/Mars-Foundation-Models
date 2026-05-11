@@ -1,0 +1,51 @@
+
+============================================================
+📄 Log File: ./logs/linear_records_new/mb-landmark_cls_dinov2_l14_frac0.01x_lr0.001_concat_3.log
+⏰ Time: 2026-04-15 02:14:46
+============================================================
+
+🚀 Training dinov2_l14 on mb-landmark_cls | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 69 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: dinov2_l14 (dinov2_hub)
+   🔍 Auditing weights for [dinov2_l14]...
+   ✅ [PERFECT MATCH] 343/343 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov2_l14 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 2.1605 | Val Accuracy: 6.47%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 2.8088 | Val Accuracy: 7.25%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 2.2715 | Val Accuracy: 2.79%
+   📅 Epoch 4 | Loss: 1.9664 | Val Accuracy: 17.57%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 2.1301 | Val Accuracy: 58.67%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 1.9280 | Val Accuracy: 33.02%
+   📅 Epoch 7 | Loss: 1.7523 | Val Accuracy: 9.65%
+   📅 Epoch 8 | Loss: 1.6882 | Val Accuracy: 10.26%
+   📅 Epoch 9 | Loss: 1.7447 | Val Accuracy: 10.65%
+   📅 Epoch 10 | Loss: 1.6262 | Val Accuracy: 10.76%
+   📅 Epoch 11 | Loss: 1.3841 | Val Accuracy: 7.98%
+   📅 Epoch 12 | Loss: 1.4320 | Val Accuracy: 11.77%
+   📅 Epoch 13 | Loss: 1.4677 | Val Accuracy: 23.31%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 58.67%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_dinov2_l14_lr0.001_concat_3.pth
+========================================
+

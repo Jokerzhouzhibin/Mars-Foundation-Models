@@ -1,0 +1,55 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-atmospheric_dust_cls_rdr_siglip2_lr1e-05_concat_3.log
+⏰ Time: 2026-02-28 09:58:52
+============================================================
+
+🚀 Training siglip2 on mb-atmospheric_dust_cls_rdr | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.3431 | Val Accuracy: 95.36%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.0913 | Val Accuracy: 95.57%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.0769 | Val Accuracy: 95.76%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.0733 | Val Accuracy: 95.90%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.0688 | Val Accuracy: 96.01%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.0646 | Val Accuracy: 95.80%
+   📅 Epoch 7 | Loss: 0.0647 | Val Accuracy: 95.53%
+   📅 Epoch 8 | Loss: 0.0583 | Val Accuracy: 94.96%
+   📅 Epoch 9 | Loss: 0.0600 | Val Accuracy: 96.36%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.0585 | Val Accuracy: 95.55%
+   📅 Epoch 11 | Loss: 0.0547 | Val Accuracy: 95.86%
+   📅 Epoch 12 | Loss: 0.0520 | Val Accuracy: 96.16%
+   📅 Epoch 13 | Loss: 0.0483 | Val Accuracy: 95.61%
+   📅 Epoch 14 | Loss: 0.0513 | Val Accuracy: 95.67%
+   📅 Epoch 15 | Loss: 0.0483 | Val Accuracy: 95.61%
+   📅 Epoch 16 | Loss: 0.0532 | Val Accuracy: 96.18%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.36%
+💾 Best Checkpoint: ./checkpoints/full_mb-atmospheric_dust_cls_rdr_siglip2_lr1e-05_concat_3.pth
+========================================
+

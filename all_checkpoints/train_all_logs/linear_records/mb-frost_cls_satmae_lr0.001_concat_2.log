@@ -1,0 +1,54 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_satmae_lr0.001_concat_2.log
+⏰ Time: 2026-03-02 13:12:20
+============================================================
+
+🚀 Training satmae on mb-frost_cls | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: satmae (timm_mae)
+   ℹ️  Config: in_chans=3
+   🔍 Auditing weights for [satmae]...
+   ✅ [PERFECT MATCH] 294/294 layers loaded (100.0%)
+
+   🔍 [Structure Check] satmae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.3330 | Val Accuracy: 94.51%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2164 | Val Accuracy: 94.57%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1878 | Val Accuracy: 95.31%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1742 | Val Accuracy: 94.10%
+   📅 Epoch 5 | Loss: 0.1659 | Val Accuracy: 95.10%
+   📅 Epoch 6 | Loss: 0.1532 | Val Accuracy: 95.27%
+   📅 Epoch 7 | Loss: 0.1458 | Val Accuracy: 95.66%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.1420 | Val Accuracy: 95.89%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.1359 | Val Accuracy: 95.64%
+   📅 Epoch 10 | Loss: 0.1339 | Val Accuracy: 95.82%
+   📅 Epoch 11 | Loss: 0.1334 | Val Accuracy: 95.76%
+   📅 Epoch 12 | Loss: 0.1309 | Val Accuracy: 95.06%
+   📅 Epoch 13 | Loss: 0.1304 | Val Accuracy: 92.43%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.89%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_satmae_lr0.001_concat_2.pth
+========================================
+

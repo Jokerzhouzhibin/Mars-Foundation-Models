@@ -1,0 +1,50 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_vit_l_frac0.05x_lr0.001_concat_3.log
+⏰ Time: 2026-04-14 07:06:21
+============================================================
+
+🚀 Training vit_l on mb-frost_cls | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 1506 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.6385 | Val Accuracy: 84.24%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.3196 | Val Accuracy: 93.97%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.2641 | Val Accuracy: 94.36%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.2334 | Val Accuracy: 94.89%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.2140 | Val Accuracy: 94.85%
+   📅 Epoch 6 | Loss: 0.2020 | Val Accuracy: 89.52%
+   📅 Epoch 7 | Loss: 0.1936 | Val Accuracy: 94.71%
+   📅 Epoch 8 | Loss: 0.1783 | Val Accuracy: 93.61%
+   📅 Epoch 9 | Loss: 0.1638 | Val Accuracy: 91.72%
+   📅 Epoch 10 | Loss: 0.1695 | Val Accuracy: 92.11%
+   📅 Epoch 11 | Loss: 0.1604 | Val Accuracy: 93.69%
+   📅 Epoch 12 | Loss: 0.1485 | Val Accuracy: 93.72%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 94.89%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_vit_l_lr0.001_concat_3.pth
+========================================
+

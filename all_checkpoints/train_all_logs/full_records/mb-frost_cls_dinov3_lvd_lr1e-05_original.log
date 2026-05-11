@@ -1,0 +1,55 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-frost_cls_dinov3_lvd_lr1e-05_original.log
+⏰ Time: 2026-03-02 05:51:35
+============================================================
+
+🚀 Training dinov3_lvd on mb-frost_cls | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: dinov3_lvd (dinov3_hub)
+   🔍 Auditing weights for [dinov3_lvd]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_lvd Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.2898 | Val Accuracy: 97.40%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.0533 | Val Accuracy: 96.23%
+   📅 Epoch 3 | Loss: 0.0351 | Val Accuracy: 97.68%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.0241 | Val Accuracy: 97.73%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.0207 | Val Accuracy: 98.42%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.0168 | Val Accuracy: 98.34%
+   📅 Epoch 7 | Loss: 0.0128 | Val Accuracy: 98.33%
+   📅 Epoch 8 | Loss: 0.0115 | Val Accuracy: 98.68%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.0109 | Val Accuracy: 98.05%
+   📅 Epoch 10 | Loss: 0.0089 | Val Accuracy: 98.24%
+   📅 Epoch 11 | Loss: 0.0074 | Val Accuracy: 98.15%
+   📅 Epoch 12 | Loss: 0.0075 | Val Accuracy: 98.46%
+   📅 Epoch 13 | Loss: 0.0075 | Val Accuracy: 97.78%
+   📅 Epoch 14 | Loss: 0.0061 | Val Accuracy: 98.22%
+   📅 Epoch 15 | Loss: 0.0056 | Val Accuracy: 98.40%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 98.68%
+💾 Best Checkpoint: ./checkpoints/full_mb-frost_cls_dinov3_lvd_lr1e-05_original.pth
+========================================
+

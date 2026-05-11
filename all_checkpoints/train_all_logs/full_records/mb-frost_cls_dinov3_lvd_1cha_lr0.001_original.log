@@ -1,0 +1,50 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-frost_cls_dinov3_lvd_1cha_lr0.001_original.log
+⏰ Time: 2026-04-10 10:53:19
+============================================================
+
+🚀 Training dinov3_lvd_1cha on mb-frost_cls | Mode: FULL | LR: 0.001
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: dinov3_lvd_1cha (dinov3_hub)
+   🔍 Auditing weights for [dinov3_lvd_1cha]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_lvd_1cha Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.0840 | Val Accuracy: 97.38%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.0444 | Val Accuracy: 97.58%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.0333 | Val Accuracy: 95.55%
+   📅 Epoch 4 | Loss: 0.0395 | Val Accuracy: 97.23%
+   📅 Epoch 5 | Loss: 0.0328 | Val Accuracy: 98.90%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.0341 | Val Accuracy: 96.79%
+   📅 Epoch 7 | Loss: 0.0279 | Val Accuracy: 97.37%
+   📅 Epoch 8 | Loss: 0.0301 | Val Accuracy: 97.38%
+   📅 Epoch 9 | Loss: 0.0238 | Val Accuracy: 97.31%
+   📅 Epoch 10 | Loss: 0.0247 | Val Accuracy: 97.34%
+   📅 Epoch 11 | Loss: 0.0215 | Val Accuracy: 97.03%
+   📅 Epoch 12 | Loss: 0.0183 | Val Accuracy: 97.76%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 98.90%
+💾 Best Checkpoint: ./checkpoints/full_mb-frost_cls_dinov3_lvd_1cha_lr0.001_original.pth
+========================================
+

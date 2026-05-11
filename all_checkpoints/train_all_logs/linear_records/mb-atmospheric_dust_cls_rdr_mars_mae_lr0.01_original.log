@@ -1,0 +1,51 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_mars_mae_lr0.01_original.log
+⏰ Time: 2026-02-28 12:23:59
+============================================================
+
+🚀 Training mars_mae on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: mars_mae (timm_mae)
+   ℹ️  Config: in_chans=1
+   🔍 Auditing weights for [mars_mae]...
+   ✅ [PERFECT MATCH] 150/150 layers loaded (100.0%)
+
+   🔍 [Structure Check] mars_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 196, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 768
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.2900 | Val Accuracy: 93.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1657 | Val Accuracy: 93.82%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1435 | Val Accuracy: 94.09%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1376 | Val Accuracy: 94.34%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.1337 | Val Accuracy: 94.65%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.1224 | Val Accuracy: 94.42%
+   📅 Epoch 7 | Loss: 0.1204 | Val Accuracy: 94.15%
+   📅 Epoch 8 | Loss: 0.1205 | Val Accuracy: 94.34%
+   📅 Epoch 9 | Loss: 0.1153 | Val Accuracy: 93.71%
+   📅 Epoch 10 | Loss: 0.1231 | Val Accuracy: 93.92%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 94.65%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_mars_mae_lr0.01_original.pth
+========================================
+

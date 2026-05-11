@@ -1,0 +1,82 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-landmark_cls_dinov1_b8_lr1e-05_concat_2.log
+⏰ Time: 2026-03-03 03:46:45
+============================================================
+
+🚀 Training dinov1_b8 on mb-landmark_cls | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: dinov1_b8 (dinov1)
+
+   🔍 [Structure Check] dinov1_b8 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 784, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 1536
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.7894 | Val Accuracy: 83.05%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.4200 | Val Accuracy: 85.89%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.3020 | Val Accuracy: 88.57%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.2377 | Val Accuracy: 90.74%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.2034 | Val Accuracy: 92.14%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.1755 | Val Accuracy: 92.30%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.1615 | Val Accuracy: 92.75%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.1472 | Val Accuracy: 92.75%
+   📅 Epoch 9 | Loss: 0.1311 | Val Accuracy: 92.92%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.1260 | Val Accuracy: 93.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.1210 | Val Accuracy: 92.81%
+   📅 Epoch 12 | Loss: 0.1154 | Val Accuracy: 92.81%
+   📅 Epoch 13 | Loss: 0.1077 | Val Accuracy: 92.75%
+   📅 Epoch 14 | Loss: 0.1085 | Val Accuracy: 93.14%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.0966 | Val Accuracy: 93.20%
+      ⭐ New Best! Saved.
+   📅 Epoch 16 | Loss: 0.0939 | Val Accuracy: 92.97%
+   📅 Epoch 17 | Loss: 0.0871 | Val Accuracy: 93.03%
+   📅 Epoch 18 | Loss: 0.0846 | Val Accuracy: 93.53%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 0.0820 | Val Accuracy: 93.47%
+   📅 Epoch 20 | Loss: 0.0815 | Val Accuracy: 93.14%
+   📅 Epoch 21 | Loss: 0.0795 | Val Accuracy: 93.70%
+      ⭐ New Best! Saved.
+   📅 Epoch 22 | Loss: 0.0726 | Val Accuracy: 93.36%
+   📅 Epoch 23 | Loss: 0.0755 | Val Accuracy: 93.59%
+   📅 Epoch 24 | Loss: 0.0729 | Val Accuracy: 93.36%
+   📅 Epoch 25 | Loss: 0.0658 | Val Accuracy: 93.53%
+   📅 Epoch 26 | Loss: 0.0663 | Val Accuracy: 93.64%
+   📅 Epoch 27 | Loss: 0.0576 | Val Accuracy: 93.70%
+   📅 Epoch 28 | Loss: 0.0637 | Val Accuracy: 93.81%
+      ⭐ New Best! Saved.
+   📅 Epoch 29 | Loss: 0.0592 | Val Accuracy: 93.59%
+   📅 Epoch 30 | Loss: 0.0541 | Val Accuracy: 93.59%
+   📅 Epoch 31 | Loss: 0.0541 | Val Accuracy: 93.53%
+   📅 Epoch 32 | Loss: 0.0569 | Val Accuracy: 93.81%
+   📅 Epoch 33 | Loss: 0.0482 | Val Accuracy: 93.70%
+   📅 Epoch 34 | Loss: 0.0544 | Val Accuracy: 93.42%
+   📅 Epoch 35 | Loss: 0.0499 | Val Accuracy: 93.36%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 93.81%
+💾 Best Checkpoint: ./checkpoints/full_mb-landmark_cls_dinov1_b8_lr1e-05_concat_2.pth
+========================================
+

@@ -1,0 +1,44 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_openclip_lr0.001_original.log
+⏰ Time: 2026-02-28 07:05:49
+============================================================
+
+🚀 Training openclip on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: openclip (transformers_clip)
+
+   🔍 [Structure Check] openclip Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.2513 | Val Accuracy: 89.97%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1292 | Val Accuracy: 95.53%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1138 | Val Accuracy: 96.49%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1088 | Val Accuracy: 96.09%
+   📅 Epoch 5 | Loss: 0.0982 | Val Accuracy: 96.24%
+   📅 Epoch 6 | Loss: 0.0943 | Val Accuracy: 96.43%
+   📅 Epoch 7 | Loss: 0.0982 | Val Accuracy: 95.70%
+   📅 Epoch 8 | Loss: 0.0905 | Val Accuracy: 96.49%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.49%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_openclip_lr0.001_original.pth
+========================================
+

@@ -1,0 +1,54 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-change_cls_ctx_swin_v2_lr1e-05_concat_2.log
+⏰ Time: 2026-02-28 10:01:28
+============================================================
+
+🚀 Training swin_v2 on mb-change_cls_ctx | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 72 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 20 samples.
+   ⚙️  Config: Workers=0, BS=32, SmallData=True
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   ⚠️ Skipping torch.compile (Small dataset or Windows detected).
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.6964 | Val Accuracy: 45.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.6999 | Val Accuracy: 55.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.6675 | Val Accuracy: 70.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.6123 | Val Accuracy: 75.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.6678 | Val Accuracy: 80.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.6387 | Val Accuracy: 85.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.6161 | Val Accuracy: 85.00%
+   📅 Epoch 8 | Loss: 0.5895 | Val Accuracy: 80.00%
+   📅 Epoch 9 | Loss: 0.5948 | Val Accuracy: 80.00%
+   📅 Epoch 10 | Loss: 0.6194 | Val Accuracy: 80.00%
+   📅 Epoch 11 | Loss: 0.5699 | Val Accuracy: 80.00%
+   📅 Epoch 12 | Loss: 0.6092 | Val Accuracy: 80.00%
+   📅 Epoch 13 | Loss: 0.5866 | Val Accuracy: 80.00%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 85.00%
+💾 Best Checkpoint: ./checkpoints/full_mb-change_cls_ctx_swin_v2_lr1e-05_concat_2.pth
+========================================
+

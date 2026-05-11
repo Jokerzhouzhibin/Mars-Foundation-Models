@@ -1,0 +1,53 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_mars_mae_frac0.50x_lr0.0001_concat_3.log
+⏰ Time: 2026-04-15 02:00:56
+============================================================
+
+🚀 Training mars_mae on mb-landmark_cls | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 2646 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: mars_mae (timm_mae)
+   ℹ️  Config: in_chans=1
+   🔍 Auditing weights for [mars_mae]...
+   ✅ [PERFECT MATCH] 150/150 layers loaded (100.0%)
+
+   🔍 [Structure Check] mars_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 196, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 2304
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 1.5773 | Val Accuracy: 82.65%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 1.3898 | Val Accuracy: 81.04%
+   📅 Epoch 3 | Loss: 1.2828 | Val Accuracy: 82.82%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 1.2064 | Val Accuracy: 80.70%
+   📅 Epoch 5 | Loss: 1.1333 | Val Accuracy: 81.43%
+   📅 Epoch 6 | Loss: 1.0769 | Val Accuracy: 81.71%
+   📅 Epoch 7 | Loss: 1.0190 | Val Accuracy: 84.27%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 0.9685 | Val Accuracy: 82.49%
+   📅 Epoch 9 | Loss: 0.9331 | Val Accuracy: 82.43%
+   📅 Epoch 10 | Loss: 0.9000 | Val Accuracy: 80.65%
+   📅 Epoch 11 | Loss: 0.8662 | Val Accuracy: 81.93%
+   📅 Epoch 12 | Loss: 0.8414 | Val Accuracy: 80.48%
+   📅 Epoch 13 | Loss: 0.8135 | Val Accuracy: 83.71%
+   📅 Epoch 14 | Loss: 0.7809 | Val Accuracy: 81.76%
+   📅 Epoch 15 | Loss: 0.7738 | Val Accuracy: 82.60%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 84.27%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_mars_mae_lr0.0001_concat_3.pth
+========================================
+

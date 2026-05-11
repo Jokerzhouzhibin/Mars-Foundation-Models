@@ -1,0 +1,104 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_dinov3_sat_lr0.0001_concat_2.log
+⏰ Time: 2026-03-01 02:13:16
+============================================================
+
+🚀 Training dinov3_sat on mb-domars16k | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: dinov3_sat (dinov3_hub)
+   🔍 Auditing weights for [dinov3_sat]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_sat Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 2.5019 | Val Accuracy: 51.92%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 2.1295 | Val Accuracy: 62.33%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 1.8418 | Val Accuracy: 66.98%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 1.6238 | Val Accuracy: 70.69%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 1.4598 | Val Accuracy: 72.43%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 1.3317 | Val Accuracy: 73.42%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 1.2387 | Val Accuracy: 74.72%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 1.1565 | Val Accuracy: 75.46%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 1.0918 | Val Accuracy: 76.46%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 1.0359 | Val Accuracy: 77.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.9883 | Val Accuracy: 77.57%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.9495 | Val Accuracy: 78.13%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.9058 | Val Accuracy: 78.44%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 0.8752 | Val Accuracy: 78.93%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.8531 | Val Accuracy: 79.06%
+      ⭐ New Best! Saved.
+   📅 Epoch 16 | Loss: 0.8272 | Val Accuracy: 79.62%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 0.8023 | Val Accuracy: 80.11%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 0.7870 | Val Accuracy: 80.48%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 0.7668 | Val Accuracy: 80.73%
+      ⭐ New Best! Saved.
+   📅 Epoch 20 | Loss: 0.7537 | Val Accuracy: 80.48%
+   📅 Epoch 21 | Loss: 0.7321 | Val Accuracy: 80.86%
+      ⭐ New Best! Saved.
+   📅 Epoch 22 | Loss: 0.7141 | Val Accuracy: 81.47%
+      ⭐ New Best! Saved.
+   📅 Epoch 23 | Loss: 0.7011 | Val Accuracy: 81.54%
+      ⭐ New Best! Saved.
+   📅 Epoch 24 | Loss: 0.6883 | Val Accuracy: 81.60%
+      ⭐ New Best! Saved.
+   📅 Epoch 25 | Loss: 0.6804 | Val Accuracy: 81.78%
+      ⭐ New Best! Saved.
+   📅 Epoch 26 | Loss: 0.6650 | Val Accuracy: 81.78%
+   📅 Epoch 27 | Loss: 0.6500 | Val Accuracy: 82.28%
+      ⭐ New Best! Saved.
+   📅 Epoch 28 | Loss: 0.6448 | Val Accuracy: 82.47%
+      ⭐ New Best! Saved.
+   📅 Epoch 29 | Loss: 0.6376 | Val Accuracy: 82.84%
+      ⭐ New Best! Saved.
+   📅 Epoch 30 | Loss: 0.6231 | Val Accuracy: 82.84%
+   📅 Epoch 31 | Loss: 0.6152 | Val Accuracy: 82.78%
+   📅 Epoch 32 | Loss: 0.6102 | Val Accuracy: 82.59%
+   📅 Epoch 33 | Loss: 0.6024 | Val Accuracy: 82.84%
+   📅 Epoch 34 | Loss: 0.5955 | Val Accuracy: 83.15%
+      ⭐ New Best! Saved.
+   📅 Epoch 35 | Loss: 0.5929 | Val Accuracy: 82.96%
+   📅 Epoch 36 | Loss: 0.5806 | Val Accuracy: 83.40%
+      ⭐ New Best! Saved.
+   📅 Epoch 37 | Loss: 0.5720 | Val Accuracy: 83.46%
+      ⭐ New Best! Saved.
+   📅 Epoch 38 | Loss: 0.5733 | Val Accuracy: 83.33%
+   📅 Epoch 39 | Loss: 0.5578 | Val Accuracy: 83.40%
+   📅 Epoch 40 | Loss: 0.5649 | Val Accuracy: 83.71%
+      ⭐ New Best! Saved.
+
+========================================
+🏆 Best Val Accuracy: 83.71%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_dinov3_sat_lr0.0001_concat_2.pth
+========================================
+

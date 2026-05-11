@@ -1,0 +1,53 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-change_cls_hirise_dinov1_b8_frac0.50x_lr0.001_concat_3.log
+⏰ Time: 2026-04-14 00:49:10
+============================================================
+
+🚀 Training dinov1_b8 on mb-change_cls_hirise | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 1565 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: dinov1_b8 (dinov1)
+
+   🔍 [Structure Check] dinov1_b8 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 784, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 2304
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.8400 | Val Accuracy: 91.49%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.2675 | Val Accuracy: 95.07%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.2815 | Val Accuracy: 96.12%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.2655 | Val Accuracy: 92.69%
+   📅 Epoch 5 | Loss: 0.2763 | Val Accuracy: 96.34%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.2500 | Val Accuracy: 90.15%
+   📅 Epoch 7 | Loss: 0.2598 | Val Accuracy: 92.39%
+   📅 Epoch 8 | Loss: 0.2491 | Val Accuracy: 96.87%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 0.2684 | Val Accuracy: 96.79%
+   📅 Epoch 10 | Loss: 0.2456 | Val Accuracy: 92.31%
+   📅 Epoch 11 | Loss: 0.2210 | Val Accuracy: 96.72%
+   📅 Epoch 12 | Loss: 0.2375 | Val Accuracy: 96.49%
+   📅 Epoch 13 | Loss: 0.2402 | Val Accuracy: 95.00%
+   📅 Epoch 14 | Loss: 0.2141 | Val Accuracy: 95.30%
+   📅 Epoch 15 | Loss: 0.2086 | Val Accuracy: 95.52%
+   📅 Epoch 16 | Loss: 0.2154 | Val Accuracy: 96.57%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.87%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_hirise_dinov1_b8_lr0.001_concat_3.pth
+========================================
+

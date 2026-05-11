@@ -1,0 +1,46 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-frost_cls_vit_l_lr0.001_original.log
+⏰ Time: 2026-03-03 04:37:15
+============================================================
+
+🚀 Training vit_l on mb-frost_cls | Mode: FULL | LR: 0.001
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.1743 | Val Accuracy: 92.16%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1109 | Val Accuracy: 96.55%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.0957 | Val Accuracy: 96.10%
+   📅 Epoch 4 | Loss: 0.0856 | Val Accuracy: 94.01%
+   📅 Epoch 5 | Loss: 0.0822 | Val Accuracy: 95.02%
+   📅 Epoch 6 | Loss: 0.0721 | Val Accuracy: 92.16%
+   📅 Epoch 7 | Loss: 0.0743 | Val Accuracy: 96.08%
+   📅 Epoch 8 | Loss: 0.1878 | Val Accuracy: 95.07%
+   📅 Epoch 9 | Loss: 0.3734 | Val Accuracy: 89.49%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.55%
+💾 Best Checkpoint: ./checkpoints/full_mb-frost_cls_vit_l_lr0.001_original.pth
+========================================
+

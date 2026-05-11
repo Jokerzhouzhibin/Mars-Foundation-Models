@@ -1,0 +1,105 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_satmae_lr0.0001_original.log
+⏰ Time: 2026-03-01 10:54:21
+============================================================
+
+🚀 Training satmae on mb-domars16k | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: satmae (timm_mae)
+   ℹ️  Config: in_chans=3
+   🔍 Auditing weights for [satmae]...
+   ✅ [PERFECT MATCH] 294/294 layers loaded (100.0%)
+
+   🔍 [Structure Check] satmae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 2.6123 | Val Accuracy: 29.93%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 2.3028 | Val Accuracy: 45.91%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 2.0883 | Val Accuracy: 52.04%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 1.9216 | Val Accuracy: 56.07%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 1.7961 | Val Accuracy: 57.25%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 1.6975 | Val Accuracy: 58.98%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 1.6226 | Val Accuracy: 61.46%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 1.5583 | Val Accuracy: 61.90%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 1.5012 | Val Accuracy: 62.39%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 1.4604 | Val Accuracy: 63.01%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 1.4113 | Val Accuracy: 64.06%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 1.3771 | Val Accuracy: 64.44%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 1.3484 | Val Accuracy: 64.87%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 1.3120 | Val Accuracy: 65.49%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 1.2907 | Val Accuracy: 65.92%
+      ⭐ New Best! Saved.
+   📅 Epoch 16 | Loss: 1.2713 | Val Accuracy: 66.67%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 1.2480 | Val Accuracy: 67.29%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 1.2283 | Val Accuracy: 68.53%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 1.2137 | Val Accuracy: 68.40%
+   📅 Epoch 20 | Loss: 1.1917 | Val Accuracy: 69.21%
+      ⭐ New Best! Saved.
+   📅 Epoch 21 | Loss: 1.1764 | Val Accuracy: 70.07%
+      ⭐ New Best! Saved.
+   📅 Epoch 22 | Loss: 1.1605 | Val Accuracy: 70.45%
+      ⭐ New Best! Saved.
+   📅 Epoch 23 | Loss: 1.1461 | Val Accuracy: 70.14%
+   📅 Epoch 24 | Loss: 1.1336 | Val Accuracy: 70.76%
+      ⭐ New Best! Saved.
+   📅 Epoch 25 | Loss: 1.1225 | Val Accuracy: 70.63%
+   📅 Epoch 26 | Loss: 1.1098 | Val Accuracy: 71.13%
+      ⭐ New Best! Saved.
+   📅 Epoch 27 | Loss: 1.0959 | Val Accuracy: 71.50%
+      ⭐ New Best! Saved.
+   📅 Epoch 28 | Loss: 1.0873 | Val Accuracy: 71.38%
+   📅 Epoch 29 | Loss: 1.0831 | Val Accuracy: 72.12%
+      ⭐ New Best! Saved.
+   📅 Epoch 30 | Loss: 1.0644 | Val Accuracy: 71.93%
+   📅 Epoch 31 | Loss: 1.0608 | Val Accuracy: 72.00%
+   📅 Epoch 32 | Loss: 1.0558 | Val Accuracy: 72.37%
+      ⭐ New Best! Saved.
+   📅 Epoch 33 | Loss: 1.0483 | Val Accuracy: 72.30%
+   📅 Epoch 34 | Loss: 1.0306 | Val Accuracy: 73.30%
+      ⭐ New Best! Saved.
+   📅 Epoch 35 | Loss: 1.0311 | Val Accuracy: 73.61%
+      ⭐ New Best! Saved.
+   📅 Epoch 36 | Loss: 1.0147 | Val Accuracy: 73.11%
+   📅 Epoch 37 | Loss: 1.0130 | Val Accuracy: 73.79%
+      ⭐ New Best! Saved.
+   📅 Epoch 38 | Loss: 1.0112 | Val Accuracy: 73.79%
+   📅 Epoch 39 | Loss: 1.0059 | Val Accuracy: 74.41%
+      ⭐ New Best! Saved.
+   📅 Epoch 40 | Loss: 0.9968 | Val Accuracy: 74.54%
+      ⭐ New Best! Saved.
+
+========================================
+🏆 Best Val Accuracy: 74.54%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_satmae_lr0.0001_original.pth
+========================================
+

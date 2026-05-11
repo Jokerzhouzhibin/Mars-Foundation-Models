@@ -1,0 +1,43 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_scale_mae_lr0.001_original.log
+⏰ Time: 2026-03-03 18:37:47
+============================================================
+
+🚀 Training scale_mae on mb-landmark_cls | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: scale_mae (scalemae)
+   🔍 Auditing weights for [scale_mae]...
+   ⚠️ [PARTIAL MATCH] 344/435 layers loaded (79.1%)
+
+   🔍 [Structure Check] scale_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+      📏 ScaleMAE GSD: 0.3 m/px
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.9070 | Val Accuracy: 82.65%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.7326 | Val Accuracy: 82.65%
+   📅 Epoch 3 | Loss: 0.7030 | Val Accuracy: 82.65%
+   📅 Epoch 4 | Loss: 0.6750 | Val Accuracy: 82.65%
+   📅 Epoch 5 | Loss: 0.6530 | Val Accuracy: 82.65%
+   📅 Epoch 6 | Loss: 0.6364 | Val Accuracy: 82.65%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 82.65%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_scale_mae_lr0.001_original.pth
+========================================
+

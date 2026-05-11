@@ -1,0 +1,87 @@
+
+============================================================
+📄 Log File: ./logs/linear_records_new/mb-change_cls_hirise_dinov3_sat_frac0.05x_lr0.0001_concat_3.log
+⏰ Time: 2026-04-15 18:33:39
+============================================================
+
+🚀 Training dinov3_sat on mb-change_cls_hirise | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 156 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: dinov3_sat (dinov3_hub)
+  ℹ️  DINOv3 Config: in_chans=3
+   🔍 Auditing weights for [dinov3_sat]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_sat Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.7240 | Val Accuracy: 22.61%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.6970 | Val Accuracy: 18.43%
+   📅 Epoch 3 | Loss: 0.6933 | Val Accuracy: 15.97%
+   📅 Epoch 4 | Loss: 0.6985 | Val Accuracy: 16.64%
+   📅 Epoch 5 | Loss: 0.6935 | Val Accuracy: 20.00%
+   📅 Epoch 6 | Loss: 0.6767 | Val Accuracy: 26.42%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 7 | Loss: 0.6911 | Val Accuracy: 32.54%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 0.6553 | Val Accuracy: 33.58%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 0.6592 | Val Accuracy: 36.79%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 10 | Loss: 0.6377 | Val Accuracy: 36.94%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 11 | Loss: 0.6171 | Val Accuracy: 38.73%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 12 | Loss: 0.6389 | Val Accuracy: 41.57%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 13 | Loss: 0.6212 | Val Accuracy: 43.51%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 14 | Loss: 0.6388 | Val Accuracy: 44.25%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 15 | Loss: 0.6173 | Val Accuracy: 45.97%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 16 | Loss: 0.6078 | Val Accuracy: 46.19%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 17 | Loss: 0.6120 | Val Accuracy: 47.31%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 18 | Loss: 0.6307 | Val Accuracy: 49.03%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 19 | Loss: 0.5792 | Val Accuracy: 52.16%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 20 | Loss: 0.5712 | Val Accuracy: 54.10%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 21 | Loss: 0.5949 | Val Accuracy: 55.15%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 22 | Loss: 0.5891 | Val Accuracy: 56.94%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 23 | Loss: 0.5496 | Val Accuracy: 59.25%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 24 | Loss: 0.6014 | Val Accuracy: 60.15%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 25 | Loss: 0.5638 | Val Accuracy: 59.25%
+   📅 Epoch 26 | Loss: 0.5808 | Val Accuracy: 57.39%
+   📅 Epoch 27 | Loss: 0.5892 | Val Accuracy: 56.49%
+   📅 Epoch 28 | Loss: 0.5502 | Val Accuracy: 56.04%
+   📅 Epoch 29 | Loss: 0.5568 | Val Accuracy: 55.82%
+   📅 Epoch 30 | Loss: 0.5681 | Val Accuracy: 56.34%
+   📅 Epoch 31 | Loss: 0.5534 | Val Accuracy: 57.76%
+   📅 Epoch 32 | Loss: 0.5615 | Val Accuracy: 58.88%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 60.15%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_hirise_dinov3_sat_lr0.0001_concat_3.pth
+========================================
+

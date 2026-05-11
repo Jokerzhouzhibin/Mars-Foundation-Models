@@ -1,0 +1,88 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-landmark_cls_dinov3_sat_1cha_lr1e-05_concat_3.log
+⏰ Time: 2026-04-11 02:03:55
+============================================================
+
+🚀 Training dinov3_sat_1cha on mb-landmark_cls | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: dinov3_sat_1cha (dinov3_hub)
+   🔍 Auditing weights for [dinov3_sat_1cha]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_sat_1cha Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 1.3929 | Val Accuracy: 82.65%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.8149 | Val Accuracy: 82.65%
+   📅 Epoch 3 | Loss: 0.7327 | Val Accuracy: 82.65%
+   📅 Epoch 4 | Loss: 0.6877 | Val Accuracy: 82.65%
+   📅 Epoch 5 | Loss: 0.6345 | Val Accuracy: 82.65%
+   📅 Epoch 6 | Loss: 0.5741 | Val Accuracy: 82.65%
+   📅 Epoch 7 | Loss: 0.5146 | Val Accuracy: 82.71%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 0.4635 | Val Accuracy: 83.16%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 0.4130 | Val Accuracy: 84.05%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 10 | Loss: 0.3682 | Val Accuracy: 86.06%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 11 | Loss: 0.3277 | Val Accuracy: 86.89%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 12 | Loss: 0.2974 | Val Accuracy: 87.90%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 13 | Loss: 0.2746 | Val Accuracy: 88.85%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 14 | Loss: 0.2560 | Val Accuracy: 89.18%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 15 | Loss: 0.2406 | Val Accuracy: 89.74%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 16 | Loss: 0.2299 | Val Accuracy: 90.69%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 17 | Loss: 0.2183 | Val Accuracy: 90.96%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 18 | Loss: 0.2067 | Val Accuracy: 91.30%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 19 | Loss: 0.2008 | Val Accuracy: 91.19%
+   📅 Epoch 20 | Loss: 0.1909 | Val Accuracy: 91.58%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 21 | Loss: 0.1862 | Val Accuracy: 91.86%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 22 | Loss: 0.1776 | Val Accuracy: 91.97%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 23 | Loss: 0.1740 | Val Accuracy: 92.02%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 24 | Loss: 0.1669 | Val Accuracy: 91.97%
+   📅 Epoch 25 | Loss: 0.1548 | Val Accuracy: 91.91%
+   📅 Epoch 26 | Loss: 0.1537 | Val Accuracy: 92.25%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 27 | Loss: 0.1511 | Val Accuracy: 92.36%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 28 | Loss: 0.1491 | Val Accuracy: 92.25%
+   📅 Epoch 29 | Loss: 0.1426 | Val Accuracy: 92.19%
+   📅 Epoch 30 | Loss: 0.1379 | Val Accuracy: 91.80%
+   📅 Epoch 31 | Loss: 0.1356 | Val Accuracy: 92.08%
+   📅 Epoch 32 | Loss: 0.1326 | Val Accuracy: 91.97%
+   📅 Epoch 33 | Loss: 0.1360 | Val Accuracy: 91.80%
+   📅 Epoch 34 | Loss: 0.1309 | Val Accuracy: 91.97%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 92.36%
+💾 Best Checkpoint: ./checkpoints/full_mb-landmark_cls_dinov3_sat_1cha_lr1e-05_concat_3.pth
+========================================
+

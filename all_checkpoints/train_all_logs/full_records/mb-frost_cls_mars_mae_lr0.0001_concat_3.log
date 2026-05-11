@@ -1,0 +1,47 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-frost_cls_mars_mae_lr0.0001_concat_3.log
+⏰ Time: 2026-03-03 05:47:10
+============================================================
+
+🚀 Training mars_mae on mb-frost_cls | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: mars_mae (timm_mae)
+   ℹ️  Config: in_chans=1
+   🔍 Auditing weights for [mars_mae]...
+   ✅ [PERFECT MATCH] 150/150 layers loaded (100.0%)
+
+   🔍 [Structure Check] mars_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 196, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 2304
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.1677 | Val Accuracy: 96.15%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.0802 | Val Accuracy: 97.72%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.0619 | Val Accuracy: 96.04%
+   📅 Epoch 4 | Loss: 0.0487 | Val Accuracy: 97.58%
+   📅 Epoch 5 | Loss: 0.0527 | Val Accuracy: 95.18%
+   📅 Epoch 6 | Loss: 0.0432 | Val Accuracy: 96.24%
+   📅 Epoch 7 | Loss: 0.0418 | Val Accuracy: 95.84%
+   📅 Epoch 8 | Loss: 0.0367 | Val Accuracy: 95.89%
+   📅 Epoch 9 | Loss: 0.0383 | Val Accuracy: 96.41%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 97.72%
+💾 Best Checkpoint: ./checkpoints/full_mb-frost_cls_mars_mae_lr0.0001_concat_3.pth
+========================================
+

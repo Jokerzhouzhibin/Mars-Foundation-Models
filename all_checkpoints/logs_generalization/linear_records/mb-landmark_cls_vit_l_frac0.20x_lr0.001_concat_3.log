@@ -1,0 +1,58 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_vit_l_frac0.20x_lr0.001_concat_3.log
+⏰ Time: 2026-04-15 01:04:14
+============================================================
+
+🚀 Training vit_l on mb-landmark_cls | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 1286 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 1.2847 | Val Accuracy: 78.75%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.4853 | Val Accuracy: 80.98%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.3338 | Val Accuracy: 67.82%
+   📅 Epoch 4 | Loss: 0.2930 | Val Accuracy: 88.85%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.2636 | Val Accuracy: 64.19%
+   📅 Epoch 6 | Loss: 0.2596 | Val Accuracy: 67.93%
+   📅 Epoch 7 | Loss: 0.2241 | Val Accuracy: 87.17%
+   📅 Epoch 8 | Loss: 0.2073 | Val Accuracy: 70.61%
+   📅 Epoch 9 | Loss: 0.2220 | Val Accuracy: 87.84%
+   📅 Epoch 10 | Loss: 0.2089 | Val Accuracy: 78.58%
+   📅 Epoch 11 | Loss: 0.2166 | Val Accuracy: 66.70%
+   📅 Epoch 12 | Loss: 0.1821 | Val Accuracy: 90.96%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 13 | Loss: 0.1780 | Val Accuracy: 76.97%
+   📅 Epoch 14 | Loss: 0.1587 | Val Accuracy: 87.23%
+   📅 Epoch 15 | Loss: 0.1478 | Val Accuracy: 83.71%
+   📅 Epoch 16 | Loss: 0.1373 | Val Accuracy: 87.95%
+   📅 Epoch 17 | Loss: 0.1365 | Val Accuracy: 81.09%
+   📅 Epoch 18 | Loss: 0.1303 | Val Accuracy: 88.40%
+   📅 Epoch 19 | Loss: 0.1300 | Val Accuracy: 77.91%
+   📅 Epoch 20 | Loss: 0.1371 | Val Accuracy: 87.56%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 90.96%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_vit_l_lr0.001_concat_3.pth
+========================================
+

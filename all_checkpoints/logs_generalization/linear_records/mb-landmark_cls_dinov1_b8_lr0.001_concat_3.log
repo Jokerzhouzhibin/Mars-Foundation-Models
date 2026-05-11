@@ -1,0 +1,48 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_dinov1_b8_lr0.001_concat_3.log
+⏰ Time: 2026-03-03 12:44:33
+============================================================
+
+🚀 Training dinov1_b8 on mb-landmark_cls | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: dinov1_b8 (dinov1)
+
+   🔍 [Structure Check] dinov1_b8 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 784, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 2304
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 1.1385 | Val Accuracy: 86.34%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.3062 | Val Accuracy: 91.30%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1571 | Val Accuracy: 91.91%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1338 | Val Accuracy: 92.19%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.1362 | Val Accuracy: 93.20%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.1421 | Val Accuracy: 92.75%
+   📅 Epoch 7 | Loss: 0.1257 | Val Accuracy: 93.03%
+   📅 Epoch 8 | Loss: 0.1154 | Val Accuracy: 92.75%
+   📅 Epoch 9 | Loss: 0.1137 | Val Accuracy: 92.86%
+   📅 Epoch 10 | Loss: 0.1192 | Val Accuracy: 92.14%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 93.20%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_dinov1_b8_lr0.001_concat_3.pth
+========================================
+

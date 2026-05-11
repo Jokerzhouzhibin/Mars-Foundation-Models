@@ -1,0 +1,92 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-change_cls_hirise_dinov2_l14_lr0.0001_original.log
+⏰ Time: 2026-02-28 16:13:39
+============================================================
+
+🚀 Training dinov2_l14 on mb-change_cls_hirise | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6206 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: dinov2_l14 (dinov2_hub)
+   🔍 Auditing weights for [dinov2_l14]...
+   ✅ [PERFECT MATCH] 343/343 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov2_l14 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.5079 | Val Accuracy: 90.07%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2485 | Val Accuracy: 91.87%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.2226 | Val Accuracy: 92.09%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.2059 | Val Accuracy: 93.06%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.1889 | Val Accuracy: 93.73%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.1766 | Val Accuracy: 93.88%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.1732 | Val Accuracy: 94.25%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.1654 | Val Accuracy: 94.63%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.1575 | Val Accuracy: 94.93%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.1536 | Val Accuracy: 95.15%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.1508 | Val Accuracy: 95.52%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.1514 | Val Accuracy: 95.45%
+   📅 Epoch 13 | Loss: 0.1421 | Val Accuracy: 95.82%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 0.1507 | Val Accuracy: 95.82%
+   📅 Epoch 15 | Loss: 0.1417 | Val Accuracy: 95.82%
+   📅 Epoch 16 | Loss: 0.1375 | Val Accuracy: 96.04%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 0.1410 | Val Accuracy: 95.82%
+   📅 Epoch 18 | Loss: 0.1373 | Val Accuracy: 95.97%
+   📅 Epoch 19 | Loss: 0.1316 | Val Accuracy: 95.90%
+   📅 Epoch 20 | Loss: 0.1369 | Val Accuracy: 95.75%
+   📅 Epoch 21 | Loss: 0.1292 | Val Accuracy: 96.27%
+      ⭐ New Best! Saved.
+   📅 Epoch 22 | Loss: 0.1314 | Val Accuracy: 96.04%
+   📅 Epoch 23 | Loss: 0.1374 | Val Accuracy: 96.19%
+   📅 Epoch 24 | Loss: 0.1322 | Val Accuracy: 96.27%
+   📅 Epoch 25 | Loss: 0.1301 | Val Accuracy: 96.49%
+      ⭐ New Best! Saved.
+   📅 Epoch 26 | Loss: 0.1284 | Val Accuracy: 96.49%
+   📅 Epoch 27 | Loss: 0.1241 | Val Accuracy: 96.49%
+   📅 Epoch 28 | Loss: 0.1287 | Val Accuracy: 96.49%
+   📅 Epoch 29 | Loss: 0.1262 | Val Accuracy: 96.57%
+      ⭐ New Best! Saved.
+   📅 Epoch 30 | Loss: 0.1297 | Val Accuracy: 96.49%
+   📅 Epoch 31 | Loss: 0.1215 | Val Accuracy: 96.64%
+      ⭐ New Best! Saved.
+   📅 Epoch 32 | Loss: 0.1283 | Val Accuracy: 96.49%
+   📅 Epoch 33 | Loss: 0.1348 | Val Accuracy: 96.64%
+   📅 Epoch 34 | Loss: 0.1310 | Val Accuracy: 96.72%
+      ⭐ New Best! Saved.
+   📅 Epoch 35 | Loss: 0.1200 | Val Accuracy: 96.64%
+   📅 Epoch 36 | Loss: 0.1253 | Val Accuracy: 96.72%
+   📅 Epoch 37 | Loss: 0.1365 | Val Accuracy: 96.72%
+   📅 Epoch 38 | Loss: 0.1264 | Val Accuracy: 96.72%
+   📅 Epoch 39 | Loss: 0.1285 | Val Accuracy: 96.79%
+      ⭐ New Best! Saved.
+   📅 Epoch 40 | Loss: 0.1304 | Val Accuracy: 96.72%
+
+========================================
+🏆 Best Val Accuracy: 96.79%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_hirise_dinov2_l14_lr0.0001_original.pth
+========================================
+

@@ -1,0 +1,79 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-change_cls_hirise_mars_mae_frac0.50x_lr0.001_concat_3.log
+⏰ Time: 2026-04-14 00:26:42
+============================================================
+
+🚀 Training mars_mae on mb-change_cls_hirise | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 1565 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: mars_mae (timm_mae)
+   ℹ️  Config: in_chans=1
+   🔍 Auditing weights for [mars_mae]...
+   ✅ [PERFECT MATCH] 150/150 layers loaded (100.0%)
+
+   🔍 [Structure Check] mars_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 196, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 2304
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.4943 | Val Accuracy: 91.94%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.3984 | Val Accuracy: 91.94%
+   📅 Epoch 3 | Loss: 0.3943 | Val Accuracy: 92.46%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.3807 | Val Accuracy: 94.48%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.3662 | Val Accuracy: 95.15%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.3511 | Val Accuracy: 94.40%
+   📅 Epoch 7 | Loss: 0.3731 | Val Accuracy: 94.85%
+   📅 Epoch 8 | Loss: 0.3653 | Val Accuracy: 95.15%
+   📅 Epoch 9 | Loss: 0.3355 | Val Accuracy: 94.18%
+   📅 Epoch 10 | Loss: 0.3468 | Val Accuracy: 93.13%
+   📅 Epoch 11 | Loss: 0.3289 | Val Accuracy: 95.45%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 12 | Loss: 0.3444 | Val Accuracy: 95.52%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 13 | Loss: 0.3286 | Val Accuracy: 93.81%
+   📅 Epoch 14 | Loss: 0.3291 | Val Accuracy: 92.91%
+   📅 Epoch 15 | Loss: 0.3183 | Val Accuracy: 90.37%
+   📅 Epoch 16 | Loss: 0.3239 | Val Accuracy: 95.67%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 17 | Loss: 0.3187 | Val Accuracy: 92.91%
+   📅 Epoch 18 | Loss: 0.3107 | Val Accuracy: 91.12%
+   📅 Epoch 19 | Loss: 0.3128 | Val Accuracy: 94.48%
+   📅 Epoch 20 | Loss: 0.3163 | Val Accuracy: 95.75%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 21 | Loss: 0.3224 | Val Accuracy: 95.67%
+   📅 Epoch 22 | Loss: 0.3088 | Val Accuracy: 93.96%
+   📅 Epoch 23 | Loss: 0.3271 | Val Accuracy: 93.96%
+   📅 Epoch 24 | Loss: 0.3050 | Val Accuracy: 95.75%
+   📅 Epoch 25 | Loss: 0.3294 | Val Accuracy: 95.82%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 26 | Loss: 0.3145 | Val Accuracy: 96.04%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 27 | Loss: 0.2978 | Val Accuracy: 92.54%
+   📅 Epoch 28 | Loss: 0.3166 | Val Accuracy: 88.21%
+   📅 Epoch 29 | Loss: 0.3393 | Val Accuracy: 90.30%
+   📅 Epoch 30 | Loss: 0.3110 | Val Accuracy: 95.52%
+   📅 Epoch 31 | Loss: 0.3201 | Val Accuracy: 96.04%
+   📅 Epoch 32 | Loss: 0.3286 | Val Accuracy: 94.18%
+   📅 Epoch 33 | Loss: 0.3186 | Val Accuracy: 90.90%
+   📅 Epoch 34 | Loss: 0.2895 | Val Accuracy: 87.39%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.04%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_hirise_mars_mae_lr0.001_concat_3.pth
+========================================
+

@@ -1,0 +1,49 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-atmospheric_dust_cls_rdr_dinov3_sat_1cha_lr0.0001_concat_2.log
+⏰ Time: 2026-04-01 22:37:23
+============================================================
+
+🚀 Training dinov3_sat_1cha on mb-atmospheric_dust_cls_rdr | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: dinov3_sat_1cha (dinov3_hub)
+   🔍 Auditing weights for [dinov3_sat_1cha]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_sat_1cha Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.1418 | Val Accuracy: 96.09%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.0564 | Val Accuracy: 96.03%
+   📅 Epoch 3 | Loss: 0.0520 | Val Accuracy: 95.97%
+   📅 Epoch 4 | Loss: 0.0447 | Val Accuracy: 95.72%
+   📅 Epoch 5 | Loss: 0.0406 | Val Accuracy: 96.84%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.0372 | Val Accuracy: 95.95%
+   📅 Epoch 7 | Loss: 0.0400 | Val Accuracy: 94.73%
+   📅 Epoch 8 | Loss: 0.0374 | Val Accuracy: 95.67%
+   📅 Epoch 9 | Loss: 0.0367 | Val Accuracy: 95.65%
+   📅 Epoch 10 | Loss: 0.0345 | Val Accuracy: 96.07%
+   📅 Epoch 11 | Loss: 0.0303 | Val Accuracy: 95.49%
+   📅 Epoch 12 | Loss: 0.0286 | Val Accuracy: 96.07%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.84%
+💾 Best Checkpoint: ./checkpoints/full_mb-atmospheric_dust_cls_rdr_dinov3_sat_1cha_lr0.0001_concat_2.pth
+========================================
+

@@ -1,0 +1,100 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_dinov3_lvd_1cha_lr0.0001_concat_3.log
+⏰ Time: 2026-04-02 10:10:39
+============================================================
+
+🚀 Training dinov3_lvd_1cha on mb-domars16k | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: dinov3_lvd_1cha (dinov3_hub)
+   🔍 Auditing weights for [dinov3_lvd_1cha]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_lvd_1cha Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 2.2841 | Val Accuracy: 61.52%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 1.6846 | Val Accuracy: 68.34%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 1.3495 | Val Accuracy: 72.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 1.1495 | Val Accuracy: 73.85%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 1.0262 | Val Accuracy: 75.40%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.9298 | Val Accuracy: 76.70%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.8637 | Val Accuracy: 77.26%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.8148 | Val Accuracy: 78.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.7797 | Val Accuracy: 79.49%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.7300 | Val Accuracy: 80.24%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.7129 | Val Accuracy: 80.42%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.6850 | Val Accuracy: 81.10%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.6646 | Val Accuracy: 81.41%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 0.6434 | Val Accuracy: 81.66%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.6314 | Val Accuracy: 81.54%
+   📅 Epoch 16 | Loss: 0.6079 | Val Accuracy: 82.40%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 0.5980 | Val Accuracy: 82.78%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 0.5876 | Val Accuracy: 82.34%
+   📅 Epoch 19 | Loss: 0.5782 | Val Accuracy: 82.65%
+   📅 Epoch 20 | Loss: 0.5679 | Val Accuracy: 82.90%
+      ⭐ New Best! Saved.
+   📅 Epoch 21 | Loss: 0.5546 | Val Accuracy: 82.65%
+   📅 Epoch 22 | Loss: 0.5473 | Val Accuracy: 82.90%
+   📅 Epoch 23 | Loss: 0.5403 | Val Accuracy: 82.71%
+   📅 Epoch 24 | Loss: 0.5275 | Val Accuracy: 83.33%
+      ⭐ New Best! Saved.
+   📅 Epoch 25 | Loss: 0.5299 | Val Accuracy: 82.90%
+   📅 Epoch 26 | Loss: 0.5290 | Val Accuracy: 83.64%
+      ⭐ New Best! Saved.
+   📅 Epoch 27 | Loss: 0.5117 | Val Accuracy: 83.46%
+   📅 Epoch 28 | Loss: 0.5135 | Val Accuracy: 83.64%
+   📅 Epoch 29 | Loss: 0.5001 | Val Accuracy: 83.83%
+      ⭐ New Best! Saved.
+   📅 Epoch 30 | Loss: 0.5020 | Val Accuracy: 83.89%
+      ⭐ New Best! Saved.
+   📅 Epoch 31 | Loss: 0.4872 | Val Accuracy: 83.52%
+   📅 Epoch 32 | Loss: 0.4837 | Val Accuracy: 84.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 33 | Loss: 0.4837 | Val Accuracy: 83.71%
+   📅 Epoch 34 | Loss: 0.4789 | Val Accuracy: 84.39%
+      ⭐ New Best! Saved.
+   📅 Epoch 35 | Loss: 0.4764 | Val Accuracy: 84.45%
+      ⭐ New Best! Saved.
+   📅 Epoch 36 | Loss: 0.4721 | Val Accuracy: 84.57%
+      ⭐ New Best! Saved.
+   📅 Epoch 37 | Loss: 0.4747 | Val Accuracy: 84.20%
+   📅 Epoch 38 | Loss: 0.4700 | Val Accuracy: 84.63%
+      ⭐ New Best! Saved.
+   📅 Epoch 39 | Loss: 0.4582 | Val Accuracy: 84.45%
+   📅 Epoch 40 | Loss: 0.4583 | Val Accuracy: 84.82%
+      ⭐ New Best! Saved.
+
+========================================
+🏆 Best Val Accuracy: 84.82%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_dinov3_lvd_1cha_lr0.0001_concat_3.pth
+========================================
+

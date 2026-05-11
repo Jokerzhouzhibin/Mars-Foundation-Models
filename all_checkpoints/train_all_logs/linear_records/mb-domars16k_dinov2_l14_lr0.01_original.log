@@ -1,0 +1,55 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_dinov2_l14_lr0.01_original.log
+⏰ Time: 2026-03-01 03:52:51
+============================================================
+
+🚀 Training dinov2_l14 on mb-domars16k | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: dinov2_l14 (dinov2_hub)
+   🔍 Auditing weights for [dinov2_l14]...
+   ✅ [PERFECT MATCH] 343/343 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov2_l14 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 1.2435 | Val Accuracy: 81.60%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.5814 | Val Accuracy: 82.59%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.5041 | Val Accuracy: 82.47%
+   📅 Epoch 4 | Loss: 0.5547 | Val Accuracy: 80.92%
+   📅 Epoch 5 | Loss: 0.5316 | Val Accuracy: 84.26%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.4881 | Val Accuracy: 83.21%
+   📅 Epoch 7 | Loss: 0.4788 | Val Accuracy: 84.94%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.4843 | Val Accuracy: 83.95%
+   📅 Epoch 9 | Loss: 0.4759 | Val Accuracy: 84.45%
+   📅 Epoch 10 | Loss: 0.4866 | Val Accuracy: 85.38%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.4592 | Val Accuracy: 82.16%
+   📅 Epoch 12 | Loss: 0.4976 | Val Accuracy: 81.91%
+   📅 Epoch 13 | Loss: 0.4656 | Val Accuracy: 84.08%
+   📅 Epoch 14 | Loss: 0.4936 | Val Accuracy: 82.53%
+   📅 Epoch 15 | Loss: 0.4445 | Val Accuracy: 83.77%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 85.38%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_dinov2_l14_lr0.01_original.pth
+========================================
+

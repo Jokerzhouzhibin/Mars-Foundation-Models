@@ -1,0 +1,66 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-change_cls_hirise_vit_l_lr0.0001_concat_2.log
+⏰ Time: 2026-02-28 20:08:30
+============================================================
+
+🚀 Training vit_l on mb-change_cls_hirise | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6206 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.4777 | Val Accuracy: 91.94%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2687 | Val Accuracy: 91.94%
+   📅 Epoch 3 | Loss: 0.2445 | Val Accuracy: 91.94%
+   📅 Epoch 4 | Loss: 0.2288 | Val Accuracy: 91.94%
+   📅 Epoch 5 | Loss: 0.2156 | Val Accuracy: 92.31%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.2063 | Val Accuracy: 93.36%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.1960 | Val Accuracy: 93.66%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.1915 | Val Accuracy: 94.03%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.1854 | Val Accuracy: 94.33%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.1800 | Val Accuracy: 94.55%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.1747 | Val Accuracy: 94.63%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.1740 | Val Accuracy: 94.85%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.1704 | Val Accuracy: 94.78%
+   📅 Epoch 14 | Loss: 0.1679 | Val Accuracy: 94.93%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.1686 | Val Accuracy: 95.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 16 | Loss: 0.1665 | Val Accuracy: 95.00%
+   📅 Epoch 17 | Loss: 0.1626 | Val Accuracy: 94.93%
+   📅 Epoch 18 | Loss: 0.1614 | Val Accuracy: 94.70%
+   📅 Epoch 19 | Loss: 0.1580 | Val Accuracy: 94.70%
+   📅 Epoch 20 | Loss: 0.1605 | Val Accuracy: 94.78%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.00%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_hirise_vit_l_lr0.0001_concat_2.pth
+========================================
+

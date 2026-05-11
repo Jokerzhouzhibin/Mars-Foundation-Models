@@ -1,0 +1,122 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_dinov3_sat_1cha_frac0.05x_lr1e-05_concat_3.log
+⏰ Time: 2026-04-13 23:16:45
+============================================================
+
+🚀 Training dinov3_sat_1cha on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 490 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: dinov3_sat_1cha (dinov3_hub)
+   🔍 Auditing weights for [dinov3_sat_1cha]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_sat_1cha Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.7757 | Val Accuracy: 37.78%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.7739 | Val Accuracy: 40.74%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.7507 | Val Accuracy: 44.76%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.7370 | Val Accuracy: 49.56%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.7286 | Val Accuracy: 53.91%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.7181 | Val Accuracy: 59.44%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 7 | Loss: 0.7169 | Val Accuracy: 64.04%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 0.7051 | Val Accuracy: 68.76%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 0.6929 | Val Accuracy: 72.94%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 10 | Loss: 0.6782 | Val Accuracy: 77.00%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 11 | Loss: 0.6711 | Val Accuracy: 80.26%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 12 | Loss: 0.6604 | Val Accuracy: 83.12%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 13 | Loss: 0.6523 | Val Accuracy: 85.65%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 14 | Loss: 0.6343 | Val Accuracy: 87.94%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 15 | Loss: 0.6346 | Val Accuracy: 89.30%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 16 | Loss: 0.6261 | Val Accuracy: 90.60%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 17 | Loss: 0.6124 | Val Accuracy: 91.48%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 18 | Loss: 0.6131 | Val Accuracy: 92.52%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 19 | Loss: 0.5971 | Val Accuracy: 93.27%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 20 | Loss: 0.5924 | Val Accuracy: 94.00%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 21 | Loss: 0.5878 | Val Accuracy: 94.50%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 22 | Loss: 0.5745 | Val Accuracy: 94.96%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 23 | Loss: 0.5654 | Val Accuracy: 95.11%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 24 | Loss: 0.5576 | Val Accuracy: 95.32%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 25 | Loss: 0.5534 | Val Accuracy: 95.55%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 26 | Loss: 0.5517 | Val Accuracy: 95.67%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 27 | Loss: 0.5429 | Val Accuracy: 95.80%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 28 | Loss: 0.5357 | Val Accuracy: 95.88%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 29 | Loss: 0.5280 | Val Accuracy: 96.09%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 30 | Loss: 0.5187 | Val Accuracy: 96.16%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 31 | Loss: 0.5170 | Val Accuracy: 96.22%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 32 | Loss: 0.5066 | Val Accuracy: 96.24%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 33 | Loss: 0.5135 | Val Accuracy: 96.30%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 34 | Loss: 0.4985 | Val Accuracy: 96.39%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 35 | Loss: 0.4932 | Val Accuracy: 96.51%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 36 | Loss: 0.4835 | Val Accuracy: 96.55%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 37 | Loss: 0.4816 | Val Accuracy: 96.64%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 38 | Loss: 0.4718 | Val Accuracy: 96.59%
+   📅 Epoch 39 | Loss: 0.4630 | Val Accuracy: 96.55%
+   📅 Epoch 40 | Loss: 0.4649 | Val Accuracy: 96.64%
+   📅 Epoch 41 | Loss: 0.4572 | Val Accuracy: 96.64%
+   📅 Epoch 42 | Loss: 0.4527 | Val Accuracy: 96.64%
+   📅 Epoch 43 | Loss: 0.4500 | Val Accuracy: 96.70%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 44 | Loss: 0.4443 | Val Accuracy: 96.66%
+   📅 Epoch 45 | Loss: 0.4326 | Val Accuracy: 96.68%
+   📅 Epoch 46 | Loss: 0.4293 | Val Accuracy: 96.70%
+   📅 Epoch 47 | Loss: 0.4318 | Val Accuracy: 96.74%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 48 | Loss: 0.4254 | Val Accuracy: 96.78%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 49 | Loss: 0.4186 | Val Accuracy: 96.74%
+   📅 Epoch 50 | Loss: 0.4165 | Val Accuracy: 96.76%
+
+========================================
+🏆 Best Val Accuracy: 96.78%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_dinov3_sat_1cha_lr1e-05_concat_3.pth
+========================================
+

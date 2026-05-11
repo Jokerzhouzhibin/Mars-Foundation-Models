@@ -1,0 +1,87 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_vit_l_frac0.05x_lr0.0001_concat_3.log
+⏰ Time: 2026-04-15 04:51:23
+============================================================
+
+🚀 Training vit_l on mb-landmark_cls | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 349 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 2.1578 | Val Accuracy: 8.37%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 1.9904 | Val Accuracy: 19.13%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 1.8832 | Val Accuracy: 19.85%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 1.7836 | Val Accuracy: 18.40%
+   📅 Epoch 5 | Loss: 1.7013 | Val Accuracy: 15.62%
+   📅 Epoch 6 | Loss: 1.6174 | Val Accuracy: 17.07%
+   📅 Epoch 7 | Loss: 1.5378 | Val Accuracy: 21.14%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 1.4441 | Val Accuracy: 31.96%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 1.3962 | Val Accuracy: 39.04%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 10 | Loss: 1.2961 | Val Accuracy: 40.99%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 11 | Loss: 1.2520 | Val Accuracy: 38.98%
+   📅 Epoch 12 | Loss: 1.1967 | Val Accuracy: 40.83%
+   📅 Epoch 13 | Loss: 1.1462 | Val Accuracy: 45.12%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 14 | Loss: 1.1026 | Val Accuracy: 47.80%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 15 | Loss: 1.0564 | Val Accuracy: 38.37%
+   📅 Epoch 16 | Loss: 0.9971 | Val Accuracy: 44.84%
+   📅 Epoch 17 | Loss: 0.9616 | Val Accuracy: 56.72%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 18 | Loss: 0.9247 | Val Accuracy: 54.10%
+   📅 Epoch 19 | Loss: 0.9112 | Val Accuracy: 53.21%
+   📅 Epoch 20 | Loss: 0.8698 | Val Accuracy: 52.43%
+   📅 Epoch 21 | Loss: 0.8591 | Val Accuracy: 53.76%
+   📅 Epoch 22 | Loss: 0.8056 | Val Accuracy: 59.90%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 23 | Loss: 0.7823 | Val Accuracy: 59.23%
+   📅 Epoch 24 | Loss: 0.7879 | Val Accuracy: 60.40%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 25 | Loss: 0.7328 | Val Accuracy: 61.85%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 26 | Loss: 0.7395 | Val Accuracy: 61.80%
+   📅 Epoch 27 | Loss: 0.7161 | Val Accuracy: 53.10%
+   📅 Epoch 28 | Loss: 0.6835 | Val Accuracy: 56.50%
+   📅 Epoch 29 | Loss: 0.6873 | Val Accuracy: 66.82%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 30 | Loss: 0.6822 | Val Accuracy: 67.93%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 31 | Loss: 0.6237 | Val Accuracy: 62.07%
+   📅 Epoch 32 | Loss: 0.6145 | Val Accuracy: 59.45%
+   📅 Epoch 33 | Loss: 0.6134 | Val Accuracy: 57.61%
+   📅 Epoch 34 | Loss: 0.5935 | Val Accuracy: 65.20%
+   📅 Epoch 35 | Loss: 0.5892 | Val Accuracy: 61.24%
+   📅 Epoch 36 | Loss: 0.5639 | Val Accuracy: 62.47%
+   📅 Epoch 37 | Loss: 0.5480 | Val Accuracy: 61.29%
+   📅 Epoch 38 | Loss: 0.5525 | Val Accuracy: 59.34%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 67.93%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_vit_l_lr0.0001_concat_3.pth
+========================================
+

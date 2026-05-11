@@ -1,0 +1,86 @@
+
+============================================================
+📄 Log File: ./logs/linear_records_new/mb-atmospheric_dust_cls_rdr_dinov3_sat_frac0.50x_lr1e-05_concat_3.log
+⏰ Time: 2026-04-15 17:06:47
+============================================================
+
+🚀 Training dinov3_sat on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 4908 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: dinov3_sat (dinov3_hub)
+  ℹ️  DINOv3 Config: in_chans=3
+   🔍 Auditing weights for [dinov3_sat]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_sat Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.6669 | Val Accuracy: 82.34%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.5809 | Val Accuracy: 93.13%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.5092 | Val Accuracy: 95.32%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.4511 | Val Accuracy: 96.38%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.4053 | Val Accuracy: 96.74%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.3675 | Val Accuracy: 97.05%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 7 | Loss: 0.3368 | Val Accuracy: 97.26%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 0.3093 | Val Accuracy: 97.33%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 0.2863 | Val Accuracy: 97.45%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 10 | Loss: 0.2667 | Val Accuracy: 97.51%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 11 | Loss: 0.2522 | Val Accuracy: 97.58%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 12 | Loss: 0.2404 | Val Accuracy: 97.64%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 13 | Loss: 0.2251 | Val Accuracy: 97.66%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 14 | Loss: 0.2146 | Val Accuracy: 97.66%
+   📅 Epoch 15 | Loss: 0.2014 | Val Accuracy: 97.70%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 16 | Loss: 0.1935 | Val Accuracy: 97.66%
+   📅 Epoch 17 | Loss: 0.1859 | Val Accuracy: 97.66%
+   📅 Epoch 18 | Loss: 0.1788 | Val Accuracy: 97.68%
+   📅 Epoch 19 | Loss: 0.1714 | Val Accuracy: 97.72%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 20 | Loss: 0.1659 | Val Accuracy: 97.70%
+   📅 Epoch 21 | Loss: 0.1626 | Val Accuracy: 97.70%
+   📅 Epoch 22 | Loss: 0.1537 | Val Accuracy: 97.70%
+   📅 Epoch 23 | Loss: 0.1508 | Val Accuracy: 97.70%
+   📅 Epoch 24 | Loss: 0.1434 | Val Accuracy: 97.68%
+   📅 Epoch 25 | Loss: 0.1418 | Val Accuracy: 97.70%
+   📅 Epoch 26 | Loss: 0.1362 | Val Accuracy: 97.72%
+   📅 Epoch 27 | Loss: 0.1361 | Val Accuracy: 97.74%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 28 | Loss: 0.1336 | Val Accuracy: 97.72%
+   📅 Epoch 29 | Loss: 0.1322 | Val Accuracy: 97.72%
+   📅 Epoch 30 | Loss: 0.1241 | Val Accuracy: 97.66%
+   📅 Epoch 31 | Loss: 0.1210 | Val Accuracy: 97.64%
+   📅 Epoch 32 | Loss: 0.1203 | Val Accuracy: 97.68%
+   📅 Epoch 33 | Loss: 0.1220 | Val Accuracy: 97.66%
+   📅 Epoch 34 | Loss: 0.1159 | Val Accuracy: 97.66%
+   📅 Epoch 35 | Loss: 0.1112 | Val Accuracy: 97.64%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 97.74%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_dinov3_sat_lr1e-05_concat_3.pth
+========================================
+

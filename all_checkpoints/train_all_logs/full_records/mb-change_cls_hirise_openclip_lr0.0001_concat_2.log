@@ -1,0 +1,71 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-change_cls_hirise_openclip_lr0.0001_concat_2.log
+⏰ Time: 2026-02-28 15:15:19
+============================================================
+
+🚀 Training openclip on mb-change_cls_hirise | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6206 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: openclip (transformers_clip)
+
+   🔍 [Structure Check] openclip Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.2486 | Val Accuracy: 95.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2307 | Val Accuracy: 95.37%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1797 | Val Accuracy: 95.45%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1505 | Val Accuracy: 95.75%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.1537 | Val Accuracy: 95.00%
+   📅 Epoch 6 | Loss: 0.1477 | Val Accuracy: 95.97%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.1426 | Val Accuracy: 95.67%
+   📅 Epoch 8 | Loss: 0.1458 | Val Accuracy: 96.42%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.1392 | Val Accuracy: 94.93%
+   📅 Epoch 10 | Loss: 0.1326 | Val Accuracy: 95.82%
+   📅 Epoch 11 | Loss: 0.1310 | Val Accuracy: 96.19%
+   📅 Epoch 12 | Loss: 0.1299 | Val Accuracy: 94.78%
+   📅 Epoch 13 | Loss: 0.1236 | Val Accuracy: 95.82%
+   📅 Epoch 14 | Loss: 0.1253 | Val Accuracy: 96.72%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.1189 | Val Accuracy: 94.63%
+   📅 Epoch 16 | Loss: 0.1215 | Val Accuracy: 96.27%
+   📅 Epoch 17 | Loss: 0.1213 | Val Accuracy: 95.15%
+   📅 Epoch 18 | Loss: 0.1176 | Val Accuracy: 97.16%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 0.1225 | Val Accuracy: 95.67%
+   📅 Epoch 20 | Loss: 0.1185 | Val Accuracy: 96.49%
+   📅 Epoch 21 | Loss: 0.1178 | Val Accuracy: 97.16%
+   📅 Epoch 22 | Loss: 0.1121 | Val Accuracy: 97.61%
+      ⭐ New Best! Saved.
+   📅 Epoch 23 | Loss: 0.1079 | Val Accuracy: 96.04%
+   📅 Epoch 24 | Loss: 0.1038 | Val Accuracy: 96.19%
+   📅 Epoch 25 | Loss: 0.1161 | Val Accuracy: 95.30%
+   📅 Epoch 26 | Loss: 0.1162 | Val Accuracy: 96.87%
+   📅 Epoch 27 | Loss: 0.1132 | Val Accuracy: 96.49%
+   📅 Epoch 28 | Loss: 0.1068 | Val Accuracy: 97.09%
+   📅 Epoch 29 | Loss: 0.1049 | Val Accuracy: 97.09%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 97.61%
+💾 Best Checkpoint: ./checkpoints/full_mb-change_cls_hirise_openclip_lr0.0001_concat_2.pth
+========================================
+

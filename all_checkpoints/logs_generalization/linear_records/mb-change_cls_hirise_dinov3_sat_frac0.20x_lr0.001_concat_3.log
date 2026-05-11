@@ -1,0 +1,49 @@
+
+============================================================
+📄 Log File: ./logs/linear_records_new/mb-change_cls_hirise_dinov3_sat_frac0.20x_lr0.001_concat_3.log
+⏰ Time: 2026-04-15 18:28:31
+============================================================
+
+🚀 Training dinov3_sat on mb-change_cls_hirise | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 626 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: dinov3_sat (dinov3_hub)
+  ℹ️  DINOv3 Config: in_chans=3
+   🔍 Auditing weights for [dinov3_sat]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_sat Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.6835 | Val Accuracy: 72.31%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.6086 | Val Accuracy: 76.34%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.4783 | Val Accuracy: 93.43%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.4586 | Val Accuracy: 88.73%
+   📅 Epoch 5 | Loss: 0.4376 | Val Accuracy: 87.46%
+   📅 Epoch 6 | Loss: 0.4315 | Val Accuracy: 91.04%
+   📅 Epoch 7 | Loss: 0.3833 | Val Accuracy: 87.76%
+   📅 Epoch 8 | Loss: 0.3733 | Val Accuracy: 87.84%
+   📅 Epoch 9 | Loss: 0.3768 | Val Accuracy: 89.63%
+   📅 Epoch 10 | Loss: 0.3641 | Val Accuracy: 88.13%
+   📅 Epoch 11 | Loss: 0.3855 | Val Accuracy: 91.87%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 93.43%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_hirise_dinov3_sat_lr0.001_concat_3.pth
+========================================
+

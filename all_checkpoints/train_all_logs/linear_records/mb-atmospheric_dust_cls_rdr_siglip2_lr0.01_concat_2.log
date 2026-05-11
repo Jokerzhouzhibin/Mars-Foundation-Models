@@ -1,0 +1,40 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_siglip2_lr0.01_concat_2.log
+⏰ Time: 2026-02-28 11:04:45
+============================================================
+
+🚀 Training siglip2 on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.1898 | Val Accuracy: 96.66%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1030 | Val Accuracy: 96.13%
+   📅 Epoch 3 | Loss: 0.0936 | Val Accuracy: 95.19%
+   📅 Epoch 4 | Loss: 0.0893 | Val Accuracy: 95.90%
+   📅 Epoch 5 | Loss: 0.0835 | Val Accuracy: 96.22%
+   📅 Epoch 6 | Loss: 0.0746 | Val Accuracy: 95.68%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.66%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_siglip2_lr0.01_concat_2.pth
+========================================
+

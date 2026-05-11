@@ -1,0 +1,103 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_mars_mae_frac0.05x_lr0.001_concat_3.log
+⏰ Time: 2026-04-13 17:01:06
+============================================================
+
+🚀 Training mars_mae on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 490 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: mars_mae (timm_mae)
+   ℹ️  Config: in_chans=1
+   🔍 Auditing weights for [mars_mae]...
+   ✅ [PERFECT MATCH] 150/150 layers loaded (100.0%)
+
+   🔍 [Structure Check] mars_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 196, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 2304
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.6946 | Val Accuracy: 87.57%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.4184 | Val Accuracy: 89.62%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.3582 | Val Accuracy: 88.88%
+   📅 Epoch 4 | Loss: 0.3076 | Val Accuracy: 91.04%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.2647 | Val Accuracy: 92.52%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.2423 | Val Accuracy: 92.98%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 7 | Loss: 0.2318 | Val Accuracy: 93.17%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 0.2266 | Val Accuracy: 93.06%
+   📅 Epoch 9 | Loss: 0.2084 | Val Accuracy: 92.88%
+   📅 Epoch 10 | Loss: 0.2220 | Val Accuracy: 93.57%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 11 | Loss: 0.1862 | Val Accuracy: 93.46%
+   📅 Epoch 12 | Loss: 0.1905 | Val Accuracy: 93.67%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 13 | Loss: 0.1865 | Val Accuracy: 93.52%
+   📅 Epoch 14 | Loss: 0.1925 | Val Accuracy: 93.38%
+   📅 Epoch 15 | Loss: 0.1898 | Val Accuracy: 93.67%
+   📅 Epoch 16 | Loss: 0.1707 | Val Accuracy: 93.79%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 17 | Loss: 0.1892 | Val Accuracy: 94.11%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 18 | Loss: 0.1691 | Val Accuracy: 94.30%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 19 | Loss: 0.1888 | Val Accuracy: 94.15%
+   📅 Epoch 20 | Loss: 0.1776 | Val Accuracy: 94.05%
+   📅 Epoch 21 | Loss: 0.1723 | Val Accuracy: 94.40%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 22 | Loss: 0.1809 | Val Accuracy: 94.05%
+   📅 Epoch 23 | Loss: 0.1721 | Val Accuracy: 94.19%
+   📅 Epoch 24 | Loss: 0.1614 | Val Accuracy: 94.30%
+   📅 Epoch 25 | Loss: 0.1593 | Val Accuracy: 94.42%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 26 | Loss: 0.1751 | Val Accuracy: 94.25%
+   📅 Epoch 27 | Loss: 0.1506 | Val Accuracy: 94.44%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 28 | Loss: 0.1563 | Val Accuracy: 94.50%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 29 | Loss: 0.1406 | Val Accuracy: 94.25%
+   📅 Epoch 30 | Loss: 0.1524 | Val Accuracy: 94.19%
+   📅 Epoch 31 | Loss: 0.1654 | Val Accuracy: 94.19%
+   📅 Epoch 32 | Loss: 0.1450 | Val Accuracy: 93.73%
+   📅 Epoch 33 | Loss: 0.1584 | Val Accuracy: 94.53%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 34 | Loss: 0.1795 | Val Accuracy: 94.32%
+   📅 Epoch 35 | Loss: 0.1711 | Val Accuracy: 94.30%
+   📅 Epoch 36 | Loss: 0.1442 | Val Accuracy: 94.67%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 37 | Loss: 0.1662 | Val Accuracy: 93.94%
+   📅 Epoch 38 | Loss: 0.1615 | Val Accuracy: 94.63%
+   📅 Epoch 39 | Loss: 0.1460 | Val Accuracy: 94.40%
+   📅 Epoch 40 | Loss: 0.1641 | Val Accuracy: 94.46%
+   📅 Epoch 41 | Loss: 0.1490 | Val Accuracy: 94.48%
+   📅 Epoch 42 | Loss: 0.1363 | Val Accuracy: 94.71%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 43 | Loss: 0.1293 | Val Accuracy: 94.63%
+   📅 Epoch 44 | Loss: 0.1625 | Val Accuracy: 94.23%
+   📅 Epoch 45 | Loss: 0.1435 | Val Accuracy: 94.73%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 46 | Loss: 0.1334 | Val Accuracy: 94.74%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 47 | Loss: 0.1435 | Val Accuracy: 94.53%
+   📅 Epoch 48 | Loss: 0.1213 | Val Accuracy: 94.71%
+   📅 Epoch 49 | Loss: 0.1602 | Val Accuracy: 94.59%
+   📅 Epoch 50 | Loss: 0.1314 | Val Accuracy: 94.34%
+
+========================================
+🏆 Best Val Accuracy: 94.74%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_mars_mae_lr0.001_concat_3.pth
+========================================
+

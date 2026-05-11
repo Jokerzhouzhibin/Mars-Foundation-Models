@@ -1,0 +1,51 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-atmospheric_dust_cls_rdr_dinov1_b8_lr0.0001_original.log
+⏰ Time: 2026-02-28 03:19:32
+============================================================
+
+🚀 Training dinov1_b8 on mb-atmospheric_dust_cls_rdr | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: dinov1_b8 (dinov1)
+
+   🔍 [Structure Check] dinov1_b8 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 784, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 768
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.0997 | Val Accuracy: 95.82%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.0712 | Val Accuracy: 95.42%
+   📅 Epoch 3 | Loss: 0.0666 | Val Accuracy: 95.82%
+   📅 Epoch 4 | Loss: 0.0642 | Val Accuracy: 96.59%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.0721 | Val Accuracy: 95.34%
+   📅 Epoch 6 | Loss: 0.0716 | Val Accuracy: 95.70%
+   📅 Epoch 7 | Loss: 0.0561 | Val Accuracy: 95.42%
+   📅 Epoch 8 | Loss: 0.0592 | Val Accuracy: 96.80%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.0525 | Val Accuracy: 95.57%
+   📅 Epoch 10 | Loss: 0.0472 | Val Accuracy: 93.33%
+   📅 Epoch 11 | Loss: 0.0467 | Val Accuracy: 95.15%
+   📅 Epoch 12 | Loss: 0.0482 | Val Accuracy: 95.57%
+   📅 Epoch 13 | Loss: 0.0443 | Val Accuracy: 96.13%
+   📅 Epoch 14 | Loss: 0.0492 | Val Accuracy: 95.11%
+   📅 Epoch 15 | Loss: 0.0398 | Val Accuracy: 96.14%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.80%
+💾 Best Checkpoint: ./checkpoints/full_mb-atmospheric_dust_cls_rdr_dinov1_b8_lr0.0001_original.pth
+========================================
+

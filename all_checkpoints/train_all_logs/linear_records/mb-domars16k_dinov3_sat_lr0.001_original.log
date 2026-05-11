@@ -1,0 +1,103 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_dinov3_sat_lr0.001_original.log
+⏰ Time: 2026-03-01 01:48:20
+============================================================
+
+🚀 Training dinov3_sat on mb-domars16k | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: dinov3_sat (dinov3_hub)
+   🔍 Auditing weights for [dinov3_sat]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_sat Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 2.2532 | Val Accuracy: 67.29%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 1.6274 | Val Accuracy: 72.43%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 1.3060 | Val Accuracy: 75.22%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 1.1117 | Val Accuracy: 77.63%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.9996 | Val Accuracy: 78.81%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.9189 | Val Accuracy: 80.05%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.8480 | Val Accuracy: 80.55%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.8059 | Val Accuracy: 80.86%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.7585 | Val Accuracy: 81.16%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.7313 | Val Accuracy: 81.23%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.7058 | Val Accuracy: 81.72%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.6771 | Val Accuracy: 82.22%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.6594 | Val Accuracy: 82.09%
+   📅 Epoch 14 | Loss: 0.6450 | Val Accuracy: 82.22%
+   📅 Epoch 15 | Loss: 0.6293 | Val Accuracy: 82.34%
+      ⭐ New Best! Saved.
+   📅 Epoch 16 | Loss: 0.6078 | Val Accuracy: 82.71%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 0.5920 | Val Accuracy: 82.90%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 0.5820 | Val Accuracy: 82.96%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 0.5708 | Val Accuracy: 83.46%
+      ⭐ New Best! Saved.
+   📅 Epoch 20 | Loss: 0.5637 | Val Accuracy: 83.33%
+   📅 Epoch 21 | Loss: 0.5519 | Val Accuracy: 83.77%
+      ⭐ New Best! Saved.
+   📅 Epoch 22 | Loss: 0.5528 | Val Accuracy: 84.26%
+      ⭐ New Best! Saved.
+   📅 Epoch 23 | Loss: 0.5412 | Val Accuracy: 83.89%
+   📅 Epoch 24 | Loss: 0.5299 | Val Accuracy: 84.14%
+   📅 Epoch 25 | Loss: 0.5268 | Val Accuracy: 84.57%
+      ⭐ New Best! Saved.
+   📅 Epoch 26 | Loss: 0.5222 | Val Accuracy: 84.32%
+   📅 Epoch 27 | Loss: 0.5167 | Val Accuracy: 84.70%
+      ⭐ New Best! Saved.
+   📅 Epoch 28 | Loss: 0.5042 | Val Accuracy: 84.76%
+      ⭐ New Best! Saved.
+   📅 Epoch 29 | Loss: 0.5060 | Val Accuracy: 84.88%
+      ⭐ New Best! Saved.
+   📅 Epoch 30 | Loss: 0.4953 | Val Accuracy: 85.13%
+      ⭐ New Best! Saved.
+   📅 Epoch 31 | Loss: 0.4879 | Val Accuracy: 85.38%
+      ⭐ New Best! Saved.
+   📅 Epoch 32 | Loss: 0.4886 | Val Accuracy: 85.44%
+      ⭐ New Best! Saved.
+   📅 Epoch 33 | Loss: 0.4799 | Val Accuracy: 85.69%
+      ⭐ New Best! Saved.
+   📅 Epoch 34 | Loss: 0.4882 | Val Accuracy: 85.75%
+      ⭐ New Best! Saved.
+   📅 Epoch 35 | Loss: 0.4792 | Val Accuracy: 85.56%
+   📅 Epoch 36 | Loss: 0.4725 | Val Accuracy: 85.81%
+      ⭐ New Best! Saved.
+   📅 Epoch 37 | Loss: 0.4737 | Val Accuracy: 85.94%
+      ⭐ New Best! Saved.
+   📅 Epoch 38 | Loss: 0.4708 | Val Accuracy: 85.81%
+   📅 Epoch 39 | Loss: 0.4636 | Val Accuracy: 85.94%
+   📅 Epoch 40 | Loss: 0.4520 | Val Accuracy: 85.75%
+
+========================================
+🏆 Best Val Accuracy: 85.94%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_dinov3_sat_lr0.001_original.pth
+========================================
+

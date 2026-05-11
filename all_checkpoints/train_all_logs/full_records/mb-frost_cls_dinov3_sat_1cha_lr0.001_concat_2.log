@@ -1,0 +1,67 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-frost_cls_dinov3_sat_1cha_lr0.001_concat_2.log
+⏰ Time: 2026-04-09 12:59:39
+============================================================
+
+🚀 Training dinov3_sat_1cha on mb-frost_cls | Mode: FULL | LR: 0.001
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: dinov3_sat_1cha (dinov3_hub)
+   🔍 Auditing weights for [dinov3_sat_1cha]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_sat_1cha Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.0564 | Val Accuracy: 97.53%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.0247 | Val Accuracy: 96.91%
+   📅 Epoch 3 | Loss: 0.0181 | Val Accuracy: 97.23%
+   📅 Epoch 4 | Loss: 0.0136 | Val Accuracy: 97.02%
+   📅 Epoch 5 | Loss: 0.0381 | Val Accuracy: 97.29%
+   📅 Epoch 6 | Loss: 0.0247 | Val Accuracy: 98.87%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 7 | Loss: 0.0166 | Val Accuracy: 97.44%
+   📅 Epoch 8 | Loss: 0.0167 | Val Accuracy: 98.05%
+   📅 Epoch 9 | Loss: 0.0128 | Val Accuracy: 94.19%
+   📅 Epoch 10 | Loss: 0.0261 | Val Accuracy: 98.96%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 11 | Loss: 0.0166 | Val Accuracy: 97.95%
+   📅 Epoch 12 | Loss: 0.0147 | Val Accuracy: 98.29%
+   📅 Epoch 13 | Loss: 0.0154 | Val Accuracy: 98.16%
+   📅 Epoch 14 | Loss: 0.0091 | Val Accuracy: 99.05%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 15 | Loss: 0.0175 | Val Accuracy: 98.47%
+   📅 Epoch 16 | Loss: 0.0213 | Val Accuracy: 98.11%
+   📅 Epoch 17 | Loss: 0.0398 | Val Accuracy: 98.96%
+   📅 Epoch 18 | Loss: 0.0119 | Val Accuracy: 98.40%
+   📅 Epoch 19 | Loss: 0.0188 | Val Accuracy: 98.22%
+   📅 Epoch 20 | Loss: 0.0086 | Val Accuracy: 99.32%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 21 | Loss: 0.0217 | Val Accuracy: 97.50%
+   📅 Epoch 22 | Loss: 0.0225 | Val Accuracy: 97.49%
+   📅 Epoch 23 | Loss: 0.0142 | Val Accuracy: 95.45%
+   📅 Epoch 24 | Loss: 0.0164 | Val Accuracy: 97.35%
+   📅 Epoch 25 | Loss: 0.0108 | Val Accuracy: 99.00%
+   📅 Epoch 26 | Loss: 0.0065 | Val Accuracy: 98.93%
+   📅 Epoch 27 | Loss: 0.0080 | Val Accuracy: 96.19%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 99.32%
+💾 Best Checkpoint: ./checkpoints/full_mb-frost_cls_dinov3_sat_1cha_lr0.001_concat_2.pth
+========================================
+

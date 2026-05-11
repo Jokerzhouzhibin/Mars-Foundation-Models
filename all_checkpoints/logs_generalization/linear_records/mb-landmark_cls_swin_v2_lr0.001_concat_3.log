@@ -1,0 +1,52 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_swin_v2_lr0.001_concat_3.log
+⏰ Time: 2026-03-03 16:32:23
+============================================================
+
+🚀 Training swin_v2 on mb-landmark_cls | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.6867 | Val Accuracy: 88.06%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.3105 | Val Accuracy: 89.96%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.2634 | Val Accuracy: 90.63%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.2458 | Val Accuracy: 89.68%
+   📅 Epoch 5 | Loss: 0.2189 | Val Accuracy: 90.63%
+   📅 Epoch 6 | Loss: 0.2181 | Val Accuracy: 90.85%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.2069 | Val Accuracy: 91.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.2019 | Val Accuracy: 90.69%
+   📅 Epoch 9 | Loss: 0.1962 | Val Accuracy: 91.02%
+   📅 Epoch 10 | Loss: 0.1875 | Val Accuracy: 90.46%
+   📅 Epoch 11 | Loss: 0.1961 | Val Accuracy: 90.41%
+   📅 Epoch 12 | Loss: 0.1868 | Val Accuracy: 90.69%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 91.08%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_swin_v2_lr0.001_concat_3.pth
+========================================
+

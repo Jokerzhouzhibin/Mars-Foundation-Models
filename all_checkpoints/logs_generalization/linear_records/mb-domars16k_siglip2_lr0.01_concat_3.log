@@ -1,0 +1,55 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_siglip2_lr0.01_concat_3.log
+⏰ Time: 2026-03-01 18:48:00
+============================================================
+
+🚀 Training siglip2 on mb-domars16k | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 21.2375 | Val Accuracy: 47.89%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 1.7886 | Val Accuracy: 74.97%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 1.0257 | Val Accuracy: 73.85%
+   📅 Epoch 4 | Loss: 0.8729 | Val Accuracy: 77.01%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.8318 | Val Accuracy: 73.48%
+   📅 Epoch 6 | Loss: 0.7381 | Val Accuracy: 61.46%
+   📅 Epoch 7 | Loss: 0.7460 | Val Accuracy: 68.46%
+   📅 Epoch 8 | Loss: 0.7827 | Val Accuracy: 77.63%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.7903 | Val Accuracy: 78.19%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.6846 | Val Accuracy: 70.26%
+   📅 Epoch 11 | Loss: 0.6887 | Val Accuracy: 84.45%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.6268 | Val Accuracy: 75.96%
+   📅 Epoch 13 | Loss: 0.8518 | Val Accuracy: 77.70%
+   📅 Epoch 14 | Loss: 0.8753 | Val Accuracy: 70.38%
+   📅 Epoch 15 | Loss: 0.7792 | Val Accuracy: 71.07%
+   📅 Epoch 16 | Loss: 0.7997 | Val Accuracy: 82.84%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 84.45%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_siglip2_lr0.01_concat_3.pth
+========================================
+

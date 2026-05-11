@@ -1,0 +1,80 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_siglip2_frac0.05x_lr0.001_concat_3.log
+⏰ Time: 2026-04-14 13:21:20
+============================================================
+
+🚀 Training siglip2 on mb-frost_cls | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 1506 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.8927 | Val Accuracy: 82.93%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.4246 | Val Accuracy: 89.39%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.2993 | Val Accuracy: 89.94%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.2578 | Val Accuracy: 94.40%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.2451 | Val Accuracy: 94.86%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.2178 | Val Accuracy: 94.02%
+   📅 Epoch 7 | Loss: 0.2107 | Val Accuracy: 94.99%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 0.2035 | Val Accuracy: 95.71%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 0.2073 | Val Accuracy: 93.42%
+   📅 Epoch 10 | Loss: 0.2031 | Val Accuracy: 95.21%
+   📅 Epoch 11 | Loss: 0.2322 | Val Accuracy: 95.28%
+   📅 Epoch 12 | Loss: 0.2001 | Val Accuracy: 95.50%
+   📅 Epoch 13 | Loss: 0.1808 | Val Accuracy: 95.61%
+   📅 Epoch 14 | Loss: 0.1564 | Val Accuracy: 95.68%
+   📅 Epoch 15 | Loss: 0.1649 | Val Accuracy: 95.90%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 16 | Loss: 0.1639 | Val Accuracy: 95.55%
+   📅 Epoch 17 | Loss: 0.1383 | Val Accuracy: 95.77%
+   📅 Epoch 18 | Loss: 0.1292 | Val Accuracy: 95.82%
+   📅 Epoch 19 | Loss: 0.1445 | Val Accuracy: 95.10%
+   📅 Epoch 20 | Loss: 0.1448 | Val Accuracy: 94.38%
+   📅 Epoch 21 | Loss: 0.1419 | Val Accuracy: 95.66%
+   📅 Epoch 22 | Loss: 0.1269 | Val Accuracy: 96.02%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 23 | Loss: 0.1209 | Val Accuracy: 95.84%
+   📅 Epoch 24 | Loss: 0.1234 | Val Accuracy: 96.11%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 25 | Loss: 0.1102 | Val Accuracy: 95.75%
+   📅 Epoch 26 | Loss: 0.1178 | Val Accuracy: 95.93%
+   📅 Epoch 27 | Loss: 0.1348 | Val Accuracy: 95.87%
+   📅 Epoch 28 | Loss: 0.1395 | Val Accuracy: 95.19%
+   📅 Epoch 29 | Loss: 0.1162 | Val Accuracy: 96.20%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 30 | Loss: 0.1051 | Val Accuracy: 96.15%
+   📅 Epoch 31 | Loss: 0.0984 | Val Accuracy: 95.01%
+   📅 Epoch 32 | Loss: 0.1098 | Val Accuracy: 96.11%
+   📅 Epoch 33 | Loss: 0.1076 | Val Accuracy: 94.73%
+   📅 Epoch 34 | Loss: 0.1452 | Val Accuracy: 95.97%
+   📅 Epoch 35 | Loss: 0.1111 | Val Accuracy: 96.06%
+   📅 Epoch 36 | Loss: 0.1064 | Val Accuracy: 96.03%
+   📅 Epoch 37 | Loss: 0.1031 | Val Accuracy: 95.20%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.20%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_siglip2_lr0.001_concat_3.pth
+========================================
+

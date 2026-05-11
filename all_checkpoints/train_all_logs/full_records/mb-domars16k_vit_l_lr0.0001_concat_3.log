@@ -1,0 +1,69 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-domars16k_vit_l_lr0.0001_concat_3.log
+⏰ Time: 2026-03-01 13:10:51
+============================================================
+
+🚀 Training vit_l on mb-domars16k | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 1.0159 | Val Accuracy: 84.01%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.4800 | Val Accuracy: 87.79%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.3784 | Val Accuracy: 88.91%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.3472 | Val Accuracy: 89.41%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.2904 | Val Accuracy: 90.58%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.2665 | Val Accuracy: 89.34%
+   📅 Epoch 7 | Loss: 0.2372 | Val Accuracy: 90.83%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.2294 | Val Accuracy: 91.02%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.2158 | Val Accuracy: 90.77%
+   📅 Epoch 10 | Loss: 0.2008 | Val Accuracy: 89.78%
+   📅 Epoch 11 | Loss: 0.1891 | Val Accuracy: 92.63%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.1646 | Val Accuracy: 92.87%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.1519 | Val Accuracy: 91.02%
+   📅 Epoch 14 | Loss: 0.1487 | Val Accuracy: 91.39%
+   📅 Epoch 15 | Loss: 0.1410 | Val Accuracy: 92.01%
+   📅 Epoch 16 | Loss: 0.1254 | Val Accuracy: 92.69%
+   📅 Epoch 17 | Loss: 0.1263 | Val Accuracy: 93.06%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 0.1275 | Val Accuracy: 91.88%
+   📅 Epoch 19 | Loss: 0.1172 | Val Accuracy: 92.94%
+   📅 Epoch 20 | Loss: 0.1103 | Val Accuracy: 92.81%
+   📅 Epoch 21 | Loss: 0.1064 | Val Accuracy: 92.87%
+   📅 Epoch 22 | Loss: 0.1026 | Val Accuracy: 92.26%
+   📅 Epoch 23 | Loss: 0.1030 | Val Accuracy: 92.63%
+   📅 Epoch 24 | Loss: 0.1151 | Val Accuracy: 92.07%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 93.06%
+💾 Best Checkpoint: ./checkpoints/full_mb-domars16k_vit_l_lr0.0001_concat_3.pth
+========================================
+

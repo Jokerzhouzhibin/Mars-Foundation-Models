@@ -1,0 +1,53 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_satmae_lr0.001_concat_3.log
+⏰ Time: 2026-03-02 13:30:49
+============================================================
+
+🚀 Training satmae on mb-frost_cls | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: satmae (timm_mae)
+   ℹ️  Config: in_chans=3
+   🔍 Auditing weights for [satmae]...
+   ✅ [PERFECT MATCH] 294/294 layers loaded (100.0%)
+
+   🔍 [Structure Check] satmae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.3778 | Val Accuracy: 94.69%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2331 | Val Accuracy: 94.75%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1984 | Val Accuracy: 95.16%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1844 | Val Accuracy: 95.27%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.1667 | Val Accuracy: 95.00%
+   📅 Epoch 6 | Loss: 0.1592 | Val Accuracy: 94.32%
+   📅 Epoch 7 | Loss: 0.1501 | Val Accuracy: 96.06%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.1451 | Val Accuracy: 95.95%
+   📅 Epoch 9 | Loss: 0.1431 | Val Accuracy: 95.70%
+   📅 Epoch 10 | Loss: 0.1376 | Val Accuracy: 95.38%
+   📅 Epoch 11 | Loss: 0.1344 | Val Accuracy: 95.17%
+   📅 Epoch 12 | Loss: 0.1327 | Val Accuracy: 95.29%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.06%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_satmae_lr0.001_concat_3.pth
+========================================
+

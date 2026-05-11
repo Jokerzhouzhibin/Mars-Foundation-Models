@@ -1,0 +1,77 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_satmae_frac0.05x_lr0.001_concat_3.log
+⏰ Time: 2026-04-13 16:03:30
+============================================================
+
+🚀 Training satmae on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 490 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: satmae (timm_mae)
+   ℹ️  Config: in_chans=3
+   🔍 Auditing weights for [satmae]...
+   ✅ [PERFECT MATCH] 294/294 layers loaded (100.0%)
+
+   🔍 [Structure Check] satmae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.7064 | Val Accuracy: 89.68%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.3575 | Val Accuracy: 87.84%
+   📅 Epoch 3 | Loss: 0.3000 | Val Accuracy: 91.87%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.2513 | Val Accuracy: 90.85%
+   📅 Epoch 5 | Loss: 0.2066 | Val Accuracy: 92.25%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.2174 | Val Accuracy: 91.93%
+   📅 Epoch 7 | Loss: 0.2116 | Val Accuracy: 92.71%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 0.2174 | Val Accuracy: 91.98%
+   📅 Epoch 9 | Loss: 0.1980 | Val Accuracy: 93.38%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 10 | Loss: 0.2020 | Val Accuracy: 93.34%
+   📅 Epoch 11 | Loss: 0.2059 | Val Accuracy: 93.31%
+   📅 Epoch 12 | Loss: 0.2002 | Val Accuracy: 93.63%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 13 | Loss: 0.1957 | Val Accuracy: 93.65%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 14 | Loss: 0.2172 | Val Accuracy: 92.77%
+   📅 Epoch 15 | Loss: 0.2101 | Val Accuracy: 93.23%
+   📅 Epoch 16 | Loss: 0.1912 | Val Accuracy: 92.79%
+   📅 Epoch 17 | Loss: 0.1623 | Val Accuracy: 93.36%
+   📅 Epoch 18 | Loss: 0.1740 | Val Accuracy: 93.52%
+   📅 Epoch 19 | Loss: 0.1672 | Val Accuracy: 94.07%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 20 | Loss: 0.1826 | Val Accuracy: 93.69%
+   📅 Epoch 21 | Loss: 0.1676 | Val Accuracy: 92.27%
+   📅 Epoch 22 | Loss: 0.2154 | Val Accuracy: 93.63%
+   📅 Epoch 23 | Loss: 0.1919 | Val Accuracy: 93.61%
+   📅 Epoch 24 | Loss: 0.1725 | Val Accuracy: 93.90%
+   📅 Epoch 25 | Loss: 0.1590 | Val Accuracy: 94.30%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 26 | Loss: 0.1485 | Val Accuracy: 94.09%
+   📅 Epoch 27 | Loss: 0.1372 | Val Accuracy: 93.92%
+   📅 Epoch 28 | Loss: 0.1641 | Val Accuracy: 93.81%
+   📅 Epoch 29 | Loss: 0.1605 | Val Accuracy: 93.73%
+   📅 Epoch 30 | Loss: 0.1696 | Val Accuracy: 93.86%
+   📅 Epoch 31 | Loss: 0.1534 | Val Accuracy: 93.92%
+   📅 Epoch 32 | Loss: 0.1482 | Val Accuracy: 94.28%
+   📅 Epoch 33 | Loss: 0.1327 | Val Accuracy: 94.17%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 94.30%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_satmae_lr0.001_concat_3.pth
+========================================
+

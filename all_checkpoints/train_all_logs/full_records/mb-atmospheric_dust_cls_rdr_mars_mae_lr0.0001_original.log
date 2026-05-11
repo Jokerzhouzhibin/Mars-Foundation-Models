@@ -1,0 +1,53 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-atmospheric_dust_cls_rdr_mars_mae_lr0.0001_original.log
+⏰ Time: 2026-02-28 13:04:14
+============================================================
+
+🚀 Training mars_mae on mb-atmospheric_dust_cls_rdr | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: mars_mae (timm_mae)
+   ℹ️  Config: in_chans=1
+   🔍 Auditing weights for [mars_mae]...
+   ✅ [PERFECT MATCH] 150/150 layers loaded (100.0%)
+
+   🔍 [Structure Check] mars_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 196, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 768
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.2272 | Val Accuracy: 94.98%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1201 | Val Accuracy: 94.67%
+   📅 Epoch 3 | Loss: 0.1108 | Val Accuracy: 95.28%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1153 | Val Accuracy: 95.63%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.1113 | Val Accuracy: 95.34%
+   📅 Epoch 6 | Loss: 0.1028 | Val Accuracy: 95.76%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.0944 | Val Accuracy: 95.07%
+   📅 Epoch 8 | Loss: 0.0978 | Val Accuracy: 95.40%
+   📅 Epoch 9 | Loss: 0.0868 | Val Accuracy: 95.74%
+   📅 Epoch 10 | Loss: 0.0896 | Val Accuracy: 95.13%
+   📅 Epoch 11 | Loss: 0.0921 | Val Accuracy: 95.53%
+   📅 Epoch 12 | Loss: 0.0899 | Val Accuracy: 95.21%
+   📅 Epoch 13 | Loss: 0.0821 | Val Accuracy: 95.22%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.76%
+💾 Best Checkpoint: ./checkpoints/full_mb-atmospheric_dust_cls_rdr_mars_mae_lr0.0001_original.pth
+========================================
+

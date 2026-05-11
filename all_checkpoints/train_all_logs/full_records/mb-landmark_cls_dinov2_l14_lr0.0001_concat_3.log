@@ -1,0 +1,56 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-landmark_cls_dinov2_l14_lr0.0001_concat_3.log
+⏰ Time: 2026-03-03 09:00:47
+============================================================
+
+🚀 Training dinov2_l14 on mb-landmark_cls | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: dinov2_l14 (dinov2_hub)
+   🔍 Auditing weights for [dinov2_l14]...
+   ✅ [PERFECT MATCH] 343/343 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov2_l14 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.3331 | Val Accuracy: 89.51%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1958 | Val Accuracy: 90.07%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.2126 | Val Accuracy: 92.14%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1510 | Val Accuracy: 90.96%
+   📅 Epoch 5 | Loss: 0.1439 | Val Accuracy: 91.19%
+   📅 Epoch 6 | Loss: 0.1224 | Val Accuracy: 92.02%
+   📅 Epoch 7 | Loss: 0.1199 | Val Accuracy: 92.25%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.1147 | Val Accuracy: 91.97%
+   📅 Epoch 9 | Loss: 0.0966 | Val Accuracy: 94.53%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.0891 | Val Accuracy: 92.41%
+   📅 Epoch 11 | Loss: 0.0948 | Val Accuracy: 93.14%
+   📅 Epoch 12 | Loss: 0.0835 | Val Accuracy: 93.20%
+   📅 Epoch 13 | Loss: 0.0778 | Val Accuracy: 93.92%
+   📅 Epoch 14 | Loss: 0.0741 | Val Accuracy: 93.08%
+   📅 Epoch 15 | Loss: 0.0667 | Val Accuracy: 93.25%
+   📅 Epoch 16 | Loss: 0.0787 | Val Accuracy: 92.81%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 94.53%
+💾 Best Checkpoint: ./checkpoints/full_mb-landmark_cls_dinov2_l14_lr0.0001_concat_3.pth
+========================================
+

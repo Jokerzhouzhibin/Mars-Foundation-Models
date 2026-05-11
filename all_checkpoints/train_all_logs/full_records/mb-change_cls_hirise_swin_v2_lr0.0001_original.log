@@ -1,0 +1,65 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-change_cls_hirise_swin_v2_lr0.0001_original.log
+⏰ Time: 2026-02-28 19:48:02
+============================================================
+
+🚀 Training swin_v2 on mb-change_cls_hirise | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6206 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.2496 | Val Accuracy: 95.15%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1687 | Val Accuracy: 95.37%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1587 | Val Accuracy: 96.04%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1536 | Val Accuracy: 94.18%
+   📅 Epoch 5 | Loss: 0.1508 | Val Accuracy: 96.27%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.1408 | Val Accuracy: 95.97%
+   📅 Epoch 7 | Loss: 0.1384 | Val Accuracy: 95.45%
+   📅 Epoch 8 | Loss: 0.1412 | Val Accuracy: 96.87%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.1283 | Val Accuracy: 96.27%
+   📅 Epoch 10 | Loss: 0.1341 | Val Accuracy: 95.45%
+   📅 Epoch 11 | Loss: 0.1315 | Val Accuracy: 96.19%
+   📅 Epoch 12 | Loss: 0.1290 | Val Accuracy: 96.87%
+   📅 Epoch 13 | Loss: 0.1340 | Val Accuracy: 96.49%
+   📅 Epoch 14 | Loss: 0.1289 | Val Accuracy: 97.01%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.1239 | Val Accuracy: 96.42%
+   📅 Epoch 16 | Loss: 0.1249 | Val Accuracy: 97.31%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 0.1259 | Val Accuracy: 96.04%
+   📅 Epoch 18 | Loss: 0.1331 | Val Accuracy: 97.24%
+   📅 Epoch 19 | Loss: 0.1219 | Val Accuracy: 96.79%
+   📅 Epoch 20 | Loss: 0.1281 | Val Accuracy: 95.97%
+   📅 Epoch 21 | Loss: 0.1127 | Val Accuracy: 95.97%
+   📅 Epoch 22 | Loss: 0.1165 | Val Accuracy: 96.72%
+   📅 Epoch 23 | Loss: 0.1166 | Val Accuracy: 96.94%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 97.31%
+💾 Best Checkpoint: ./checkpoints/full_mb-change_cls_hirise_swin_v2_lr0.0001_original.pth
+========================================
+

@@ -1,0 +1,56 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-frost_cls_swin_v2_lr0.0001_concat_3.log
+⏰ Time: 2026-03-02 18:49:22
+============================================================
+
+🚀 Training swin_v2 on mb-frost_cls | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.1397 | Val Accuracy: 96.19%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.0533 | Val Accuracy: 97.33%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.0370 | Val Accuracy: 97.90%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.0335 | Val Accuracy: 97.20%
+   📅 Epoch 5 | Loss: 0.0284 | Val Accuracy: 98.13%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.0246 | Val Accuracy: 98.10%
+   📅 Epoch 7 | Loss: 0.0205 | Val Accuracy: 96.50%
+   📅 Epoch 8 | Loss: 0.0216 | Val Accuracy: 97.11%
+   📅 Epoch 9 | Loss: 0.0168 | Val Accuracy: 99.05%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.0168 | Val Accuracy: 97.11%
+   📅 Epoch 11 | Loss: 0.0144 | Val Accuracy: 97.42%
+   📅 Epoch 12 | Loss: 0.0171 | Val Accuracy: 97.48%
+   📅 Epoch 13 | Loss: 0.0158 | Val Accuracy: 97.34%
+   📅 Epoch 14 | Loss: 0.0159 | Val Accuracy: 96.69%
+   📅 Epoch 15 | Loss: 0.0115 | Val Accuracy: 98.00%
+   📅 Epoch 16 | Loss: 0.0131 | Val Accuracy: 97.01%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 99.05%
+💾 Best Checkpoint: ./checkpoints/full_mb-frost_cls_swin_v2_lr0.0001_concat_3.pth
+========================================
+

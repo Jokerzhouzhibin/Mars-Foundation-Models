@@ -1,0 +1,87 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_siglip2_frac0.05x_lr0.0001_concat_3.log
+⏰ Time: 2026-04-14 14:08:03
+============================================================
+
+🚀 Training siglip2 on mb-frost_cls | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 1506 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.6058 | Val Accuracy: 85.18%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.5281 | Val Accuracy: 80.66%
+   📅 Epoch 3 | Loss: 0.4719 | Val Accuracy: 88.48%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.4415 | Val Accuracy: 77.92%
+   📅 Epoch 5 | Loss: 0.4073 | Val Accuracy: 89.89%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.3825 | Val Accuracy: 92.38%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 7 | Loss: 0.3622 | Val Accuracy: 91.97%
+   📅 Epoch 8 | Loss: 0.3431 | Val Accuracy: 92.56%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 0.3304 | Val Accuracy: 90.97%
+   📅 Epoch 10 | Loss: 0.3192 | Val Accuracy: 92.55%
+   📅 Epoch 11 | Loss: 0.3045 | Val Accuracy: 93.35%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 12 | Loss: 0.2929 | Val Accuracy: 89.53%
+   📅 Epoch 13 | Loss: 0.2885 | Val Accuracy: 94.82%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 14 | Loss: 0.2830 | Val Accuracy: 89.93%
+   📅 Epoch 15 | Loss: 0.2864 | Val Accuracy: 94.20%
+   📅 Epoch 16 | Loss: 0.2686 | Val Accuracy: 91.18%
+   📅 Epoch 17 | Loss: 0.2694 | Val Accuracy: 93.69%
+   📅 Epoch 18 | Loss: 0.2615 | Val Accuracy: 93.41%
+   📅 Epoch 19 | Loss: 0.2536 | Val Accuracy: 94.16%
+   📅 Epoch 20 | Loss: 0.2546 | Val Accuracy: 93.49%
+   📅 Epoch 21 | Loss: 0.2357 | Val Accuracy: 95.14%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 22 | Loss: 0.2430 | Val Accuracy: 93.07%
+   📅 Epoch 23 | Loss: 0.2371 | Val Accuracy: 93.13%
+   📅 Epoch 24 | Loss: 0.2359 | Val Accuracy: 95.29%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 25 | Loss: 0.2221 | Val Accuracy: 94.15%
+   📅 Epoch 26 | Loss: 0.2220 | Val Accuracy: 94.23%
+   📅 Epoch 27 | Loss: 0.2218 | Val Accuracy: 94.69%
+   📅 Epoch 28 | Loss: 0.2174 | Val Accuracy: 94.89%
+   📅 Epoch 29 | Loss: 0.2107 | Val Accuracy: 95.61%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 30 | Loss: 0.2091 | Val Accuracy: 95.57%
+   📅 Epoch 31 | Loss: 0.2108 | Val Accuracy: 94.38%
+   📅 Epoch 32 | Loss: 0.2054 | Val Accuracy: 94.78%
+   📅 Epoch 33 | Loss: 0.2031 | Val Accuracy: 95.76%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 34 | Loss: 0.2005 | Val Accuracy: 95.35%
+   📅 Epoch 35 | Loss: 0.2041 | Val Accuracy: 95.83%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 36 | Loss: 0.2036 | Val Accuracy: 94.86%
+   📅 Epoch 37 | Loss: 0.1976 | Val Accuracy: 95.62%
+   📅 Epoch 38 | Loss: 0.1952 | Val Accuracy: 95.14%
+   📅 Epoch 39 | Loss: 0.1856 | Val Accuracy: 95.32%
+   📅 Epoch 40 | Loss: 0.1947 | Val Accuracy: 95.32%
+   📅 Epoch 41 | Loss: 0.1941 | Val Accuracy: 95.52%
+   📅 Epoch 42 | Loss: 0.1850 | Val Accuracy: 95.35%
+   📅 Epoch 43 | Loss: 0.1821 | Val Accuracy: 95.79%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.83%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_siglip2_lr0.0001_concat_3.pth
+========================================
+

@@ -1,0 +1,55 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-landmark_cls_openclip_lr0.0001_original.log
+⏰ Time: 2026-03-03 23:55:39
+============================================================
+
+🚀 Training openclip on mb-landmark_cls | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: openclip (transformers_clip)
+
+   🔍 [Structure Check] openclip Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.3331 | Val Accuracy: 91.13%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1800 | Val Accuracy: 92.30%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1615 | Val Accuracy: 91.02%
+   📅 Epoch 4 | Loss: 0.1247 | Val Accuracy: 89.18%
+   📅 Epoch 5 | Loss: 0.1254 | Val Accuracy: 92.64%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.1166 | Val Accuracy: 93.25%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.1045 | Val Accuracy: 92.47%
+   📅 Epoch 8 | Loss: 0.1089 | Val Accuracy: 90.69%
+   📅 Epoch 9 | Loss: 0.1013 | Val Accuracy: 92.97%
+   📅 Epoch 10 | Loss: 0.0950 | Val Accuracy: 93.92%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.0806 | Val Accuracy: 92.47%
+   📅 Epoch 12 | Loss: 0.0906 | Val Accuracy: 92.30%
+   📅 Epoch 13 | Loss: 0.0893 | Val Accuracy: 93.14%
+   📅 Epoch 14 | Loss: 0.0819 | Val Accuracy: 93.03%
+   📅 Epoch 15 | Loss: 0.0670 | Val Accuracy: 93.47%
+   📅 Epoch 16 | Loss: 0.0661 | Val Accuracy: 92.86%
+   📅 Epoch 17 | Loss: 0.0674 | Val Accuracy: 93.53%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 93.92%
+💾 Best Checkpoint: ./checkpoints/full_mb-landmark_cls_openclip_lr0.0001_original.pth
+========================================
+

@@ -1,0 +1,55 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-atmospheric_dust_cls_rdr_vit_l_lr1e-05_original.log
+⏰ Time: 2026-02-28 08:44:30
+============================================================
+
+🚀 Training vit_l on mb-atmospheric_dust_cls_rdr | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.2320 | Val Accuracy: 95.63%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.0954 | Val Accuracy: 95.28%
+   📅 Epoch 3 | Loss: 0.0792 | Val Accuracy: 95.63%
+   📅 Epoch 4 | Loss: 0.0711 | Val Accuracy: 95.44%
+   📅 Epoch 5 | Loss: 0.0728 | Val Accuracy: 95.34%
+   📅 Epoch 6 | Loss: 0.0649 | Val Accuracy: 95.65%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.0640 | Val Accuracy: 95.44%
+   📅 Epoch 8 | Loss: 0.0595 | Val Accuracy: 95.17%
+   📅 Epoch 9 | Loss: 0.0627 | Val Accuracy: 95.51%
+   📅 Epoch 10 | Loss: 0.0570 | Val Accuracy: 95.72%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.0582 | Val Accuracy: 95.61%
+   📅 Epoch 12 | Loss: 0.0525 | Val Accuracy: 95.51%
+   📅 Epoch 13 | Loss: 0.0494 | Val Accuracy: 94.99%
+   📅 Epoch 14 | Loss: 0.0474 | Val Accuracy: 95.53%
+   📅 Epoch 15 | Loss: 0.0518 | Val Accuracy: 95.38%
+   📅 Epoch 16 | Loss: 0.0456 | Val Accuracy: 94.82%
+   📅 Epoch 17 | Loss: 0.0491 | Val Accuracy: 95.28%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.72%
+💾 Best Checkpoint: ./checkpoints/full_mb-atmospheric_dust_cls_rdr_vit_l_lr1e-05_original.pth
+========================================
+

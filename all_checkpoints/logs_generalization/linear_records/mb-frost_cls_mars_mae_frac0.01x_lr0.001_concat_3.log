@@ -1,0 +1,60 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_mars_mae_frac0.01x_lr0.001_concat_3.log
+⏰ Time: 2026-04-14 12:04:01
+============================================================
+
+🚀 Training mars_mae on mb-frost_cls | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 301 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: mars_mae (timm_mae)
+   ℹ️  Config: in_chans=1
+   🔍 Auditing weights for [mars_mae]...
+   ✅ [PERFECT MATCH] 150/150 layers loaded (100.0%)
+
+   🔍 [Structure Check] mars_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 196, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 2304
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.7588 | Val Accuracy: 66.63%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.6395 | Val Accuracy: 82.59%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.5851 | Val Accuracy: 90.21%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.5358 | Val Accuracy: 79.87%
+   📅 Epoch 5 | Loss: 0.4832 | Val Accuracy: 93.20%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.4577 | Val Accuracy: 83.28%
+   📅 Epoch 7 | Loss: 0.4668 | Val Accuracy: 92.31%
+   📅 Epoch 8 | Loss: 0.4303 | Val Accuracy: 95.17%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 0.3714 | Val Accuracy: 86.72%
+   📅 Epoch 10 | Loss: 0.3614 | Val Accuracy: 93.92%
+   📅 Epoch 11 | Loss: 0.3642 | Val Accuracy: 95.26%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 12 | Loss: 0.3437 | Val Accuracy: 92.50%
+   📅 Epoch 13 | Loss: 0.3343 | Val Accuracy: 94.33%
+   📅 Epoch 14 | Loss: 0.3063 | Val Accuracy: 94.27%
+   📅 Epoch 15 | Loss: 0.3093 | Val Accuracy: 93.06%
+   📅 Epoch 16 | Loss: 0.3141 | Val Accuracy: 95.00%
+   📅 Epoch 17 | Loss: 0.2954 | Val Accuracy: 93.33%
+   📅 Epoch 18 | Loss: 0.2917 | Val Accuracy: 94.97%
+   📅 Epoch 19 | Loss: 0.2777 | Val Accuracy: 94.77%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.26%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_mars_mae_lr0.001_concat_3.pth
+========================================
+

@@ -1,0 +1,44 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-change_cls_ctx_dinov3_lvd_lr0.0001_original.log
+⏰ Time: 2026-02-28 13:20:40
+============================================================
+
+🚀 Training dinov3_lvd on mb-change_cls_ctx | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 72 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 20 samples.
+   ⚙️  Config: Workers=0, BS=32, SmallData=True
+
+>>> Loading Model: dinov3_lvd (dinov3_hub)
+   🔍 Auditing weights for [dinov3_lvd]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_lvd Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   ⚠️ Skipping torch.compile (Small dataset or Windows detected).
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.6367 | Val Accuracy: 80.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.5294 | Val Accuracy: 80.00%
+   📅 Epoch 3 | Loss: 0.4645 | Val Accuracy: 80.00%
+   📅 Epoch 4 | Loss: 0.3974 | Val Accuracy: 80.00%
+   📅 Epoch 5 | Loss: 0.3598 | Val Accuracy: 80.00%
+   📅 Epoch 6 | Loss: 0.3795 | Val Accuracy: 80.00%
+   📅 Epoch 7 | Loss: 0.3313 | Val Accuracy: 80.00%
+   📅 Epoch 8 | Loss: 0.3424 | Val Accuracy: 80.00%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 80.00%
+💾 Best Checkpoint: ./checkpoints/full_mb-change_cls_ctx_dinov3_lvd_lr0.0001_original.pth
+========================================
+

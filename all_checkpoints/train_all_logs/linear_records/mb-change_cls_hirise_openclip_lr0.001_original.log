@@ -1,0 +1,53 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-change_cls_hirise_openclip_lr0.001_original.log
+⏰ Time: 2026-02-28 18:49:59
+============================================================
+
+🚀 Training openclip on mb-change_cls_hirise | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6206 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: openclip (transformers_clip)
+
+   🔍 [Structure Check] openclip Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.3826 | Val Accuracy: 92.39%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2202 | Val Accuracy: 95.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1878 | Val Accuracy: 95.15%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1766 | Val Accuracy: 95.30%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.1677 | Val Accuracy: 95.67%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.1649 | Val Accuracy: 95.67%
+   📅 Epoch 7 | Loss: 0.1631 | Val Accuracy: 95.67%
+   📅 Epoch 8 | Loss: 0.1621 | Val Accuracy: 95.60%
+   📅 Epoch 9 | Loss: 0.1591 | Val Accuracy: 95.75%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.1628 | Val Accuracy: 95.75%
+   📅 Epoch 11 | Loss: 0.1571 | Val Accuracy: 95.67%
+   📅 Epoch 12 | Loss: 0.1539 | Val Accuracy: 95.75%
+   📅 Epoch 13 | Loss: 0.1578 | Val Accuracy: 95.75%
+   📅 Epoch 14 | Loss: 0.1544 | Val Accuracy: 95.67%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.75%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_hirise_openclip_lr0.001_original.pth
+========================================
+

@@ -1,0 +1,52 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_swin_v2_frac0.05x_lr0.0001_concat_3.log
+⏰ Time: 2026-04-13 15:44:25
+============================================================
+
+🚀 Training swin_v2 on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 490 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.5811 | Val Accuracy: 82.72%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.4439 | Val Accuracy: 94.76%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.3454 | Val Accuracy: 96.51%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.2859 | Val Accuracy: 96.78%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.2472 | Val Accuracy: 96.91%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.2297 | Val Accuracy: 96.89%
+   📅 Epoch 7 | Loss: 0.2090 | Val Accuracy: 96.80%
+   📅 Epoch 8 | Loss: 0.1828 | Val Accuracy: 96.61%
+   📅 Epoch 9 | Loss: 0.1689 | Val Accuracy: 96.61%
+   📅 Epoch 10 | Loss: 0.1765 | Val Accuracy: 96.82%
+   📅 Epoch 11 | Loss: 0.1626 | Val Accuracy: 96.66%
+   📅 Epoch 12 | Loss: 0.1549 | Val Accuracy: 96.43%
+   📅 Epoch 13 | Loss: 0.1427 | Val Accuracy: 96.34%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.91%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_swin_v2_lr0.0001_concat_3.pth
+========================================
+

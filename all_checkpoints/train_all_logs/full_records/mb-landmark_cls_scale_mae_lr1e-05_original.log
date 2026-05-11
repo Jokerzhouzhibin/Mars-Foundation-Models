@@ -1,0 +1,78 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-landmark_cls_scale_mae_lr1e-05_original.log
+⏰ Time: 2026-03-04 02:52:53
+============================================================
+
+🚀 Training scale_mae on mb-landmark_cls | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: scale_mae (scalemae)
+   🔍 Auditing weights for [scale_mae]...
+   ⚠️ [PARTIAL MATCH] 344/435 layers loaded (79.1%)
+
+   🔍 [Structure Check] scale_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+      📏 ScaleMAE GSD: 0.3 m/px
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 1.4679 | Val Accuracy: 82.65%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.8245 | Val Accuracy: 82.65%
+   📅 Epoch 3 | Loss: 0.7566 | Val Accuracy: 82.65%
+   📅 Epoch 4 | Loss: 0.7171 | Val Accuracy: 82.65%
+   📅 Epoch 5 | Loss: 0.6901 | Val Accuracy: 82.77%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.6706 | Val Accuracy: 82.82%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.6356 | Val Accuracy: 82.77%
+   📅 Epoch 8 | Loss: 0.6195 | Val Accuracy: 82.54%
+   📅 Epoch 9 | Loss: 0.5937 | Val Accuracy: 82.82%
+   📅 Epoch 10 | Loss: 0.5973 | Val Accuracy: 82.93%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.5730 | Val Accuracy: 83.10%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.5464 | Val Accuracy: 83.55%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.5373 | Val Accuracy: 84.10%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 0.5541 | Val Accuracy: 83.49%
+   📅 Epoch 15 | Loss: 0.5562 | Val Accuracy: 83.77%
+   📅 Epoch 16 | Loss: 0.5754 | Val Accuracy: 83.44%
+   📅 Epoch 17 | Loss: 0.5564 | Val Accuracy: 84.50%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 0.5168 | Val Accuracy: 84.77%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 0.5335 | Val Accuracy: 84.50%
+   📅 Epoch 20 | Loss: 0.4789 | Val Accuracy: 84.83%
+      ⭐ New Best! Saved.
+   📅 Epoch 21 | Loss: 0.4882 | Val Accuracy: 85.78%
+      ⭐ New Best! Saved.
+   📅 Epoch 22 | Loss: 0.4998 | Val Accuracy: 85.50%
+   📅 Epoch 23 | Loss: 0.4878 | Val Accuracy: 86.61%
+      ⭐ New Best! Saved.
+   📅 Epoch 24 | Loss: 0.4701 | Val Accuracy: 86.50%
+   📅 Epoch 25 | Loss: 0.4865 | Val Accuracy: 85.78%
+   📅 Epoch 26 | Loss: 0.4889 | Val Accuracy: 86.39%
+   📅 Epoch 27 | Loss: 0.4658 | Val Accuracy: 86.50%
+   📅 Epoch 28 | Loss: 0.4791 | Val Accuracy: 86.39%
+   📅 Epoch 29 | Loss: 0.4734 | Val Accuracy: 86.34%
+   📅 Epoch 30 | Loss: 0.5121 | Val Accuracy: 85.67%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 86.61%
+💾 Best Checkpoint: ./checkpoints/full_mb-landmark_cls_scale_mae_lr1e-05_original.pth
+========================================
+

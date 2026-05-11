@@ -1,0 +1,52 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_satmae_frac0.20x_lr0.0001_concat_3.log
+⏰ Time: 2026-04-15 07:11:50
+============================================================
+
+🚀 Training satmae on mb-landmark_cls | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 1286 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: satmae (timm_mae)
+   ℹ️  Config: in_chans=3
+   🔍 Auditing weights for [satmae]...
+   ✅ [PERFECT MATCH] 294/294 layers loaded (100.0%)
+
+   🔍 [Structure Check] satmae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 1.8342 | Val Accuracy: 38.15%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 1.5755 | Val Accuracy: 53.76%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 1.4293 | Val Accuracy: 55.61%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 1.3247 | Val Accuracy: 54.99%
+   📅 Epoch 5 | Loss: 1.2221 | Val Accuracy: 61.35%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 1.1629 | Val Accuracy: 52.31%
+   📅 Epoch 7 | Loss: 1.1189 | Val Accuracy: 54.10%
+   📅 Epoch 8 | Loss: 1.0406 | Val Accuracy: 60.57%
+   📅 Epoch 9 | Loss: 1.0352 | Val Accuracy: 51.42%
+   📅 Epoch 10 | Loss: 0.9785 | Val Accuracy: 56.89%
+   📅 Epoch 11 | Loss: 0.9534 | Val Accuracy: 51.70%
+   📅 Epoch 12 | Loss: 0.9278 | Val Accuracy: 59.96%
+   📅 Epoch 13 | Loss: 0.8921 | Val Accuracy: 56.39%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 61.35%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_satmae_lr0.0001_concat_3.pth
+========================================
+

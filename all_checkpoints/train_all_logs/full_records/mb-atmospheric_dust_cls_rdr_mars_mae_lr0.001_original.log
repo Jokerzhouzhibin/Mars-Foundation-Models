@@ -1,0 +1,72 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-atmospheric_dust_cls_rdr_mars_mae_lr0.001_original.log
+⏰ Time: 2026-02-28 12:52:11
+============================================================
+
+🚀 Training mars_mae on mb-atmospheric_dust_cls_rdr | Mode: FULL | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: mars_mae (timm_mae)
+   ℹ️  Config: in_chans=1
+   🔍 Auditing weights for [mars_mae]...
+   ✅ [PERFECT MATCH] 150/150 layers loaded (100.0%)
+
+   🔍 [Structure Check] mars_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 196, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 768
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.3903 | Val Accuracy: 88.59%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2750 | Val Accuracy: 91.56%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.2629 | Val Accuracy: 93.79%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.2299 | Val Accuracy: 94.23%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.2106 | Val Accuracy: 92.71%
+   📅 Epoch 6 | Loss: 0.2096 | Val Accuracy: 91.77%
+   📅 Epoch 7 | Loss: 0.2028 | Val Accuracy: 93.44%
+   📅 Epoch 8 | Loss: 0.1797 | Val Accuracy: 92.23%
+   📅 Epoch 9 | Loss: 0.1717 | Val Accuracy: 93.10%
+   📅 Epoch 10 | Loss: 0.1650 | Val Accuracy: 93.23%
+   📅 Epoch 11 | Loss: 0.1580 | Val Accuracy: 94.74%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.1513 | Val Accuracy: 92.39%
+   📅 Epoch 13 | Loss: 0.1606 | Val Accuracy: 94.23%
+   📅 Epoch 14 | Loss: 0.1509 | Val Accuracy: 94.73%
+   📅 Epoch 15 | Loss: 0.1467 | Val Accuracy: 93.19%
+   📅 Epoch 16 | Loss: 0.1570 | Val Accuracy: 94.51%
+   📅 Epoch 17 | Loss: 0.1482 | Val Accuracy: 94.76%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 0.1408 | Val Accuracy: 93.38%
+   📅 Epoch 19 | Loss: 0.1317 | Val Accuracy: 94.27%
+   📅 Epoch 20 | Loss: 0.1343 | Val Accuracy: 93.84%
+   📅 Epoch 21 | Loss: 0.1447 | Val Accuracy: 93.48%
+   📅 Epoch 22 | Loss: 0.1456 | Val Accuracy: 94.99%
+      ⭐ New Best! Saved.
+   📅 Epoch 23 | Loss: 0.1294 | Val Accuracy: 94.73%
+   📅 Epoch 24 | Loss: 0.1257 | Val Accuracy: 94.50%
+   📅 Epoch 25 | Loss: 0.1317 | Val Accuracy: 93.92%
+   📅 Epoch 26 | Loss: 0.1294 | Val Accuracy: 94.50%
+   📅 Epoch 27 | Loss: 0.1419 | Val Accuracy: 94.65%
+   📅 Epoch 28 | Loss: 0.1279 | Val Accuracy: 94.30%
+   📅 Epoch 29 | Loss: 0.1344 | Val Accuracy: 93.67%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 94.99%
+💾 Best Checkpoint: ./checkpoints/full_mb-atmospheric_dust_cls_rdr_mars_mae_lr0.001_original.pth
+========================================
+

@@ -1,0 +1,44 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-change_cls_hirise_vit_l_frac0.01x_lr1e-05_concat_3.log
+⏰ Time: 2026-04-13 22:00:59
+============================================================
+
+🚀 Training vit_l on mb-change_cls_hirise | Mode: LINEAR | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 31 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=0, BS=31, SmallData=True
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.7883 | Val Accuracy: 91.94%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.8264 | Val Accuracy: 91.94%
+   📅 Epoch 3 | Loss: 0.8064 | Val Accuracy: 91.94%
+   📅 Epoch 4 | Loss: 0.7923 | Val Accuracy: 91.94%
+   📅 Epoch 5 | Loss: 0.8003 | Val Accuracy: 91.94%
+   📅 Epoch 6 | Loss: 0.7694 | Val Accuracy: 91.94%
+   📅 Epoch 7 | Loss: 0.7961 | Val Accuracy: 91.94%
+   📅 Epoch 8 | Loss: 0.8125 | Val Accuracy: 91.94%
+   📅 Epoch 9 | Loss: 0.7889 | Val Accuracy: 91.94%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 91.94%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_hirise_vit_l_lr1e-05_concat_3.pth
+========================================
+

@@ -1,0 +1,45 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-change_cls_hirise_mars_mae_lr0.001_concat_3.log
+⏰ Time: 2026-02-28 17:51:51
+============================================================
+
+🚀 Training mars_mae on mb-change_cls_hirise | Mode: FULL | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6206 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: mars_mae (timm_mae)
+   ℹ️  Config: in_chans=1
+   🔍 Auditing weights for [mars_mae]...
+   ✅ [PERFECT MATCH] 150/150 layers loaded (100.0%)
+
+   🔍 [Structure Check] mars_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 196, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 2304
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.2976 | Val Accuracy: 91.94%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2732 | Val Accuracy: 91.94%
+   📅 Epoch 3 | Loss: 0.2753 | Val Accuracy: 91.94%
+   📅 Epoch 4 | Loss: 0.2741 | Val Accuracy: 91.94%
+   📅 Epoch 5 | Loss: 0.2732 | Val Accuracy: 91.94%
+   📅 Epoch 6 | Loss: 0.2708 | Val Accuracy: 91.94%
+   📅 Epoch 7 | Loss: 0.2693 | Val Accuracy: 91.94%
+   📅 Epoch 8 | Loss: 0.2712 | Val Accuracy: 91.94%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 91.94%
+💾 Best Checkpoint: ./checkpoints/full_mb-change_cls_hirise_mars_mae_lr0.001_concat_3.pth
+========================================
+

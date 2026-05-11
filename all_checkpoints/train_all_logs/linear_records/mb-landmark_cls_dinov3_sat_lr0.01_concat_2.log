@@ -1,0 +1,57 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_dinov3_sat_lr0.01_concat_2.log
+⏰ Time: 2026-03-03 09:38:20
+============================================================
+
+🚀 Training dinov3_sat on mb-landmark_cls | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: dinov3_sat (dinov3_hub)
+   🔍 Auditing weights for [dinov3_sat]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_sat Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.6123 | Val Accuracy: 89.63%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2379 | Val Accuracy: 90.46%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1868 | Val Accuracy: 91.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1807 | Val Accuracy: 91.52%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.1583 | Val Accuracy: 91.69%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.1629 | Val Accuracy: 91.30%
+   📅 Epoch 7 | Loss: 0.1509 | Val Accuracy: 91.97%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.1505 | Val Accuracy: 90.80%
+   📅 Epoch 9 | Loss: 0.1417 | Val Accuracy: 91.30%
+   📅 Epoch 10 | Loss: 0.1503 | Val Accuracy: 92.41%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.1513 | Val Accuracy: 91.13%
+   📅 Epoch 12 | Loss: 0.1399 | Val Accuracy: 90.69%
+   📅 Epoch 13 | Loss: 0.1361 | Val Accuracy: 91.80%
+   📅 Epoch 14 | Loss: 0.1315 | Val Accuracy: 92.02%
+   📅 Epoch 15 | Loss: 0.1450 | Val Accuracy: 90.24%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 92.41%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_dinov3_sat_lr0.01_concat_2.pth
+========================================
+

@@ -1,0 +1,53 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-atmospheric_dust_cls_rdr_dinov1_b8_lr0.001_concat_2.log
+⏰ Time: 2026-02-28 02:04:40
+============================================================
+
+🚀 Training dinov1_b8 on mb-atmospheric_dust_cls_rdr | Mode: FULL | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: dinov1_b8 (dinov1)
+
+   🔍 [Structure Check] dinov1_b8 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 784, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 1536
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.3521 | Val Accuracy: 92.98%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1517 | Val Accuracy: 93.52%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1810 | Val Accuracy: 95.55%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1694 | Val Accuracy: 95.22%
+   📅 Epoch 5 | Loss: 0.1552 | Val Accuracy: 96.39%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.1326 | Val Accuracy: 94.38%
+   📅 Epoch 7 | Loss: 0.1345 | Val Accuracy: 94.57%
+   📅 Epoch 8 | Loss: 0.1423 | Val Accuracy: 96.57%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.1490 | Val Accuracy: 94.74%
+   📅 Epoch 10 | Loss: 0.1262 | Val Accuracy: 94.13%
+   📅 Epoch 11 | Loss: 0.1322 | Val Accuracy: 95.07%
+   📅 Epoch 12 | Loss: 0.1317 | Val Accuracy: 95.28%
+   📅 Epoch 13 | Loss: 0.1286 | Val Accuracy: 96.36%
+   📅 Epoch 14 | Loss: 0.1254 | Val Accuracy: 96.14%
+   📅 Epoch 15 | Loss: 0.1260 | Val Accuracy: 95.99%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.57%
+💾 Best Checkpoint: ./checkpoints/full_mb-atmospheric_dust_cls_rdr_dinov1_b8_lr0.001_concat_2.pth
+========================================
+

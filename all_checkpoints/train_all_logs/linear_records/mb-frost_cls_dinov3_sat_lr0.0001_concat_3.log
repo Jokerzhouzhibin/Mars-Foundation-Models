@@ -1,0 +1,42 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_dinov3_sat_lr0.0001_concat_3.log
+⏰ Time: 2026-03-02 04:44:54
+============================================================
+
+🚀 Training dinov3_sat on mb-frost_cls | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: dinov3_sat (dinov3_hub)
+   🔍 Auditing weights for [dinov3_sat]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_sat Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.4492 | Val Accuracy: 99.16%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2422 | Val Accuracy: 99.13%
+   📅 Epoch 3 | Loss: 0.1746 | Val Accuracy: 99.08%
+   📅 Epoch 4 | Loss: 0.1405 | Val Accuracy: 99.02%
+   📅 Epoch 5 | Loss: 0.1172 | Val Accuracy: 99.08%
+   📅 Epoch 6 | Loss: 0.1037 | Val Accuracy: 99.01%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 99.16%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_dinov3_sat_lr0.0001_concat_3.pth
+========================================
+

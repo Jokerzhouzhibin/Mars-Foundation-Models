@@ -1,0 +1,44 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-change_cls_ctx_vit_l_lr0.0001_concat_3.log
+⏰ Time: 2026-02-28 10:44:24
+============================================================
+
+🚀 Training vit_l on mb-change_cls_ctx | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 72 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 20 samples.
+   ⚙️  Config: Workers=0, BS=32, SmallData=True
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   ⚠️ Skipping torch.compile (Small dataset or Windows detected).
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.4745 | Val Accuracy: 80.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.3776 | Val Accuracy: 80.00%
+   📅 Epoch 3 | Loss: 0.3011 | Val Accuracy: 80.00%
+   📅 Epoch 4 | Loss: 0.4010 | Val Accuracy: 80.00%
+   📅 Epoch 5 | Loss: 0.3793 | Val Accuracy: 80.00%
+   📅 Epoch 6 | Loss: 0.3424 | Val Accuracy: 80.00%
+   📅 Epoch 7 | Loss: 0.3343 | Val Accuracy: 80.00%
+   📅 Epoch 8 | Loss: 0.2300 | Val Accuracy: 80.00%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 80.00%
+💾 Best Checkpoint: ./checkpoints/full_mb-change_cls_ctx_vit_l_lr0.0001_concat_3.pth
+========================================
+

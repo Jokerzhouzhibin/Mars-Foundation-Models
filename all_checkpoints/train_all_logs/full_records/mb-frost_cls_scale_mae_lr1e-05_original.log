@@ -1,0 +1,50 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-frost_cls_scale_mae_lr1e-05_original.log
+⏰ Time: 2026-03-03 10:55:11
+============================================================
+
+🚀 Training scale_mae on mb-frost_cls | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: scale_mae (scalemae)
+   🔍 Auditing weights for [scale_mae]...
+   ⚠️ [PARTIAL MATCH] 344/435 layers loaded (79.1%)
+
+   🔍 [Structure Check] scale_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+      📏 ScaleMAE GSD: 0.3 m/px
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.4154 | Val Accuracy: 96.73%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1478 | Val Accuracy: 96.51%
+   📅 Epoch 3 | Loss: 0.1030 | Val Accuracy: 96.96%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.0826 | Val Accuracy: 96.99%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.0733 | Val Accuracy: 96.75%
+   📅 Epoch 6 | Loss: 0.0609 | Val Accuracy: 96.55%
+   📅 Epoch 7 | Loss: 0.0516 | Val Accuracy: 96.67%
+   📅 Epoch 8 | Loss: 0.0493 | Val Accuracy: 96.91%
+   📅 Epoch 9 | Loss: 0.0462 | Val Accuracy: 96.80%
+   📅 Epoch 10 | Loss: 0.0394 | Val Accuracy: 96.38%
+   📅 Epoch 11 | Loss: 0.0426 | Val Accuracy: 96.20%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.99%
+💾 Best Checkpoint: ./checkpoints/full_mb-frost_cls_scale_mae_lr1e-05_original.pth
+========================================
+

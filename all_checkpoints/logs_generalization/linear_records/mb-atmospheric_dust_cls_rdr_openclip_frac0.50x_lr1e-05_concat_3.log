@@ -1,0 +1,46 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_openclip_frac0.50x_lr1e-05_concat_3.log
+⏰ Time: 2026-04-13 19:20:46
+============================================================
+
+🚀 Training openclip on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 4908 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: openclip (transformers_clip)
+
+   🔍 [Structure Check] openclip Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.5856 | Val Accuracy: 91.83%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.4506 | Val Accuracy: 94.05%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.3692 | Val Accuracy: 94.48%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.3181 | Val Accuracy: 94.32%
+   📅 Epoch 5 | Loss: 0.2811 | Val Accuracy: 93.96%
+   📅 Epoch 6 | Loss: 0.2559 | Val Accuracy: 94.27%
+   📅 Epoch 7 | Loss: 0.2400 | Val Accuracy: 94.11%
+   📅 Epoch 8 | Loss: 0.2218 | Val Accuracy: 94.05%
+   📅 Epoch 9 | Loss: 0.2139 | Val Accuracy: 93.94%
+   📅 Epoch 10 | Loss: 0.2020 | Val Accuracy: 93.96%
+   📅 Epoch 11 | Loss: 0.1968 | Val Accuracy: 93.73%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 94.48%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_openclip_lr1e-05_concat_3.pth
+========================================
+

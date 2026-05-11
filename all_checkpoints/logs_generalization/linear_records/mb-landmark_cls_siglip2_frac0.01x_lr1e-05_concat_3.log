@@ -1,0 +1,48 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_siglip2_frac0.01x_lr1e-05_concat_3.log
+⏰ Time: 2026-04-15 02:02:21
+============================================================
+
+🚀 Training siglip2 on mb-landmark_cls | Mode: LINEAR | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 69 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 2.3831 | Val Accuracy: 70.33%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 2.3802 | Val Accuracy: 70.27%
+   📅 Epoch 3 | Loss: 2.4017 | Val Accuracy: 70.16%
+   📅 Epoch 4 | Loss: 2.3883 | Val Accuracy: 70.33%
+   📅 Epoch 5 | Loss: 2.3351 | Val Accuracy: 70.33%
+   📅 Epoch 6 | Loss: 2.3141 | Val Accuracy: 70.38%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 7 | Loss: 2.2647 | Val Accuracy: 70.27%
+   📅 Epoch 8 | Loss: 2.3237 | Val Accuracy: 70.27%
+   📅 Epoch 9 | Loss: 2.2604 | Val Accuracy: 69.94%
+   📅 Epoch 10 | Loss: 2.2604 | Val Accuracy: 70.27%
+   📅 Epoch 11 | Loss: 2.1940 | Val Accuracy: 70.05%
+   📅 Epoch 12 | Loss: 2.1572 | Val Accuracy: 70.27%
+   📅 Epoch 13 | Loss: 2.1331 | Val Accuracy: 69.94%
+   📅 Epoch 14 | Loss: 2.1602 | Val Accuracy: 69.83%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 70.38%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_siglip2_lr1e-05_concat_3.pth
+========================================
+

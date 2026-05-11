@@ -1,0 +1,45 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-change_cls_ctx_satmae_lr0.0001_original.log
+⏰ Time: 2026-02-28 13:24:44
+============================================================
+
+🚀 Training satmae on mb-change_cls_ctx | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 72 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 20 samples.
+   ⚙️  Config: Workers=0, BS=32, SmallData=True
+
+>>> Loading Model: satmae (timm_mae)
+   ℹ️  Config: in_chans=3
+   🔍 Auditing weights for [satmae]...
+   ✅ [PERFECT MATCH] 294/294 layers loaded (100.0%)
+
+   🔍 [Structure Check] satmae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   ⚠️ Skipping torch.compile (Small dataset or Windows detected).
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.7926 | Val Accuracy: 80.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.3450 | Val Accuracy: 80.00%
+   📅 Epoch 3 | Loss: 0.3178 | Val Accuracy: 80.00%
+   📅 Epoch 4 | Loss: 0.4018 | Val Accuracy: 80.00%
+   📅 Epoch 5 | Loss: 0.4196 | Val Accuracy: 80.00%
+   📅 Epoch 6 | Loss: 0.4058 | Val Accuracy: 80.00%
+   📅 Epoch 7 | Loss: 0.3906 | Val Accuracy: 80.00%
+   📅 Epoch 8 | Loss: 0.3344 | Val Accuracy: 80.00%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 80.00%
+💾 Best Checkpoint: ./checkpoints/full_mb-change_cls_ctx_satmae_lr0.0001_original.pth
+========================================
+

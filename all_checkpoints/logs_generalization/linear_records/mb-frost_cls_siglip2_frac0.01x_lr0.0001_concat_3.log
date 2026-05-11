@@ -1,0 +1,88 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_siglip2_frac0.01x_lr0.0001_concat_3.log
+⏰ Time: 2026-04-14 14:31:43
+============================================================
+
+🚀 Training siglip2 on mb-frost_cls | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 301 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.7454 | Val Accuracy: 61.62%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.6990 | Val Accuracy: 55.25%
+   📅 Epoch 3 | Loss: 0.6860 | Val Accuracy: 66.63%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.6504 | Val Accuracy: 72.26%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.6417 | Val Accuracy: 77.16%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.6154 | Val Accuracy: 72.41%
+   📅 Epoch 7 | Loss: 0.5988 | Val Accuracy: 81.95%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 0.5791 | Val Accuracy: 84.69%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 0.5587 | Val Accuracy: 77.27%
+   📅 Epoch 10 | Loss: 0.5650 | Val Accuracy: 84.08%
+   📅 Epoch 11 | Loss: 0.5249 | Val Accuracy: 88.61%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 12 | Loss: 0.5002 | Val Accuracy: 85.22%
+   📅 Epoch 13 | Loss: 0.5008 | Val Accuracy: 88.01%
+   📅 Epoch 14 | Loss: 0.5069 | Val Accuracy: 88.55%
+   📅 Epoch 15 | Loss: 0.4898 | Val Accuracy: 90.54%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 16 | Loss: 0.4917 | Val Accuracy: 84.80%
+   📅 Epoch 17 | Loss: 0.5084 | Val Accuracy: 86.15%
+   📅 Epoch 18 | Loss: 0.4935 | Val Accuracy: 87.62%
+   📅 Epoch 19 | Loss: 0.4656 | Val Accuracy: 91.68%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 20 | Loss: 0.4508 | Val Accuracy: 89.52%
+   📅 Epoch 21 | Loss: 0.4362 | Val Accuracy: 84.60%
+   📅 Epoch 22 | Loss: 0.4358 | Val Accuracy: 91.05%
+   📅 Epoch 23 | Loss: 0.4179 | Val Accuracy: 90.86%
+   📅 Epoch 24 | Loss: 0.4335 | Val Accuracy: 88.06%
+   📅 Epoch 25 | Loss: 0.4136 | Val Accuracy: 89.15%
+   📅 Epoch 26 | Loss: 0.4079 | Val Accuracy: 91.80%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 27 | Loss: 0.3856 | Val Accuracy: 87.77%
+   📅 Epoch 28 | Loss: 0.4185 | Val Accuracy: 88.66%
+   📅 Epoch 29 | Loss: 0.3941 | Val Accuracy: 92.51%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 30 | Loss: 0.3993 | Val Accuracy: 90.95%
+   📅 Epoch 31 | Loss: 0.3756 | Val Accuracy: 86.02%
+   📅 Epoch 32 | Loss: 0.3891 | Val Accuracy: 89.75%
+   📅 Epoch 33 | Loss: 0.3724 | Val Accuracy: 92.15%
+   📅 Epoch 34 | Loss: 0.3748 | Val Accuracy: 90.08%
+   📅 Epoch 35 | Loss: 0.3856 | Val Accuracy: 87.99%
+   📅 Epoch 36 | Loss: 0.3677 | Val Accuracy: 92.63%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 37 | Loss: 0.3837 | Val Accuracy: 91.50%
+   📅 Epoch 38 | Loss: 0.3380 | Val Accuracy: 89.87%
+   📅 Epoch 39 | Loss: 0.3550 | Val Accuracy: 89.96%
+   📅 Epoch 40 | Loss: 0.3361 | Val Accuracy: 92.07%
+   📅 Epoch 41 | Loss: 0.3544 | Val Accuracy: 91.66%
+   📅 Epoch 42 | Loss: 0.3399 | Val Accuracy: 91.98%
+   📅 Epoch 43 | Loss: 0.3451 | Val Accuracy: 90.22%
+   📅 Epoch 44 | Loss: 0.3385 | Val Accuracy: 88.56%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 92.63%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_siglip2_lr0.0001_concat_3.pth
+========================================
+

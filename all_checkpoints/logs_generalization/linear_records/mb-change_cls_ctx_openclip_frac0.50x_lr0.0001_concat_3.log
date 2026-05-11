@@ -1,0 +1,42 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-change_cls_ctx_openclip_frac0.50x_lr0.0001_concat_3.log
+⏰ Time: 2026-04-16 19:08:33
+============================================================
+
+🚀 Training openclip on mb-change_cls_ctx | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 18 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 20 samples.
+   ⚙️  Config: Workers=0, BS=18, SmallData=True
+
+>>> Loading Model: openclip (transformers_clip)
+
+   🔍 [Structure Check] openclip Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.6089 | Val Accuracy: 80.00%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.5546 | Val Accuracy: 80.00%
+   📅 Epoch 3 | Loss: 0.5516 | Val Accuracy: 80.00%
+   📅 Epoch 4 | Loss: 0.5536 | Val Accuracy: 80.00%
+   📅 Epoch 5 | Loss: 0.5713 | Val Accuracy: 80.00%
+   📅 Epoch 6 | Loss: 0.5254 | Val Accuracy: 80.00%
+   📅 Epoch 7 | Loss: 0.5751 | Val Accuracy: 80.00%
+   📅 Epoch 8 | Loss: 0.5961 | Val Accuracy: 80.00%
+   📅 Epoch 9 | Loss: 0.5489 | Val Accuracy: 80.00%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 80.00%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_ctx_openclip_lr0.0001_concat_3.pth
+========================================
+

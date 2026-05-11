@@ -1,0 +1,97 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_dinov3_lvd_1cha_frac0.50x_lr1e-05_concat_3.log
+⏰ Time: 2026-04-13 21:09:46
+============================================================
+
+🚀 Training dinov3_lvd_1cha on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 4908 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: dinov3_lvd_1cha (dinov3_hub)
+   🔍 Auditing weights for [dinov3_lvd_1cha]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_lvd_1cha Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.6265 | Val Accuracy: 93.17%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.5038 | Val Accuracy: 96.09%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.4184 | Val Accuracy: 96.62%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.3558 | Val Accuracy: 97.05%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.3090 | Val Accuracy: 97.37%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.2764 | Val Accuracy: 97.33%
+   📅 Epoch 7 | Loss: 0.2467 | Val Accuracy: 97.47%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 0.2222 | Val Accuracy: 97.53%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 0.2067 | Val Accuracy: 97.60%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 10 | Loss: 0.1926 | Val Accuracy: 97.85%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 11 | Loss: 0.1808 | Val Accuracy: 97.99%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 12 | Loss: 0.1706 | Val Accuracy: 98.01%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 13 | Loss: 0.1639 | Val Accuracy: 98.02%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 14 | Loss: 0.1542 | Val Accuracy: 98.04%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 15 | Loss: 0.1483 | Val Accuracy: 98.06%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 16 | Loss: 0.1429 | Val Accuracy: 98.06%
+   📅 Epoch 17 | Loss: 0.1363 | Val Accuracy: 98.06%
+   📅 Epoch 18 | Loss: 0.1332 | Val Accuracy: 98.10%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 19 | Loss: 0.1294 | Val Accuracy: 98.14%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 20 | Loss: 0.1247 | Val Accuracy: 98.14%
+   📅 Epoch 21 | Loss: 0.1207 | Val Accuracy: 98.16%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 22 | Loss: 0.1194 | Val Accuracy: 98.16%
+   📅 Epoch 23 | Loss: 0.1157 | Val Accuracy: 98.12%
+   📅 Epoch 24 | Loss: 0.1118 | Val Accuracy: 98.12%
+   📅 Epoch 25 | Loss: 0.1093 | Val Accuracy: 98.12%
+   📅 Epoch 26 | Loss: 0.1090 | Val Accuracy: 98.16%
+   📅 Epoch 27 | Loss: 0.1084 | Val Accuracy: 98.22%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 28 | Loss: 0.1027 | Val Accuracy: 98.24%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 29 | Loss: 0.1026 | Val Accuracy: 98.25%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 30 | Loss: 0.1008 | Val Accuracy: 98.25%
+   📅 Epoch 31 | Loss: 0.0981 | Val Accuracy: 98.25%
+   📅 Epoch 32 | Loss: 0.0969 | Val Accuracy: 98.25%
+   📅 Epoch 33 | Loss: 0.0926 | Val Accuracy: 98.25%
+   📅 Epoch 34 | Loss: 0.0947 | Val Accuracy: 98.27%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 35 | Loss: 0.0945 | Val Accuracy: 98.22%
+   📅 Epoch 36 | Loss: 0.0913 | Val Accuracy: 98.24%
+   📅 Epoch 37 | Loss: 0.0925 | Val Accuracy: 98.22%
+   📅 Epoch 38 | Loss: 0.0904 | Val Accuracy: 98.20%
+   📅 Epoch 39 | Loss: 0.0868 | Val Accuracy: 98.18%
+   📅 Epoch 40 | Loss: 0.0919 | Val Accuracy: 98.20%
+   📅 Epoch 41 | Loss: 0.0890 | Val Accuracy: 98.20%
+   📅 Epoch 42 | Loss: 0.0870 | Val Accuracy: 98.22%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 98.27%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_dinov3_lvd_1cha_lr1e-05_concat_3.pth
+========================================
+

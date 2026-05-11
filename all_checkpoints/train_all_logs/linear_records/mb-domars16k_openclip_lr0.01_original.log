@@ -1,0 +1,44 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_openclip_lr0.01_original.log
+⏰ Time: 2026-03-01 11:38:21
+============================================================
+
+🚀 Training openclip on mb-domars16k | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: openclip (transformers_clip)
+
+   🔍 [Structure Check] openclip Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 1.6162 | Val Accuracy: 78.44%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.7004 | Val Accuracy: 80.92%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.6212 | Val Accuracy: 82.84%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.6174 | Val Accuracy: 81.35%
+   📅 Epoch 5 | Loss: 0.6206 | Val Accuracy: 81.91%
+   📅 Epoch 6 | Loss: 0.6140 | Val Accuracy: 81.97%
+   📅 Epoch 7 | Loss: 0.6044 | Val Accuracy: 79.43%
+   📅 Epoch 8 | Loss: 0.5974 | Val Accuracy: 82.65%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 82.84%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_openclip_lr0.01_original.pth
+========================================
+

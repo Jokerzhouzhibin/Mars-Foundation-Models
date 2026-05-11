@@ -1,0 +1,40 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_dinov1_b8_lr0.01_concat_3.log
+⏰ Time: 2026-03-02 08:26:43
+============================================================
+
+🚀 Training dinov1_b8 on mb-frost_cls | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: dinov1_b8 (dinov1)
+
+   🔍 [Structure Check] dinov1_b8 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 784, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 2304
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 2.4134 | Val Accuracy: 96.36%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1340 | Val Accuracy: 96.05%
+   📅 Epoch 3 | Loss: 0.0682 | Val Accuracy: 95.98%
+   📅 Epoch 4 | Loss: 0.0636 | Val Accuracy: 95.97%
+   📅 Epoch 5 | Loss: 0.0707 | Val Accuracy: 95.48%
+   📅 Epoch 6 | Loss: 0.0447 | Val Accuracy: 95.98%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.36%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_dinov1_b8_lr0.01_concat_3.pth
+========================================
+

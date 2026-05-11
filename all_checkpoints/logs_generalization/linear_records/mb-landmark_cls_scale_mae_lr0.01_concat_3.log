@@ -1,0 +1,55 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_scale_mae_lr0.01_concat_3.log
+⏰ Time: 2026-03-03 18:08:26
+============================================================
+
+🚀 Training scale_mae on mb-landmark_cls | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: scale_mae (scalemae)
+   🔍 Auditing weights for [scale_mae]...
+   ⚠️ [PARTIAL MATCH] 344/435 layers loaded (79.1%)
+
+   🔍 [Structure Check] scale_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+      📏 ScaleMAE GSD: 0.3 m/px
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 3.9928 | Val Accuracy: 82.88%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 1.4956 | Val Accuracy: 83.94%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.7027 | Val Accuracy: 84.61%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.5658 | Val Accuracy: 80.70%
+   📅 Epoch 5 | Loss: 0.5661 | Val Accuracy: 83.83%
+   📅 Epoch 6 | Loss: 0.6154 | Val Accuracy: 84.16%
+   📅 Epoch 7 | Loss: 0.5314 | Val Accuracy: 86.17%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.5662 | Val Accuracy: 85.67%
+   📅 Epoch 9 | Loss: 0.5536 | Val Accuracy: 86.78%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.7307 | Val Accuracy: 79.09%
+   📅 Epoch 11 | Loss: 0.6697 | Val Accuracy: 85.95%
+   📅 Epoch 12 | Loss: 0.6126 | Val Accuracy: 85.00%
+   📅 Epoch 13 | Loss: 0.5829 | Val Accuracy: 84.22%
+   📅 Epoch 14 | Loss: 0.5850 | Val Accuracy: 85.28%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 86.78%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_scale_mae_lr0.01_concat_3.pth
+========================================
+

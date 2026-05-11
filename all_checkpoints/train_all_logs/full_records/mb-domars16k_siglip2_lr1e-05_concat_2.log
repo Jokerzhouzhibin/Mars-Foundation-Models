@@ -1,0 +1,82 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-domars16k_siglip2_lr1e-05_concat_2.log
+⏰ Time: 2026-03-01 16:46:25
+============================================================
+
+🚀 Training siglip2 on mb-domars16k | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 1.9455 | Val Accuracy: 76.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.7996 | Val Accuracy: 83.33%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.5689 | Val Accuracy: 85.38%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.4928 | Val Accuracy: 86.31%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.4388 | Val Accuracy: 88.66%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.4159 | Val Accuracy: 89.34%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.3718 | Val Accuracy: 89.41%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.3591 | Val Accuracy: 88.23%
+   📅 Epoch 9 | Loss: 0.3376 | Val Accuracy: 89.03%
+   📅 Epoch 10 | Loss: 0.3235 | Val Accuracy: 89.90%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.3043 | Val Accuracy: 90.71%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.3049 | Val Accuracy: 90.89%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.2825 | Val Accuracy: 90.40%
+   📅 Epoch 14 | Loss: 0.2728 | Val Accuracy: 91.57%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.2601 | Val Accuracy: 91.14%
+   📅 Epoch 16 | Loss: 0.2587 | Val Accuracy: 90.83%
+   📅 Epoch 17 | Loss: 0.2477 | Val Accuracy: 91.39%
+   📅 Epoch 18 | Loss: 0.2397 | Val Accuracy: 91.70%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 0.2315 | Val Accuracy: 91.02%
+   📅 Epoch 20 | Loss: 0.2284 | Val Accuracy: 91.33%
+   📅 Epoch 21 | Loss: 0.2211 | Val Accuracy: 91.39%
+   📅 Epoch 22 | Loss: 0.2089 | Val Accuracy: 92.32%
+      ⭐ New Best! Saved.
+   📅 Epoch 23 | Loss: 0.2006 | Val Accuracy: 90.77%
+   📅 Epoch 24 | Loss: 0.2011 | Val Accuracy: 90.64%
+   📅 Epoch 25 | Loss: 0.1917 | Val Accuracy: 91.82%
+   📅 Epoch 26 | Loss: 0.1987 | Val Accuracy: 92.38%
+      ⭐ New Best! Saved.
+   📅 Epoch 27 | Loss: 0.1867 | Val Accuracy: 93.12%
+      ⭐ New Best! Saved.
+   📅 Epoch 28 | Loss: 0.1788 | Val Accuracy: 92.44%
+   📅 Epoch 29 | Loss: 0.1763 | Val Accuracy: 91.57%
+   📅 Epoch 30 | Loss: 0.1794 | Val Accuracy: 91.51%
+   📅 Epoch 31 | Loss: 0.1732 | Val Accuracy: 92.07%
+   📅 Epoch 32 | Loss: 0.1745 | Val Accuracy: 93.06%
+   📅 Epoch 33 | Loss: 0.1607 | Val Accuracy: 92.19%
+   📅 Epoch 34 | Loss: 0.1627 | Val Accuracy: 91.14%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 93.12%
+💾 Best Checkpoint: ./checkpoints/full_mb-domars16k_siglip2_lr1e-05_concat_2.pth
+========================================
+

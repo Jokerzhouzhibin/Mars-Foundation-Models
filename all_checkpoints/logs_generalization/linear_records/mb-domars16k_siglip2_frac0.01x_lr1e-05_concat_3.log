@@ -1,0 +1,42 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_siglip2_frac0.01x_lr1e-05_concat_3.log
+⏰ Time: 2026-04-14 01:31:00
+============================================================
+
+🚀 Training siglip2 on mb-domars16k | Mode: LINEAR | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 113 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 3.1242 | Val Accuracy: 6.32%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 3.2155 | Val Accuracy: 6.32%
+   📅 Epoch 3 | Loss: 3.1322 | Val Accuracy: 6.32%
+   📅 Epoch 4 | Loss: 3.0981 | Val Accuracy: 6.32%
+   📅 Epoch 5 | Loss: 3.0351 | Val Accuracy: 6.32%
+   📅 Epoch 6 | Loss: 3.0531 | Val Accuracy: 6.32%
+   📅 Epoch 7 | Loss: 2.8837 | Val Accuracy: 6.32%
+   📅 Epoch 8 | Loss: 3.0028 | Val Accuracy: 6.32%
+   📅 Epoch 9 | Loss: 2.9251 | Val Accuracy: 6.32%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 6.32%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_siglip2_lr1e-05_concat_3.pth
+========================================
+

@@ -1,0 +1,55 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-domars16k_swin_v2_lr0.001_original.log
+⏰ Time: 2026-03-01 17:37:44
+============================================================
+
+🚀 Training swin_v2 on mb-domars16k | Mode: FULL | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.9628 | Val Accuracy: 80.42%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.6242 | Val Accuracy: 84.20%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.5443 | Val Accuracy: 87.61%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.4910 | Val Accuracy: 86.62%
+   📅 Epoch 5 | Loss: 0.4656 | Val Accuracy: 87.86%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.4275 | Val Accuracy: 88.85%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.4099 | Val Accuracy: 90.27%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.3873 | Val Accuracy: 89.78%
+   📅 Epoch 9 | Loss: 0.3865 | Val Accuracy: 89.71%
+   📅 Epoch 10 | Loss: 0.3722 | Val Accuracy: 89.16%
+   📅 Epoch 11 | Loss: 0.3546 | Val Accuracy: 88.72%
+   📅 Epoch 12 | Loss: 0.3449 | Val Accuracy: 89.84%
+   📅 Epoch 13 | Loss: 0.3197 | Val Accuracy: 89.53%
+   📅 Epoch 14 | Loss: 0.3206 | Val Accuracy: 89.59%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 90.27%
+💾 Best Checkpoint: ./checkpoints/full_mb-domars16k_swin_v2_lr0.001_original.pth
+========================================
+

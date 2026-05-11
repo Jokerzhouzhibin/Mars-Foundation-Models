@@ -1,0 +1,107 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_siglip2_lr0.0001_original.log
+⏰ Time: 2026-03-01 20:24:59
+============================================================
+
+🚀 Training siglip2 on mb-domars16k | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 2.6063 | Val Accuracy: 16.67%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 2.3462 | Val Accuracy: 29.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 2.1439 | Val Accuracy: 38.04%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 1.9812 | Val Accuracy: 43.93%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 1.8389 | Val Accuracy: 46.53%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 1.7220 | Val Accuracy: 49.94%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 1.6190 | Val Accuracy: 50.81%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 1.5361 | Val Accuracy: 54.21%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 1.4612 | Val Accuracy: 55.20%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 1.3919 | Val Accuracy: 55.95%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 1.3333 | Val Accuracy: 57.50%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 1.2800 | Val Accuracy: 59.17%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 1.2366 | Val Accuracy: 59.73%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 1.2022 | Val Accuracy: 61.03%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 1.1612 | Val Accuracy: 61.71%
+      ⭐ New Best! Saved.
+   📅 Epoch 16 | Loss: 1.1293 | Val Accuracy: 62.33%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 1.0929 | Val Accuracy: 62.45%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 1.0749 | Val Accuracy: 63.07%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 1.0520 | Val Accuracy: 63.75%
+      ⭐ New Best! Saved.
+   📅 Epoch 20 | Loss: 1.0163 | Val Accuracy: 64.87%
+      ⭐ New Best! Saved.
+   📅 Epoch 21 | Loss: 0.9969 | Val Accuracy: 64.99%
+      ⭐ New Best! Saved.
+   📅 Epoch 22 | Loss: 0.9810 | Val Accuracy: 65.18%
+      ⭐ New Best! Saved.
+   📅 Epoch 23 | Loss: 0.9563 | Val Accuracy: 65.61%
+      ⭐ New Best! Saved.
+   📅 Epoch 24 | Loss: 0.9448 | Val Accuracy: 66.11%
+      ⭐ New Best! Saved.
+   📅 Epoch 25 | Loss: 0.9237 | Val Accuracy: 66.60%
+      ⭐ New Best! Saved.
+   📅 Epoch 26 | Loss: 0.9077 | Val Accuracy: 66.98%
+      ⭐ New Best! Saved.
+   📅 Epoch 27 | Loss: 0.8990 | Val Accuracy: 67.35%
+      ⭐ New Best! Saved.
+   📅 Epoch 28 | Loss: 0.8882 | Val Accuracy: 67.22%
+   📅 Epoch 29 | Loss: 0.8732 | Val Accuracy: 67.78%
+      ⭐ New Best! Saved.
+   📅 Epoch 30 | Loss: 0.8630 | Val Accuracy: 67.66%
+   📅 Epoch 31 | Loss: 0.8458 | Val Accuracy: 67.97%
+      ⭐ New Best! Saved.
+   📅 Epoch 32 | Loss: 0.8400 | Val Accuracy: 68.15%
+      ⭐ New Best! Saved.
+   📅 Epoch 33 | Loss: 0.8244 | Val Accuracy: 68.77%
+      ⭐ New Best! Saved.
+   📅 Epoch 34 | Loss: 0.8293 | Val Accuracy: 68.84%
+      ⭐ New Best! Saved.
+   📅 Epoch 35 | Loss: 0.8165 | Val Accuracy: 69.33%
+      ⭐ New Best! Saved.
+   📅 Epoch 36 | Loss: 0.8046 | Val Accuracy: 69.58%
+      ⭐ New Best! Saved.
+   📅 Epoch 37 | Loss: 0.7980 | Val Accuracy: 69.70%
+      ⭐ New Best! Saved.
+   📅 Epoch 38 | Loss: 0.7844 | Val Accuracy: 69.33%
+   📅 Epoch 39 | Loss: 0.7820 | Val Accuracy: 70.32%
+      ⭐ New Best! Saved.
+   📅 Epoch 40 | Loss: 0.7781 | Val Accuracy: 70.20%
+
+========================================
+🏆 Best Val Accuracy: 70.32%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_siglip2_lr0.0001_original.pth
+========================================
+

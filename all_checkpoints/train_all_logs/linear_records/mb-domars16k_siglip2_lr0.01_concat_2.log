@@ -1,0 +1,54 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_siglip2_lr0.01_concat_2.log
+⏰ Time: 2026-03-01 18:39:14
+============================================================
+
+🚀 Training siglip2 on mb-domars16k | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 1.4971 | Val Accuracy: 76.39%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.6166 | Val Accuracy: 78.62%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.5361 | Val Accuracy: 78.19%
+   📅 Epoch 4 | Loss: 0.5030 | Val Accuracy: 77.20%
+   📅 Epoch 5 | Loss: 0.5548 | Val Accuracy: 80.24%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.5181 | Val Accuracy: 81.41%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.4834 | Val Accuracy: 84.32%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.4999 | Val Accuracy: 76.52%
+   📅 Epoch 9 | Loss: 0.4871 | Val Accuracy: 79.68%
+   📅 Epoch 10 | Loss: 0.4513 | Val Accuracy: 85.50%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.4608 | Val Accuracy: 83.83%
+   📅 Epoch 12 | Loss: 0.4840 | Val Accuracy: 78.87%
+   📅 Epoch 13 | Loss: 0.4763 | Val Accuracy: 83.77%
+   📅 Epoch 14 | Loss: 0.4874 | Val Accuracy: 78.38%
+   📅 Epoch 15 | Loss: 0.4967 | Val Accuracy: 83.77%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 85.50%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_siglip2_lr0.01_concat_2.pth
+========================================
+

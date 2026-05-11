@@ -1,0 +1,45 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_satmae_frac0.01x_lr1e-05_concat_3.log
+⏰ Time: 2026-04-15 01:42:23
+============================================================
+
+🚀 Training satmae on mb-landmark_cls | Mode: LINEAR | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 69 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: satmae (timm_mae)
+   ℹ️  Config: in_chans=3
+   🔍 Auditing weights for [satmae]...
+   ✅ [PERFECT MATCH] 294/294 layers loaded (100.0%)
+
+   🔍 [Structure Check] satmae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 2.3434 | Val Accuracy: 1.95%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 2.3196 | Val Accuracy: 1.90%
+   📅 Epoch 3 | Loss: 2.2668 | Val Accuracy: 1.90%
+   📅 Epoch 4 | Loss: 2.2645 | Val Accuracy: 1.90%
+   📅 Epoch 5 | Loss: 2.2983 | Val Accuracy: 1.90%
+   📅 Epoch 6 | Loss: 2.2755 | Val Accuracy: 1.90%
+   📅 Epoch 7 | Loss: 2.2416 | Val Accuracy: 1.90%
+   📅 Epoch 8 | Loss: 2.2107 | Val Accuracy: 1.90%
+   📅 Epoch 9 | Loss: 2.2737 | Val Accuracy: 1.90%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 1.95%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_satmae_lr1e-05_concat_3.pth
+========================================
+

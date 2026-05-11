@@ -1,0 +1,56 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_vit_l_lr0.0001_concat_2.log
+⏰ Time: 2026-02-28 09:02:29
+============================================================
+
+🚀 Training vit_l on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.4824 | Val Accuracy: 95.01%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2816 | Val Accuracy: 95.63%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.2140 | Val Accuracy: 95.91%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1824 | Val Accuracy: 96.14%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.1655 | Val Accuracy: 96.16%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.1496 | Val Accuracy: 96.18%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.1461 | Val Accuracy: 96.14%
+   📅 Epoch 8 | Loss: 0.1343 | Val Accuracy: 96.16%
+   📅 Epoch 9 | Loss: 0.1287 | Val Accuracy: 96.26%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.1246 | Val Accuracy: 96.20%
+   📅 Epoch 11 | Loss: 0.1223 | Val Accuracy: 96.20%
+   📅 Epoch 12 | Loss: 0.1176 | Val Accuracy: 96.07%
+   📅 Epoch 13 | Loss: 0.1171 | Val Accuracy: 96.11%
+   📅 Epoch 14 | Loss: 0.1132 | Val Accuracy: 96.07%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.26%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_vit_l_lr0.0001_concat_2.pth
+========================================
+

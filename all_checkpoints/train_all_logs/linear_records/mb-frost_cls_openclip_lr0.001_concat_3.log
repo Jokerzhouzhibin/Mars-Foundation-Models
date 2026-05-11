@@ -1,0 +1,40 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_openclip_lr0.001_concat_3.log
+⏰ Time: 2026-03-02 17:00:41
+============================================================
+
+🚀 Training openclip on mb-frost_cls | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: openclip (transformers_clip)
+
+   🔍 [Structure Check] openclip Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.3249 | Val Accuracy: 97.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1582 | Val Accuracy: 96.23%
+   📅 Epoch 3 | Loss: 0.1259 | Val Accuracy: 96.76%
+   📅 Epoch 4 | Loss: 0.1088 | Val Accuracy: 96.26%
+   📅 Epoch 5 | Loss: 0.1004 | Val Accuracy: 96.19%
+   📅 Epoch 6 | Loss: 0.0889 | Val Accuracy: 96.47%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 97.08%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_openclip_lr0.001_concat_3.pth
+========================================
+

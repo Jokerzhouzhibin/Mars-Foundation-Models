@@ -1,0 +1,55 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_dinov3_lvd_lr0.001_concat_3.log
+⏰ Time: 2026-02-28 22:49:52
+============================================================
+
+🚀 Training dinov3_lvd on mb-domars16k | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: dinov3_lvd (dinov3_hub)
+   🔍 Auditing weights for [dinov3_lvd]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_lvd Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 1.1740 | Val Accuracy: 78.38%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.6204 | Val Accuracy: 82.28%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.5379 | Val Accuracy: 83.27%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.4943 | Val Accuracy: 84.26%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.4572 | Val Accuracy: 84.08%
+   📅 Epoch 6 | Loss: 0.4439 | Val Accuracy: 85.38%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.4287 | Val Accuracy: 85.01%
+   📅 Epoch 8 | Loss: 0.4046 | Val Accuracy: 84.94%
+   📅 Epoch 9 | Loss: 0.4043 | Val Accuracy: 86.80%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.3869 | Val Accuracy: 85.94%
+   📅 Epoch 11 | Loss: 0.3796 | Val Accuracy: 86.62%
+   📅 Epoch 12 | Loss: 0.3807 | Val Accuracy: 86.56%
+   📅 Epoch 13 | Loss: 0.3733 | Val Accuracy: 86.31%
+   📅 Epoch 14 | Loss: 0.3726 | Val Accuracy: 86.49%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 86.80%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_dinov3_lvd_lr0.001_concat_3.pth
+========================================
+

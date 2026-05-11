@@ -1,0 +1,48 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-change_cls_hirise_dinov3_lvd_1cha_lr0.001_concat_2.log
+⏰ Time: 2026-04-02 02:40:39
+============================================================
+
+🚀 Training dinov3_lvd_1cha on mb-change_cls_hirise | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6206 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: dinov3_lvd_1cha (dinov3_hub)
+   🔍 Auditing weights for [dinov3_lvd_1cha]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_lvd_1cha Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.2791 | Val Accuracy: 94.63%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1560 | Val Accuracy: 95.60%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1336 | Val Accuracy: 95.82%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1339 | Val Accuracy: 96.12%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.1335 | Val Accuracy: 95.82%
+   📅 Epoch 6 | Loss: 0.1342 | Val Accuracy: 95.97%
+   📅 Epoch 7 | Loss: 0.1324 | Val Accuracy: 95.97%
+   📅 Epoch 8 | Loss: 0.1337 | Val Accuracy: 95.97%
+   📅 Epoch 9 | Loss: 0.1202 | Val Accuracy: 95.97%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.12%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_hirise_dinov3_lvd_1cha_lr0.001_concat_2.pth
+========================================
+

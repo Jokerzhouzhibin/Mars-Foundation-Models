@@ -1,0 +1,50 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_siglip2_frac0.50x_lr0.001_concat_3.log
+⏰ Time: 2026-04-14 03:00:43
+============================================================
+
+🚀 Training siglip2 on mb-domars16k | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 5652 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 1.6217 | Val Accuracy: 67.53%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.8234 | Val Accuracy: 74.97%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.7044 | Val Accuracy: 75.53%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.7004 | Val Accuracy: 76.83%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.6671 | Val Accuracy: 81.72%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.6370 | Val Accuracy: 78.00%
+   📅 Epoch 7 | Loss: 0.6205 | Val Accuracy: 78.00%
+   📅 Epoch 8 | Loss: 0.5809 | Val Accuracy: 78.19%
+   📅 Epoch 9 | Loss: 0.5666 | Val Accuracy: 81.10%
+   📅 Epoch 10 | Loss: 0.5752 | Val Accuracy: 78.13%
+   📅 Epoch 11 | Loss: 0.5727 | Val Accuracy: 76.64%
+   📅 Epoch 12 | Loss: 0.5676 | Val Accuracy: 78.00%
+   📅 Epoch 13 | Loss: 0.5436 | Val Accuracy: 80.36%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 81.72%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_siglip2_lr0.001_concat_3.pth
+========================================
+

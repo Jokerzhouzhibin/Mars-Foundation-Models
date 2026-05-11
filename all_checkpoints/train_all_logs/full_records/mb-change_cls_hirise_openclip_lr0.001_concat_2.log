@@ -1,0 +1,42 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-change_cls_hirise_openclip_lr0.001_concat_2.log
+⏰ Time: 2026-02-28 15:08:41
+============================================================
+
+🚀 Training openclip on mb-change_cls_hirise | Mode: FULL | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6206 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: openclip (transformers_clip)
+
+   🔍 [Structure Check] openclip Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.3671 | Val Accuracy: 91.94%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2766 | Val Accuracy: 91.94%
+   📅 Epoch 3 | Loss: 0.2795 | Val Accuracy: 91.94%
+   📅 Epoch 4 | Loss: 0.2744 | Val Accuracy: 91.94%
+   📅 Epoch 5 | Loss: 0.2796 | Val Accuracy: 91.94%
+   📅 Epoch 6 | Loss: 0.2799 | Val Accuracy: 91.94%
+   📅 Epoch 7 | Loss: 0.2795 | Val Accuracy: 91.94%
+   📅 Epoch 8 | Loss: 0.2729 | Val Accuracy: 91.94%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 91.94%
+💾 Best Checkpoint: ./checkpoints/full_mb-change_cls_hirise_openclip_lr0.001_concat_2.pth
+========================================
+

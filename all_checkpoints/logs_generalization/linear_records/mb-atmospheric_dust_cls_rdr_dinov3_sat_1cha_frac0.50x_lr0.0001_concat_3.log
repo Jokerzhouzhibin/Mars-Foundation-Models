@@ -1,0 +1,44 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_dinov3_sat_1cha_frac0.50x_lr0.0001_concat_3.log
+⏰ Time: 2026-04-13 21:44:56
+============================================================
+
+🚀 Training dinov3_sat_1cha on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 4908 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: dinov3_sat_1cha (dinov3_hub)
+   🔍 Auditing weights for [dinov3_sat_1cha]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_sat_1cha Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.3829 | Val Accuracy: 97.14%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.1846 | Val Accuracy: 97.12%
+   📅 Epoch 3 | Loss: 0.1398 | Val Accuracy: 97.08%
+   📅 Epoch 4 | Loss: 0.1204 | Val Accuracy: 97.12%
+   📅 Epoch 5 | Loss: 0.1066 | Val Accuracy: 96.93%
+   📅 Epoch 6 | Loss: 0.0976 | Val Accuracy: 96.89%
+   📅 Epoch 7 | Loss: 0.0933 | Val Accuracy: 96.78%
+   📅 Epoch 8 | Loss: 0.0886 | Val Accuracy: 96.82%
+   📅 Epoch 9 | Loss: 0.0806 | Val Accuracy: 96.87%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 97.14%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_dinov3_sat_1cha_lr0.0001_concat_3.pth
+========================================
+

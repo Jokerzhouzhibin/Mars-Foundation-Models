@@ -1,0 +1,59 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-landmark_cls_mars_mae_lr0.0001_concat_2.log
+⏰ Time: 2026-03-03 09:50:21
+============================================================
+
+🚀 Training mars_mae on mb-landmark_cls | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: mars_mae (timm_mae)
+   ℹ️  Config: in_chans=1
+   🔍 Auditing weights for [mars_mae]...
+   ✅ [PERFECT MATCH] 150/150 layers loaded (100.0%)
+
+   🔍 [Structure Check] mars_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 196, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 1536
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.7041 | Val Accuracy: 83.27%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.3969 | Val Accuracy: 85.67%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.2777 | Val Accuracy: 89.57%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.2266 | Val Accuracy: 88.85%
+   📅 Epoch 5 | Loss: 0.1938 | Val Accuracy: 90.57%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.1725 | Val Accuracy: 90.52%
+   📅 Epoch 7 | Loss: 0.1638 | Val Accuracy: 90.80%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.1653 | Val Accuracy: 90.52%
+   📅 Epoch 9 | Loss: 0.1440 | Val Accuracy: 90.74%
+   📅 Epoch 10 | Loss: 0.1342 | Val Accuracy: 91.02%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.1244 | Val Accuracy: 90.69%
+   📅 Epoch 12 | Loss: 0.1160 | Val Accuracy: 89.63%
+   📅 Epoch 13 | Loss: 0.1181 | Val Accuracy: 88.96%
+   📅 Epoch 14 | Loss: 0.1247 | Val Accuracy: 90.63%
+   📅 Epoch 15 | Loss: 0.1238 | Val Accuracy: 90.96%
+   📅 Epoch 16 | Loss: 0.1015 | Val Accuracy: 90.69%
+   📅 Epoch 17 | Loss: 0.1097 | Val Accuracy: 90.57%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 91.02%
+💾 Best Checkpoint: ./checkpoints/full_mb-landmark_cls_mars_mae_lr0.0001_concat_2.pth
+========================================
+

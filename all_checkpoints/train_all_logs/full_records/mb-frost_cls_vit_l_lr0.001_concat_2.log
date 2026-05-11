@@ -1,0 +1,56 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-frost_cls_vit_l_lr0.001_concat_2.log
+⏰ Time: 2026-03-02 13:56:47
+============================================================
+
+🚀 Training vit_l on mb-frost_cls | Mode: FULL | LR: 0.001
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.1809 | Val Accuracy: 91.04%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1059 | Val Accuracy: 94.34%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.0979 | Val Accuracy: 96.15%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.0927 | Val Accuracy: 90.64%
+   📅 Epoch 5 | Loss: 0.0881 | Val Accuracy: 96.76%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.0731 | Val Accuracy: 94.51%
+   📅 Epoch 7 | Loss: 0.0775 | Val Accuracy: 95.48%
+   📅 Epoch 8 | Loss: 0.0681 | Val Accuracy: 95.13%
+   📅 Epoch 9 | Loss: 0.0681 | Val Accuracy: 96.91%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.0637 | Val Accuracy: 93.51%
+   📅 Epoch 11 | Loss: 0.0679 | Val Accuracy: 94.58%
+   📅 Epoch 12 | Loss: 0.0648 | Val Accuracy: 93.84%
+   📅 Epoch 13 | Loss: 0.0625 | Val Accuracy: 96.00%
+   📅 Epoch 14 | Loss: 0.0603 | Val Accuracy: 96.11%
+   📅 Epoch 15 | Loss: 0.0591 | Val Accuracy: 91.08%
+   📅 Epoch 16 | Loss: 0.0696 | Val Accuracy: 95.30%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.91%
+💾 Best Checkpoint: ./checkpoints/full_mb-frost_cls_vit_l_lr0.001_concat_2.pth
+========================================
+

@@ -1,0 +1,51 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-frost_cls_siglip2_lr1e-05_concat_3.log
+⏰ Time: 2026-03-03 04:26:03
+============================================================
+
+🚀 Training siglip2 on mb-frost_cls | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.1590 | Val Accuracy: 98.61%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.0452 | Val Accuracy: 97.18%
+   📅 Epoch 3 | Loss: 0.0342 | Val Accuracy: 97.82%
+   📅 Epoch 4 | Loss: 0.0297 | Val Accuracy: 98.80%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.0231 | Val Accuracy: 99.15%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.0201 | Val Accuracy: 98.83%
+   📅 Epoch 7 | Loss: 0.0189 | Val Accuracy: 99.40%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.0150 | Val Accuracy: 99.40%
+   📅 Epoch 9 | Loss: 0.0179 | Val Accuracy: 98.75%
+   📅 Epoch 10 | Loss: 0.0177 | Val Accuracy: 98.41%
+   📅 Epoch 11 | Loss: 0.0105 | Val Accuracy: 99.16%
+   📅 Epoch 12 | Loss: 0.0108 | Val Accuracy: 98.41%
+   📅 Epoch 13 | Loss: 0.0115 | Val Accuracy: 99.30%
+   📅 Epoch 14 | Loss: 0.0115 | Val Accuracy: 98.10%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 99.40%
+💾 Best Checkpoint: ./checkpoints/full_mb-frost_cls_siglip2_lr1e-05_concat_3.pth
+========================================
+

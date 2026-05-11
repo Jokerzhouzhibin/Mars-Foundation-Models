@@ -1,0 +1,53 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-change_cls_hirise_swin_v2_lr0.01_original.log
+⏰ Time: 2026-02-28 19:18:38
+============================================================
+
+🚀 Training swin_v2 on mb-change_cls_hirise | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6206 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.3081 | Val Accuracy: 92.99%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1830 | Val Accuracy: 94.48%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1603 | Val Accuracy: 92.46%
+   📅 Epoch 4 | Loss: 0.1727 | Val Accuracy: 95.67%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.1542 | Val Accuracy: 95.00%
+   📅 Epoch 6 | Loss: 0.1565 | Val Accuracy: 95.37%
+   📅 Epoch 7 | Loss: 0.1523 | Val Accuracy: 94.78%
+   📅 Epoch 8 | Loss: 0.1569 | Val Accuracy: 95.60%
+   📅 Epoch 9 | Loss: 0.1599 | Val Accuracy: 95.75%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.1590 | Val Accuracy: 94.70%
+   📅 Epoch 11 | Loss: 0.1651 | Val Accuracy: 95.22%
+   📅 Epoch 12 | Loss: 0.1585 | Val Accuracy: 94.70%
+   📅 Epoch 13 | Loss: 0.1638 | Val Accuracy: 95.30%
+   📅 Epoch 14 | Loss: 0.1502 | Val Accuracy: 93.88%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.75%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_hirise_swin_v2_lr0.01_original.pth
+========================================
+

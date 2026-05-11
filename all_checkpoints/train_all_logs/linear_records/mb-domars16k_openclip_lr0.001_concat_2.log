@@ -1,0 +1,57 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_openclip_lr0.001_concat_2.log
+⏰ Time: 2026-03-01 11:43:12
+============================================================
+
+🚀 Training openclip on mb-domars16k | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: openclip (transformers_clip)
+
+   🔍 [Structure Check] openclip Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 1.3670 | Val Accuracy: 75.65%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.7760 | Val Accuracy: 80.30%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.6771 | Val Accuracy: 82.65%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.6346 | Val Accuracy: 83.40%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.5998 | Val Accuracy: 82.71%
+   📅 Epoch 6 | Loss: 0.5750 | Val Accuracy: 83.64%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.5568 | Val Accuracy: 84.32%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.5398 | Val Accuracy: 83.64%
+   📅 Epoch 9 | Loss: 0.5364 | Val Accuracy: 85.81%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.5194 | Val Accuracy: 84.94%
+   📅 Epoch 11 | Loss: 0.5038 | Val Accuracy: 87.05%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.4918 | Val Accuracy: 85.94%
+   📅 Epoch 13 | Loss: 0.4883 | Val Accuracy: 86.00%
+   📅 Epoch 14 | Loss: 0.4804 | Val Accuracy: 85.32%
+   📅 Epoch 15 | Loss: 0.4751 | Val Accuracy: 86.25%
+   📅 Epoch 16 | Loss: 0.4735 | Val Accuracy: 86.43%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 87.05%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_openclip_lr0.001_concat_2.pth
+========================================
+

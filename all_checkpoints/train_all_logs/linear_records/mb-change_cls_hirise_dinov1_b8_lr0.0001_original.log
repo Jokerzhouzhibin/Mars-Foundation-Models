@@ -1,0 +1,54 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-change_cls_hirise_dinov1_b8_lr0.0001_original.log
+⏰ Time: 2026-02-28 17:41:16
+============================================================
+
+🚀 Training dinov1_b8 on mb-change_cls_hirise | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6206 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: dinov1_b8 (dinov1)
+
+   🔍 [Structure Check] dinov1_b8 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 784, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 768
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.7372 | Val Accuracy: 87.01%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2571 | Val Accuracy: 92.69%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.2226 | Val Accuracy: 94.25%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1997 | Val Accuracy: 95.60%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.1792 | Val Accuracy: 96.04%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.1727 | Val Accuracy: 95.97%
+   📅 Epoch 7 | Loss: 0.1649 | Val Accuracy: 96.12%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.1570 | Val Accuracy: 96.12%
+   📅 Epoch 9 | Loss: 0.1569 | Val Accuracy: 96.19%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.1491 | Val Accuracy: 96.12%
+   📅 Epoch 11 | Loss: 0.1509 | Val Accuracy: 96.19%
+   📅 Epoch 12 | Loss: 0.1481 | Val Accuracy: 95.97%
+   📅 Epoch 13 | Loss: 0.1489 | Val Accuracy: 95.90%
+   📅 Epoch 14 | Loss: 0.1507 | Val Accuracy: 96.12%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.19%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_hirise_dinov1_b8_lr0.0001_original.pth
+========================================
+

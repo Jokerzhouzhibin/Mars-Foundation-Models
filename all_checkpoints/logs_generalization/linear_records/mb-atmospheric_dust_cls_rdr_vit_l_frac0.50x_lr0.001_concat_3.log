@@ -1,0 +1,55 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_vit_l_frac0.50x_lr0.001_concat_3.log
+⏰ Time: 2026-04-13 15:33:01
+============================================================
+
+🚀 Training vit_l on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 4908 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.1876 | Val Accuracy: 95.68%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.1011 | Val Accuracy: 95.36%
+   📅 Epoch 3 | Loss: 0.0876 | Val Accuracy: 95.82%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.0811 | Val Accuracy: 95.55%
+   📅 Epoch 5 | Loss: 0.0795 | Val Accuracy: 95.40%
+   📅 Epoch 6 | Loss: 0.0811 | Val Accuracy: 95.82%
+   📅 Epoch 7 | Loss: 0.0782 | Val Accuracy: 94.90%
+   📅 Epoch 8 | Loss: 0.0737 | Val Accuracy: 94.98%
+   📅 Epoch 9 | Loss: 0.0702 | Val Accuracy: 95.59%
+   📅 Epoch 10 | Loss: 0.0693 | Val Accuracy: 95.91%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 11 | Loss: 0.0731 | Val Accuracy: 95.55%
+   📅 Epoch 12 | Loss: 0.0699 | Val Accuracy: 94.57%
+   📅 Epoch 13 | Loss: 0.0719 | Val Accuracy: 95.84%
+   📅 Epoch 14 | Loss: 0.0761 | Val Accuracy: 95.57%
+   📅 Epoch 15 | Loss: 0.0658 | Val Accuracy: 94.94%
+   📅 Epoch 16 | Loss: 0.0654 | Val Accuracy: 94.55%
+   📅 Epoch 17 | Loss: 0.0604 | Val Accuracy: 95.49%
+   📅 Epoch 18 | Loss: 0.0736 | Val Accuracy: 95.57%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.91%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_vit_l_lr0.001_concat_3.pth
+========================================
+

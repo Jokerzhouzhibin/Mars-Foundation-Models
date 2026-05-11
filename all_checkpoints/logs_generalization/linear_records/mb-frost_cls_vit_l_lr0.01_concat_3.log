@@ -1,0 +1,49 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_vit_l_lr0.01_concat_3.log
+⏰ Time: 2026-03-02 20:16:42
+============================================================
+
+🚀 Training vit_l on mb-frost_cls | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.6663 | Val Accuracy: 93.71%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1333 | Val Accuracy: 94.43%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1227 | Val Accuracy: 95.04%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1059 | Val Accuracy: 94.55%
+   📅 Epoch 5 | Loss: 0.0936 | Val Accuracy: 95.47%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.0996 | Val Accuracy: 95.16%
+   📅 Epoch 7 | Loss: 0.1693 | Val Accuracy: 90.62%
+   📅 Epoch 8 | Loss: 0.1001 | Val Accuracy: 95.29%
+   📅 Epoch 9 | Loss: 0.0966 | Val Accuracy: 95.40%
+   📅 Epoch 10 | Loss: 0.2423 | Val Accuracy: 94.86%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.47%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_vit_l_lr0.01_concat_3.pth
+========================================
+

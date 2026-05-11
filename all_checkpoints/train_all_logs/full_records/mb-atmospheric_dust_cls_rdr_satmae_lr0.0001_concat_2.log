@@ -1,0 +1,56 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-atmospheric_dust_cls_rdr_satmae_lr0.0001_concat_2.log
+⏰ Time: 2026-02-28 04:03:22
+============================================================
+
+🚀 Training satmae on mb-atmospheric_dust_cls_rdr | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: satmae (timm_mae)
+   ℹ️  Config: in_chans=3
+   🔍 Auditing weights for [satmae]...
+   ✅ [PERFECT MATCH] 294/294 layers loaded (100.0%)
+
+   🔍 [Structure Check] satmae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.2240 | Val Accuracy: 95.38%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1491 | Val Accuracy: 95.11%
+   📅 Epoch 3 | Loss: 0.1340 | Val Accuracy: 94.90%
+   📅 Epoch 4 | Loss: 0.1177 | Val Accuracy: 94.96%
+   📅 Epoch 5 | Loss: 0.1301 | Val Accuracy: 95.47%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.1185 | Val Accuracy: 95.09%
+   📅 Epoch 7 | Loss: 0.1211 | Val Accuracy: 93.67%
+   📅 Epoch 8 | Loss: 0.1088 | Val Accuracy: 95.91%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.1083 | Val Accuracy: 96.01%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.0980 | Val Accuracy: 95.32%
+   📅 Epoch 11 | Loss: 0.1111 | Val Accuracy: 95.42%
+   📅 Epoch 12 | Loss: 0.0972 | Val Accuracy: 95.24%
+   📅 Epoch 13 | Loss: 0.1057 | Val Accuracy: 94.90%
+   📅 Epoch 14 | Loss: 0.0990 | Val Accuracy: 94.55%
+   📅 Epoch 15 | Loss: 0.1005 | Val Accuracy: 95.65%
+   📅 Epoch 16 | Loss: 0.0916 | Val Accuracy: 95.61%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.01%
+💾 Best Checkpoint: ./checkpoints/full_mb-atmospheric_dust_cls_rdr_satmae_lr0.0001_concat_2.pth
+========================================
+

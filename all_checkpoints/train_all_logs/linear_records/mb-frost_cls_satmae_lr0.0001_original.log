@@ -1,0 +1,67 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_satmae_lr0.0001_original.log
+⏰ Time: 2026-03-02 15:26:49
+============================================================
+
+🚀 Training satmae on mb-frost_cls | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: satmae (timm_mae)
+   ℹ️  Config: in_chans=3
+   🔍 Auditing weights for [satmae]...
+   ✅ [PERFECT MATCH] 294/294 layers loaded (100.0%)
+
+   🔍 [Structure Check] satmae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.6116 | Val Accuracy: 80.84%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.4911 | Val Accuracy: 87.53%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.4345 | Val Accuracy: 90.24%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.3964 | Val Accuracy: 92.28%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.3690 | Val Accuracy: 93.17%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.3456 | Val Accuracy: 93.84%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.3279 | Val Accuracy: 93.44%
+   📅 Epoch 8 | Loss: 0.3147 | Val Accuracy: 93.93%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.3006 | Val Accuracy: 93.94%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.2915 | Val Accuracy: 94.04%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.2823 | Val Accuracy: 93.87%
+   📅 Epoch 12 | Loss: 0.2727 | Val Accuracy: 94.17%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.2687 | Val Accuracy: 94.33%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 0.2620 | Val Accuracy: 94.86%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.2548 | Val Accuracy: 94.11%
+   📅 Epoch 16 | Loss: 0.2484 | Val Accuracy: 94.71%
+   📅 Epoch 17 | Loss: 0.2465 | Val Accuracy: 94.55%
+   📅 Epoch 18 | Loss: 0.2419 | Val Accuracy: 94.50%
+   📅 Epoch 19 | Loss: 0.2380 | Val Accuracy: 94.41%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 94.86%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_satmae_lr0.0001_original.pth
+========================================
+

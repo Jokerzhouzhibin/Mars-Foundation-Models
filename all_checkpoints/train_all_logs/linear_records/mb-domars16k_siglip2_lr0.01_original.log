@@ -1,0 +1,55 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_siglip2_lr0.01_original.log
+⏰ Time: 2026-03-01 18:57:16
+============================================================
+
+🚀 Training siglip2 on mb-domars16k | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 1.0295 | Val Accuracy: 74.72%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.6434 | Val Accuracy: 77.01%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.6038 | Val Accuracy: 78.93%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.5622 | Val Accuracy: 78.81%
+   📅 Epoch 5 | Loss: 0.5448 | Val Accuracy: 76.89%
+   📅 Epoch 6 | Loss: 0.5335 | Val Accuracy: 80.79%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.5184 | Val Accuracy: 75.77%
+   📅 Epoch 8 | Loss: 0.5019 | Val Accuracy: 80.67%
+   📅 Epoch 9 | Loss: 0.5146 | Val Accuracy: 79.43%
+   📅 Epoch 10 | Loss: 0.5054 | Val Accuracy: 82.28%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.4930 | Val Accuracy: 82.78%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.4828 | Val Accuracy: 82.53%
+   📅 Epoch 13 | Loss: 0.4874 | Val Accuracy: 79.93%
+   📅 Epoch 14 | Loss: 0.4998 | Val Accuracy: 77.70%
+   📅 Epoch 15 | Loss: 0.4735 | Val Accuracy: 78.19%
+   📅 Epoch 16 | Loss: 0.4835 | Val Accuracy: 81.10%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 82.78%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_siglip2_lr0.01_original.pth
+========================================
+

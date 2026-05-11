@@ -1,0 +1,122 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_swin_v2_frac0.05x_lr1e-05_concat_3.log
+⏰ Time: 2026-04-13 16:15:17
+============================================================
+
+🚀 Training swin_v2 on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 490 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.6582 | Val Accuracy: 65.61%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.6156 | Val Accuracy: 68.72%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.6033 | Val Accuracy: 71.40%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.5747 | Val Accuracy: 74.63%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.5562 | Val Accuracy: 77.25%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.5546 | Val Accuracy: 79.92%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 7 | Loss: 0.5401 | Val Accuracy: 81.95%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 0.5249 | Val Accuracy: 84.35%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 0.5056 | Val Accuracy: 85.90%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 10 | Loss: 0.4906 | Val Accuracy: 87.57%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 11 | Loss: 0.4872 | Val Accuracy: 88.91%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 12 | Loss: 0.4665 | Val Accuracy: 89.89%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 13 | Loss: 0.4636 | Val Accuracy: 90.89%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 14 | Loss: 0.4417 | Val Accuracy: 91.62%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 15 | Loss: 0.4273 | Val Accuracy: 92.35%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 16 | Loss: 0.4258 | Val Accuracy: 92.67%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 17 | Loss: 0.4101 | Val Accuracy: 93.02%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 18 | Loss: 0.4031 | Val Accuracy: 93.65%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 19 | Loss: 0.3967 | Val Accuracy: 93.90%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 20 | Loss: 0.3779 | Val Accuracy: 94.21%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 21 | Loss: 0.3673 | Val Accuracy: 94.50%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 22 | Loss: 0.3570 | Val Accuracy: 94.78%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 23 | Loss: 0.3647 | Val Accuracy: 94.99%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 24 | Loss: 0.3465 | Val Accuracy: 95.34%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 25 | Loss: 0.3427 | Val Accuracy: 95.47%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 26 | Loss: 0.3418 | Val Accuracy: 95.57%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 27 | Loss: 0.3301 | Val Accuracy: 95.72%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 28 | Loss: 0.3238 | Val Accuracy: 95.90%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 29 | Loss: 0.3155 | Val Accuracy: 96.03%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 30 | Loss: 0.3107 | Val Accuracy: 96.13%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 31 | Loss: 0.3112 | Val Accuracy: 96.20%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 32 | Loss: 0.2930 | Val Accuracy: 96.41%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 33 | Loss: 0.3084 | Val Accuracy: 96.41%
+   📅 Epoch 34 | Loss: 0.2995 | Val Accuracy: 96.53%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 35 | Loss: 0.2870 | Val Accuracy: 96.57%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 36 | Loss: 0.2894 | Val Accuracy: 96.59%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 37 | Loss: 0.2795 | Val Accuracy: 96.62%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 38 | Loss: 0.2748 | Val Accuracy: 96.72%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 39 | Loss: 0.2830 | Val Accuracy: 96.66%
+   📅 Epoch 40 | Loss: 0.2693 | Val Accuracy: 96.64%
+   📅 Epoch 41 | Loss: 0.2796 | Val Accuracy: 96.68%
+   📅 Epoch 42 | Loss: 0.2666 | Val Accuracy: 96.70%
+   📅 Epoch 43 | Loss: 0.2611 | Val Accuracy: 96.72%
+   📅 Epoch 44 | Loss: 0.2543 | Val Accuracy: 96.82%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 45 | Loss: 0.2569 | Val Accuracy: 96.82%
+   📅 Epoch 46 | Loss: 0.2562 | Val Accuracy: 96.82%
+   📅 Epoch 47 | Loss: 0.2401 | Val Accuracy: 96.85%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 48 | Loss: 0.2465 | Val Accuracy: 96.89%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 49 | Loss: 0.2444 | Val Accuracy: 96.87%
+   📅 Epoch 50 | Loss: 0.2590 | Val Accuracy: 96.89%
+
+========================================
+🏆 Best Val Accuracy: 96.89%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_swin_v2_lr1e-05_concat_3.pth
+========================================
+

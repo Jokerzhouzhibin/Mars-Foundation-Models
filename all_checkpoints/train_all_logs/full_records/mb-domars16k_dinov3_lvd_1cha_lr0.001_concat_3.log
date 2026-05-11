@@ -1,0 +1,73 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-domars16k_dinov3_lvd_1cha_lr0.001_concat_3.log
+⏰ Time: 2026-04-02 08:02:34
+============================================================
+
+🚀 Training dinov3_lvd_1cha on mb-domars16k | Mode: FULL | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: dinov3_lvd_1cha (dinov3_hub)
+   🔍 Auditing weights for [dinov3_lvd_1cha]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_lvd_1cha Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.7470 | Val Accuracy: 86.93%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.4706 | Val Accuracy: 86.93%
+   📅 Epoch 3 | Loss: 0.4026 | Val Accuracy: 89.84%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.3529 | Val Accuracy: 91.14%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.3090 | Val Accuracy: 91.14%
+   📅 Epoch 6 | Loss: 0.3105 | Val Accuracy: 90.52%
+   📅 Epoch 7 | Loss: 0.2737 | Val Accuracy: 91.76%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.2735 | Val Accuracy: 90.83%
+   📅 Epoch 9 | Loss: 0.2595 | Val Accuracy: 92.19%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.2442 | Val Accuracy: 91.82%
+   📅 Epoch 11 | Loss: 0.2202 | Val Accuracy: 91.95%
+   📅 Epoch 12 | Loss: 0.1994 | Val Accuracy: 90.33%
+   📅 Epoch 13 | Loss: 0.2139 | Val Accuracy: 92.26%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 0.2029 | Val Accuracy: 92.57%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.2067 | Val Accuracy: 91.64%
+   📅 Epoch 16 | Loss: 0.1957 | Val Accuracy: 91.88%
+   📅 Epoch 17 | Loss: 0.1894 | Val Accuracy: 93.25%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 0.1710 | Val Accuracy: 92.69%
+   📅 Epoch 19 | Loss: 0.1783 | Val Accuracy: 93.31%
+      ⭐ New Best! Saved.
+   📅 Epoch 20 | Loss: 0.1803 | Val Accuracy: 92.63%
+   📅 Epoch 21 | Loss: 0.1542 | Val Accuracy: 93.56%
+      ⭐ New Best! Saved.
+   📅 Epoch 22 | Loss: 0.1544 | Val Accuracy: 93.49%
+   📅 Epoch 23 | Loss: 0.1438 | Val Accuracy: 92.38%
+   📅 Epoch 24 | Loss: 0.1469 | Val Accuracy: 91.64%
+   📅 Epoch 25 | Loss: 0.1483 | Val Accuracy: 92.75%
+   📅 Epoch 26 | Loss: 0.1777 | Val Accuracy: 92.87%
+   📅 Epoch 27 | Loss: 0.1495 | Val Accuracy: 93.43%
+   📅 Epoch 28 | Loss: 0.1517 | Val Accuracy: 93.00%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 93.56%
+💾 Best Checkpoint: ./checkpoints/full_mb-domars16k_dinov3_lvd_1cha_lr0.001_concat_3.pth
+========================================
+

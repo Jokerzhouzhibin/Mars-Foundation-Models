@@ -1,0 +1,88 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_siglip2_frac0.01x_lr0.001_concat_3.log
+⏰ Time: 2026-04-14 02:22:12
+============================================================
+
+🚀 Training siglip2 on mb-domars16k | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 113 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 3.4174 | Val Accuracy: 6.20%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 3.7910 | Val Accuracy: 7.93%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 4.4855 | Val Accuracy: 9.11%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 3.7945 | Val Accuracy: 15.37%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 3.2348 | Val Accuracy: 13.44%
+   📅 Epoch 6 | Loss: 3.0043 | Val Accuracy: 12.21%
+   📅 Epoch 7 | Loss: 3.1458 | Val Accuracy: 18.22%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 2.8122 | Val Accuracy: 25.59%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 2.4276 | Val Accuracy: 13.32%
+   📅 Epoch 10 | Loss: 2.6829 | Val Accuracy: 17.10%
+   📅 Epoch 11 | Loss: 2.6309 | Val Accuracy: 26.39%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 12 | Loss: 2.4218 | Val Accuracy: 29.00%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 13 | Loss: 1.9120 | Val Accuracy: 33.83%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 14 | Loss: 1.9253 | Val Accuracy: 32.78%
+   📅 Epoch 15 | Loss: 1.8407 | Val Accuracy: 32.34%
+   📅 Epoch 16 | Loss: 1.9443 | Val Accuracy: 32.90%
+   📅 Epoch 17 | Loss: 1.7538 | Val Accuracy: 32.96%
+   📅 Epoch 18 | Loss: 1.6806 | Val Accuracy: 31.41%
+   📅 Epoch 19 | Loss: 1.5428 | Val Accuracy: 33.40%
+   📅 Epoch 20 | Loss: 1.5343 | Val Accuracy: 35.56%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 21 | Loss: 1.3698 | Val Accuracy: 33.21%
+   📅 Epoch 22 | Loss: 1.4192 | Val Accuracy: 33.21%
+   📅 Epoch 23 | Loss: 1.2183 | Val Accuracy: 38.97%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 24 | Loss: 1.2679 | Val Accuracy: 43.87%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 25 | Loss: 1.0929 | Val Accuracy: 43.37%
+   📅 Epoch 26 | Loss: 1.1915 | Val Accuracy: 42.94%
+   📅 Epoch 27 | Loss: 1.2006 | Val Accuracy: 43.93%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 28 | Loss: 1.0295 | Val Accuracy: 47.34%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 29 | Loss: 1.1240 | Val Accuracy: 50.06%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 30 | Loss: 1.0286 | Val Accuracy: 51.18%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 31 | Loss: 0.9005 | Val Accuracy: 51.36%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 32 | Loss: 0.8841 | Val Accuracy: 50.87%
+   📅 Epoch 33 | Loss: 0.8390 | Val Accuracy: 49.50%
+   📅 Epoch 34 | Loss: 0.8644 | Val Accuracy: 46.41%
+   📅 Epoch 35 | Loss: 0.9634 | Val Accuracy: 45.35%
+   📅 Epoch 36 | Loss: 0.9674 | Val Accuracy: 46.28%
+   📅 Epoch 37 | Loss: 0.8089 | Val Accuracy: 47.09%
+   📅 Epoch 38 | Loss: 0.7279 | Val Accuracy: 49.01%
+   📅 Epoch 39 | Loss: 0.7651 | Val Accuracy: 50.74%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 51.36%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_siglip2_lr0.001_concat_3.pth
+========================================
+

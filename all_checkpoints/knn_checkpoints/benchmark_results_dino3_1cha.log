@@ -1,0 +1,535 @@
+2026-04-01 21:34:15,692 | ============================================================
+2026-04-01 21:34:15,693 | 🚀 Running ACCELERATED UNIVERSAL KNN Benchmark
+2026-04-01 21:34:15,693 |    Datasets: 6
+2026-04-01 21:34:15,693 |    Models:   2
+2026-04-01 21:34:15,694 |    GPUs:     8 detected, using IDs [0, 1, 2, 3]
+2026-04-01 21:34:15,694 | ============================================================
+2026-04-01 21:34:15,694 | Dataset,Model,Pooling,K,Accuracy,F1_Micro,F1_Macro
+2026-04-01 21:34:15,694 | 
+📂 Dataset: mb-atmospheric_dust_cls_rdr
+2026-04-01 21:34:15,694 |    👉 Model: dinov3_sat_1cha
+2026-04-01 21:34:15,694 |    ⚙️ [dinov3_sat_1cha] Target Chans: 1 | Stats: (0.379,)
+2026-04-01 21:34:28,904 | using base=100 for rope new
+2026-04-01 21:34:28,904 | using min_period=None for rope new
+2026-04-01 21:34:28,904 | using max_period=None for rope new
+2026-04-01 21:34:28,905 | using normalize_coords=separate for rope new
+2026-04-01 21:34:28,905 | using shift_coords=None for rope new
+2026-04-01 21:34:28,905 | using rescale_coords=2 for rope new
+2026-04-01 21:34:28,905 | using jitter_coords=None for rope new
+2026-04-01 21:34:28,905 | using dtype=fp32 for rope new
+2026-04-01 21:34:29,262 | using mlp layer as FFN
+2026-04-01 21:36:41,721 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,cls,1,0.9557,0.9557,0.9557
+2026-04-01 21:36:41,721 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,cls,3,0.9678,0.9678,0.9678
+2026-04-01 21:36:41,721 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,cls,5,0.9697,0.9697,0.9697
+2026-04-01 21:36:41,721 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,cls,7,0.9714,0.9714,0.9714
+2026-04-01 21:36:41,721 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,cls,9,0.9716,0.9716,0.9716
+2026-04-01 21:36:41,721 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,cls,11,0.9708,0.9708,0.9708
+2026-04-01 21:36:41,721 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,cls,13,0.9720,0.9720,0.9720
+2026-04-01 21:36:41,721 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,cls,15,0.9707,0.9707,0.9706
+2026-04-01 21:36:42,891 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,mean,1,0.9595,0.9595,0.9595
+2026-04-01 21:36:42,891 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,mean,3,0.9710,0.9710,0.9710
+2026-04-01 21:36:42,891 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,mean,5,0.9733,0.9733,0.9733
+2026-04-01 21:36:42,891 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,mean,7,0.9728,0.9728,0.9727
+2026-04-01 21:36:42,891 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,mean,9,0.9726,0.9726,0.9725
+2026-04-01 21:36:42,891 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,mean,11,0.9720,0.9720,0.9720
+2026-04-01 21:36:42,891 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,mean,13,0.9716,0.9716,0.9716
+2026-04-01 21:36:42,891 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,mean,15,0.9716,0.9716,0.9716
+2026-04-01 21:36:49,236 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,max,1,0.9599,0.9599,0.9599
+2026-04-01 21:36:49,236 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,max,3,0.9705,0.9705,0.9705
+2026-04-01 21:36:49,236 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,max,5,0.9724,0.9724,0.9724
+2026-04-01 21:36:49,236 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,max,7,0.9726,0.9726,0.9726
+2026-04-01 21:36:49,236 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,max,9,0.9739,0.9739,0.9739
+2026-04-01 21:36:49,236 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,max,11,0.9747,0.9747,0.9747
+2026-04-01 21:36:49,236 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,max,13,0.9743,0.9743,0.9743
+2026-04-01 21:36:49,236 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,max,15,0.9747,0.9747,0.9747
+2026-04-01 21:36:59,874 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,gem,1,0.9632,0.9632,0.9632
+2026-04-01 21:36:59,874 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,gem,3,0.9733,0.9733,0.9733
+2026-04-01 21:36:59,874 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,gem,5,0.9733,0.9733,0.9733
+2026-04-01 21:36:59,874 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,gem,7,0.9735,0.9735,0.9735
+2026-04-01 21:36:59,874 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,gem,9,0.9745,0.9745,0.9745
+2026-04-01 21:36:59,874 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,gem,11,0.9749,0.9749,0.9749
+2026-04-01 21:36:59,874 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,gem,13,0.9751,0.9751,0.9750
+2026-04-01 21:36:59,874 | mb-atmospheric_dust_cls_rdr,dinov3_sat_1cha,gem,15,0.9755,0.9755,0.9754
+2026-04-01 21:36:59,874 |    👉 Model: dinov3_lvd_1cha
+2026-04-01 21:36:59,874 |    ⚙️ [dinov3_lvd_1cha] Target Chans: 1 | Stats: (0.449,)
+2026-04-01 21:37:00,245 | using base=100 for rope new
+2026-04-01 21:37:00,245 | using min_period=None for rope new
+2026-04-01 21:37:00,245 | using max_period=None for rope new
+2026-04-01 21:37:00,245 | using normalize_coords=separate for rope new
+2026-04-01 21:37:00,245 | using shift_coords=None for rope new
+2026-04-01 21:37:00,246 | using rescale_coords=2 for rope new
+2026-04-01 21:37:00,246 | using jitter_coords=None for rope new
+2026-04-01 21:37:00,246 | using dtype=fp32 for rope new
+2026-04-01 21:37:00,246 | using mlp layer as FFN
+2026-04-01 21:40:14,441 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,cls,1,0.9680,0.9680,0.9680
+2026-04-01 21:40:14,441 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,cls,3,0.9776,0.9776,0.9775
+2026-04-01 21:40:14,441 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,cls,5,0.9785,0.9785,0.9785
+2026-04-01 21:40:14,442 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,cls,7,0.9795,0.9795,0.9795
+2026-04-01 21:40:14,442 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,cls,9,0.9795,0.9795,0.9795
+2026-04-01 21:40:14,442 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,cls,11,0.9785,0.9785,0.9785
+2026-04-01 21:40:14,442 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,cls,13,0.9789,0.9789,0.9789
+2026-04-01 21:40:14,442 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,cls,15,0.9787,0.9787,0.9787
+2026-04-01 21:40:15,469 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,mean,1,0.9745,0.9745,0.9745
+2026-04-01 21:40:15,469 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,mean,3,0.9774,0.9774,0.9773
+2026-04-01 21:40:15,469 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,mean,5,0.9774,0.9774,0.9773
+2026-04-01 21:40:15,469 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,mean,7,0.9768,0.9768,0.9768
+2026-04-01 21:40:15,469 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,mean,9,0.9768,0.9768,0.9768
+2026-04-01 21:40:15,469 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,mean,11,0.9764,0.9764,0.9764
+2026-04-01 21:40:15,469 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,mean,13,0.9741,0.9741,0.9741
+2026-04-01 21:40:15,469 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,mean,15,0.9735,0.9735,0.9735
+2026-04-01 21:40:21,332 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,max,1,0.9753,0.9753,0.9752
+2026-04-01 21:40:21,332 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,max,3,0.9785,0.9785,0.9785
+2026-04-01 21:40:21,332 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,max,5,0.9789,0.9789,0.9789
+2026-04-01 21:40:21,332 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,max,7,0.9795,0.9795,0.9795
+2026-04-01 21:40:21,332 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,max,9,0.9785,0.9785,0.9785
+2026-04-01 21:40:21,332 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,max,11,0.9779,0.9779,0.9779
+2026-04-01 21:40:21,332 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,max,13,0.9768,0.9768,0.9768
+2026-04-01 21:40:21,332 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,max,15,0.9749,0.9749,0.9748
+2026-04-01 21:40:31,267 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,gem,1,0.9720,0.9720,0.9720
+2026-04-01 21:40:31,267 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,gem,3,0.9753,0.9753,0.9752
+2026-04-01 21:40:31,267 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,gem,5,0.9751,0.9751,0.9750
+2026-04-01 21:40:31,267 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,gem,7,0.9755,0.9755,0.9754
+2026-04-01 21:40:31,268 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,gem,9,0.9747,0.9747,0.9746
+2026-04-01 21:40:31,268 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,gem,11,0.9753,0.9753,0.9752
+2026-04-01 21:40:31,268 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,gem,13,0.9751,0.9751,0.9750
+2026-04-01 21:40:31,268 | mb-atmospheric_dust_cls_rdr,dinov3_lvd_1cha,gem,15,0.9735,0.9735,0.9735
+2026-04-01 21:40:31,268 | 
+📂 Dataset: mb-change_cls_ctx
+2026-04-01 21:40:31,268 |    👉 Model: dinov3_sat_1cha
+2026-04-01 21:40:31,268 |    ⚙️ [dinov3_sat_1cha] Target Chans: 1 | Stats: (0.379,)
+2026-04-01 21:40:31,530 | using base=100 for rope new
+2026-04-01 21:40:31,530 | using min_period=None for rope new
+2026-04-01 21:40:31,530 | using max_period=None for rope new
+2026-04-01 21:40:31,530 | using normalize_coords=separate for rope new
+2026-04-01 21:40:31,531 | using shift_coords=None for rope new
+2026-04-01 21:40:31,531 | using rescale_coords=2 for rope new
+2026-04-01 21:40:31,531 | using jitter_coords=None for rope new
+2026-04-01 21:40:31,531 | using dtype=fp32 for rope new
+2026-04-01 21:40:31,532 | using mlp layer as FFN
+2026-04-01 21:40:39,009 | mb-change_cls_ctx,dinov3_sat_1cha,cls,1,0.6500,0.6500,0.4982
+2026-04-01 21:40:39,009 | mb-change_cls_ctx,dinov3_sat_1cha,cls,3,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,009 | mb-change_cls_ctx,dinov3_sat_1cha,cls,5,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,009 | mb-change_cls_ctx,dinov3_sat_1cha,cls,7,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,009 | mb-change_cls_ctx,dinov3_sat_1cha,cls,9,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,009 | mb-change_cls_ctx,dinov3_sat_1cha,cls,11,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,009 | mb-change_cls_ctx,dinov3_sat_1cha,cls,13,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,009 | mb-change_cls_ctx,dinov3_sat_1cha,cls,15,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,033 | mb-change_cls_ctx,dinov3_sat_1cha,mean,1,0.7000,0.7000,0.5312
+2026-04-01 21:40:39,033 | mb-change_cls_ctx,dinov3_sat_1cha,mean,3,0.7500,0.7500,0.4286
+2026-04-01 21:40:39,033 | mb-change_cls_ctx,dinov3_sat_1cha,mean,5,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,033 | mb-change_cls_ctx,dinov3_sat_1cha,mean,7,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,033 | mb-change_cls_ctx,dinov3_sat_1cha,mean,9,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,033 | mb-change_cls_ctx,dinov3_sat_1cha,mean,11,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,033 | mb-change_cls_ctx,dinov3_sat_1cha,mean,13,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,033 | mb-change_cls_ctx,dinov3_sat_1cha,mean,15,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,088 | mb-change_cls_ctx,dinov3_sat_1cha,max,1,0.7500,0.7500,0.5671
+2026-04-01 21:40:39,088 | mb-change_cls_ctx,dinov3_sat_1cha,max,3,0.8500,0.8500,0.6571
+2026-04-01 21:40:39,088 | mb-change_cls_ctx,dinov3_sat_1cha,max,5,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,088 | mb-change_cls_ctx,dinov3_sat_1cha,max,7,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,088 | mb-change_cls_ctx,dinov3_sat_1cha,max,9,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,088 | mb-change_cls_ctx,dinov3_sat_1cha,max,11,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,088 | mb-change_cls_ctx,dinov3_sat_1cha,max,13,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,088 | mb-change_cls_ctx,dinov3_sat_1cha,max,15,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,161 | mb-change_cls_ctx,dinov3_sat_1cha,gem,1,0.7000,0.7000,0.5312
+2026-04-01 21:40:39,161 | mb-change_cls_ctx,dinov3_sat_1cha,gem,3,0.7500,0.7500,0.4286
+2026-04-01 21:40:39,161 | mb-change_cls_ctx,dinov3_sat_1cha,gem,5,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,161 | mb-change_cls_ctx,dinov3_sat_1cha,gem,7,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,161 | mb-change_cls_ctx,dinov3_sat_1cha,gem,9,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,161 | mb-change_cls_ctx,dinov3_sat_1cha,gem,11,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,161 | mb-change_cls_ctx,dinov3_sat_1cha,gem,13,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,161 | mb-change_cls_ctx,dinov3_sat_1cha,gem,15,0.8000,0.8000,0.4444
+2026-04-01 21:40:39,162 |    👉 Model: dinov3_lvd_1cha
+2026-04-01 21:40:39,162 |    ⚙️ [dinov3_lvd_1cha] Target Chans: 1 | Stats: (0.449,)
+2026-04-01 21:40:39,203 | using base=100 for rope new
+2026-04-01 21:40:39,203 | using min_period=None for rope new
+2026-04-01 21:40:39,203 | using max_period=None for rope new
+2026-04-01 21:40:39,204 | using normalize_coords=separate for rope new
+2026-04-01 21:40:39,204 | using shift_coords=None for rope new
+2026-04-01 21:40:39,204 | using rescale_coords=2 for rope new
+2026-04-01 21:40:39,204 | using jitter_coords=None for rope new
+2026-04-01 21:40:39,204 | using dtype=fp32 for rope new
+2026-04-01 21:40:39,204 | using mlp layer as FFN
+2026-04-01 21:40:45,033 | mb-change_cls_ctx,dinov3_lvd_1cha,cls,1,0.9000,0.9000,0.8039
+2026-04-01 21:40:45,033 | mb-change_cls_ctx,dinov3_lvd_1cha,cls,3,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,033 | mb-change_cls_ctx,dinov3_lvd_1cha,cls,5,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,033 | mb-change_cls_ctx,dinov3_lvd_1cha,cls,7,0.8500,0.8500,0.6571
+2026-04-01 21:40:45,033 | mb-change_cls_ctx,dinov3_lvd_1cha,cls,9,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,033 | mb-change_cls_ctx,dinov3_lvd_1cha,cls,11,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,033 | mb-change_cls_ctx,dinov3_lvd_1cha,cls,13,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,033 | mb-change_cls_ctx,dinov3_lvd_1cha,cls,15,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,058 | mb-change_cls_ctx,dinov3_lvd_1cha,mean,1,0.8500,0.8500,0.6571
+2026-04-01 21:40:45,058 | mb-change_cls_ctx,dinov3_lvd_1cha,mean,3,0.8500,0.8500,0.6571
+2026-04-01 21:40:45,058 | mb-change_cls_ctx,dinov3_lvd_1cha,mean,5,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,058 | mb-change_cls_ctx,dinov3_lvd_1cha,mean,7,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,058 | mb-change_cls_ctx,dinov3_lvd_1cha,mean,9,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,058 | mb-change_cls_ctx,dinov3_lvd_1cha,mean,11,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,058 | mb-change_cls_ctx,dinov3_lvd_1cha,mean,13,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,058 | mb-change_cls_ctx,dinov3_lvd_1cha,mean,15,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,113 | mb-change_cls_ctx,dinov3_lvd_1cha,max,1,0.9000,0.9000,0.8039
+2026-04-01 21:40:45,113 | mb-change_cls_ctx,dinov3_lvd_1cha,max,3,0.8500,0.8500,0.6571
+2026-04-01 21:40:45,113 | mb-change_cls_ctx,dinov3_lvd_1cha,max,5,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,113 | mb-change_cls_ctx,dinov3_lvd_1cha,max,7,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,113 | mb-change_cls_ctx,dinov3_lvd_1cha,max,9,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,113 | mb-change_cls_ctx,dinov3_lvd_1cha,max,11,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,113 | mb-change_cls_ctx,dinov3_lvd_1cha,max,13,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,113 | mb-change_cls_ctx,dinov3_lvd_1cha,max,15,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,180 | mb-change_cls_ctx,dinov3_lvd_1cha,gem,1,0.9000,0.9000,0.8039
+2026-04-01 21:40:45,180 | mb-change_cls_ctx,dinov3_lvd_1cha,gem,3,0.8500,0.8500,0.6571
+2026-04-01 21:40:45,180 | mb-change_cls_ctx,dinov3_lvd_1cha,gem,5,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,180 | mb-change_cls_ctx,dinov3_lvd_1cha,gem,7,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,180 | mb-change_cls_ctx,dinov3_lvd_1cha,gem,9,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,180 | mb-change_cls_ctx,dinov3_lvd_1cha,gem,11,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,180 | mb-change_cls_ctx,dinov3_lvd_1cha,gem,13,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,180 | mb-change_cls_ctx,dinov3_lvd_1cha,gem,15,0.8000,0.8000,0.4444
+2026-04-01 21:40:45,180 | 
+📂 Dataset: mb-change_cls_hirise
+2026-04-01 21:40:45,180 |    👉 Model: dinov3_sat_1cha
+2026-04-01 21:40:45,181 |    ⚙️ [dinov3_sat_1cha] Target Chans: 1 | Stats: (0.379,)
+2026-04-01 21:40:46,309 | using base=100 for rope new
+2026-04-01 21:40:46,310 | using min_period=None for rope new
+2026-04-01 21:40:46,310 | using max_period=None for rope new
+2026-04-01 21:40:46,310 | using normalize_coords=separate for rope new
+2026-04-01 21:40:46,310 | using shift_coords=None for rope new
+2026-04-01 21:40:46,310 | using rescale_coords=2 for rope new
+2026-04-01 21:40:46,310 | using jitter_coords=None for rope new
+2026-04-01 21:40:46,310 | using dtype=fp32 for rope new
+2026-04-01 21:40:46,311 | using mlp layer as FFN
+2026-04-01 21:42:27,793 | mb-change_cls_hirise,dinov3_sat_1cha,cls,1,0.9821,0.9821,0.9385
+2026-04-01 21:42:27,793 | mb-change_cls_hirise,dinov3_sat_1cha,cls,3,0.9776,0.9776,0.9225
+2026-04-01 21:42:27,793 | mb-change_cls_hirise,dinov3_sat_1cha,cls,5,0.9791,0.9791,0.9257
+2026-04-01 21:42:27,793 | mb-change_cls_hirise,dinov3_sat_1cha,cls,7,0.9769,0.9769,0.9174
+2026-04-01 21:42:27,794 | mb-change_cls_hirise,dinov3_sat_1cha,cls,9,0.9769,0.9769,0.9166
+2026-04-01 21:42:27,794 | mb-change_cls_hirise,dinov3_sat_1cha,cls,11,0.9776,0.9776,0.9182
+2026-04-01 21:42:27,794 | mb-change_cls_hirise,dinov3_sat_1cha,cls,13,0.9754,0.9754,0.9079
+2026-04-01 21:42:27,794 | mb-change_cls_hirise,dinov3_sat_1cha,cls,15,0.9754,0.9754,0.9079
+2026-04-01 21:42:28,315 | mb-change_cls_hirise,dinov3_sat_1cha,mean,1,0.9828,0.9828,0.9418
+2026-04-01 21:42:28,316 | mb-change_cls_hirise,dinov3_sat_1cha,mean,3,0.9791,0.9791,0.9257
+2026-04-01 21:42:28,316 | mb-change_cls_hirise,dinov3_sat_1cha,mean,5,0.9746,0.9746,0.9055
+2026-04-01 21:42:28,316 | mb-change_cls_hirise,dinov3_sat_1cha,mean,7,0.9739,0.9739,0.9032
+2026-04-01 21:42:28,316 | mb-change_cls_hirise,dinov3_sat_1cha,mean,9,0.9731,0.9731,0.9000
+2026-04-01 21:42:28,316 | mb-change_cls_hirise,dinov3_sat_1cha,mean,11,0.9716,0.9716,0.8944
+2026-04-01 21:42:28,316 | mb-change_cls_hirise,dinov3_sat_1cha,mean,13,0.9709,0.9709,0.8901
+2026-04-01 21:42:28,316 | mb-change_cls_hirise,dinov3_sat_1cha,mean,15,0.9701,0.9701,0.8867
+2026-04-01 21:42:31,259 | mb-change_cls_hirise,dinov3_sat_1cha,max,1,0.9813,0.9813,0.9357
+2026-04-01 21:42:31,259 | mb-change_cls_hirise,dinov3_sat_1cha,max,3,0.9791,0.9791,0.9244
+2026-04-01 21:42:31,259 | mb-change_cls_hirise,dinov3_sat_1cha,max,5,0.9754,0.9754,0.9096
+2026-04-01 21:42:31,259 | mb-change_cls_hirise,dinov3_sat_1cha,max,7,0.9754,0.9754,0.9079
+2026-04-01 21:42:31,259 | mb-change_cls_hirise,dinov3_sat_1cha,max,9,0.9746,0.9746,0.9046
+2026-04-01 21:42:31,259 | mb-change_cls_hirise,dinov3_sat_1cha,max,11,0.9716,0.9716,0.8944
+2026-04-01 21:42:31,259 | mb-change_cls_hirise,dinov3_sat_1cha,max,13,0.9709,0.9709,0.8890
+2026-04-01 21:42:31,259 | mb-change_cls_hirise,dinov3_sat_1cha,max,15,0.9701,0.9701,0.8856
+2026-04-01 21:42:36,202 | mb-change_cls_hirise,dinov3_sat_1cha,gem,1,0.9799,0.9799,0.9334
+2026-04-01 21:42:36,203 | mb-change_cls_hirise,dinov3_sat_1cha,gem,3,0.9799,0.9799,0.9280
+2026-04-01 21:42:36,203 | mb-change_cls_hirise,dinov3_sat_1cha,gem,5,0.9754,0.9754,0.9096
+2026-04-01 21:42:36,203 | mb-change_cls_hirise,dinov3_sat_1cha,gem,7,0.9746,0.9746,0.9064
+2026-04-01 21:42:36,203 | mb-change_cls_hirise,dinov3_sat_1cha,gem,9,0.9746,0.9746,0.9055
+2026-04-01 21:42:36,203 | mb-change_cls_hirise,dinov3_sat_1cha,gem,11,0.9724,0.9724,0.8977
+2026-04-01 21:42:36,203 | mb-change_cls_hirise,dinov3_sat_1cha,gem,13,0.9716,0.9716,0.8944
+2026-04-01 21:42:36,203 | mb-change_cls_hirise,dinov3_sat_1cha,gem,15,0.9724,0.9724,0.8967
+2026-04-01 21:42:36,203 |    👉 Model: dinov3_lvd_1cha
+2026-04-01 21:42:36,203 |    ⚙️ [dinov3_lvd_1cha] Target Chans: 1 | Stats: (0.449,)
+2026-04-01 21:42:36,414 | using base=100 for rope new
+2026-04-01 21:42:36,415 | using min_period=None for rope new
+2026-04-01 21:42:36,415 | using max_period=None for rope new
+2026-04-01 21:42:36,415 | using normalize_coords=separate for rope new
+2026-04-01 21:42:36,415 | using shift_coords=None for rope new
+2026-04-01 21:42:36,415 | using rescale_coords=2 for rope new
+2026-04-01 21:42:36,416 | using jitter_coords=None for rope new
+2026-04-01 21:42:36,416 | using dtype=fp32 for rope new
+2026-04-01 21:42:36,416 | using mlp layer as FFN
+2026-04-01 21:44:16,180 | mb-change_cls_hirise,dinov3_lvd_1cha,cls,1,0.9724,0.9724,0.9095
+2026-04-01 21:44:16,180 | mb-change_cls_hirise,dinov3_lvd_1cha,cls,3,0.9746,0.9746,0.9158
+2026-04-01 21:44:16,180 | mb-change_cls_hirise,dinov3_lvd_1cha,cls,5,0.9791,0.9791,0.9289
+2026-04-01 21:44:16,180 | mb-change_cls_hirise,dinov3_lvd_1cha,cls,7,0.9716,0.9716,0.9035
+2026-04-01 21:44:16,180 | mb-change_cls_hirise,dinov3_lvd_1cha,cls,9,0.9731,0.9731,0.9062
+2026-04-01 21:44:16,180 | mb-change_cls_hirise,dinov3_lvd_1cha,cls,11,0.9731,0.9731,0.9053
+2026-04-01 21:44:16,180 | mb-change_cls_hirise,dinov3_lvd_1cha,cls,13,0.9739,0.9739,0.9092
+2026-04-01 21:44:16,180 | mb-change_cls_hirise,dinov3_lvd_1cha,cls,15,0.9724,0.9724,0.9023
+2026-04-01 21:44:16,755 | mb-change_cls_hirise,dinov3_lvd_1cha,mean,1,0.9649,0.9649,0.8841
+2026-04-01 21:44:16,755 | mb-change_cls_hirise,dinov3_lvd_1cha,mean,3,0.9701,0.9701,0.8984
+2026-04-01 21:44:16,755 | mb-change_cls_hirise,dinov3_lvd_1cha,mean,5,0.9724,0.9724,0.9048
+2026-04-01 21:44:16,755 | mb-change_cls_hirise,dinov3_lvd_1cha,mean,7,0.9731,0.9731,0.9018
+2026-04-01 21:44:16,755 | mb-change_cls_hirise,dinov3_lvd_1cha,mean,9,0.9746,0.9746,0.9081
+2026-04-01 21:44:16,755 | mb-change_cls_hirise,dinov3_lvd_1cha,mean,11,0.9769,0.9769,0.9159
+2026-04-01 21:44:16,755 | mb-change_cls_hirise,dinov3_lvd_1cha,mean,13,0.9769,0.9769,0.9159
+2026-04-01 21:44:16,755 | mb-change_cls_hirise,dinov3_lvd_1cha,mean,15,0.9754,0.9754,0.9121
+2026-04-01 21:44:19,751 | mb-change_cls_hirise,dinov3_lvd_1cha,max,1,0.9672,0.9672,0.8901
+2026-04-01 21:44:19,751 | mb-change_cls_hirise,dinov3_lvd_1cha,max,3,0.9724,0.9724,0.9064
+2026-04-01 21:44:19,751 | mb-change_cls_hirise,dinov3_lvd_1cha,max,5,0.9724,0.9724,0.9023
+2026-04-01 21:44:19,751 | mb-change_cls_hirise,dinov3_lvd_1cha,max,7,0.9724,0.9724,0.9023
+2026-04-01 21:44:19,751 | mb-change_cls_hirise,dinov3_lvd_1cha,max,9,0.9761,0.9761,0.9135
+2026-04-01 21:44:19,751 | mb-change_cls_hirise,dinov3_lvd_1cha,max,11,0.9746,0.9746,0.9081
+2026-04-01 21:44:19,751 | mb-change_cls_hirise,dinov3_lvd_1cha,max,13,0.9746,0.9746,0.9090
+2026-04-01 21:44:19,751 | mb-change_cls_hirise,dinov3_lvd_1cha,max,15,0.9731,0.9731,0.9036
+2026-04-01 21:44:24,816 | mb-change_cls_hirise,dinov3_lvd_1cha,gem,1,0.9649,0.9649,0.8831
+2026-04-01 21:44:24,816 | mb-change_cls_hirise,dinov3_lvd_1cha,gem,3,0.9731,0.9731,0.9078
+2026-04-01 21:44:24,816 | mb-change_cls_hirise,dinov3_lvd_1cha,gem,5,0.9731,0.9731,0.9062
+2026-04-01 21:44:24,816 | mb-change_cls_hirise,dinov3_lvd_1cha,gem,7,0.9709,0.9709,0.8942
+2026-04-01 21:44:24,816 | mb-change_cls_hirise,dinov3_lvd_1cha,gem,9,0.9761,0.9761,0.9135
+2026-04-01 21:44:24,816 | mb-change_cls_hirise,dinov3_lvd_1cha,gem,11,0.9739,0.9739,0.9059
+2026-04-01 21:44:24,816 | mb-change_cls_hirise,dinov3_lvd_1cha,gem,13,0.9769,0.9769,0.9159
+2026-04-01 21:44:24,816 | mb-change_cls_hirise,dinov3_lvd_1cha,gem,15,0.9739,0.9739,0.9059
+2026-04-01 21:44:24,816 | 
+📂 Dataset: mb-domars16k
+2026-04-01 21:44:24,816 |    👉 Model: dinov3_sat_1cha
+2026-04-01 21:44:24,816 |    ⚙️ [dinov3_sat_1cha] Target Chans: 1 | Stats: (0.379,)
+2026-04-01 21:44:25,599 | using base=100 for rope new
+2026-04-01 21:44:25,600 | using min_period=None for rope new
+2026-04-01 21:44:25,600 | using max_period=None for rope new
+2026-04-01 21:44:25,600 | using normalize_coords=separate for rope new
+2026-04-01 21:44:25,600 | using shift_coords=None for rope new
+2026-04-01 21:44:25,600 | using rescale_coords=2 for rope new
+2026-04-01 21:44:25,600 | using jitter_coords=None for rope new
+2026-04-01 21:44:25,600 | using dtype=fp32 for rope new
+2026-04-01 21:44:25,601 | using mlp layer as FFN
+2026-04-01 21:47:11,773 | mb-domars16k,dinov3_sat_1cha,cls,1,0.8817,0.8817,0.8802
+2026-04-01 21:47:11,773 | mb-domars16k,dinov3_sat_1cha,cls,3,0.8717,0.8717,0.8700
+2026-04-01 21:47:11,773 | mb-domars16k,dinov3_sat_1cha,cls,5,0.8643,0.8643,0.8635
+2026-04-01 21:47:11,773 | mb-domars16k,dinov3_sat_1cha,cls,7,0.8656,0.8656,0.8647
+2026-04-01 21:47:11,773 | mb-domars16k,dinov3_sat_1cha,cls,9,0.8594,0.8594,0.8589
+2026-04-01 21:47:11,773 | mb-domars16k,dinov3_sat_1cha,cls,11,0.8625,0.8625,0.8625
+2026-04-01 21:47:11,773 | mb-domars16k,dinov3_sat_1cha,cls,13,0.8544,0.8544,0.8540
+2026-04-01 21:47:11,773 | mb-domars16k,dinov3_sat_1cha,cls,15,0.8525,0.8525,0.8517
+2026-04-01 21:47:12,756 | mb-domars16k,dinov3_sat_1cha,mean,1,0.8730,0.8730,0.8722
+2026-04-01 21:47:12,756 | mb-domars16k,dinov3_sat_1cha,mean,3,0.8711,0.8711,0.8705
+2026-04-01 21:47:12,756 | mb-domars16k,dinov3_sat_1cha,mean,5,0.8637,0.8637,0.8629
+2026-04-01 21:47:12,756 | mb-domars16k,dinov3_sat_1cha,mean,7,0.8631,0.8631,0.8627
+2026-04-01 21:47:12,756 | mb-domars16k,dinov3_sat_1cha,mean,9,0.8600,0.8600,0.8593
+2026-04-01 21:47:12,756 | mb-domars16k,dinov3_sat_1cha,mean,11,0.8587,0.8587,0.8579
+2026-04-01 21:47:12,756 | mb-domars16k,dinov3_sat_1cha,mean,13,0.8600,0.8600,0.8594
+2026-04-01 21:47:12,756 | mb-domars16k,dinov3_sat_1cha,mean,15,0.8587,0.8587,0.8580
+2026-04-01 21:47:18,057 | mb-domars16k,dinov3_sat_1cha,max,1,0.8891,0.8891,0.8885
+2026-04-01 21:47:18,057 | mb-domars16k,dinov3_sat_1cha,max,3,0.8848,0.8848,0.8840
+2026-04-01 21:47:18,057 | mb-domars16k,dinov3_sat_1cha,max,5,0.8742,0.8742,0.8726
+2026-04-01 21:47:18,057 | mb-domars16k,dinov3_sat_1cha,max,7,0.8786,0.8786,0.8776
+2026-04-01 21:47:18,057 | mb-domars16k,dinov3_sat_1cha,max,9,0.8730,0.8730,0.8719
+2026-04-01 21:47:18,057 | mb-domars16k,dinov3_sat_1cha,max,11,0.8724,0.8724,0.8714
+2026-04-01 21:47:18,058 | mb-domars16k,dinov3_sat_1cha,max,13,0.8699,0.8699,0.8687
+2026-04-01 21:47:18,058 | mb-domars16k,dinov3_sat_1cha,max,15,0.8631,0.8631,0.8615
+2026-04-01 21:47:26,831 | mb-domars16k,dinov3_sat_1cha,gem,1,0.8748,0.8748,0.8736
+2026-04-01 21:47:26,831 | mb-domars16k,dinov3_sat_1cha,gem,3,0.8711,0.8711,0.8704
+2026-04-01 21:47:26,831 | mb-domars16k,dinov3_sat_1cha,gem,5,0.8637,0.8637,0.8626
+2026-04-01 21:47:26,831 | mb-domars16k,dinov3_sat_1cha,gem,7,0.8686,0.8686,0.8685
+2026-04-01 21:47:26,831 | mb-domars16k,dinov3_sat_1cha,gem,9,0.8699,0.8699,0.8697
+2026-04-01 21:47:26,832 | mb-domars16k,dinov3_sat_1cha,gem,11,0.8668,0.8668,0.8666
+2026-04-01 21:47:26,832 | mb-domars16k,dinov3_sat_1cha,gem,13,0.8594,0.8594,0.8593
+2026-04-01 21:47:26,832 | mb-domars16k,dinov3_sat_1cha,gem,15,0.8587,0.8587,0.8583
+2026-04-01 21:47:26,832 |    👉 Model: dinov3_lvd_1cha
+2026-04-01 21:47:26,832 |    ⚙️ [dinov3_lvd_1cha] Target Chans: 1 | Stats: (0.449,)
+2026-04-01 21:47:27,211 | using base=100 for rope new
+2026-04-01 21:47:27,211 | using min_period=None for rope new
+2026-04-01 21:47:27,211 | using max_period=None for rope new
+2026-04-01 21:47:27,211 | using normalize_coords=separate for rope new
+2026-04-01 21:47:27,211 | using shift_coords=None for rope new
+2026-04-01 21:47:27,212 | using rescale_coords=2 for rope new
+2026-04-01 21:47:27,212 | using jitter_coords=None for rope new
+2026-04-01 21:47:27,212 | using dtype=fp32 for rope new
+2026-04-01 21:47:27,212 | using mlp layer as FFN
+2026-04-01 21:50:08,181 | mb-domars16k,dinov3_lvd_1cha,cls,1,0.8426,0.8426,0.8381
+2026-04-01 21:50:08,182 | mb-domars16k,dinov3_lvd_1cha,cls,3,0.8476,0.8476,0.8439
+2026-04-01 21:50:08,182 | mb-domars16k,dinov3_lvd_1cha,cls,5,0.8501,0.8501,0.8461
+2026-04-01 21:50:08,182 | mb-domars16k,dinov3_lvd_1cha,cls,7,0.8476,0.8476,0.8436
+2026-04-01 21:50:08,182 | mb-domars16k,dinov3_lvd_1cha,cls,9,0.8513,0.8513,0.8471
+2026-04-01 21:50:08,182 | mb-domars16k,dinov3_lvd_1cha,cls,11,0.8525,0.8525,0.8487
+2026-04-01 21:50:08,182 | mb-domars16k,dinov3_lvd_1cha,cls,13,0.8544,0.8544,0.8504
+2026-04-01 21:50:08,182 | mb-domars16k,dinov3_lvd_1cha,cls,15,0.8507,0.8507,0.8462
+2026-04-01 21:50:09,469 | mb-domars16k,dinov3_lvd_1cha,mean,1,0.8278,0.8278,0.8238
+2026-04-01 21:50:09,470 | mb-domars16k,dinov3_lvd_1cha,mean,3,0.8346,0.8346,0.8306
+2026-04-01 21:50:09,470 | mb-domars16k,dinov3_lvd_1cha,mean,5,0.8432,0.8432,0.8395
+2026-04-01 21:50:09,470 | mb-domars16k,dinov3_lvd_1cha,mean,7,0.8327,0.8327,0.8278
+2026-04-01 21:50:09,470 | mb-domars16k,dinov3_lvd_1cha,mean,9,0.8401,0.8401,0.8361
+2026-04-01 21:50:09,470 | mb-domars16k,dinov3_lvd_1cha,mean,11,0.8333,0.8333,0.8290
+2026-04-01 21:50:09,470 | mb-domars16k,dinov3_lvd_1cha,mean,13,0.8296,0.8296,0.8247
+2026-04-01 21:50:09,470 | mb-domars16k,dinov3_lvd_1cha,mean,15,0.8401,0.8401,0.8362
+2026-04-01 21:50:14,716 | mb-domars16k,dinov3_lvd_1cha,max,1,0.8240,0.8240,0.8190
+2026-04-01 21:50:14,716 | mb-domars16k,dinov3_lvd_1cha,max,3,0.8451,0.8451,0.8408
+2026-04-01 21:50:14,716 | mb-domars16k,dinov3_lvd_1cha,max,5,0.8439,0.8439,0.8398
+2026-04-01 21:50:14,716 | mb-domars16k,dinov3_lvd_1cha,max,7,0.8432,0.8432,0.8389
+2026-04-01 21:50:14,716 | mb-domars16k,dinov3_lvd_1cha,max,9,0.8414,0.8414,0.8374
+2026-04-01 21:50:14,716 | mb-domars16k,dinov3_lvd_1cha,max,11,0.8358,0.8358,0.8318
+2026-04-01 21:50:14,716 | mb-domars16k,dinov3_lvd_1cha,max,13,0.8358,0.8358,0.8315
+2026-04-01 21:50:14,716 | mb-domars16k,dinov3_lvd_1cha,max,15,0.8401,0.8401,0.8357
+2026-04-01 21:50:23,333 | mb-domars16k,dinov3_lvd_1cha,gem,1,0.8259,0.8259,0.8215
+2026-04-01 21:50:23,334 | mb-domars16k,dinov3_lvd_1cha,gem,3,0.8346,0.8346,0.8305
+2026-04-01 21:50:23,334 | mb-domars16k,dinov3_lvd_1cha,gem,5,0.8333,0.8333,0.8292
+2026-04-01 21:50:23,334 | mb-domars16k,dinov3_lvd_1cha,gem,7,0.8346,0.8346,0.8305
+2026-04-01 21:50:23,334 | mb-domars16k,dinov3_lvd_1cha,gem,9,0.8371,0.8371,0.8330
+2026-04-01 21:50:23,334 | mb-domars16k,dinov3_lvd_1cha,gem,11,0.8364,0.8364,0.8322
+2026-04-01 21:50:23,334 | mb-domars16k,dinov3_lvd_1cha,gem,13,0.8333,0.8333,0.8286
+2026-04-01 21:50:23,334 | mb-domars16k,dinov3_lvd_1cha,gem,15,0.8333,0.8333,0.8282
+2026-04-01 21:50:23,334 | 
+📂 Dataset: mb-frost_cls
+2026-04-01 21:50:23,334 |    👉 Model: dinov3_sat_1cha
+2026-04-01 21:50:23,334 |    ⚙️ [dinov3_sat_1cha] Target Chans: 1 | Stats: (0.379,)
+2026-04-01 21:50:31,144 | using base=100 for rope new
+2026-04-01 21:50:31,144 | using min_period=None for rope new
+2026-04-01 21:50:31,144 | using max_period=None for rope new
+2026-04-01 21:50:31,144 | using normalize_coords=separate for rope new
+2026-04-01 21:50:31,144 | using shift_coords=None for rope new
+2026-04-01 21:50:31,145 | using rescale_coords=2 for rope new
+2026-04-01 21:50:31,145 | using jitter_coords=None for rope new
+2026-04-01 21:50:31,145 | using dtype=fp32 for rope new
+2026-04-01 21:50:31,146 | using mlp layer as FFN
+2026-04-01 21:59:19,548 | mb-frost_cls,dinov3_sat_1cha,cls,1,0.9883,0.9883,0.9874
+2026-04-01 21:59:19,549 | mb-frost_cls,dinov3_sat_1cha,cls,3,0.9897,0.9897,0.9889
+2026-04-01 21:59:19,549 | mb-frost_cls,dinov3_sat_1cha,cls,5,0.9899,0.9899,0.9891
+2026-04-01 21:59:19,549 | mb-frost_cls,dinov3_sat_1cha,cls,7,0.9900,0.9900,0.9892
+2026-04-01 21:59:19,549 | mb-frost_cls,dinov3_sat_1cha,cls,9,0.9901,0.9901,0.9893
+2026-04-01 21:59:19,549 | mb-frost_cls,dinov3_sat_1cha,cls,11,0.9908,0.9908,0.9900
+2026-04-01 21:59:19,549 | mb-frost_cls,dinov3_sat_1cha,cls,13,0.9910,0.9910,0.9903
+2026-04-01 21:59:19,549 | mb-frost_cls,dinov3_sat_1cha,cls,15,0.9913,0.9913,0.9906
+2026-04-01 21:59:22,518 | mb-frost_cls,dinov3_sat_1cha,mean,1,0.9769,0.9769,0.9752
+2026-04-01 21:59:22,519 | mb-frost_cls,dinov3_sat_1cha,mean,3,0.9785,0.9785,0.9770
+2026-04-01 21:59:22,519 | mb-frost_cls,dinov3_sat_1cha,mean,5,0.9787,0.9787,0.9772
+2026-04-01 21:59:22,519 | mb-frost_cls,dinov3_sat_1cha,mean,7,0.9788,0.9788,0.9773
+2026-04-01 21:59:22,519 | mb-frost_cls,dinov3_sat_1cha,mean,9,0.9791,0.9791,0.9776
+2026-04-01 21:59:22,519 | mb-frost_cls,dinov3_sat_1cha,mean,11,0.9805,0.9805,0.9791
+2026-04-01 21:59:22,519 | mb-frost_cls,dinov3_sat_1cha,mean,13,0.9817,0.9817,0.9804
+2026-04-01 21:59:22,519 | mb-frost_cls,dinov3_sat_1cha,mean,15,0.9829,0.9829,0.9817
+2026-04-01 21:59:39,148 | mb-frost_cls,dinov3_sat_1cha,max,1,0.9845,0.9845,0.9833
+2026-04-01 21:59:39,148 | mb-frost_cls,dinov3_sat_1cha,max,3,0.9833,0.9833,0.9820
+2026-04-01 21:59:39,148 | mb-frost_cls,dinov3_sat_1cha,max,5,0.9847,0.9847,0.9836
+2026-04-01 21:59:39,148 | mb-frost_cls,dinov3_sat_1cha,max,7,0.9851,0.9851,0.9839
+2026-04-01 21:59:39,148 | mb-frost_cls,dinov3_sat_1cha,max,9,0.9854,0.9854,0.9843
+2026-04-01 21:59:39,148 | mb-frost_cls,dinov3_sat_1cha,max,11,0.9855,0.9855,0.9844
+2026-04-01 21:59:39,148 | mb-frost_cls,dinov3_sat_1cha,max,13,0.9863,0.9863,0.9852
+2026-04-01 21:59:39,148 | mb-frost_cls,dinov3_sat_1cha,max,15,0.9873,0.9873,0.9863
+2026-04-01 22:00:10,225 | mb-frost_cls,dinov3_sat_1cha,gem,1,0.9781,0.9781,0.9765
+2026-04-01 22:00:10,225 | mb-frost_cls,dinov3_sat_1cha,gem,3,0.9789,0.9789,0.9773
+2026-04-01 22:00:10,225 | mb-frost_cls,dinov3_sat_1cha,gem,5,0.9824,0.9824,0.9811
+2026-04-01 22:00:10,225 | mb-frost_cls,dinov3_sat_1cha,gem,7,0.9831,0.9831,0.9818
+2026-04-01 22:00:10,225 | mb-frost_cls,dinov3_sat_1cha,gem,9,0.9860,0.9860,0.9849
+2026-04-01 22:00:10,225 | mb-frost_cls,dinov3_sat_1cha,gem,11,0.9871,0.9871,0.9861
+2026-04-01 22:00:10,225 | mb-frost_cls,dinov3_sat_1cha,gem,13,0.9882,0.9882,0.9872
+2026-04-01 22:00:10,225 | mb-frost_cls,dinov3_sat_1cha,gem,15,0.9898,0.9898,0.9890
+2026-04-01 22:00:10,225 |    👉 Model: dinov3_lvd_1cha
+2026-04-01 22:00:10,225 |    ⚙️ [dinov3_lvd_1cha] Target Chans: 1 | Stats: (0.449,)
+2026-04-01 22:00:12,898 | using base=100 for rope new
+2026-04-01 22:00:12,899 | using min_period=None for rope new
+2026-04-01 22:00:12,899 | using max_period=None for rope new
+2026-04-01 22:00:12,899 | using normalize_coords=separate for rope new
+2026-04-01 22:00:12,899 | using shift_coords=None for rope new
+2026-04-01 22:00:12,899 | using rescale_coords=2 for rope new
+2026-04-01 22:00:12,899 | using jitter_coords=None for rope new
+2026-04-01 22:00:12,899 | using dtype=fp32 for rope new
+2026-04-01 22:00:12,900 | using mlp layer as FFN
+2026-04-01 22:08:58,861 | mb-frost_cls,dinov3_lvd_1cha,cls,1,0.9112,0.9112,0.9060
+2026-04-01 22:08:58,862 | mb-frost_cls,dinov3_lvd_1cha,cls,3,0.9255,0.9255,0.9211
+2026-04-01 22:08:58,862 | mb-frost_cls,dinov3_lvd_1cha,cls,5,0.9300,0.9300,0.9259
+2026-04-01 22:08:58,862 | mb-frost_cls,dinov3_lvd_1cha,cls,7,0.9296,0.9296,0.9255
+2026-04-01 22:08:58,862 | mb-frost_cls,dinov3_lvd_1cha,cls,9,0.9286,0.9286,0.9244
+2026-04-01 22:08:58,862 | mb-frost_cls,dinov3_lvd_1cha,cls,11,0.9297,0.9297,0.9257
+2026-04-01 22:08:58,862 | mb-frost_cls,dinov3_lvd_1cha,cls,13,0.9300,0.9300,0.9260
+2026-04-01 22:08:58,862 | mb-frost_cls,dinov3_lvd_1cha,cls,15,0.9300,0.9300,0.9259
+2026-04-01 22:09:03,221 | mb-frost_cls,dinov3_lvd_1cha,mean,1,0.8818,0.8818,0.8760
+2026-04-01 22:09:03,221 | mb-frost_cls,dinov3_lvd_1cha,mean,3,0.8912,0.8912,0.8858
+2026-04-01 22:09:03,222 | mb-frost_cls,dinov3_lvd_1cha,mean,5,0.8944,0.8944,0.8891
+2026-04-01 22:09:03,222 | mb-frost_cls,dinov3_lvd_1cha,mean,7,0.8948,0.8948,0.8897
+2026-04-01 22:09:03,222 | mb-frost_cls,dinov3_lvd_1cha,mean,9,0.8953,0.8953,0.8904
+2026-04-01 22:09:03,222 | mb-frost_cls,dinov3_lvd_1cha,mean,11,0.8957,0.8957,0.8907
+2026-04-01 22:09:03,222 | mb-frost_cls,dinov3_lvd_1cha,mean,13,0.8975,0.8975,0.8927
+2026-04-01 22:09:03,222 | mb-frost_cls,dinov3_lvd_1cha,mean,15,0.8967,0.8967,0.8919
+2026-04-01 22:09:22,050 | mb-frost_cls,dinov3_lvd_1cha,max,1,0.8837,0.8837,0.8779
+2026-04-01 22:09:22,050 | mb-frost_cls,dinov3_lvd_1cha,max,3,0.8976,0.8976,0.8925
+2026-04-01 22:09:22,050 | mb-frost_cls,dinov3_lvd_1cha,max,5,0.9026,0.9026,0.8975
+2026-04-01 22:09:22,050 | mb-frost_cls,dinov3_lvd_1cha,max,7,0.9024,0.9024,0.8974
+2026-04-01 22:09:22,050 | mb-frost_cls,dinov3_lvd_1cha,max,9,0.9006,0.9006,0.8958
+2026-04-01 22:09:22,050 | mb-frost_cls,dinov3_lvd_1cha,max,11,0.9031,0.9031,0.8983
+2026-04-01 22:09:22,050 | mb-frost_cls,dinov3_lvd_1cha,max,13,0.9039,0.9039,0.8992
+2026-04-01 22:09:22,050 | mb-frost_cls,dinov3_lvd_1cha,max,15,0.9048,0.9048,0.9002
+2026-04-01 22:09:52,915 | mb-frost_cls,dinov3_lvd_1cha,gem,1,0.8830,0.8830,0.8770
+2026-04-01 22:09:52,915 | mb-frost_cls,dinov3_lvd_1cha,gem,3,0.8950,0.8950,0.8897
+2026-04-01 22:09:52,916 | mb-frost_cls,dinov3_lvd_1cha,gem,5,0.9004,0.9004,0.8953
+2026-04-01 22:09:52,916 | mb-frost_cls,dinov3_lvd_1cha,gem,7,0.9007,0.9007,0.8958
+2026-04-01 22:09:52,916 | mb-frost_cls,dinov3_lvd_1cha,gem,9,0.9013,0.9013,0.8965
+2026-04-01 22:09:52,916 | mb-frost_cls,dinov3_lvd_1cha,gem,11,0.9010,0.9010,0.8962
+2026-04-01 22:09:52,916 | mb-frost_cls,dinov3_lvd_1cha,gem,13,0.9015,0.9015,0.8967
+2026-04-01 22:09:52,916 | mb-frost_cls,dinov3_lvd_1cha,gem,15,0.9019,0.9019,0.8972
+2026-04-01 22:09:52,916 | 
+📂 Dataset: mb-landmark_cls
+2026-04-01 22:09:52,916 |    👉 Model: dinov3_sat_1cha
+2026-04-01 22:09:52,916 |    ⚙️ [dinov3_sat_1cha] Target Chans: 1 | Stats: (0.379,)
+2026-04-01 22:09:54,751 | using base=100 for rope new
+2026-04-01 22:09:54,751 | using min_period=None for rope new
+2026-04-01 22:09:54,752 | using max_period=None for rope new
+2026-04-01 22:09:54,752 | using normalize_coords=separate for rope new
+2026-04-01 22:09:54,752 | using shift_coords=None for rope new
+2026-04-01 22:09:54,752 | using rescale_coords=2 for rope new
+2026-04-01 22:09:54,752 | using jitter_coords=None for rope new
+2026-04-01 22:09:54,752 | using dtype=fp32 for rope new
+2026-04-01 22:09:54,753 | using mlp layer as FFN
+2026-04-01 22:11:52,223 | mb-landmark_cls,dinov3_sat_1cha,cls,1,0.8572,0.8572,0.6118
+2026-04-01 22:11:52,224 | mb-landmark_cls,dinov3_sat_1cha,cls,3,0.8851,0.8851,0.5828
+2026-04-01 22:11:52,224 | mb-landmark_cls,dinov3_sat_1cha,cls,5,0.8918,0.8918,0.5684
+2026-04-01 22:11:52,224 | mb-landmark_cls,dinov3_sat_1cha,cls,7,0.8924,0.8924,0.5495
+2026-04-01 22:11:52,224 | mb-landmark_cls,dinov3_sat_1cha,cls,9,0.8929,0.8929,0.5405
+2026-04-01 22:11:52,224 | mb-landmark_cls,dinov3_sat_1cha,cls,11,0.8951,0.8951,0.5492
+2026-04-01 22:11:52,224 | mb-landmark_cls,dinov3_sat_1cha,cls,13,0.8963,0.8963,0.5554
+2026-04-01 22:11:52,224 | mb-landmark_cls,dinov3_sat_1cha,cls,15,0.8946,0.8946,0.5504
+2026-04-01 22:11:52,830 | mb-landmark_cls,dinov3_sat_1cha,mean,1,0.8494,0.8494,0.5813
+2026-04-01 22:11:52,830 | mb-landmark_cls,dinov3_sat_1cha,mean,3,0.8745,0.8745,0.5392
+2026-04-01 22:11:52,830 | mb-landmark_cls,dinov3_sat_1cha,mean,5,0.8784,0.8784,0.5176
+2026-04-01 22:11:52,830 | mb-landmark_cls,dinov3_sat_1cha,mean,7,0.8857,0.8857,0.5274
+2026-04-01 22:11:52,830 | mb-landmark_cls,dinov3_sat_1cha,mean,9,0.8868,0.8868,0.5103
+2026-04-01 22:11:52,830 | mb-landmark_cls,dinov3_sat_1cha,mean,11,0.8834,0.8834,0.5045
+2026-04-01 22:11:52,830 | mb-landmark_cls,dinov3_sat_1cha,mean,13,0.8834,0.8834,0.4942
+2026-04-01 22:11:52,830 | mb-landmark_cls,dinov3_sat_1cha,mean,15,0.8795,0.8795,0.4893
+2026-04-01 22:11:56,344 | mb-landmark_cls,dinov3_sat_1cha,max,1,0.8500,0.8500,0.6359
+2026-04-01 22:11:56,344 | mb-landmark_cls,dinov3_sat_1cha,max,3,0.8862,0.8862,0.6322
+2026-04-01 22:11:56,344 | mb-landmark_cls,dinov3_sat_1cha,max,5,0.8868,0.8868,0.5549
+2026-04-01 22:11:56,344 | mb-landmark_cls,dinov3_sat_1cha,max,7,0.8851,0.8851,0.5525
+2026-04-01 22:11:56,344 | mb-landmark_cls,dinov3_sat_1cha,max,9,0.8840,0.8840,0.5338
+2026-04-01 22:11:56,344 | mb-landmark_cls,dinov3_sat_1cha,max,11,0.8857,0.8857,0.5358
+2026-04-01 22:11:56,344 | mb-landmark_cls,dinov3_sat_1cha,max,13,0.8846,0.8846,0.5278
+2026-04-01 22:11:56,344 | mb-landmark_cls,dinov3_sat_1cha,max,15,0.8846,0.8846,0.5291
+2026-04-01 22:12:02,308 | mb-landmark_cls,dinov3_sat_1cha,gem,1,0.8455,0.8455,0.5938
+2026-04-01 22:12:02,308 | mb-landmark_cls,dinov3_sat_1cha,gem,3,0.8751,0.8751,0.5600
+2026-04-01 22:12:02,308 | mb-landmark_cls,dinov3_sat_1cha,gem,5,0.8795,0.8795,0.5275
+2026-04-01 22:12:02,308 | mb-landmark_cls,dinov3_sat_1cha,gem,7,0.8795,0.8795,0.5200
+2026-04-01 22:12:02,308 | mb-landmark_cls,dinov3_sat_1cha,gem,9,0.8790,0.8790,0.5007
+2026-04-01 22:12:02,308 | mb-landmark_cls,dinov3_sat_1cha,gem,11,0.8806,0.8806,0.5043
+2026-04-01 22:12:02,308 | mb-landmark_cls,dinov3_sat_1cha,gem,13,0.8779,0.8779,0.4932
+2026-04-01 22:12:02,308 | mb-landmark_cls,dinov3_sat_1cha,gem,15,0.8773,0.8773,0.4834
+2026-04-01 22:12:02,308 |    👉 Model: dinov3_lvd_1cha
+2026-04-01 22:12:02,308 |    ⚙️ [dinov3_lvd_1cha] Target Chans: 1 | Stats: (0.449,)
+2026-04-01 22:12:02,779 | using base=100 for rope new
+2026-04-01 22:12:02,780 | using min_period=None for rope new
+2026-04-01 22:12:02,780 | using max_period=None for rope new
+2026-04-01 22:12:02,780 | using normalize_coords=separate for rope new
+2026-04-01 22:12:02,780 | using shift_coords=None for rope new
+2026-04-01 22:12:02,780 | using rescale_coords=2 for rope new
+2026-04-01 22:12:02,780 | using jitter_coords=None for rope new
+2026-04-01 22:12:02,780 | using dtype=fp32 for rope new
+2026-04-01 22:12:02,781 | using mlp layer as FFN
+2026-04-01 22:13:57,067 | mb-landmark_cls,dinov3_lvd_1cha,cls,1,0.8862,0.8862,0.6654
+2026-04-01 22:13:57,067 | mb-landmark_cls,dinov3_lvd_1cha,cls,3,0.9035,0.9035,0.6792
+2026-04-01 22:13:57,067 | mb-landmark_cls,dinov3_lvd_1cha,cls,5,0.9057,0.9057,0.6593
+2026-04-01 22:13:57,067 | mb-landmark_cls,dinov3_lvd_1cha,cls,7,0.9102,0.9102,0.6671
+2026-04-01 22:13:57,067 | mb-landmark_cls,dinov3_lvd_1cha,cls,9,0.9091,0.9091,0.6685
+2026-04-01 22:13:57,067 | mb-landmark_cls,dinov3_lvd_1cha,cls,11,0.9063,0.9063,0.6554
+2026-04-01 22:13:57,067 | mb-landmark_cls,dinov3_lvd_1cha,cls,13,0.9041,0.9041,0.6396
+2026-04-01 22:13:57,067 | mb-landmark_cls,dinov3_lvd_1cha,cls,15,0.9057,0.9057,0.6445
+2026-04-01 22:13:57,776 | mb-landmark_cls,dinov3_lvd_1cha,mean,1,0.8834,0.8834,0.6586
+2026-04-01 22:13:57,777 | mb-landmark_cls,dinov3_lvd_1cha,mean,3,0.9069,0.9069,0.6905
+2026-04-01 22:13:57,777 | mb-landmark_cls,dinov3_lvd_1cha,mean,5,0.9035,0.9035,0.6679
+2026-04-01 22:13:57,777 | mb-landmark_cls,dinov3_lvd_1cha,mean,7,0.9046,0.9046,0.6535
+2026-04-01 22:13:57,777 | mb-landmark_cls,dinov3_lvd_1cha,mean,9,0.9046,0.9046,0.6382
+2026-04-01 22:13:57,777 | mb-landmark_cls,dinov3_lvd_1cha,mean,11,0.8996,0.8996,0.6288
+2026-04-01 22:13:57,777 | mb-landmark_cls,dinov3_lvd_1cha,mean,13,0.8979,0.8979,0.6121
+2026-04-01 22:13:57,777 | mb-landmark_cls,dinov3_lvd_1cha,mean,15,0.8963,0.8963,0.6029
+2026-04-01 22:14:01,482 | mb-landmark_cls,dinov3_lvd_1cha,max,1,0.8985,0.8985,0.7017
+2026-04-01 22:14:01,482 | mb-landmark_cls,dinov3_lvd_1cha,max,3,0.9136,0.9136,0.7137
+2026-04-01 22:14:01,482 | mb-landmark_cls,dinov3_lvd_1cha,max,5,0.9163,0.9163,0.6969
+2026-04-01 22:14:01,482 | mb-landmark_cls,dinov3_lvd_1cha,max,7,0.9141,0.9141,0.6955
+2026-04-01 22:14:01,482 | mb-landmark_cls,dinov3_lvd_1cha,max,9,0.9136,0.9136,0.6766
+2026-04-01 22:14:01,482 | mb-landmark_cls,dinov3_lvd_1cha,max,11,0.9119,0.9119,0.6754
+2026-04-01 22:14:01,482 | mb-landmark_cls,dinov3_lvd_1cha,max,13,0.9063,0.9063,0.6476
+2026-04-01 22:14:01,482 | mb-landmark_cls,dinov3_lvd_1cha,max,15,0.9074,0.9074,0.6665
+2026-04-01 22:14:07,516 | mb-landmark_cls,dinov3_lvd_1cha,gem,1,0.8745,0.8745,0.6521
+2026-04-01 22:14:07,516 | mb-landmark_cls,dinov3_lvd_1cha,gem,3,0.8991,0.8991,0.6702
+2026-04-01 22:14:07,516 | mb-landmark_cls,dinov3_lvd_1cha,gem,5,0.9024,0.9024,0.6523
+2026-04-01 22:14:07,516 | mb-landmark_cls,dinov3_lvd_1cha,gem,7,0.9030,0.9030,0.6493
+2026-04-01 22:14:07,516 | mb-landmark_cls,dinov3_lvd_1cha,gem,9,0.9041,0.9041,0.6417
+2026-04-01 22:14:07,516 | mb-landmark_cls,dinov3_lvd_1cha,gem,11,0.9013,0.9013,0.6301
+2026-04-01 22:14:07,516 | mb-landmark_cls,dinov3_lvd_1cha,gem,13,0.9018,0.9018,0.6244
+2026-04-01 22:14:07,516 | mb-landmark_cls,dinov3_lvd_1cha,gem,15,0.8996,0.8996,0.6232

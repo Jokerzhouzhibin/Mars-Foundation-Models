@@ -1,0 +1,55 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-atmospheric_dust_cls_rdr_openclip_lr1e-05_concat_3.log
+⏰ Time: 2026-02-28 06:18:40
+============================================================
+
+🚀 Training openclip on mb-atmospheric_dust_cls_rdr | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: openclip (transformers_clip)
+
+   🔍 [Structure Check] openclip Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.1557 | Val Accuracy: 95.51%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.0852 | Val Accuracy: 95.01%
+   📅 Epoch 3 | Loss: 0.0747 | Val Accuracy: 95.38%
+   📅 Epoch 4 | Loss: 0.0693 | Val Accuracy: 95.61%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.0626 | Val Accuracy: 95.07%
+   📅 Epoch 6 | Loss: 0.0587 | Val Accuracy: 95.45%
+   📅 Epoch 7 | Loss: 0.0575 | Val Accuracy: 95.03%
+   📅 Epoch 8 | Loss: 0.0584 | Val Accuracy: 95.53%
+   📅 Epoch 9 | Loss: 0.0587 | Val Accuracy: 95.63%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.0571 | Val Accuracy: 95.11%
+   📅 Epoch 11 | Loss: 0.0511 | Val Accuracy: 95.82%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.0532 | Val Accuracy: 95.34%
+   📅 Epoch 13 | Loss: 0.0499 | Val Accuracy: 95.47%
+   📅 Epoch 14 | Loss: 0.0482 | Val Accuracy: 95.44%
+   📅 Epoch 15 | Loss: 0.0418 | Val Accuracy: 95.49%
+   📅 Epoch 16 | Loss: 0.0443 | Val Accuracy: 95.26%
+   📅 Epoch 17 | Loss: 0.0407 | Val Accuracy: 95.24%
+   📅 Epoch 18 | Loss: 0.0412 | Val Accuracy: 93.81%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.82%
+💾 Best Checkpoint: ./checkpoints/full_mb-atmospheric_dust_cls_rdr_openclip_lr1e-05_concat_3.pth
+========================================
+

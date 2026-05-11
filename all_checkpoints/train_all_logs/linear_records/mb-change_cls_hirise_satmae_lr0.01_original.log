@@ -1,0 +1,51 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-change_cls_hirise_satmae_lr0.01_original.log
+⏰ Time: 2026-02-28 17:54:46
+============================================================
+
+🚀 Training satmae on mb-change_cls_hirise | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6206 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: satmae (timm_mae)
+   ℹ️  Config: in_chans=3
+   🔍 Auditing weights for [satmae]...
+   ✅ [PERFECT MATCH] 294/294 layers loaded (100.0%)
+
+   🔍 [Structure Check] satmae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.7715 | Val Accuracy: 93.28%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2840 | Val Accuracy: 94.10%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1606 | Val Accuracy: 95.22%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1666 | Val Accuracy: 95.22%
+   📅 Epoch 5 | Loss: 0.1607 | Val Accuracy: 95.15%
+   📅 Epoch 6 | Loss: 0.1647 | Val Accuracy: 95.60%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.1564 | Val Accuracy: 95.07%
+   📅 Epoch 8 | Loss: 0.1489 | Val Accuracy: 95.22%
+   📅 Epoch 9 | Loss: 0.1567 | Val Accuracy: 95.07%
+   📅 Epoch 10 | Loss: 0.1576 | Val Accuracy: 95.07%
+   📅 Epoch 11 | Loss: 0.1524 | Val Accuracy: 95.37%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.60%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_hirise_satmae_lr0.01_original.pth
+========================================
+

@@ -1,0 +1,63 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_satmae_lr0.01_concat_3.log
+⏰ Time: 2026-03-03 13:56:39
+============================================================
+
+🚀 Training satmae on mb-landmark_cls | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: satmae (timm_mae)
+   ℹ️  Config: in_chans=3
+   🔍 Auditing weights for [satmae]...
+   ✅ [PERFECT MATCH] 294/294 layers loaded (100.0%)
+
+   🔍 [Structure Check] satmae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 5.4717 | Val Accuracy: 69.83%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 1.4652 | Val Accuracy: 78.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.5488 | Val Accuracy: 88.18%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.3882 | Val Accuracy: 89.35%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.3896 | Val Accuracy: 88.40%
+   📅 Epoch 6 | Loss: 0.4295 | Val Accuracy: 88.90%
+   📅 Epoch 7 | Loss: 0.4948 | Val Accuracy: 89.51%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.6862 | Val Accuracy: 83.99%
+   📅 Epoch 9 | Loss: 0.3154 | Val Accuracy: 88.18%
+   📅 Epoch 10 | Loss: 0.2949 | Val Accuracy: 89.91%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.2615 | Val Accuracy: 90.02%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.3485 | Val Accuracy: 82.32%
+   📅 Epoch 13 | Loss: 0.3632 | Val Accuracy: 87.84%
+   📅 Epoch 14 | Loss: 0.2793 | Val Accuracy: 91.02%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.3649 | Val Accuracy: 87.67%
+   📅 Epoch 16 | Loss: 0.3482 | Val Accuracy: 88.90%
+   📅 Epoch 17 | Loss: 0.3525 | Val Accuracy: 89.51%
+   📅 Epoch 18 | Loss: 0.3404 | Val Accuracy: 89.24%
+   📅 Epoch 19 | Loss: 0.4688 | Val Accuracy: 89.63%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 91.02%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_satmae_lr0.01_concat_3.pth
+========================================
+

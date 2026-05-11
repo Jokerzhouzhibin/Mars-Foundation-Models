@@ -1,0 +1,53 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_vit_l_lr0.01_concat_3.log
+⏰ Time: 2026-03-03 17:07:54
+============================================================
+
+🚀 Training vit_l on mb-landmark_cls | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 4.6110 | Val Accuracy: 86.56%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.5890 | Val Accuracy: 90.80%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.3146 | Val Accuracy: 90.13%
+   📅 Epoch 4 | Loss: 0.2064 | Val Accuracy: 90.13%
+   📅 Epoch 5 | Loss: 0.2091 | Val Accuracy: 90.35%
+   📅 Epoch 6 | Loss: 0.1923 | Val Accuracy: 91.75%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.1571 | Val Accuracy: 91.30%
+   📅 Epoch 8 | Loss: 0.1488 | Val Accuracy: 90.13%
+   📅 Epoch 9 | Loss: 0.1807 | Val Accuracy: 92.02%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.1674 | Val Accuracy: 90.63%
+   📅 Epoch 11 | Loss: 0.1610 | Val Accuracy: 91.91%
+   📅 Epoch 12 | Loss: 0.1843 | Val Accuracy: 91.86%
+   📅 Epoch 13 | Loss: 0.1406 | Val Accuracy: 89.35%
+   📅 Epoch 14 | Loss: 0.1317 | Val Accuracy: 90.80%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 92.02%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_vit_l_lr0.01_concat_3.pth
+========================================
+

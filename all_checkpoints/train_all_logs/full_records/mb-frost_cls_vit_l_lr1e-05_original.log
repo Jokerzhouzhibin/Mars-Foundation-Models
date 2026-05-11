@@ -1,0 +1,72 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-frost_cls_vit_l_lr1e-05_original.log
+⏰ Time: 2026-03-03 06:35:32
+============================================================
+
+🚀 Training vit_l on mb-frost_cls | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.2558 | Val Accuracy: 94.12%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.0789 | Val Accuracy: 94.38%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.0503 | Val Accuracy: 93.74%
+   📅 Epoch 4 | Loss: 0.0391 | Val Accuracy: 94.81%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.0303 | Val Accuracy: 94.14%
+   📅 Epoch 6 | Loss: 0.0246 | Val Accuracy: 95.12%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.0201 | Val Accuracy: 94.37%
+   📅 Epoch 8 | Loss: 0.0182 | Val Accuracy: 94.82%
+   📅 Epoch 9 | Loss: 0.0169 | Val Accuracy: 95.86%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.0140 | Val Accuracy: 95.83%
+   📅 Epoch 11 | Loss: 0.0137 | Val Accuracy: 95.90%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.0131 | Val Accuracy: 95.84%
+   📅 Epoch 13 | Loss: 0.0112 | Val Accuracy: 95.83%
+   📅 Epoch 14 | Loss: 0.0089 | Val Accuracy: 96.06%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.0092 | Val Accuracy: 96.46%
+      ⭐ New Best! Saved.
+   📅 Epoch 16 | Loss: 0.0079 | Val Accuracy: 95.71%
+   📅 Epoch 17 | Loss: 0.0081 | Val Accuracy: 95.84%
+   📅 Epoch 18 | Loss: 0.0089 | Val Accuracy: 95.75%
+   📅 Epoch 19 | Loss: 0.0076 | Val Accuracy: 94.91%
+   📅 Epoch 20 | Loss: 0.0077 | Val Accuracy: 95.62%
+   📅 Epoch 21 | Loss: 0.0066 | Val Accuracy: 96.76%
+      ⭐ New Best! Saved.
+   📅 Epoch 22 | Loss: 0.0082 | Val Accuracy: 96.56%
+   📅 Epoch 23 | Loss: 0.0057 | Val Accuracy: 95.53%
+   📅 Epoch 24 | Loss: 0.0074 | Val Accuracy: 95.04%
+   📅 Epoch 25 | Loss: 0.0065 | Val Accuracy: 95.09%
+   📅 Epoch 26 | Loss: 0.0055 | Val Accuracy: 95.53%
+   📅 Epoch 27 | Loss: 0.0052 | Val Accuracy: 95.69%
+   📅 Epoch 28 | Loss: 0.0047 | Val Accuracy: 95.66%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.76%
+💾 Best Checkpoint: ./checkpoints/full_mb-frost_cls_vit_l_lr1e-05_original.pth
+========================================
+

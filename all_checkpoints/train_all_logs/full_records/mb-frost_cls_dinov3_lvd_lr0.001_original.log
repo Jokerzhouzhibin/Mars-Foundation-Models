@@ -1,0 +1,52 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-frost_cls_dinov3_lvd_lr0.001_original.log
+⏰ Time: 2026-03-02 03:39:03
+============================================================
+
+🚀 Training dinov3_lvd on mb-frost_cls | Mode: FULL | LR: 0.001
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: dinov3_lvd (dinov3_hub)
+   🔍 Auditing weights for [dinov3_lvd]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_lvd Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.1085 | Val Accuracy: 97.84%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.0528 | Val Accuracy: 97.66%
+   📅 Epoch 3 | Loss: 0.0514 | Val Accuracy: 96.85%
+   📅 Epoch 4 | Loss: 0.0484 | Val Accuracy: 98.44%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.0388 | Val Accuracy: 98.17%
+   📅 Epoch 6 | Loss: 0.0476 | Val Accuracy: 97.64%
+   📅 Epoch 7 | Loss: 0.0310 | Val Accuracy: 99.38%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.0294 | Val Accuracy: 94.39%
+   📅 Epoch 9 | Loss: 0.0287 | Val Accuracy: 97.09%
+   📅 Epoch 10 | Loss: 0.0426 | Val Accuracy: 94.80%
+   📅 Epoch 11 | Loss: 0.0294 | Val Accuracy: 98.48%
+   📅 Epoch 12 | Loss: 0.0251 | Val Accuracy: 96.85%
+   📅 Epoch 13 | Loss: 0.0315 | Val Accuracy: 96.11%
+   📅 Epoch 14 | Loss: 0.0306 | Val Accuracy: 95.84%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 99.38%
+💾 Best Checkpoint: ./checkpoints/full_mb-frost_cls_dinov3_lvd_lr0.001_original.pth
+========================================
+

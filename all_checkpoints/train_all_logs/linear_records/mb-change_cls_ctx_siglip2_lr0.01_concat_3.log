@@ -1,0 +1,40 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-change_cls_ctx_siglip2_lr0.01_concat_3.log
+⏰ Time: 2026-02-28 13:12:27
+============================================================
+
+🚀 Training siglip2 on mb-change_cls_ctx | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 72 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 20 samples.
+   ⚙️  Config: Workers=0, BS=72, SmallData=True
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚠️ Skipping torch.compile (Small dataset or Windows detected).
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 1.0655 | Val Accuracy: 80.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 7.2743 | Val Accuracy: 80.00%
+   📅 Epoch 3 | Loss: 10.9236 | Val Accuracy: 80.00%
+   📅 Epoch 4 | Loss: 12.7986 | Val Accuracy: 80.00%
+   📅 Epoch 5 | Loss: 13.5903 | Val Accuracy: 80.00%
+   📅 Epoch 6 | Loss: 13.5486 | Val Accuracy: 80.00%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 80.00%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_ctx_siglip2_lr0.01_concat_3.pth
+========================================
+

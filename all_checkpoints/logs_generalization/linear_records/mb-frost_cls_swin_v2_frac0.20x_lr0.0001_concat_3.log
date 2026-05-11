@@ -1,0 +1,61 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_swin_v2_frac0.20x_lr0.0001_concat_3.log
+⏰ Time: 2026-04-14 09:01:53
+============================================================
+
+🚀 Training swin_v2 on mb-frost_cls | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6024 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.5115 | Val Accuracy: 92.52%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.3583 | Val Accuracy: 94.64%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.3113 | Val Accuracy: 95.79%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.2835 | Val Accuracy: 96.24%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.2651 | Val Accuracy: 95.93%
+   📅 Epoch 6 | Loss: 0.2534 | Val Accuracy: 96.18%
+   📅 Epoch 7 | Loss: 0.2396 | Val Accuracy: 96.24%
+   📅 Epoch 8 | Loss: 0.2312 | Val Accuracy: 96.49%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 0.2220 | Val Accuracy: 96.64%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 10 | Loss: 0.2130 | Val Accuracy: 96.82%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 11 | Loss: 0.2148 | Val Accuracy: 96.92%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 12 | Loss: 0.2109 | Val Accuracy: 96.49%
+   📅 Epoch 13 | Loss: 0.1990 | Val Accuracy: 96.20%
+   📅 Epoch 14 | Loss: 0.1979 | Val Accuracy: 96.60%
+   📅 Epoch 15 | Loss: 0.1963 | Val Accuracy: 96.73%
+   📅 Epoch 16 | Loss: 0.1987 | Val Accuracy: 96.82%
+   📅 Epoch 17 | Loss: 0.1949 | Val Accuracy: 96.88%
+   📅 Epoch 18 | Loss: 0.1865 | Val Accuracy: 96.66%
+   📅 Epoch 19 | Loss: 0.1852 | Val Accuracy: 96.73%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.92%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_swin_v2_lr0.0001_concat_3.pth
+========================================
+

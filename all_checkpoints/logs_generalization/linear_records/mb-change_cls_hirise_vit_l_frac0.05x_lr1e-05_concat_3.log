@@ -1,0 +1,64 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-change_cls_hirise_vit_l_frac0.05x_lr1e-05_concat_3.log
+⏰ Time: 2026-04-14 00:04:25
+============================================================
+
+🚀 Training vit_l on mb-change_cls_hirise | Mode: LINEAR | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 156 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.7035 | Val Accuracy: 42.09%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.7179 | Val Accuracy: 51.42%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.7244 | Val Accuracy: 57.99%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.6960 | Val Accuracy: 64.33%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.7119 | Val Accuracy: 67.69%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.7028 | Val Accuracy: 70.07%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 7 | Loss: 0.7021 | Val Accuracy: 70.97%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 0.6891 | Val Accuracy: 71.94%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 0.6833 | Val Accuracy: 72.99%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 10 | Loss: 0.6910 | Val Accuracy: 73.06%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 11 | Loss: 0.6985 | Val Accuracy: 73.73%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 12 | Loss: 0.6926 | Val Accuracy: 73.06%
+   📅 Epoch 13 | Loss: 0.6919 | Val Accuracy: 72.91%
+   📅 Epoch 14 | Loss: 0.6672 | Val Accuracy: 72.76%
+   📅 Epoch 15 | Loss: 0.6834 | Val Accuracy: 71.87%
+   📅 Epoch 16 | Loss: 0.7026 | Val Accuracy: 70.45%
+   📅 Epoch 17 | Loss: 0.6868 | Val Accuracy: 68.51%
+   📅 Epoch 18 | Loss: 0.6724 | Val Accuracy: 67.16%
+   📅 Epoch 19 | Loss: 0.6847 | Val Accuracy: 65.97%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 73.73%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_hirise_vit_l_lr1e-05_concat_3.pth
+========================================
+

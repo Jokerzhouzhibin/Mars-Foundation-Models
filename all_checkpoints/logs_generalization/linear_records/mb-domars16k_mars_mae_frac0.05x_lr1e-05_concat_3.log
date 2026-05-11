@@ -1,0 +1,124 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_mars_mae_frac0.05x_lr1e-05_concat_3.log
+⏰ Time: 2026-04-14 02:38:31
+============================================================
+
+🚀 Training mars_mae on mb-domars16k | Mode: LINEAR | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 565 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: mars_mae (timm_mae)
+   ℹ️  Config: in_chans=1
+   🔍 Auditing weights for [mars_mae]...
+   ✅ [PERFECT MATCH] 150/150 layers loaded (100.0%)
+
+   🔍 [Structure Check] mars_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 196, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 2304
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 2.8032 | Val Accuracy: 7.93%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 2.7885 | Val Accuracy: 8.12%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 2.7715 | Val Accuracy: 8.12%
+   📅 Epoch 4 | Loss: 2.7549 | Val Accuracy: 7.93%
+   📅 Epoch 5 | Loss: 2.7373 | Val Accuracy: 7.62%
+   📅 Epoch 6 | Loss: 2.7153 | Val Accuracy: 7.62%
+   📅 Epoch 7 | Loss: 2.7126 | Val Accuracy: 7.50%
+   📅 Epoch 8 | Loss: 2.7226 | Val Accuracy: 7.87%
+   📅 Epoch 9 | Loss: 2.7001 | Val Accuracy: 8.05%
+   📅 Epoch 10 | Loss: 2.6944 | Val Accuracy: 8.24%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 11 | Loss: 2.6889 | Val Accuracy: 8.61%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 12 | Loss: 2.6757 | Val Accuracy: 9.11%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 13 | Loss: 2.6769 | Val Accuracy: 9.05%
+   📅 Epoch 14 | Loss: 2.6607 | Val Accuracy: 9.60%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 15 | Loss: 2.6500 | Val Accuracy: 9.91%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 16 | Loss: 2.6625 | Val Accuracy: 10.72%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 17 | Loss: 2.6596 | Val Accuracy: 11.52%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 18 | Loss: 2.6471 | Val Accuracy: 12.02%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 19 | Loss: 2.6383 | Val Accuracy: 12.70%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 20 | Loss: 2.6364 | Val Accuracy: 13.20%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 21 | Loss: 2.6231 | Val Accuracy: 14.00%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 22 | Loss: 2.6315 | Val Accuracy: 14.19%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 23 | Loss: 2.6209 | Val Accuracy: 14.62%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 24 | Loss: 2.6241 | Val Accuracy: 15.24%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 25 | Loss: 2.6148 | Val Accuracy: 15.80%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 26 | Loss: 2.6115 | Val Accuracy: 16.60%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 27 | Loss: 2.6053 | Val Accuracy: 17.47%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 28 | Loss: 2.6157 | Val Accuracy: 18.28%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 29 | Loss: 2.5968 | Val Accuracy: 18.71%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 30 | Loss: 2.5879 | Val Accuracy: 19.45%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 31 | Loss: 2.5931 | Val Accuracy: 20.20%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 32 | Loss: 2.5912 | Val Accuracy: 20.94%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 33 | Loss: 2.5733 | Val Accuracy: 21.50%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 34 | Loss: 2.5758 | Val Accuracy: 22.49%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 35 | Loss: 2.5581 | Val Accuracy: 23.30%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 36 | Loss: 2.5557 | Val Accuracy: 24.16%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 37 | Loss: 2.5583 | Val Accuracy: 24.29%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 38 | Loss: 2.5497 | Val Accuracy: 25.03%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 39 | Loss: 2.5453 | Val Accuracy: 26.52%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 40 | Loss: 2.5339 | Val Accuracy: 27.70%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 41 | Loss: 2.5268 | Val Accuracy: 28.87%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 42 | Loss: 2.5291 | Val Accuracy: 29.68%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 43 | Loss: 2.5382 | Val Accuracy: 29.62%
+   📅 Epoch 44 | Loss: 2.5161 | Val Accuracy: 29.86%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 45 | Loss: 2.5189 | Val Accuracy: 31.10%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 46 | Loss: 2.5058 | Val Accuracy: 31.60%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 47 | Loss: 2.5079 | Val Accuracy: 32.16%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 48 | Loss: 2.5136 | Val Accuracy: 32.22%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 49 | Loss: 2.5082 | Val Accuracy: 33.27%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 50 | Loss: 2.5127 | Val Accuracy: 33.83%
+      ⭐ New Best! (Model saving disabled to save space)
+
+========================================
+🏆 Best Val Accuracy: 33.83%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_mars_mae_lr1e-05_concat_3.pth
+========================================
+

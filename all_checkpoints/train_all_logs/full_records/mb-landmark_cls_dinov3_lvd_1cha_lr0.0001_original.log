@@ -1,0 +1,59 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-landmark_cls_dinov3_lvd_1cha_lr0.0001_original.log
+⏰ Time: 2026-04-11 05:26:53
+============================================================
+
+🚀 Training dinov3_lvd_1cha on mb-landmark_cls | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: dinov3_lvd_1cha (dinov3_hub)
+   🔍 Auditing weights for [dinov3_lvd_1cha]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_lvd_1cha Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.5220 | Val Accuracy: 88.73%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.2053 | Val Accuracy: 92.02%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.1414 | Val Accuracy: 92.58%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.1173 | Val Accuracy: 92.75%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.1046 | Val Accuracy: 92.81%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.0887 | Val Accuracy: 93.08%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 7 | Loss: 0.0904 | Val Accuracy: 92.75%
+   📅 Epoch 8 | Loss: 0.0835 | Val Accuracy: 93.53%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 0.0753 | Val Accuracy: 94.37%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 10 | Loss: 0.0707 | Val Accuracy: 92.30%
+   📅 Epoch 11 | Loss: 0.0697 | Val Accuracy: 93.14%
+   📅 Epoch 12 | Loss: 0.0614 | Val Accuracy: 93.36%
+   📅 Epoch 13 | Loss: 0.0615 | Val Accuracy: 94.03%
+   📅 Epoch 14 | Loss: 0.0657 | Val Accuracy: 93.64%
+   📅 Epoch 15 | Loss: 0.0563 | Val Accuracy: 93.87%
+   📅 Epoch 16 | Loss: 0.0537 | Val Accuracy: 93.81%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 94.37%
+💾 Best Checkpoint: ./checkpoints/full_mb-landmark_cls_dinov3_lvd_1cha_lr0.0001_original.pth
+========================================
+

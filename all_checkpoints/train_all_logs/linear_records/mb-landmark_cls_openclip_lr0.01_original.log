@@ -1,0 +1,44 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_openclip_lr0.01_original.log
+⏰ Time: 2026-03-03 15:07:20
+============================================================
+
+🚀 Training openclip on mb-landmark_cls | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: openclip (transformers_clip)
+
+   🔍 [Structure Check] openclip Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 1.2380 | Val Accuracy: 90.46%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.3167 | Val Accuracy: 91.97%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1985 | Val Accuracy: 92.25%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1996 | Val Accuracy: 91.63%
+   📅 Epoch 5 | Loss: 0.1854 | Val Accuracy: 90.63%
+   📅 Epoch 6 | Loss: 0.1762 | Val Accuracy: 91.30%
+   📅 Epoch 7 | Loss: 0.1637 | Val Accuracy: 91.08%
+   📅 Epoch 8 | Loss: 0.1652 | Val Accuracy: 92.14%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 92.25%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_openclip_lr0.01_original.pth
+========================================
+

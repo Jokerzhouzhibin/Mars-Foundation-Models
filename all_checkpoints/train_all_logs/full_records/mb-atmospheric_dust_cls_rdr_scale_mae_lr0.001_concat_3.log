@@ -1,0 +1,99 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-atmospheric_dust_cls_rdr_scale_mae_lr0.001_concat_3.log
+⏰ Time: 2026-02-28 08:01:22
+============================================================
+
+🚀 Training scale_mae on mb-atmospheric_dust_cls_rdr | Mode: FULL | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: scale_mae (scalemae)
+   🔍 Auditing weights for [scale_mae]...
+   ⚠️ [PARTIAL MATCH] 344/435 layers loaded (79.1%)
+
+   🔍 [Structure Check] scale_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+      📏 ScaleMAE GSD: 0.3 m/px
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.7169 | Val Accuracy: 48.98%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.5937 | Val Accuracy: 76.97%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.5028 | Val Accuracy: 78.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.4872 | Val Accuracy: 79.19%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.4778 | Val Accuracy: 79.56%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.4840 | Val Accuracy: 78.04%
+   📅 Epoch 7 | Loss: 0.4613 | Val Accuracy: 76.01%
+   📅 Epoch 8 | Loss: 0.4577 | Val Accuracy: 79.86%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.4503 | Val Accuracy: 79.50%
+   📅 Epoch 10 | Loss: 0.4426 | Val Accuracy: 79.15%
+   📅 Epoch 11 | Loss: 0.4319 | Val Accuracy: 80.96%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.4195 | Val Accuracy: 82.85%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.3989 | Val Accuracy: 84.18%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 0.4080 | Val Accuracy: 83.10%
+   📅 Epoch 15 | Loss: 0.3967 | Val Accuracy: 84.68%
+      ⭐ New Best! Saved.
+   📅 Epoch 16 | Loss: 0.3971 | Val Accuracy: 84.91%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 0.3818 | Val Accuracy: 84.33%
+   📅 Epoch 18 | Loss: 0.3756 | Val Accuracy: 82.97%
+   📅 Epoch 19 | Loss: 0.3863 | Val Accuracy: 85.96%
+      ⭐ New Best! Saved.
+   📅 Epoch 20 | Loss: 0.3762 | Val Accuracy: 83.76%
+   📅 Epoch 21 | Loss: 0.3588 | Val Accuracy: 87.17%
+      ⭐ New Best! Saved.
+   📅 Epoch 22 | Loss: 0.3534 | Val Accuracy: 87.07%
+   📅 Epoch 23 | Loss: 0.3247 | Val Accuracy: 88.61%
+      ⭐ New Best! Saved.
+   📅 Epoch 24 | Loss: 0.3098 | Val Accuracy: 88.03%
+   📅 Epoch 25 | Loss: 0.2696 | Val Accuracy: 88.80%
+      ⭐ New Best! Saved.
+   📅 Epoch 26 | Loss: 0.2507 | Val Accuracy: 88.93%
+      ⭐ New Best! Saved.
+   📅 Epoch 27 | Loss: 0.2310 | Val Accuracy: 91.18%
+      ⭐ New Best! Saved.
+   📅 Epoch 28 | Loss: 0.2222 | Val Accuracy: 92.56%
+      ⭐ New Best! Saved.
+   📅 Epoch 29 | Loss: 0.2077 | Val Accuracy: 89.28%
+   📅 Epoch 30 | Loss: 0.1839 | Val Accuracy: 92.19%
+   📅 Epoch 31 | Loss: 0.1929 | Val Accuracy: 93.06%
+      ⭐ New Best! Saved.
+   📅 Epoch 32 | Loss: 0.1771 | Val Accuracy: 92.35%
+   📅 Epoch 33 | Loss: 0.1691 | Val Accuracy: 92.92%
+   📅 Epoch 34 | Loss: 0.1640 | Val Accuracy: 93.50%
+      ⭐ New Best! Saved.
+   📅 Epoch 35 | Loss: 0.1612 | Val Accuracy: 94.32%
+      ⭐ New Best! Saved.
+   📅 Epoch 36 | Loss: 0.1692 | Val Accuracy: 93.63%
+   📅 Epoch 37 | Loss: 0.1517 | Val Accuracy: 93.48%
+   📅 Epoch 38 | Loss: 0.1659 | Val Accuracy: 93.08%
+   📅 Epoch 39 | Loss: 0.1494 | Val Accuracy: 92.71%
+   📅 Epoch 40 | Loss: 0.1424 | Val Accuracy: 93.82%
+   📅 Epoch 41 | Loss: 0.1576 | Val Accuracy: 93.19%
+   📅 Epoch 42 | Loss: 0.1449 | Val Accuracy: 93.17%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 94.32%
+💾 Best Checkpoint: ./checkpoints/full_mb-atmospheric_dust_cls_rdr_scale_mae_lr0.001_concat_3.pth
+========================================
+

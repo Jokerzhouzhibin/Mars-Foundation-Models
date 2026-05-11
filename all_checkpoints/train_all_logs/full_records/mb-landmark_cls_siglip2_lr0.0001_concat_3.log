@@ -1,0 +1,57 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-landmark_cls_siglip2_lr0.0001_concat_3.log
+⏰ Time: 2026-03-03 16:30:17
+============================================================
+
+🚀 Training siglip2 on mb-landmark_cls | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.5639 | Val Accuracy: 88.85%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.3012 | Val Accuracy: 89.40%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.2204 | Val Accuracy: 88.85%
+   📅 Epoch 4 | Loss: 0.1920 | Val Accuracy: 90.41%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.1654 | Val Accuracy: 90.96%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.1439 | Val Accuracy: 91.91%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.1389 | Val Accuracy: 91.97%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.1243 | Val Accuracy: 92.53%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.1155 | Val Accuracy: 92.97%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.1354 | Val Accuracy: 92.53%
+   📅 Epoch 11 | Loss: 0.1283 | Val Accuracy: 90.07%
+   📅 Epoch 12 | Loss: 0.1193 | Val Accuracy: 92.02%
+   📅 Epoch 13 | Loss: 0.1205 | Val Accuracy: 92.08%
+   📅 Epoch 14 | Loss: 0.1274 | Val Accuracy: 92.02%
+   📅 Epoch 15 | Loss: 0.1131 | Val Accuracy: 91.75%
+   📅 Epoch 16 | Loss: 0.1164 | Val Accuracy: 92.41%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 92.97%
+💾 Best Checkpoint: ./checkpoints/full_mb-landmark_cls_siglip2_lr0.0001_concat_3.pth
+========================================
+

@@ -1,0 +1,59 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_siglip2_lr0.0001_concat_3.log
+⏰ Time: 2026-03-03 05:43:54
+============================================================
+
+🚀 Training siglip2 on mb-frost_cls | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.4822 | Val Accuracy: 93.59%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.3258 | Val Accuracy: 94.65%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.2703 | Val Accuracy: 95.09%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.2362 | Val Accuracy: 95.53%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.2150 | Val Accuracy: 95.52%
+   📅 Epoch 6 | Loss: 0.1981 | Val Accuracy: 95.75%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.1869 | Val Accuracy: 95.85%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.1747 | Val Accuracy: 95.80%
+   📅 Epoch 9 | Loss: 0.1662 | Val Accuracy: 96.02%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.1576 | Val Accuracy: 96.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.1534 | Val Accuracy: 95.85%
+   📅 Epoch 12 | Loss: 0.1448 | Val Accuracy: 96.17%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.1431 | Val Accuracy: 95.35%
+   📅 Epoch 14 | Loss: 0.1388 | Val Accuracy: 95.75%
+   📅 Epoch 15 | Loss: 0.1332 | Val Accuracy: 95.64%
+   📅 Epoch 16 | Loss: 0.1282 | Val Accuracy: 96.07%
+   📅 Epoch 17 | Loss: 0.1249 | Val Accuracy: 96.16%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.17%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_siglip2_lr0.0001_concat_3.pth
+========================================
+

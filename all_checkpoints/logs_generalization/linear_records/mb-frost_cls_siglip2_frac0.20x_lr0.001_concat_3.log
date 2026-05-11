@@ -1,0 +1,49 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_siglip2_frac0.20x_lr0.001_concat_3.log
+⏰ Time: 2026-04-14 14:24:00
+============================================================
+
+🚀 Training siglip2 on mb-frost_cls | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6024 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.4551 | Val Accuracy: 93.25%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.2286 | Val Accuracy: 94.96%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.1837 | Val Accuracy: 94.51%
+   📅 Epoch 4 | Loss: 0.1734 | Val Accuracy: 94.08%
+   📅 Epoch 5 | Loss: 0.1526 | Val Accuracy: 93.81%
+   📅 Epoch 6 | Loss: 0.1387 | Val Accuracy: 96.15%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 7 | Loss: 0.1383 | Val Accuracy: 95.30%
+   📅 Epoch 8 | Loss: 0.1238 | Val Accuracy: 95.62%
+   📅 Epoch 9 | Loss: 0.1182 | Val Accuracy: 95.91%
+   📅 Epoch 10 | Loss: 0.1115 | Val Accuracy: 95.81%
+   📅 Epoch 11 | Loss: 0.1135 | Val Accuracy: 94.49%
+   📅 Epoch 12 | Loss: 0.1070 | Val Accuracy: 94.12%
+   📅 Epoch 13 | Loss: 0.1086 | Val Accuracy: 95.87%
+   📅 Epoch 14 | Loss: 0.1049 | Val Accuracy: 95.80%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.15%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_siglip2_lr0.001_concat_3.pth
+========================================
+

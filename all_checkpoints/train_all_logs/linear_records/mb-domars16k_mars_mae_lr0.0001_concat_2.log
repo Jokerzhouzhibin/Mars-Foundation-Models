@@ -1,0 +1,106 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_mars_mae_lr0.0001_concat_2.log
+⏰ Time: 2026-03-01 21:07:49
+============================================================
+
+🚀 Training mars_mae on mb-domars16k | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: mars_mae (timm_mae)
+   ℹ️  Config: in_chans=1
+   🔍 Auditing weights for [mars_mae]...
+   ✅ [PERFECT MATCH] 150/150 layers loaded (100.0%)
+
+   🔍 [Structure Check] mars_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 196, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 1536
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 2.5940 | Val Accuracy: 34.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 2.3873 | Val Accuracy: 53.22%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 2.2181 | Val Accuracy: 60.16%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 2.0719 | Val Accuracy: 63.82%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 1.9466 | Val Accuracy: 65.68%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 1.8460 | Val Accuracy: 68.15%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 1.7522 | Val Accuracy: 68.59%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 1.6717 | Val Accuracy: 69.70%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 1.6033 | Val Accuracy: 71.69%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 1.5488 | Val Accuracy: 72.06%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 1.4838 | Val Accuracy: 73.48%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 1.4361 | Val Accuracy: 72.92%
+   📅 Epoch 13 | Loss: 1.3955 | Val Accuracy: 74.29%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 1.3590 | Val Accuracy: 74.54%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 1.3222 | Val Accuracy: 74.91%
+      ⭐ New Best! Saved.
+   📅 Epoch 16 | Loss: 1.2881 | Val Accuracy: 75.03%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 1.2561 | Val Accuracy: 75.59%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 1.2316 | Val Accuracy: 75.65%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 1.2076 | Val Accuracy: 75.84%
+      ⭐ New Best! Saved.
+   📅 Epoch 20 | Loss: 1.1768 | Val Accuracy: 76.70%
+      ⭐ New Best! Saved.
+   📅 Epoch 21 | Loss: 1.1666 | Val Accuracy: 76.33%
+   📅 Epoch 22 | Loss: 1.1359 | Val Accuracy: 77.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 23 | Loss: 1.1187 | Val Accuracy: 77.63%
+      ⭐ New Best! Saved.
+   📅 Epoch 24 | Loss: 1.1061 | Val Accuracy: 77.45%
+   📅 Epoch 25 | Loss: 1.0892 | Val Accuracy: 77.63%
+   📅 Epoch 26 | Loss: 1.0662 | Val Accuracy: 78.50%
+      ⭐ New Best! Saved.
+   📅 Epoch 27 | Loss: 1.0579 | Val Accuracy: 78.44%
+   📅 Epoch 28 | Loss: 1.0479 | Val Accuracy: 78.93%
+      ⭐ New Best! Saved.
+   📅 Epoch 29 | Loss: 1.0276 | Val Accuracy: 79.18%
+      ⭐ New Best! Saved.
+   📅 Epoch 30 | Loss: 1.0097 | Val Accuracy: 79.37%
+      ⭐ New Best! Saved.
+   📅 Epoch 31 | Loss: 1.0058 | Val Accuracy: 79.24%
+   📅 Epoch 32 | Loss: 0.9902 | Val Accuracy: 79.55%
+      ⭐ New Best! Saved.
+   📅 Epoch 33 | Loss: 0.9849 | Val Accuracy: 79.80%
+      ⭐ New Best! Saved.
+   📅 Epoch 34 | Loss: 0.9685 | Val Accuracy: 79.74%
+   📅 Epoch 35 | Loss: 0.9591 | Val Accuracy: 79.93%
+      ⭐ New Best! Saved.
+   📅 Epoch 36 | Loss: 0.9398 | Val Accuracy: 79.93%
+   📅 Epoch 37 | Loss: 0.9352 | Val Accuracy: 80.36%
+      ⭐ New Best! Saved.
+   📅 Epoch 38 | Loss: 0.9280 | Val Accuracy: 80.48%
+      ⭐ New Best! Saved.
+   📅 Epoch 39 | Loss: 0.9174 | Val Accuracy: 80.67%
+      ⭐ New Best! Saved.
+   📅 Epoch 40 | Loss: 0.9096 | Val Accuracy: 80.79%
+      ⭐ New Best! Saved.
+
+========================================
+🏆 Best Val Accuracy: 80.79%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_mars_mae_lr0.0001_concat_2.pth
+========================================
+

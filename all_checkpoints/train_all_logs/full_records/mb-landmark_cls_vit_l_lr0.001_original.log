@@ -1,0 +1,55 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-landmark_cls_vit_l_lr0.001_original.log
+⏰ Time: 2026-03-04 01:22:26
+============================================================
+
+🚀 Training vit_l on mb-landmark_cls | Mode: FULL | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.3604 | Val Accuracy: 88.68%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2149 | Val Accuracy: 87.45%
+   📅 Epoch 3 | Loss: 0.1945 | Val Accuracy: 90.96%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1868 | Val Accuracy: 89.57%
+   📅 Epoch 5 | Loss: 0.1851 | Val Accuracy: 89.74%
+   📅 Epoch 6 | Loss: 0.1691 | Val Accuracy: 89.46%
+   📅 Epoch 7 | Loss: 0.1812 | Val Accuracy: 91.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.1754 | Val Accuracy: 89.57%
+   📅 Epoch 9 | Loss: 0.1574 | Val Accuracy: 91.24%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.1418 | Val Accuracy: 90.52%
+   📅 Epoch 11 | Loss: 0.1598 | Val Accuracy: 89.85%
+   📅 Epoch 12 | Loss: 0.1433 | Val Accuracy: 89.46%
+   📅 Epoch 13 | Loss: 0.1406 | Val Accuracy: 89.96%
+   📅 Epoch 14 | Loss: 0.1460 | Val Accuracy: 87.51%
+   📅 Epoch 15 | Loss: 0.1255 | Val Accuracy: 90.02%
+   📅 Epoch 16 | Loss: 0.1228 | Val Accuracy: 87.90%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 91.24%
+💾 Best Checkpoint: ./checkpoints/full_mb-landmark_cls_vit_l_lr0.001_original.pth
+========================================
+

@@ -1,0 +1,105 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_dinov3_lvd_1cha_lr0.0001_original.log
+⏰ Time: 2026-04-02 10:43:33
+============================================================
+
+🚀 Training dinov3_lvd_1cha on mb-domars16k | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: dinov3_lvd_1cha (dinov3_hub)
+   🔍 Auditing weights for [dinov3_lvd_1cha]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_lvd_1cha Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 2.4948 | Val Accuracy: 37.55%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 2.0955 | Val Accuracy: 59.54%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 1.7982 | Val Accuracy: 66.60%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 1.5755 | Val Accuracy: 70.07%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 1.4047 | Val Accuracy: 71.44%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 1.2731 | Val Accuracy: 73.61%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 1.1704 | Val Accuracy: 73.92%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 1.0922 | Val Accuracy: 74.78%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 1.0277 | Val Accuracy: 75.28%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.9690 | Val Accuracy: 76.77%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.9289 | Val Accuracy: 77.26%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.8910 | Val Accuracy: 78.07%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.8560 | Val Accuracy: 78.25%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 0.8227 | Val Accuracy: 78.81%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.8011 | Val Accuracy: 78.93%
+      ⭐ New Best! Saved.
+   📅 Epoch 16 | Loss: 0.7795 | Val Accuracy: 79.31%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 0.7611 | Val Accuracy: 79.62%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 0.7409 | Val Accuracy: 79.55%
+   📅 Epoch 19 | Loss: 0.7280 | Val Accuracy: 80.11%
+      ⭐ New Best! Saved.
+   📅 Epoch 20 | Loss: 0.7068 | Val Accuracy: 79.99%
+   📅 Epoch 21 | Loss: 0.6960 | Val Accuracy: 80.42%
+      ⭐ New Best! Saved.
+   📅 Epoch 22 | Loss: 0.6836 | Val Accuracy: 80.36%
+   📅 Epoch 23 | Loss: 0.6717 | Val Accuracy: 80.55%
+      ⭐ New Best! Saved.
+   📅 Epoch 24 | Loss: 0.6575 | Val Accuracy: 80.79%
+      ⭐ New Best! Saved.
+   📅 Epoch 25 | Loss: 0.6526 | Val Accuracy: 80.86%
+      ⭐ New Best! Saved.
+   📅 Epoch 26 | Loss: 0.6351 | Val Accuracy: 80.79%
+   📅 Epoch 27 | Loss: 0.6344 | Val Accuracy: 80.92%
+      ⭐ New Best! Saved.
+   📅 Epoch 28 | Loss: 0.6268 | Val Accuracy: 81.04%
+      ⭐ New Best! Saved.
+   📅 Epoch 29 | Loss: 0.6171 | Val Accuracy: 81.23%
+      ⭐ New Best! Saved.
+   📅 Epoch 30 | Loss: 0.6076 | Val Accuracy: 81.35%
+      ⭐ New Best! Saved.
+   📅 Epoch 31 | Loss: 0.5995 | Val Accuracy: 81.60%
+      ⭐ New Best! Saved.
+   📅 Epoch 32 | Loss: 0.5863 | Val Accuracy: 81.78%
+      ⭐ New Best! Saved.
+   📅 Epoch 33 | Loss: 0.5866 | Val Accuracy: 81.66%
+   📅 Epoch 34 | Loss: 0.5814 | Val Accuracy: 82.28%
+      ⭐ New Best! Saved.
+   📅 Epoch 35 | Loss: 0.5708 | Val Accuracy: 82.22%
+   📅 Epoch 36 | Loss: 0.5703 | Val Accuracy: 82.47%
+      ⭐ New Best! Saved.
+   📅 Epoch 37 | Loss: 0.5644 | Val Accuracy: 82.28%
+   📅 Epoch 38 | Loss: 0.5594 | Val Accuracy: 82.59%
+      ⭐ New Best! Saved.
+   📅 Epoch 39 | Loss: 0.5528 | Val Accuracy: 82.84%
+      ⭐ New Best! Saved.
+   📅 Epoch 40 | Loss: 0.5472 | Val Accuracy: 82.71%
+
+========================================
+🏆 Best Val Accuracy: 82.84%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_dinov3_lvd_1cha_lr0.0001_original.pth
+========================================
+

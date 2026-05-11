@@ -1,0 +1,101 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_openclip_lr0.0001_original.log
+⏰ Time: 2026-03-01 13:01:12
+============================================================
+
+🚀 Training openclip on mb-domars16k | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: openclip (transformers_clip)
+
+   🔍 [Structure Check] openclip Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 2.4427 | Val Accuracy: 44.80%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 1.9340 | Val Accuracy: 58.74%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 1.6365 | Val Accuracy: 66.11%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 1.4262 | Val Accuracy: 68.28%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 1.2969 | Val Accuracy: 70.07%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 1.1861 | Val Accuracy: 73.23%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 1.1151 | Val Accuracy: 72.86%
+   📅 Epoch 8 | Loss: 1.0499 | Val Accuracy: 73.92%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.9976 | Val Accuracy: 75.40%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.9501 | Val Accuracy: 75.96%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.9184 | Val Accuracy: 76.27%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.8952 | Val Accuracy: 77.39%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.8684 | Val Accuracy: 77.63%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 0.8487 | Val Accuracy: 78.07%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.8269 | Val Accuracy: 78.00%
+   📅 Epoch 16 | Loss: 0.8044 | Val Accuracy: 78.75%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 0.7932 | Val Accuracy: 78.62%
+   📅 Epoch 18 | Loss: 0.7815 | Val Accuracy: 79.37%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 0.7707 | Val Accuracy: 79.86%
+      ⭐ New Best! Saved.
+   📅 Epoch 20 | Loss: 0.7567 | Val Accuracy: 79.93%
+      ⭐ New Best! Saved.
+   📅 Epoch 21 | Loss: 0.7436 | Val Accuracy: 79.74%
+   📅 Epoch 22 | Loss: 0.7352 | Val Accuracy: 80.05%
+      ⭐ New Best! Saved.
+   📅 Epoch 23 | Loss: 0.7197 | Val Accuracy: 80.30%
+      ⭐ New Best! Saved.
+   📅 Epoch 24 | Loss: 0.7160 | Val Accuracy: 80.55%
+      ⭐ New Best! Saved.
+   📅 Epoch 25 | Loss: 0.7111 | Val Accuracy: 80.92%
+      ⭐ New Best! Saved.
+   📅 Epoch 26 | Loss: 0.7031 | Val Accuracy: 81.10%
+      ⭐ New Best! Saved.
+   📅 Epoch 27 | Loss: 0.7000 | Val Accuracy: 80.92%
+   📅 Epoch 28 | Loss: 0.6833 | Val Accuracy: 81.54%
+      ⭐ New Best! Saved.
+   📅 Epoch 29 | Loss: 0.6851 | Val Accuracy: 81.91%
+      ⭐ New Best! Saved.
+   📅 Epoch 30 | Loss: 0.6666 | Val Accuracy: 81.97%
+      ⭐ New Best! Saved.
+   📅 Epoch 31 | Loss: 0.6651 | Val Accuracy: 82.28%
+      ⭐ New Best! Saved.
+   📅 Epoch 32 | Loss: 0.6652 | Val Accuracy: 82.40%
+      ⭐ New Best! Saved.
+   📅 Epoch 33 | Loss: 0.6605 | Val Accuracy: 82.09%
+   📅 Epoch 34 | Loss: 0.6565 | Val Accuracy: 83.02%
+      ⭐ New Best! Saved.
+   📅 Epoch 35 | Loss: 0.6463 | Val Accuracy: 82.59%
+   📅 Epoch 36 | Loss: 0.6437 | Val Accuracy: 82.90%
+   📅 Epoch 37 | Loss: 0.6388 | Val Accuracy: 82.84%
+   📅 Epoch 38 | Loss: 0.6412 | Val Accuracy: 82.90%
+   📅 Epoch 39 | Loss: 0.6348 | Val Accuracy: 83.09%
+      ⭐ New Best! Saved.
+   📅 Epoch 40 | Loss: 0.6307 | Val Accuracy: 83.27%
+      ⭐ New Best! Saved.
+
+========================================
+🏆 Best Val Accuracy: 83.27%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_openclip_lr0.0001_original.pth
+========================================
+

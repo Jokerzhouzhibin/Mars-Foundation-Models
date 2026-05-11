@@ -1,0 +1,103 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_openclip_lr0.0001_original.log
+⏰ Time: 2026-03-03 16:04:22
+============================================================
+
+🚀 Training openclip on mb-landmark_cls | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: openclip (transformers_clip)
+
+   🔍 [Structure Check] openclip Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 1.3383 | Val Accuracy: 82.65%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.7082 | Val Accuracy: 82.65%
+   📅 Epoch 3 | Loss: 0.6233 | Val Accuracy: 83.05%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.5729 | Val Accuracy: 83.83%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.5210 | Val Accuracy: 84.33%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.4846 | Val Accuracy: 85.39%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.4428 | Val Accuracy: 86.34%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.4235 | Val Accuracy: 86.67%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.4051 | Val Accuracy: 87.06%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.3836 | Val Accuracy: 87.34%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.3654 | Val Accuracy: 87.51%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.3530 | Val Accuracy: 87.79%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.3352 | Val Accuracy: 87.90%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 0.3320 | Val Accuracy: 88.34%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.3170 | Val Accuracy: 88.57%
+      ⭐ New Best! Saved.
+   📅 Epoch 16 | Loss: 0.3130 | Val Accuracy: 89.07%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 0.2980 | Val Accuracy: 89.12%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 0.2935 | Val Accuracy: 89.29%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 0.2924 | Val Accuracy: 89.57%
+      ⭐ New Best! Saved.
+   📅 Epoch 20 | Loss: 0.2799 | Val Accuracy: 89.74%
+      ⭐ New Best! Saved.
+   📅 Epoch 21 | Loss: 0.2779 | Val Accuracy: 90.02%
+      ⭐ New Best! Saved.
+   📅 Epoch 22 | Loss: 0.2663 | Val Accuracy: 90.24%
+      ⭐ New Best! Saved.
+   📅 Epoch 23 | Loss: 0.2711 | Val Accuracy: 90.52%
+      ⭐ New Best! Saved.
+   📅 Epoch 24 | Loss: 0.2663 | Val Accuracy: 90.69%
+      ⭐ New Best! Saved.
+   📅 Epoch 25 | Loss: 0.2529 | Val Accuracy: 90.91%
+      ⭐ New Best! Saved.
+   📅 Epoch 26 | Loss: 0.2560 | Val Accuracy: 90.91%
+   📅 Epoch 27 | Loss: 0.2568 | Val Accuracy: 91.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 28 | Loss: 0.2529 | Val Accuracy: 91.02%
+   📅 Epoch 29 | Loss: 0.2404 | Val Accuracy: 91.36%
+      ⭐ New Best! Saved.
+   📅 Epoch 30 | Loss: 0.2457 | Val Accuracy: 91.52%
+      ⭐ New Best! Saved.
+   📅 Epoch 31 | Loss: 0.2386 | Val Accuracy: 91.69%
+      ⭐ New Best! Saved.
+   📅 Epoch 32 | Loss: 0.2415 | Val Accuracy: 91.69%
+   📅 Epoch 33 | Loss: 0.2343 | Val Accuracy: 91.86%
+      ⭐ New Best! Saved.
+   📅 Epoch 34 | Loss: 0.2286 | Val Accuracy: 91.63%
+   📅 Epoch 35 | Loss: 0.2331 | Val Accuracy: 91.80%
+   📅 Epoch 36 | Loss: 0.2256 | Val Accuracy: 91.97%
+      ⭐ New Best! Saved.
+   📅 Epoch 37 | Loss: 0.2277 | Val Accuracy: 92.14%
+      ⭐ New Best! Saved.
+   📅 Epoch 38 | Loss: 0.2200 | Val Accuracy: 92.08%
+   📅 Epoch 39 | Loss: 0.2253 | Val Accuracy: 92.36%
+      ⭐ New Best! Saved.
+   📅 Epoch 40 | Loss: 0.2188 | Val Accuracy: 92.25%
+
+========================================
+🏆 Best Val Accuracy: 92.36%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_openclip_lr0.0001_original.pth
+========================================
+

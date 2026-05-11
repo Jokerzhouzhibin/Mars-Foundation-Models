@@ -1,0 +1,51 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_openclip_frac0.05x_lr0.001_concat_3.log
+⏰ Time: 2026-04-14 16:22:01
+============================================================
+
+🚀 Training openclip on mb-frost_cls | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 1506 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: openclip (transformers_clip)
+
+   🔍 [Structure Check] openclip Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.6958 | Val Accuracy: 73.72%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.3550 | Val Accuracy: 92.30%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.2748 | Val Accuracy: 93.87%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.2550 | Val Accuracy: 83.00%
+   📅 Epoch 5 | Loss: 0.2331 | Val Accuracy: 95.06%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.1962 | Val Accuracy: 96.85%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 7 | Loss: 0.1847 | Val Accuracy: 96.75%
+   📅 Epoch 8 | Loss: 0.1745 | Val Accuracy: 96.52%
+   📅 Epoch 9 | Loss: 0.1665 | Val Accuracy: 95.52%
+   📅 Epoch 10 | Loss: 0.1509 | Val Accuracy: 95.86%
+   📅 Epoch 11 | Loss: 0.1566 | Val Accuracy: 96.00%
+   📅 Epoch 12 | Loss: 0.1423 | Val Accuracy: 96.85%
+   📅 Epoch 13 | Loss: 0.1268 | Val Accuracy: 95.31%
+   📅 Epoch 14 | Loss: 0.1338 | Val Accuracy: 95.22%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.85%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_openclip_lr0.001_concat_3.pth
+========================================
+

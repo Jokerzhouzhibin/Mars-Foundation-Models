@@ -1,0 +1,51 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-frost_cls_dinov2_l14_lr0.0001_concat_3.log
+⏰ Time: 2026-03-02 04:06:15
+============================================================
+
+🚀 Training dinov2_l14 on mb-frost_cls | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: dinov2_l14 (dinov2_hub)
+   🔍 Auditing weights for [dinov2_l14]...
+   ✅ [PERFECT MATCH] 343/343 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov2_l14 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.0861 | Val Accuracy: 97.22%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.0771 | Val Accuracy: 96.82%
+   📅 Epoch 3 | Loss: 0.0424 | Val Accuracy: 97.24%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.0264 | Val Accuracy: 96.76%
+   📅 Epoch 5 | Loss: 0.0250 | Val Accuracy: 96.86%
+   📅 Epoch 6 | Loss: 0.0192 | Val Accuracy: 97.77%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.0183 | Val Accuracy: 97.47%
+   📅 Epoch 8 | Loss: 0.0189 | Val Accuracy: 96.89%
+   📅 Epoch 9 | Loss: 0.0164 | Val Accuracy: 97.53%
+   📅 Epoch 10 | Loss: 0.0190 | Val Accuracy: 97.00%
+   📅 Epoch 11 | Loss: 0.0184 | Val Accuracy: 97.46%
+   📅 Epoch 12 | Loss: 0.0159 | Val Accuracy: 97.66%
+   📅 Epoch 13 | Loss: 0.0161 | Val Accuracy: 97.71%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 97.77%
+💾 Best Checkpoint: ./checkpoints/full_mb-frost_cls_dinov2_l14_lr0.0001_concat_3.pth
+========================================
+

@@ -1,0 +1,66 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-change_cls_ctx_dinov3_sat_lr1e-05_concat_3.log
+⏰ Time: 2026-02-28 10:38:44
+============================================================
+
+🚀 Training dinov3_sat on mb-change_cls_ctx | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 72 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 20 samples.
+   ⚙️  Config: Workers=0, BS=32, SmallData=True
+
+>>> Loading Model: dinov3_sat (dinov3_hub)
+   🔍 Auditing weights for [dinov3_sat]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_sat Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   ⚠️ Skipping torch.compile (Small dataset or Windows detected).
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.7027 | Val Accuracy: 45.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.7012 | Val Accuracy: 40.00%
+   📅 Epoch 3 | Loss: 0.6871 | Val Accuracy: 45.00%
+   📅 Epoch 4 | Loss: 0.6800 | Val Accuracy: 55.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.6837 | Val Accuracy: 60.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.6696 | Val Accuracy: 60.00%
+   📅 Epoch 7 | Loss: 0.6743 | Val Accuracy: 60.00%
+   📅 Epoch 8 | Loss: 0.6403 | Val Accuracy: 65.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.6459 | Val Accuracy: 70.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.6345 | Val Accuracy: 70.00%
+   📅 Epoch 11 | Loss: 0.6241 | Val Accuracy: 70.00%
+   📅 Epoch 12 | Loss: 0.6203 | Val Accuracy: 75.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.6151 | Val Accuracy: 75.00%
+   📅 Epoch 14 | Loss: 0.6214 | Val Accuracy: 75.00%
+   📅 Epoch 15 | Loss: 0.6021 | Val Accuracy: 75.00%
+   📅 Epoch 16 | Loss: 0.6017 | Val Accuracy: 75.00%
+   📅 Epoch 17 | Loss: 0.5834 | Val Accuracy: 80.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 0.5877 | Val Accuracy: 80.00%
+   📅 Epoch 19 | Loss: 0.5717 | Val Accuracy: 80.00%
+   📅 Epoch 20 | Loss: 0.5702 | Val Accuracy: 80.00%
+   📅 Epoch 21 | Loss: 0.5613 | Val Accuracy: 80.00%
+   📅 Epoch 22 | Loss: 0.5522 | Val Accuracy: 80.00%
+   📅 Epoch 23 | Loss: 0.5555 | Val Accuracy: 80.00%
+   📅 Epoch 24 | Loss: 0.5515 | Val Accuracy: 80.00%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 80.00%
+💾 Best Checkpoint: ./checkpoints/full_mb-change_cls_ctx_dinov3_sat_lr1e-05_concat_3.pth
+========================================
+

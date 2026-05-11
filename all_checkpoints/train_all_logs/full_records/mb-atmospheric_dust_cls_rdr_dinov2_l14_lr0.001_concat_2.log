@@ -1,0 +1,72 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-atmospheric_dust_cls_rdr_dinov2_l14_lr0.001_concat_2.log
+⏰ Time: 2026-02-28 00:43:53
+============================================================
+
+🚀 Training dinov2_l14 on mb-atmospheric_dust_cls_rdr | Mode: FULL | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: dinov2_l14 (dinov2_hub)
+   🔍 Auditing weights for [dinov2_l14]...
+   ✅ [PERFECT MATCH] 343/343 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov2_l14 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.6875 | Val Accuracy: 69.51%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.3512 | Val Accuracy: 48.98%
+   📅 Epoch 3 | Loss: 0.3088 | Val Accuracy: 92.64%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.2455 | Val Accuracy: 86.98%
+   📅 Epoch 5 | Loss: 0.2327 | Val Accuracy: 92.00%
+   📅 Epoch 6 | Loss: 0.2146 | Val Accuracy: 86.84%
+   📅 Epoch 7 | Loss: 0.2300 | Val Accuracy: 91.12%
+   📅 Epoch 8 | Loss: 0.1964 | Val Accuracy: 92.75%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.2024 | Val Accuracy: 92.33%
+   📅 Epoch 10 | Loss: 0.1843 | Val Accuracy: 91.83%
+   📅 Epoch 11 | Loss: 0.2018 | Val Accuracy: 93.34%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.1753 | Val Accuracy: 91.47%
+   📅 Epoch 13 | Loss: 0.2164 | Val Accuracy: 82.01%
+   📅 Epoch 14 | Loss: 0.2237 | Val Accuracy: 91.77%
+   📅 Epoch 15 | Loss: 0.1992 | Val Accuracy: 91.20%
+   📅 Epoch 16 | Loss: 0.1561 | Val Accuracy: 92.19%
+   📅 Epoch 17 | Loss: 0.1794 | Val Accuracy: 93.48%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 0.1556 | Val Accuracy: 92.35%
+   📅 Epoch 19 | Loss: 0.1593 | Val Accuracy: 92.17%
+   📅 Epoch 20 | Loss: 0.1511 | Val Accuracy: 91.83%
+   📅 Epoch 21 | Loss: 0.1601 | Val Accuracy: 91.68%
+   📅 Epoch 22 | Loss: 0.1485 | Val Accuracy: 91.60%
+   📅 Epoch 23 | Loss: 0.1597 | Val Accuracy: 92.92%
+   📅 Epoch 24 | Loss: 0.1464 | Val Accuracy: 93.98%
+      ⭐ New Best! Saved.
+   📅 Epoch 25 | Loss: 0.1418 | Val Accuracy: 92.69%
+   📅 Epoch 26 | Loss: 0.1410 | Val Accuracy: 93.27%
+   📅 Epoch 27 | Loss: 0.1491 | Val Accuracy: 93.63%
+   📅 Epoch 28 | Loss: 0.1424 | Val Accuracy: 93.04%
+   📅 Epoch 29 | Loss: 0.1432 | Val Accuracy: 93.27%
+   📅 Epoch 30 | Loss: 0.1481 | Val Accuracy: 92.58%
+   📅 Epoch 31 | Loss: 0.1398 | Val Accuracy: 93.81%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 93.98%
+💾 Best Checkpoint: ./checkpoints/full_mb-atmospheric_dust_cls_rdr_dinov2_l14_lr0.001_concat_2.pth
+========================================
+

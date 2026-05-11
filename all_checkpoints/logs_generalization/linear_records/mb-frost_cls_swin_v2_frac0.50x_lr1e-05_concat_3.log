@@ -1,0 +1,88 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_swin_v2_frac0.50x_lr1e-05_concat_3.log
+⏰ Time: 2026-04-14 09:29:15
+============================================================
+
+🚀 Training swin_v2 on mb-frost_cls | Mode: LINEAR | LR: 1e-05
+   📂 [TRAIN] Loading 2 shards...
+   ✅ Loaded 15062 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.6670 | Val Accuracy: 81.94%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.5364 | Val Accuracy: 89.22%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.4647 | Val Accuracy: 91.26%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.4183 | Val Accuracy: 92.51%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.3899 | Val Accuracy: 93.39%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.3644 | Val Accuracy: 93.84%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 7 | Loss: 0.3495 | Val Accuracy: 94.10%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 0.3372 | Val Accuracy: 94.55%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 0.3233 | Val Accuracy: 94.77%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 10 | Loss: 0.3096 | Val Accuracy: 95.03%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 11 | Loss: 0.3012 | Val Accuracy: 95.48%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 12 | Loss: 0.2917 | Val Accuracy: 95.28%
+   📅 Epoch 13 | Loss: 0.2891 | Val Accuracy: 95.64%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 14 | Loss: 0.2787 | Val Accuracy: 96.09%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 15 | Loss: 0.2755 | Val Accuracy: 96.06%
+   📅 Epoch 16 | Loss: 0.2671 | Val Accuracy: 96.20%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 17 | Loss: 0.2640 | Val Accuracy: 96.07%
+   📅 Epoch 18 | Loss: 0.2554 | Val Accuracy: 96.21%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 19 | Loss: 0.2532 | Val Accuracy: 96.37%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 20 | Loss: 0.2519 | Val Accuracy: 96.24%
+   📅 Epoch 21 | Loss: 0.2480 | Val Accuracy: 96.50%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 22 | Loss: 0.2441 | Val Accuracy: 96.42%
+   📅 Epoch 23 | Loss: 0.2397 | Val Accuracy: 96.42%
+   📅 Epoch 24 | Loss: 0.2382 | Val Accuracy: 96.33%
+   📅 Epoch 25 | Loss: 0.2357 | Val Accuracy: 96.79%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 26 | Loss: 0.2302 | Val Accuracy: 96.64%
+   📅 Epoch 27 | Loss: 0.2282 | Val Accuracy: 96.80%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 28 | Loss: 0.2257 | Val Accuracy: 96.61%
+   📅 Epoch 29 | Loss: 0.2264 | Val Accuracy: 96.46%
+   📅 Epoch 30 | Loss: 0.2240 | Val Accuracy: 96.65%
+   📅 Epoch 31 | Loss: 0.2205 | Val Accuracy: 96.59%
+   📅 Epoch 32 | Loss: 0.2183 | Val Accuracy: 96.73%
+   📅 Epoch 33 | Loss: 0.2181 | Val Accuracy: 96.65%
+   📅 Epoch 34 | Loss: 0.2144 | Val Accuracy: 96.64%
+   📅 Epoch 35 | Loss: 0.2174 | Val Accuracy: 96.62%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.80%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_swin_v2_lr1e-05_concat_3.pth
+========================================
+

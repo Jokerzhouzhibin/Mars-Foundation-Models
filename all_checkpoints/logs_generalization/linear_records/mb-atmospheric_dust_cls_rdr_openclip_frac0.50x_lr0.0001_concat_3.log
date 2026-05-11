@@ -1,0 +1,68 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_openclip_frac0.50x_lr0.0001_concat_3.log
+⏰ Time: 2026-04-13 18:32:01
+============================================================
+
+🚀 Training openclip on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 4908 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: openclip (transformers_clip)
+
+   🔍 [Structure Check] openclip Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.4117 | Val Accuracy: 90.03%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.2165 | Val Accuracy: 92.62%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.1740 | Val Accuracy: 93.75%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.1574 | Val Accuracy: 94.53%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.1414 | Val Accuracy: 94.28%
+   📅 Epoch 6 | Loss: 0.1320 | Val Accuracy: 94.78%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 7 | Loss: 0.1206 | Val Accuracy: 95.36%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 0.1175 | Val Accuracy: 94.84%
+   📅 Epoch 9 | Loss: 0.1163 | Val Accuracy: 95.68%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 10 | Loss: 0.1104 | Val Accuracy: 95.13%
+   📅 Epoch 11 | Loss: 0.1034 | Val Accuracy: 95.97%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 12 | Loss: 0.1059 | Val Accuracy: 95.03%
+   📅 Epoch 13 | Loss: 0.1024 | Val Accuracy: 96.36%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 14 | Loss: 0.0962 | Val Accuracy: 95.90%
+   📅 Epoch 15 | Loss: 0.0978 | Val Accuracy: 95.93%
+   📅 Epoch 16 | Loss: 0.0988 | Val Accuracy: 95.59%
+   📅 Epoch 17 | Loss: 0.0967 | Val Accuracy: 96.14%
+   📅 Epoch 18 | Loss: 0.0930 | Val Accuracy: 96.55%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 19 | Loss: 0.0916 | Val Accuracy: 96.14%
+   📅 Epoch 20 | Loss: 0.0932 | Val Accuracy: 96.41%
+   📅 Epoch 21 | Loss: 0.0857 | Val Accuracy: 96.38%
+   📅 Epoch 22 | Loss: 0.0844 | Val Accuracy: 95.67%
+   📅 Epoch 23 | Loss: 0.0869 | Val Accuracy: 95.63%
+   📅 Epoch 24 | Loss: 0.0863 | Val Accuracy: 96.36%
+   📅 Epoch 25 | Loss: 0.0837 | Val Accuracy: 96.32%
+   📅 Epoch 26 | Loss: 0.0889 | Val Accuracy: 96.41%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.55%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_openclip_lr0.0001_concat_3.pth
+========================================
+

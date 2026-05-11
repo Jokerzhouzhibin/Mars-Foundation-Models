@@ -1,0 +1,87 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_scale_mae_lr0.01_original.log
+⏰ Time: 2026-03-01 16:46:54
+============================================================
+
+🚀 Training scale_mae on mb-domars16k | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: scale_mae (scalemae)
+   🔍 Auditing weights for [scale_mae]...
+   ⚠️ [PARTIAL MATCH] 344/435 layers loaded (79.1%)
+
+   🔍 [Structure Check] scale_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+      📏 ScaleMAE GSD: 5.0 m/px
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 2.0088 | Val Accuracy: 47.46%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 1.5772 | Val Accuracy: 56.07%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 1.4852 | Val Accuracy: 56.01%
+   📅 Epoch 4 | Loss: 1.4191 | Val Accuracy: 60.35%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 1.3866 | Val Accuracy: 59.48%
+   📅 Epoch 6 | Loss: 1.3542 | Val Accuracy: 60.84%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 1.3371 | Val Accuracy: 62.21%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 1.3087 | Val Accuracy: 61.59%
+   📅 Epoch 9 | Loss: 1.2771 | Val Accuracy: 64.62%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 1.2889 | Val Accuracy: 62.76%
+   📅 Epoch 11 | Loss: 1.2639 | Val Accuracy: 63.88%
+   📅 Epoch 12 | Loss: 1.2583 | Val Accuracy: 64.75%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 1.2476 | Val Accuracy: 66.67%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 1.2342 | Val Accuracy: 66.48%
+   📅 Epoch 15 | Loss: 1.2352 | Val Accuracy: 67.04%
+      ⭐ New Best! Saved.
+   📅 Epoch 16 | Loss: 1.2307 | Val Accuracy: 66.17%
+   📅 Epoch 17 | Loss: 1.2055 | Val Accuracy: 66.73%
+   📅 Epoch 18 | Loss: 1.2002 | Val Accuracy: 68.46%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 1.1953 | Val Accuracy: 66.79%
+   📅 Epoch 20 | Loss: 1.1962 | Val Accuracy: 66.73%
+   📅 Epoch 21 | Loss: 1.1779 | Val Accuracy: 68.53%
+      ⭐ New Best! Saved.
+   📅 Epoch 22 | Loss: 1.1715 | Val Accuracy: 66.05%
+   📅 Epoch 23 | Loss: 1.1859 | Val Accuracy: 68.46%
+   📅 Epoch 24 | Loss: 1.1648 | Val Accuracy: 68.22%
+   📅 Epoch 25 | Loss: 1.1825 | Val Accuracy: 69.21%
+      ⭐ New Best! Saved.
+   📅 Epoch 26 | Loss: 1.1638 | Val Accuracy: 69.08%
+   📅 Epoch 27 | Loss: 1.1651 | Val Accuracy: 68.59%
+   📅 Epoch 28 | Loss: 1.1363 | Val Accuracy: 70.32%
+      ⭐ New Best! Saved.
+   📅 Epoch 29 | Loss: 1.1463 | Val Accuracy: 70.07%
+   📅 Epoch 30 | Loss: 1.1343 | Val Accuracy: 69.27%
+   📅 Epoch 31 | Loss: 1.1374 | Val Accuracy: 69.83%
+   📅 Epoch 32 | Loss: 1.1501 | Val Accuracy: 71.62%
+      ⭐ New Best! Saved.
+   📅 Epoch 33 | Loss: 1.1462 | Val Accuracy: 68.65%
+   📅 Epoch 34 | Loss: 1.1337 | Val Accuracy: 70.69%
+   📅 Epoch 35 | Loss: 1.1148 | Val Accuracy: 71.13%
+   📅 Epoch 36 | Loss: 1.1048 | Val Accuracy: 70.01%
+   📅 Epoch 37 | Loss: 1.1007 | Val Accuracy: 69.02%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 71.62%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_scale_mae_lr0.01_original.pth
+========================================
+

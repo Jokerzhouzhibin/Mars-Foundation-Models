@@ -1,0 +1,52 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-change_cls_hirise_openclip_frac0.20x_lr1e-05_concat_3.log
+⏰ Time: 2026-04-14 00:09:25
+============================================================
+
+🚀 Training openclip on mb-change_cls_hirise | Mode: LINEAR | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 626 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: openclip (transformers_clip)
+
+   🔍 [Structure Check] openclip Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.8803 | Val Accuracy: 11.34%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.7700 | Val Accuracy: 50.07%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.7172 | Val Accuracy: 84.40%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.7171 | Val Accuracy: 90.45%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.6861 | Val Accuracy: 91.64%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 0.7040 | Val Accuracy: 91.72%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 7 | Loss: 0.6848 | Val Accuracy: 91.72%
+   📅 Epoch 8 | Loss: 0.6918 | Val Accuracy: 91.49%
+   📅 Epoch 9 | Loss: 0.6980 | Val Accuracy: 91.19%
+   📅 Epoch 10 | Loss: 0.6936 | Val Accuracy: 90.97%
+   📅 Epoch 11 | Loss: 0.6971 | Val Accuracy: 90.82%
+   📅 Epoch 12 | Loss: 0.6908 | Val Accuracy: 90.90%
+   📅 Epoch 13 | Loss: 0.6817 | Val Accuracy: 91.12%
+   📅 Epoch 14 | Loss: 0.6703 | Val Accuracy: 91.34%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 91.72%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_hirise_openclip_lr1e-05_concat_3.pth
+========================================
+

@@ -1,0 +1,54 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_scale_mae_lr0.01_original.log
+⏰ Time: 2026-03-02 23:13:10
+============================================================
+
+🚀 Training scale_mae on mb-frost_cls | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: scale_mae (scalemae)
+   🔍 Auditing weights for [scale_mae]...
+   ⚠️ [PARTIAL MATCH] 344/435 layers loaded (79.1%)
+
+   🔍 [Structure Check] scale_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+      📏 ScaleMAE GSD: 0.3 m/px
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.4154 | Val Accuracy: 94.55%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.3264 | Val Accuracy: 93.92%
+   📅 Epoch 3 | Loss: 0.2985 | Val Accuracy: 94.81%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.2876 | Val Accuracy: 95.71%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.3027 | Val Accuracy: 95.00%
+   📅 Epoch 6 | Loss: 0.2694 | Val Accuracy: 95.63%
+   📅 Epoch 7 | Loss: 0.2801 | Val Accuracy: 95.51%
+   📅 Epoch 8 | Loss: 0.2633 | Val Accuracy: 94.18%
+   📅 Epoch 9 | Loss: 0.2659 | Val Accuracy: 95.89%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.2524 | Val Accuracy: 95.38%
+   📅 Epoch 11 | Loss: 0.2519 | Val Accuracy: 94.84%
+   📅 Epoch 12 | Loss: 0.2420 | Val Accuracy: 95.81%
+   📅 Epoch 13 | Loss: 0.2405 | Val Accuracy: 95.21%
+   📅 Epoch 14 | Loss: 0.2445 | Val Accuracy: 95.02%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.89%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_scale_mae_lr0.01_original.pth
+========================================
+

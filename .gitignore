@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Model weights (users download themselves; use 3to1.py to generate 1cha variants)
+model_weights/*.pth
+model_weights/siglip2/
+model_weights/openclip/
+model_weights/dinov3/
+
+# Dataset parquet files (download from HuggingFace MarsBench)
+dataset/
+
+# Personal / private files (not part of the project)
+南科大毕业论文资料/
+阅读文献集/
+.kiro/

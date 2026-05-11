@@ -1,0 +1,50 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_dinov3_lvd_lr0.001_original.log
+⏰ Time: 2026-02-27 23:49:24
+============================================================
+
+🚀 Training dinov3_lvd on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: dinov3_lvd (dinov3_hub)
+   🔍 Auditing weights for [dinov3_lvd]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_lvd Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.1940 | Val Accuracy: 97.51%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.0881 | Val Accuracy: 97.76%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.0799 | Val Accuracy: 97.30%
+   📅 Epoch 4 | Loss: 0.0716 | Val Accuracy: 97.68%
+   📅 Epoch 5 | Loss: 0.0673 | Val Accuracy: 97.55%
+   📅 Epoch 6 | Loss: 0.0682 | Val Accuracy: 97.72%
+   📅 Epoch 7 | Loss: 0.0646 | Val Accuracy: 97.83%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.0634 | Val Accuracy: 97.49%
+   📅 Epoch 9 | Loss: 0.0619 | Val Accuracy: 97.60%
+   📅 Epoch 10 | Loss: 0.0594 | Val Accuracy: 97.31%
+   📅 Epoch 11 | Loss: 0.0581 | Val Accuracy: 97.33%
+   📅 Epoch 12 | Loss: 0.0561 | Val Accuracy: 97.07%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 97.83%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_dinov3_lvd_lr0.001_original.pth
+========================================
+

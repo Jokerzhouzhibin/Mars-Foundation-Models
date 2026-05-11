@@ -1,0 +1,55 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_openclip_lr0.0001_concat_3.log
+⏰ Time: 2026-03-02 17:42:57
+============================================================
+
+🚀 Training openclip on mb-frost_cls | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: openclip (transformers_clip)
+
+   🔍 [Structure Check] openclip Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.6360 | Val Accuracy: 94.52%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.3836 | Val Accuracy: 96.32%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.3127 | Val Accuracy: 96.70%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.2691 | Val Accuracy: 96.83%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.2397 | Val Accuracy: 97.01%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.2198 | Val Accuracy: 97.16%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.2025 | Val Accuracy: 97.21%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.1885 | Val Accuracy: 97.18%
+   📅 Epoch 9 | Loss: 0.1753 | Val Accuracy: 97.22%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.1648 | Val Accuracy: 97.22%
+   📅 Epoch 11 | Loss: 0.1576 | Val Accuracy: 96.88%
+   📅 Epoch 12 | Loss: 0.1490 | Val Accuracy: 97.17%
+   📅 Epoch 13 | Loss: 0.1433 | Val Accuracy: 96.91%
+   📅 Epoch 14 | Loss: 0.1353 | Val Accuracy: 96.70%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 97.22%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_openclip_lr0.0001_concat_3.pth
+========================================
+

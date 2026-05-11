@@ -1,0 +1,52 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-frost_cls_mars_mae_lr0.0001_concat_2.log
+⏰ Time: 2026-03-02 22:44:32
+============================================================
+
+🚀 Training mars_mae on mb-frost_cls | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: mars_mae (timm_mae)
+   ℹ️  Config: in_chans=1
+   🔍 Auditing weights for [mars_mae]...
+   ✅ [PERFECT MATCH] 150/150 layers loaded (100.0%)
+
+   🔍 [Structure Check] mars_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 196, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 1536
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.1649 | Val Accuracy: 96.87%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.0750 | Val Accuracy: 96.78%
+   📅 Epoch 3 | Loss: 0.0684 | Val Accuracy: 97.37%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.0518 | Val Accuracy: 95.00%
+   📅 Epoch 5 | Loss: 0.0479 | Val Accuracy: 95.79%
+   📅 Epoch 6 | Loss: 0.0389 | Val Accuracy: 97.80%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.0387 | Val Accuracy: 95.42%
+   📅 Epoch 8 | Loss: 0.0374 | Val Accuracy: 95.86%
+   📅 Epoch 9 | Loss: 0.0317 | Val Accuracy: 96.60%
+   📅 Epoch 10 | Loss: 0.0313 | Val Accuracy: 97.48%
+   📅 Epoch 11 | Loss: 0.0293 | Val Accuracy: 95.36%
+   📅 Epoch 12 | Loss: 0.0331 | Val Accuracy: 97.24%
+   📅 Epoch 13 | Loss: 0.0314 | Val Accuracy: 97.75%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 97.80%
+💾 Best Checkpoint: ./checkpoints/full_mb-frost_cls_mars_mae_lr0.0001_concat_2.pth
+========================================
+

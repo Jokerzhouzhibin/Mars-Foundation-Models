@@ -1,0 +1,52 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-change_cls_hirise_swin_v2_lr0.001_concat_3.log
+⏰ Time: 2026-02-28 19:25:12
+============================================================
+
+🚀 Training swin_v2 on mb-change_cls_hirise | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6206 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.2816 | Val Accuracy: 94.25%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1675 | Val Accuracy: 95.07%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1627 | Val Accuracy: 93.36%
+   📅 Epoch 4 | Loss: 0.1584 | Val Accuracy: 93.73%
+   📅 Epoch 5 | Loss: 0.1615 | Val Accuracy: 93.81%
+   📅 Epoch 6 | Loss: 0.1642 | Val Accuracy: 93.88%
+   📅 Epoch 7 | Loss: 0.1588 | Val Accuracy: 95.67%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.1536 | Val Accuracy: 95.75%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.1515 | Val Accuracy: 95.15%
+   📅 Epoch 10 | Loss: 0.1506 | Val Accuracy: 95.60%
+   📅 Epoch 11 | Loss: 0.1494 | Val Accuracy: 95.75%
+   📅 Epoch 12 | Loss: 0.1559 | Val Accuracy: 95.52%
+   📅 Epoch 13 | Loss: 0.1503 | Val Accuracy: 95.52%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.75%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_hirise_swin_v2_lr0.001_concat_3.pth
+========================================
+

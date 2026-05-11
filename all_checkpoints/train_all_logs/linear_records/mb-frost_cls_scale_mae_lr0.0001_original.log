@@ -1,0 +1,90 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-frost_cls_scale_mae_lr0.0001_original.log
+⏰ Time: 2026-03-03 01:44:39
+============================================================
+
+🚀 Training scale_mae on mb-frost_cls | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: scale_mae (scalemae)
+   🔍 Auditing weights for [scale_mae]...
+   ⚠️ [PARTIAL MATCH] 344/435 layers loaded (79.1%)
+
+   🔍 [Structure Check] scale_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+      📏 ScaleMAE GSD: 0.3 m/px
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.6607 | Val Accuracy: 67.96%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.5893 | Val Accuracy: 76.54%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.5520 | Val Accuracy: 82.53%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.5246 | Val Accuracy: 87.75%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.5032 | Val Accuracy: 90.20%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.4869 | Val Accuracy: 90.92%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.4710 | Val Accuracy: 92.18%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.4592 | Val Accuracy: 92.43%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.4486 | Val Accuracy: 93.21%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.4397 | Val Accuracy: 92.95%
+   📅 Epoch 11 | Loss: 0.4336 | Val Accuracy: 93.70%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.4240 | Val Accuracy: 93.66%
+   📅 Epoch 13 | Loss: 0.4162 | Val Accuracy: 93.60%
+   📅 Epoch 14 | Loss: 0.4099 | Val Accuracy: 94.60%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.4067 | Val Accuracy: 94.53%
+   📅 Epoch 16 | Loss: 0.4024 | Val Accuracy: 93.89%
+   📅 Epoch 17 | Loss: 0.3974 | Val Accuracy: 94.31%
+   📅 Epoch 18 | Loss: 0.3936 | Val Accuracy: 94.73%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 0.3891 | Val Accuracy: 94.81%
+      ⭐ New Best! Saved.
+   📅 Epoch 20 | Loss: 0.3840 | Val Accuracy: 95.05%
+      ⭐ New Best! Saved.
+   📅 Epoch 21 | Loss: 0.3813 | Val Accuracy: 95.03%
+   📅 Epoch 22 | Loss: 0.3744 | Val Accuracy: 95.16%
+      ⭐ New Best! Saved.
+   📅 Epoch 23 | Loss: 0.3743 | Val Accuracy: 94.64%
+   📅 Epoch 24 | Loss: 0.3712 | Val Accuracy: 95.29%
+      ⭐ New Best! Saved.
+   📅 Epoch 25 | Loss: 0.3704 | Val Accuracy: 95.20%
+   📅 Epoch 26 | Loss: 0.3649 | Val Accuracy: 94.94%
+   📅 Epoch 27 | Loss: 0.3608 | Val Accuracy: 95.13%
+   📅 Epoch 28 | Loss: 0.3566 | Val Accuracy: 95.36%
+      ⭐ New Best! Saved.
+   📅 Epoch 29 | Loss: 0.3565 | Val Accuracy: 95.31%
+   📅 Epoch 30 | Loss: 0.3549 | Val Accuracy: 95.10%
+   📅 Epoch 31 | Loss: 0.3547 | Val Accuracy: 95.75%
+      ⭐ New Best! Saved.
+   📅 Epoch 32 | Loss: 0.3508 | Val Accuracy: 95.38%
+   📅 Epoch 33 | Loss: 0.3488 | Val Accuracy: 95.57%
+   📅 Epoch 34 | Loss: 0.3457 | Val Accuracy: 95.38%
+   📅 Epoch 35 | Loss: 0.3443 | Val Accuracy: 95.71%
+   📅 Epoch 36 | Loss: 0.3407 | Val Accuracy: 95.48%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.75%
+💾 Best Checkpoint: ./checkpoints/linear_mb-frost_cls_scale_mae_lr0.0001_original.pth
+========================================
+

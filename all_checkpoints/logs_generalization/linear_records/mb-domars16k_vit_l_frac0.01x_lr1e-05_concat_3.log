@@ -1,0 +1,110 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_vit_l_frac0.01x_lr1e-05_concat_3.log
+⏰ Time: 2026-04-13 23:27:14
+============================================================
+
+🚀 Training vit_l on mb-domars16k | Mode: LINEAR | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 113 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 2.8788 | Val Accuracy: 10.04%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 2.8492 | Val Accuracy: 10.10%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 2.9209 | Val Accuracy: 10.16%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 2.9508 | Val Accuracy: 10.10%
+   📅 Epoch 5 | Loss: 2.8728 | Val Accuracy: 10.10%
+   📅 Epoch 6 | Loss: 2.8938 | Val Accuracy: 10.10%
+   📅 Epoch 7 | Loss: 2.7805 | Val Accuracy: 10.16%
+   📅 Epoch 8 | Loss: 2.8115 | Val Accuracy: 10.29%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 2.8550 | Val Accuracy: 10.29%
+   📅 Epoch 10 | Loss: 2.7983 | Val Accuracy: 10.22%
+   📅 Epoch 11 | Loss: 2.8063 | Val Accuracy: 10.35%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 12 | Loss: 2.8134 | Val Accuracy: 10.41%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 13 | Loss: 2.8004 | Val Accuracy: 10.41%
+   📅 Epoch 14 | Loss: 2.8040 | Val Accuracy: 10.53%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 15 | Loss: 2.7892 | Val Accuracy: 10.66%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 16 | Loss: 2.8120 | Val Accuracy: 10.47%
+   📅 Epoch 17 | Loss: 2.7902 | Val Accuracy: 10.53%
+   📅 Epoch 18 | Loss: 2.7765 | Val Accuracy: 10.53%
+   📅 Epoch 19 | Loss: 2.7809 | Val Accuracy: 10.78%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 20 | Loss: 2.7589 | Val Accuracy: 10.78%
+   📅 Epoch 21 | Loss: 2.7194 | Val Accuracy: 10.72%
+   📅 Epoch 22 | Loss: 2.7114 | Val Accuracy: 10.72%
+   📅 Epoch 23 | Loss: 2.7728 | Val Accuracy: 10.84%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 24 | Loss: 2.7413 | Val Accuracy: 10.90%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 25 | Loss: 2.7400 | Val Accuracy: 11.15%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 26 | Loss: 2.7126 | Val Accuracy: 11.09%
+   📅 Epoch 27 | Loss: 2.7062 | Val Accuracy: 11.09%
+   📅 Epoch 28 | Loss: 2.7787 | Val Accuracy: 11.21%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 29 | Loss: 2.7373 | Val Accuracy: 11.28%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 30 | Loss: 2.6949 | Val Accuracy: 11.28%
+   📅 Epoch 31 | Loss: 2.7307 | Val Accuracy: 11.59%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 32 | Loss: 2.7167 | Val Accuracy: 11.77%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 33 | Loss: 2.6937 | Val Accuracy: 11.90%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 34 | Loss: 2.6943 | Val Accuracy: 12.08%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 35 | Loss: 2.7605 | Val Accuracy: 12.02%
+   📅 Epoch 36 | Loss: 2.7177 | Val Accuracy: 12.14%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 37 | Loss: 2.5979 | Val Accuracy: 12.21%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 38 | Loss: 2.6649 | Val Accuracy: 12.33%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 39 | Loss: 2.6736 | Val Accuracy: 12.45%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 40 | Loss: 2.6780 | Val Accuracy: 12.52%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 41 | Loss: 2.6604 | Val Accuracy: 12.64%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 42 | Loss: 2.7023 | Val Accuracy: 13.14%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 43 | Loss: 2.5991 | Val Accuracy: 13.20%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 44 | Loss: 2.6797 | Val Accuracy: 13.07%
+   📅 Epoch 45 | Loss: 2.6345 | Val Accuracy: 13.14%
+   📅 Epoch 46 | Loss: 2.5989 | Val Accuracy: 13.20%
+   📅 Epoch 47 | Loss: 2.6144 | Val Accuracy: 13.14%
+   📅 Epoch 48 | Loss: 2.5857 | Val Accuracy: 13.14%
+   📅 Epoch 49 | Loss: 2.6482 | Val Accuracy: 13.51%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 50 | Loss: 2.6396 | Val Accuracy: 13.57%
+      ⭐ New Best! (Model saving disabled to save space)
+
+========================================
+🏆 Best Val Accuracy: 13.57%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_vit_l_lr1e-05_concat_3.pth
+========================================
+

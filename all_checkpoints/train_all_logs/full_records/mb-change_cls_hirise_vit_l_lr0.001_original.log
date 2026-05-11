@@ -1,0 +1,55 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-change_cls_hirise_vit_l_lr0.001_original.log
+⏰ Time: 2026-02-28 20:06:55
+============================================================
+
+🚀 Training vit_l on mb-change_cls_hirise | Mode: FULL | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6206 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: vit_l (torchvision_vit)
+   🔍 Auditing weights for [vit_l]...
+   ✅ [PERFECT MATCH] 296/296 layers loaded (100.0%)
+
+   🔍 [Structure Check] vit_l Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.2813 | Val Accuracy: 89.63%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2654 | Val Accuracy: 91.94%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.2721 | Val Accuracy: 91.94%
+   📅 Epoch 4 | Loss: 0.2456 | Val Accuracy: 92.76%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.2554 | Val Accuracy: 92.01%
+   📅 Epoch 6 | Loss: 0.2290 | Val Accuracy: 92.69%
+   📅 Epoch 7 | Loss: 0.2072 | Val Accuracy: 94.78%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.1954 | Val Accuracy: 95.22%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.1925 | Val Accuracy: 95.15%
+   📅 Epoch 10 | Loss: 0.1954 | Val Accuracy: 94.93%
+   📅 Epoch 11 | Loss: 0.1848 | Val Accuracy: 95.07%
+   📅 Epoch 12 | Loss: 0.1730 | Val Accuracy: 93.88%
+   📅 Epoch 13 | Loss: 0.1775 | Val Accuracy: 93.66%
+   📅 Epoch 14 | Loss: 0.1836 | Val Accuracy: 92.61%
+   📅 Epoch 15 | Loss: 0.1778 | Val Accuracy: 93.21%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.22%
+💾 Best Checkpoint: ./checkpoints/full_mb-change_cls_hirise_vit_l_lr0.001_original.pth
+========================================
+

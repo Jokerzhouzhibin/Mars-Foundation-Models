@@ -1,0 +1,53 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-frost_cls_dinov2_l14_lr1e-05_concat_2.log
+⏰ Time: 2026-03-02 03:43:26
+============================================================
+
+🚀 Training dinov2_l14 on mb-frost_cls | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: dinov2_l14 (dinov2_hub)
+   🔍 Auditing weights for [dinov2_l14]...
+   ✅ [PERFECT MATCH] 343/343 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov2_l14 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.0856 | Val Accuracy: 97.98%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.0214 | Val Accuracy: 96.80%
+   📅 Epoch 3 | Loss: 0.0151 | Val Accuracy: 97.56%
+   📅 Epoch 4 | Loss: 0.0111 | Val Accuracy: 97.63%
+   📅 Epoch 5 | Loss: 0.0093 | Val Accuracy: 97.95%
+   📅 Epoch 6 | Loss: 0.0082 | Val Accuracy: 97.67%
+   📅 Epoch 7 | Loss: 0.0074 | Val Accuracy: 98.03%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.0043 | Val Accuracy: 98.72%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.0068 | Val Accuracy: 97.20%
+   📅 Epoch 10 | Loss: 0.0052 | Val Accuracy: 97.62%
+   📅 Epoch 11 | Loss: 0.0023 | Val Accuracy: 97.65%
+   📅 Epoch 12 | Loss: 0.0049 | Val Accuracy: 97.62%
+   📅 Epoch 13 | Loss: 0.0059 | Val Accuracy: 97.56%
+   📅 Epoch 14 | Loss: 0.0058 | Val Accuracy: 97.82%
+   📅 Epoch 15 | Loss: 0.0041 | Val Accuracy: 96.91%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 98.72%
+💾 Best Checkpoint: ./checkpoints/full_mb-frost_cls_dinov2_l14_lr1e-05_concat_2.pth
+========================================
+

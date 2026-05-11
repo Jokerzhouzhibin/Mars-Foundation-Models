@@ -1,0 +1,65 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-landmark_cls_swin_v2_lr0.001_concat_3.log
+⏰ Time: 2026-03-03 13:14:38
+============================================================
+
+🚀 Training swin_v2 on mb-landmark_cls | Mode: FULL | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.6148 | Val Accuracy: 87.17%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2988 | Val Accuracy: 88.12%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.2282 | Val Accuracy: 90.18%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.2081 | Val Accuracy: 89.51%
+   📅 Epoch 5 | Loss: 0.1854 | Val Accuracy: 89.91%
+   📅 Epoch 6 | Loss: 0.1851 | Val Accuracy: 90.96%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.1801 | Val Accuracy: 91.75%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.1556 | Val Accuracy: 92.02%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.1601 | Val Accuracy: 92.36%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.1387 | Val Accuracy: 88.46%
+   📅 Epoch 11 | Loss: 0.1650 | Val Accuracy: 92.97%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.1372 | Val Accuracy: 91.08%
+   📅 Epoch 13 | Loss: 0.1305 | Val Accuracy: 92.97%
+   📅 Epoch 14 | Loss: 0.1398 | Val Accuracy: 93.20%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.1282 | Val Accuracy: 92.36%
+   📅 Epoch 16 | Loss: 0.1179 | Val Accuracy: 92.30%
+   📅 Epoch 17 | Loss: 0.1378 | Val Accuracy: 92.97%
+   📅 Epoch 18 | Loss: 0.1142 | Val Accuracy: 92.25%
+   📅 Epoch 19 | Loss: 0.1163 | Val Accuracy: 91.36%
+   📅 Epoch 20 | Loss: 0.1076 | Val Accuracy: 93.03%
+   📅 Epoch 21 | Loss: 0.1266 | Val Accuracy: 91.86%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 93.20%
+💾 Best Checkpoint: ./checkpoints/full_mb-landmark_cls_swin_v2_lr0.001_concat_3.pth
+========================================
+

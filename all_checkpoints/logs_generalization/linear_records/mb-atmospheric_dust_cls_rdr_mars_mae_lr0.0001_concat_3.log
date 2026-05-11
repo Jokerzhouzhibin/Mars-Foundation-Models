@@ -1,0 +1,100 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_mars_mae_lr0.0001_concat_3.log
+⏰ Time: 2026-02-28 12:39:27
+============================================================
+
+🚀 Training mars_mae on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: mars_mae (timm_mae)
+   ℹ️  Config: in_chans=1
+   🔍 Auditing weights for [mars_mae]...
+   ✅ [PERFECT MATCH] 150/150 layers loaded (100.0%)
+
+   🔍 [Structure Check] mars_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 196, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 2304
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.5524 | Val Accuracy: 88.99%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.3940 | Val Accuracy: 91.02%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.3210 | Val Accuracy: 91.98%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.2850 | Val Accuracy: 92.52%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.2533 | Val Accuracy: 93.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.2350 | Val Accuracy: 93.19%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.2230 | Val Accuracy: 93.29%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.2118 | Val Accuracy: 93.42%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.2031 | Val Accuracy: 93.54%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.1976 | Val Accuracy: 93.61%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.1912 | Val Accuracy: 93.84%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.1884 | Val Accuracy: 93.82%
+   📅 Epoch 13 | Loss: 0.1798 | Val Accuracy: 93.86%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 0.1770 | Val Accuracy: 93.88%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.1717 | Val Accuracy: 93.92%
+      ⭐ New Best! Saved.
+   📅 Epoch 16 | Loss: 0.1678 | Val Accuracy: 94.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 0.1687 | Val Accuracy: 94.05%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 0.1666 | Val Accuracy: 94.15%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 0.1627 | Val Accuracy: 94.21%
+      ⭐ New Best! Saved.
+   📅 Epoch 20 | Loss: 0.1581 | Val Accuracy: 94.23%
+      ⭐ New Best! Saved.
+   📅 Epoch 21 | Loss: 0.1562 | Val Accuracy: 94.19%
+   📅 Epoch 22 | Loss: 0.1539 | Val Accuracy: 94.21%
+   📅 Epoch 23 | Loss: 0.1590 | Val Accuracy: 94.28%
+      ⭐ New Best! Saved.
+   📅 Epoch 24 | Loss: 0.1516 | Val Accuracy: 94.30%
+      ⭐ New Best! Saved.
+   📅 Epoch 25 | Loss: 0.1495 | Val Accuracy: 94.34%
+      ⭐ New Best! Saved.
+   📅 Epoch 26 | Loss: 0.1461 | Val Accuracy: 94.27%
+   📅 Epoch 27 | Loss: 0.1483 | Val Accuracy: 94.27%
+   📅 Epoch 28 | Loss: 0.1471 | Val Accuracy: 94.44%
+      ⭐ New Best! Saved.
+   📅 Epoch 29 | Loss: 0.1422 | Val Accuracy: 94.44%
+   📅 Epoch 30 | Loss: 0.1438 | Val Accuracy: 94.32%
+   📅 Epoch 31 | Loss: 0.1420 | Val Accuracy: 94.34%
+   📅 Epoch 32 | Loss: 0.1428 | Val Accuracy: 94.46%
+      ⭐ New Best! Saved.
+   📅 Epoch 33 | Loss: 0.1388 | Val Accuracy: 94.40%
+   📅 Epoch 34 | Loss: 0.1385 | Val Accuracy: 94.38%
+   📅 Epoch 35 | Loss: 0.1376 | Val Accuracy: 94.46%
+   📅 Epoch 36 | Loss: 0.1391 | Val Accuracy: 94.51%
+      ⭐ New Best! Saved.
+   📅 Epoch 37 | Loss: 0.1383 | Val Accuracy: 94.42%
+   📅 Epoch 38 | Loss: 0.1360 | Val Accuracy: 94.42%
+   📅 Epoch 39 | Loss: 0.1351 | Val Accuracy: 94.48%
+   📅 Epoch 40 | Loss: 0.1345 | Val Accuracy: 94.57%
+      ⭐ New Best! Saved.
+
+========================================
+🏆 Best Val Accuracy: 94.57%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_mars_mae_lr0.0001_concat_3.pth
+========================================
+

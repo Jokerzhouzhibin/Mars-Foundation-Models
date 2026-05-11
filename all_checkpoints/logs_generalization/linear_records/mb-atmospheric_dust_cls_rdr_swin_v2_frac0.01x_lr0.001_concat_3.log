@@ -1,0 +1,59 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_swin_v2_frac0.01x_lr0.001_concat_3.log
+⏰ Time: 2026-04-13 15:33:13
+============================================================
+
+🚀 Training swin_v2 on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 98 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.7477 | Val Accuracy: 49.50%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.6652 | Val Accuracy: 63.71%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 0.5394 | Val Accuracy: 93.94%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.2810 | Val Accuracy: 95.70%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 0.2226 | Val Accuracy: 93.77%
+   📅 Epoch 6 | Loss: 0.2461 | Val Accuracy: 94.00%
+   📅 Epoch 7 | Loss: 0.1803 | Val Accuracy: 95.19%
+   📅 Epoch 8 | Loss: 0.1712 | Val Accuracy: 96.20%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 0.1570 | Val Accuracy: 96.38%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 10 | Loss: 0.1310 | Val Accuracy: 96.43%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 11 | Loss: 0.1686 | Val Accuracy: 96.26%
+   📅 Epoch 12 | Loss: 0.1329 | Val Accuracy: 95.91%
+   📅 Epoch 13 | Loss: 0.1615 | Val Accuracy: 95.51%
+   📅 Epoch 14 | Loss: 0.0828 | Val Accuracy: 95.24%
+   📅 Epoch 15 | Loss: 0.1488 | Val Accuracy: 95.11%
+   📅 Epoch 16 | Loss: 0.0946 | Val Accuracy: 95.11%
+   📅 Epoch 17 | Loss: 0.1025 | Val Accuracy: 95.22%
+   📅 Epoch 18 | Loss: 0.1032 | Val Accuracy: 95.32%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.43%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_swin_v2_lr0.001_concat_3.pth
+========================================
+

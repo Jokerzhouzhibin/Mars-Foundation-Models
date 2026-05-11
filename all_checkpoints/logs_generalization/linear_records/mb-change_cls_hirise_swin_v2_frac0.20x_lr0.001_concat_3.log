@@ -1,0 +1,52 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-change_cls_hirise_swin_v2_frac0.20x_lr0.001_concat_3.log
+⏰ Time: 2026-04-13 22:09:21
+============================================================
+
+🚀 Training swin_v2 on mb-change_cls_hirise | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 626 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 0.7001 | Val Accuracy: 86.94%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 0.5319 | Val Accuracy: 83.51%
+   📅 Epoch 3 | Loss: 0.4844 | Val Accuracy: 86.72%
+   📅 Epoch 4 | Loss: 0.5167 | Val Accuracy: 86.87%
+   📅 Epoch 5 | Loss: 0.4592 | Val Accuracy: 82.61%
+   📅 Epoch 6 | Loss: 0.4750 | Val Accuracy: 80.52%
+   📅 Epoch 7 | Loss: 0.4642 | Val Accuracy: 83.06%
+   📅 Epoch 8 | Loss: 0.4948 | Val Accuracy: 89.93%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 9 | Loss: 0.4819 | Val Accuracy: 89.18%
+   📅 Epoch 10 | Loss: 0.4834 | Val Accuracy: 80.90%
+   📅 Epoch 11 | Loss: 0.4889 | Val Accuracy: 80.45%
+   📅 Epoch 12 | Loss: 0.5196 | Val Accuracy: 89.93%
+   📅 Epoch 13 | Loss: 0.4508 | Val Accuracy: 88.88%
+   📅 Epoch 14 | Loss: 0.4937 | Val Accuracy: 84.10%
+   📅 Epoch 15 | Loss: 0.4660 | Val Accuracy: 85.52%
+   📅 Epoch 16 | Loss: 0.3867 | Val Accuracy: 89.78%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 89.93%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_hirise_swin_v2_lr0.001_concat_3.pth
+========================================
+

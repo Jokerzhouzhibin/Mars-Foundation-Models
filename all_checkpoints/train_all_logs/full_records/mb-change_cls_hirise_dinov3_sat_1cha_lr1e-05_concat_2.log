@@ -1,0 +1,52 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-change_cls_hirise_dinov3_sat_1cha_lr1e-05_concat_2.log
+⏰ Time: 2026-04-02 02:00:34
+============================================================
+
+🚀 Training dinov3_sat_1cha on mb-change_cls_hirise | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6206 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: dinov3_sat_1cha (dinov3_hub)
+   🔍 Auditing weights for [dinov3_sat_1cha]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_sat_1cha Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.3928 | Val Accuracy: 91.94%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.2580 | Val Accuracy: 91.94%
+   📅 Epoch 3 | Loss: 0.2362 | Val Accuracy: 91.94%
+   📅 Epoch 4 | Loss: 0.2066 | Val Accuracy: 92.76%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.1810 | Val Accuracy: 95.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.1583 | Val Accuracy: 96.12%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.1492 | Val Accuracy: 95.97%
+   📅 Epoch 8 | Loss: 0.1437 | Val Accuracy: 95.82%
+   📅 Epoch 9 | Loss: 0.1381 | Val Accuracy: 95.37%
+   📅 Epoch 10 | Loss: 0.1333 | Val Accuracy: 95.22%
+   📅 Epoch 11 | Loss: 0.1303 | Val Accuracy: 95.82%
+   📅 Epoch 12 | Loss: 0.1287 | Val Accuracy: 96.04%
+   📅 Epoch 13 | Loss: 0.1329 | Val Accuracy: 95.67%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 96.12%
+💾 Best Checkpoint: ./checkpoints/full_mb-change_cls_hirise_dinov3_sat_1cha_lr1e-05_concat_2.pth
+========================================
+

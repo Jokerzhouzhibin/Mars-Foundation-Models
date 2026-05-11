@@ -1,0 +1,50 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-change_cls_hirise_swin_v2_lr0.01_concat_3.log
+⏰ Time: 2026-02-28 19:16:18
+============================================================
+
+🚀 Training swin_v2 on mb-change_cls_hirise | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6206 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 1.0562 | Val Accuracy: 90.15%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.3840 | Val Accuracy: 90.90%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.2760 | Val Accuracy: 95.60%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.2266 | Val Accuracy: 94.33%
+   📅 Epoch 5 | Loss: 0.2374 | Val Accuracy: 95.15%
+   📅 Epoch 6 | Loss: 0.1942 | Val Accuracy: 95.82%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.2231 | Val Accuracy: 95.82%
+   📅 Epoch 8 | Loss: 0.2201 | Val Accuracy: 95.45%
+   📅 Epoch 9 | Loss: 0.4910 | Val Accuracy: 91.27%
+   📅 Epoch 10 | Loss: 0.3651 | Val Accuracy: 94.85%
+   📅 Epoch 11 | Loss: 0.3142 | Val Accuracy: 95.60%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.82%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_hirise_swin_v2_lr0.01_concat_3.pth
+========================================
+

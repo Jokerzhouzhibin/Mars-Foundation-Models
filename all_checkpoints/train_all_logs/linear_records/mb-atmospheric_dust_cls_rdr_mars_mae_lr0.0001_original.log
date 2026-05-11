@@ -1,0 +1,105 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_mars_mae_lr0.0001_original.log
+⏰ Time: 2026-02-28 12:45:58
+============================================================
+
+🚀 Training mars_mae on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: mars_mae (timm_mae)
+   ℹ️  Config: in_chans=1
+   🔍 Auditing weights for [mars_mae]...
+   ✅ [PERFECT MATCH] 150/150 layers loaded (100.0%)
+
+   🔍 [Structure Check] mars_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 196, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 768
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.7024 | Val Accuracy: 64.15%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.5971 | Val Accuracy: 77.62%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.5249 | Val Accuracy: 83.89%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.4709 | Val Accuracy: 86.56%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.4304 | Val Accuracy: 88.67%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.3968 | Val Accuracy: 89.45%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.3698 | Val Accuracy: 90.31%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.3556 | Val Accuracy: 91.33%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.3343 | Val Accuracy: 91.56%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.3198 | Val Accuracy: 91.83%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.3066 | Val Accuracy: 91.77%
+   📅 Epoch 12 | Loss: 0.2980 | Val Accuracy: 92.21%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.2878 | Val Accuracy: 92.29%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 0.2799 | Val Accuracy: 92.25%
+   📅 Epoch 15 | Loss: 0.2691 | Val Accuracy: 92.41%
+      ⭐ New Best! Saved.
+   📅 Epoch 16 | Loss: 0.2633 | Val Accuracy: 92.42%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 0.2564 | Val Accuracy: 92.50%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 0.2545 | Val Accuracy: 92.54%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 0.2462 | Val Accuracy: 92.65%
+      ⭐ New Best! Saved.
+   📅 Epoch 20 | Loss: 0.2417 | Val Accuracy: 92.90%
+      ⭐ New Best! Saved.
+   📅 Epoch 21 | Loss: 0.2360 | Val Accuracy: 92.96%
+      ⭐ New Best! Saved.
+   📅 Epoch 22 | Loss: 0.2326 | Val Accuracy: 93.02%
+      ⭐ New Best! Saved.
+   📅 Epoch 23 | Loss: 0.2300 | Val Accuracy: 93.06%
+      ⭐ New Best! Saved.
+   📅 Epoch 24 | Loss: 0.2287 | Val Accuracy: 93.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 25 | Loss: 0.2213 | Val Accuracy: 93.10%
+      ⭐ New Best! Saved.
+   📅 Epoch 26 | Loss: 0.2227 | Val Accuracy: 93.13%
+      ⭐ New Best! Saved.
+   📅 Epoch 27 | Loss: 0.2184 | Val Accuracy: 93.23%
+      ⭐ New Best! Saved.
+   📅 Epoch 28 | Loss: 0.2134 | Val Accuracy: 93.34%
+      ⭐ New Best! Saved.
+   📅 Epoch 29 | Loss: 0.2120 | Val Accuracy: 93.31%
+   📅 Epoch 30 | Loss: 0.2087 | Val Accuracy: 93.56%
+      ⭐ New Best! Saved.
+   📅 Epoch 31 | Loss: 0.2078 | Val Accuracy: 93.61%
+      ⭐ New Best! Saved.
+   📅 Epoch 32 | Loss: 0.2035 | Val Accuracy: 93.56%
+   📅 Epoch 33 | Loss: 0.2039 | Val Accuracy: 93.52%
+   📅 Epoch 34 | Loss: 0.2009 | Val Accuracy: 93.71%
+      ⭐ New Best! Saved.
+   📅 Epoch 35 | Loss: 0.2003 | Val Accuracy: 93.63%
+   📅 Epoch 36 | Loss: 0.1974 | Val Accuracy: 93.67%
+   📅 Epoch 37 | Loss: 0.1950 | Val Accuracy: 93.57%
+   📅 Epoch 38 | Loss: 0.1947 | Val Accuracy: 93.77%
+      ⭐ New Best! Saved.
+   📅 Epoch 39 | Loss: 0.1927 | Val Accuracy: 93.73%
+   📅 Epoch 40 | Loss: 0.1890 | Val Accuracy: 93.79%
+      ⭐ New Best! Saved.
+
+========================================
+🏆 Best Val Accuracy: 93.79%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_mars_mae_lr0.0001_original.pth
+========================================
+

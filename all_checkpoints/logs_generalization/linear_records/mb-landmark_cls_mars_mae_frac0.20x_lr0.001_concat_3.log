@@ -1,0 +1,45 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_mars_mae_frac0.20x_lr0.001_concat_3.log
+⏰ Time: 2026-04-15 02:00:12
+============================================================
+
+🚀 Training mars_mae on mb-landmark_cls | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 1286 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=64, SmallData=False
+
+>>> Loading Model: mars_mae (timm_mae)
+   ℹ️  Config: in_chans=1
+   🔍 Auditing weights for [mars_mae]...
+   ✅ [PERFECT MATCH] 150/150 layers loaded (100.0%)
+
+   🔍 [Structure Check] mars_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 196, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 2304
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 1.7394 | Val Accuracy: 81.93%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 1.1960 | Val Accuracy: 51.92%
+   📅 Epoch 3 | Loss: 0.9806 | Val Accuracy: 47.13%
+   📅 Epoch 4 | Loss: 0.8355 | Val Accuracy: 55.94%
+   📅 Epoch 5 | Loss: 0.7709 | Val Accuracy: 52.70%
+   📅 Epoch 6 | Loss: 0.6764 | Val Accuracy: 62.35%
+   📅 Epoch 7 | Loss: 0.6692 | Val Accuracy: 64.86%
+   📅 Epoch 8 | Loss: 0.6062 | Val Accuracy: 52.54%
+   📅 Epoch 9 | Loss: 0.6186 | Val Accuracy: 67.21%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 81.93%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_mars_mae_lr0.001_concat_3.pth
+========================================
+

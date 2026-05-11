@@ -1,0 +1,50 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_siglip2_frac0.01x_lr0.0001_concat_3.log
+⏰ Time: 2026-04-15 10:12:12
+============================================================
+
+🚀 Training siglip2 on mb-landmark_cls | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 69 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 2.2576 | Val Accuracy: 0.89%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 2.1598 | Val Accuracy: 4.57%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 3 | Loss: 2.0724 | Val Accuracy: 13.50%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 2.0868 | Val Accuracy: 29.89%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 5 | Loss: 2.0531 | Val Accuracy: 33.91%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 6 | Loss: 2.0258 | Val Accuracy: 29.28%
+   📅 Epoch 7 | Loss: 1.9813 | Val Accuracy: 26.66%
+   📅 Epoch 8 | Loss: 1.9586 | Val Accuracy: 22.76%
+   📅 Epoch 9 | Loss: 1.9646 | Val Accuracy: 19.52%
+   📅 Epoch 10 | Loss: 1.9707 | Val Accuracy: 18.63%
+   📅 Epoch 11 | Loss: 1.9359 | Val Accuracy: 20.19%
+   📅 Epoch 12 | Loss: 1.9075 | Val Accuracy: 23.76%
+   📅 Epoch 13 | Loss: 1.8601 | Val Accuracy: 27.38%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 33.91%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_siglip2_lr0.0001_concat_3.pth
+========================================
+

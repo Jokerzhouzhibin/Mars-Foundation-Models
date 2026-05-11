@@ -1,0 +1,99 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-domars16k_siglip2_lr1e-05_original.log
+⏰ Time: 2026-03-02 01:39:55
+============================================================
+
+🚀 Training siglip2 on mb-domars16k | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 2.2104 | Val Accuracy: 66.85%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 1.1025 | Val Accuracy: 80.17%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.6760 | Val Accuracy: 82.71%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.5462 | Val Accuracy: 85.07%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.4940 | Val Accuracy: 86.25%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.4522 | Val Accuracy: 87.92%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.4096 | Val Accuracy: 87.79%
+   📅 Epoch 8 | Loss: 0.3820 | Val Accuracy: 89.03%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.3627 | Val Accuracy: 88.91%
+   📅 Epoch 10 | Loss: 0.3493 | Val Accuracy: 89.78%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.3201 | Val Accuracy: 90.40%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.3248 | Val Accuracy: 90.77%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.3045 | Val Accuracy: 89.90%
+   📅 Epoch 14 | Loss: 0.2961 | Val Accuracy: 91.08%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.2834 | Val Accuracy: 90.58%
+   📅 Epoch 16 | Loss: 0.2720 | Val Accuracy: 91.39%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 0.2658 | Val Accuracy: 91.26%
+   📅 Epoch 18 | Loss: 0.2541 | Val Accuracy: 91.45%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 0.2544 | Val Accuracy: 91.82%
+      ⭐ New Best! Saved.
+   📅 Epoch 20 | Loss: 0.2427 | Val Accuracy: 91.20%
+   📅 Epoch 21 | Loss: 0.2383 | Val Accuracy: 91.45%
+   📅 Epoch 22 | Loss: 0.2265 | Val Accuracy: 90.95%
+   📅 Epoch 23 | Loss: 0.2232 | Val Accuracy: 91.88%
+      ⭐ New Best! Saved.
+   📅 Epoch 24 | Loss: 0.2228 | Val Accuracy: 91.45%
+   📅 Epoch 25 | Loss: 0.2149 | Val Accuracy: 91.64%
+   📅 Epoch 26 | Loss: 0.2030 | Val Accuracy: 91.76%
+   📅 Epoch 27 | Loss: 0.2030 | Val Accuracy: 92.19%
+      ⭐ New Best! Saved.
+   📅 Epoch 28 | Loss: 0.1995 | Val Accuracy: 91.14%
+   📅 Epoch 29 | Loss: 0.2018 | Val Accuracy: 91.39%
+   📅 Epoch 30 | Loss: 0.1938 | Val Accuracy: 91.88%
+   📅 Epoch 31 | Loss: 0.1920 | Val Accuracy: 92.50%
+      ⭐ New Best! Saved.
+   📅 Epoch 32 | Loss: 0.1880 | Val Accuracy: 92.07%
+   📅 Epoch 33 | Loss: 0.1727 | Val Accuracy: 91.45%
+   📅 Epoch 34 | Loss: 0.1728 | Val Accuracy: 92.87%
+      ⭐ New Best! Saved.
+   📅 Epoch 35 | Loss: 0.1718 | Val Accuracy: 92.63%
+   📅 Epoch 36 | Loss: 0.1785 | Val Accuracy: 92.19%
+   📅 Epoch 37 | Loss: 0.1670 | Val Accuracy: 92.57%
+   📅 Epoch 38 | Loss: 0.1684 | Val Accuracy: 93.25%
+      ⭐ New Best! Saved.
+   📅 Epoch 39 | Loss: 0.1600 | Val Accuracy: 93.31%
+      ⭐ New Best! Saved.
+   📅 Epoch 40 | Loss: 0.1533 | Val Accuracy: 92.63%
+   📅 Epoch 41 | Loss: 0.1490 | Val Accuracy: 92.32%
+   📅 Epoch 42 | Loss: 0.1528 | Val Accuracy: 92.50%
+   📅 Epoch 43 | Loss: 0.1387 | Val Accuracy: 92.94%
+   📅 Epoch 44 | Loss: 0.1492 | Val Accuracy: 92.13%
+   📅 Epoch 45 | Loss: 0.1460 | Val Accuracy: 92.81%
+   📅 Epoch 46 | Loss: 0.1361 | Val Accuracy: 92.63%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 93.31%
+💾 Best Checkpoint: ./checkpoints/full_mb-domars16k_siglip2_lr1e-05_original.pth
+========================================
+

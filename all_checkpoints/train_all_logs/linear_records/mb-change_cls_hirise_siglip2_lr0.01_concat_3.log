@@ -1,0 +1,50 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-change_cls_hirise_siglip2_lr0.01_concat_3.log
+⏰ Time: 2026-02-28 20:51:41
+============================================================
+
+🚀 Training siglip2 on mb-change_cls_hirise | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6206 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 7.5747 | Val Accuracy: 91.94%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 1.3385 | Val Accuracy: 94.25%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.4283 | Val Accuracy: 94.40%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.2577 | Val Accuracy: 94.93%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.2446 | Val Accuracy: 95.60%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.2245 | Val Accuracy: 95.97%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.6402 | Val Accuracy: 53.58%
+   📅 Epoch 8 | Loss: 2.4169 | Val Accuracy: 95.07%
+   📅 Epoch 9 | Loss: 1.0988 | Val Accuracy: 94.55%
+   📅 Epoch 10 | Loss: 0.5525 | Val Accuracy: 95.22%
+   📅 Epoch 11 | Loss: 0.4049 | Val Accuracy: 94.70%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.97%
+💾 Best Checkpoint: ./checkpoints/linear_mb-change_cls_hirise_siglip2_lr0.01_concat_3.pth
+========================================
+

@@ -1,0 +1,50 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_siglip2_frac0.01x_lr0.001_concat_3.log
+⏰ Time: 2026-04-13 17:24:29
+============================================================
+
+🚀 Training siglip2 on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 98 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=0, BS=64, SmallData=True
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 8)
+   📅 Epoch 1 | Loss: 1.2533 | Val Accuracy: 51.02%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 2 | Loss: 2.0088 | Val Accuracy: 51.02%
+   📅 Epoch 3 | Loss: 1.5919 | Val Accuracy: 86.46%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 4 | Loss: 0.4758 | Val Accuracy: 48.98%
+   📅 Epoch 5 | Loss: 1.0242 | Val Accuracy: 48.98%
+   📅 Epoch 6 | Loss: 1.0360 | Val Accuracy: 51.59%
+   📅 Epoch 7 | Loss: 0.5278 | Val Accuracy: 95.38%
+      ⭐ New Best! (Model saving disabled to save space)
+   📅 Epoch 8 | Loss: 0.3122 | Val Accuracy: 86.92%
+   📅 Epoch 9 | Loss: 0.4668 | Val Accuracy: 84.45%
+   📅 Epoch 10 | Loss: 0.5185 | Val Accuracy: 89.07%
+   📅 Epoch 11 | Loss: 0.3573 | Val Accuracy: 94.67%
+   📅 Epoch 12 | Loss: 0.3135 | Val Accuracy: 95.19%
+   📅 Epoch 13 | Loss: 0.2115 | Val Accuracy: 85.08%
+   📅 Epoch 14 | Loss: 0.2106 | Val Accuracy: 74.18%
+   📅 Epoch 15 | Loss: 0.3663 | Val Accuracy: 73.84%
+
+   🛑 Early Stopping triggered after 8 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.38%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_siglip2_lr0.001_concat_3.pth
+========================================
+

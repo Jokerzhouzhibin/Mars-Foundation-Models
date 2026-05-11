@@ -1,0 +1,105 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_siglip2_lr0.0001_concat_2.log
+⏰ Time: 2026-03-03 19:31:16
+============================================================
+
+🚀 Training siglip2 on mb-landmark_cls | Mode: LINEAR | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: siglip2 (transformers)
+
+   🔍 [Structure Check] siglip2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 1.2051 | Val Accuracy: 82.65%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.6756 | Val Accuracy: 82.65%
+   📅 Epoch 3 | Loss: 0.6110 | Val Accuracy: 82.82%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.5583 | Val Accuracy: 83.21%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.5156 | Val Accuracy: 83.83%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.4800 | Val Accuracy: 84.22%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.4463 | Val Accuracy: 85.16%
+      ⭐ New Best! Saved.
+   📅 Epoch 8 | Loss: 0.4194 | Val Accuracy: 85.67%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.3935 | Val Accuracy: 86.00%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.3746 | Val Accuracy: 86.67%
+      ⭐ New Best! Saved.
+   📅 Epoch 11 | Loss: 0.3616 | Val Accuracy: 87.12%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.3430 | Val Accuracy: 87.51%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.3275 | Val Accuracy: 88.01%
+      ⭐ New Best! Saved.
+   📅 Epoch 14 | Loss: 0.3155 | Val Accuracy: 88.18%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.3017 | Val Accuracy: 88.57%
+      ⭐ New Best! Saved.
+   📅 Epoch 16 | Loss: 0.2918 | Val Accuracy: 88.62%
+      ⭐ New Best! Saved.
+   📅 Epoch 17 | Loss: 0.2946 | Val Accuracy: 88.79%
+      ⭐ New Best! Saved.
+   📅 Epoch 18 | Loss: 0.2806 | Val Accuracy: 89.07%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 0.2735 | Val Accuracy: 89.35%
+      ⭐ New Best! Saved.
+   📅 Epoch 20 | Loss: 0.2701 | Val Accuracy: 89.40%
+      ⭐ New Best! Saved.
+   📅 Epoch 21 | Loss: 0.2626 | Val Accuracy: 89.74%
+      ⭐ New Best! Saved.
+   📅 Epoch 22 | Loss: 0.2597 | Val Accuracy: 89.85%
+      ⭐ New Best! Saved.
+   📅 Epoch 23 | Loss: 0.2479 | Val Accuracy: 89.96%
+      ⭐ New Best! Saved.
+   📅 Epoch 24 | Loss: 0.2491 | Val Accuracy: 90.07%
+      ⭐ New Best! Saved.
+   📅 Epoch 25 | Loss: 0.2474 | Val Accuracy: 90.13%
+      ⭐ New Best! Saved.
+   📅 Epoch 26 | Loss: 0.2382 | Val Accuracy: 90.07%
+   📅 Epoch 27 | Loss: 0.2299 | Val Accuracy: 90.13%
+   📅 Epoch 28 | Loss: 0.2293 | Val Accuracy: 90.35%
+      ⭐ New Best! Saved.
+   📅 Epoch 29 | Loss: 0.2283 | Val Accuracy: 90.69%
+      ⭐ New Best! Saved.
+   📅 Epoch 30 | Loss: 0.2276 | Val Accuracy: 90.85%
+      ⭐ New Best! Saved.
+   📅 Epoch 31 | Loss: 0.2229 | Val Accuracy: 90.85%
+   📅 Epoch 32 | Loss: 0.2144 | Val Accuracy: 90.91%
+      ⭐ New Best! Saved.
+   📅 Epoch 33 | Loss: 0.2141 | Val Accuracy: 90.96%
+      ⭐ New Best! Saved.
+   📅 Epoch 34 | Loss: 0.2190 | Val Accuracy: 91.13%
+      ⭐ New Best! Saved.
+   📅 Epoch 35 | Loss: 0.2139 | Val Accuracy: 91.19%
+      ⭐ New Best! Saved.
+   📅 Epoch 36 | Loss: 0.2120 | Val Accuracy: 91.30%
+      ⭐ New Best! Saved.
+   📅 Epoch 37 | Loss: 0.2082 | Val Accuracy: 91.36%
+      ⭐ New Best! Saved.
+   📅 Epoch 38 | Loss: 0.2071 | Val Accuracy: 91.36%
+   📅 Epoch 39 | Loss: 0.1978 | Val Accuracy: 91.30%
+   📅 Epoch 40 | Loss: 0.1980 | Val Accuracy: 91.58%
+      ⭐ New Best! Saved.
+
+========================================
+🏆 Best Val Accuracy: 91.58%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_siglip2_lr0.0001_concat_2.pth
+========================================
+

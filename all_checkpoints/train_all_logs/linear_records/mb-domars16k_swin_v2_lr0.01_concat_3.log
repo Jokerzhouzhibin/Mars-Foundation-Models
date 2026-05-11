@@ -1,0 +1,52 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_swin_v2_lr0.01_concat_3.log
+⏰ Time: 2026-03-01 13:28:30
+============================================================
+
+🚀 Training swin_v2 on mb-domars16k | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: swin_v2 (torchvision_swin)
+   🔍 Auditing weights for [swin_v2]...
+   ✅ [PERFECT MATCH] 449/449 layers loaded (100.0%)
+
+   🔍 [Structure Check] swin_v2 Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 64, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 3072
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 6.5966 | Val Accuracy: 71.38%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 1.3771 | Val Accuracy: 78.19%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.9607 | Val Accuracy: 80.36%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.8863 | Val Accuracy: 77.57%
+   📅 Epoch 5 | Loss: 0.8741 | Val Accuracy: 76.02%
+   📅 Epoch 6 | Loss: 1.0323 | Val Accuracy: 78.56%
+   📅 Epoch 7 | Loss: 0.9535 | Val Accuracy: 79.00%
+   📅 Epoch 8 | Loss: 1.1085 | Val Accuracy: 81.29%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 1.0102 | Val Accuracy: 79.99%
+   📅 Epoch 10 | Loss: 0.9194 | Val Accuracy: 78.87%
+   📅 Epoch 11 | Loss: 1.0655 | Val Accuracy: 80.67%
+   📅 Epoch 12 | Loss: 0.9471 | Val Accuracy: 81.23%
+   📅 Epoch 13 | Loss: 0.9856 | Val Accuracy: 79.68%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 81.29%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_swin_v2_lr0.01_concat_3.pth
+========================================
+

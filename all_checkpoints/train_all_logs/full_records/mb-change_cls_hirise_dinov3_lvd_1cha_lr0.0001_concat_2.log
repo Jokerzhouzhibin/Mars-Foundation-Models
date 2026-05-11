@@ -1,0 +1,52 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-change_cls_hirise_dinov3_lvd_1cha_lr0.0001_concat_2.log
+⏰ Time: 2026-04-02 02:34:48
+============================================================
+
+🚀 Training dinov3_lvd_1cha on mb-change_cls_hirise | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6206 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1340 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: dinov3_lvd_1cha (dinov3_hub)
+   🔍 Auditing weights for [dinov3_lvd_1cha]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_lvd_1cha Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.1783 | Val Accuracy: 96.19%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1384 | Val Accuracy: 95.22%
+   📅 Epoch 3 | Loss: 0.1255 | Val Accuracy: 96.49%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1249 | Val Accuracy: 97.61%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.1076 | Val Accuracy: 97.46%
+   📅 Epoch 6 | Loss: 0.1078 | Val Accuracy: 97.99%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.1085 | Val Accuracy: 97.16%
+   📅 Epoch 8 | Loss: 0.1067 | Val Accuracy: 97.16%
+   📅 Epoch 9 | Loss: 0.1051 | Val Accuracy: 96.34%
+   📅 Epoch 10 | Loss: 0.0957 | Val Accuracy: 97.09%
+   📅 Epoch 11 | Loss: 0.0954 | Val Accuracy: 97.24%
+   📅 Epoch 12 | Loss: 0.1010 | Val Accuracy: 96.94%
+   📅 Epoch 13 | Loss: 0.0958 | Val Accuracy: 97.84%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 97.99%
+💾 Best Checkpoint: ./checkpoints/full_mb-change_cls_hirise_dinov3_lvd_1cha_lr0.0001_concat_2.pth
+========================================
+

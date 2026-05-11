@@ -1,0 +1,56 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-atmospheric_dust_cls_rdr_mars_mae_lr0.0001_concat_3.log
+⏰ Time: 2026-02-28 10:25:21
+============================================================
+
+🚀 Training mars_mae on mb-atmospheric_dust_cls_rdr | Mode: FULL | LR: 0.0001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: mars_mae (timm_mae)
+   ℹ️  Config: in_chans=1
+   🔍 Auditing weights for [mars_mae]...
+   ✅ [PERFECT MATCH] 150/150 layers loaded (100.0%)
+
+   🔍 [Structure Check] mars_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 768)
+      Item 1: Shape (1, 196, 768)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_3 | Input Dim: 2304
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.2059 | Val Accuracy: 92.02%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.1312 | Val Accuracy: 94.63%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.1172 | Val Accuracy: 95.38%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.1146 | Val Accuracy: 95.36%
+   📅 Epoch 5 | Loss: 0.1054 | Val Accuracy: 95.72%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.1052 | Val Accuracy: 95.01%
+   📅 Epoch 7 | Loss: 0.0974 | Val Accuracy: 95.59%
+   📅 Epoch 8 | Loss: 0.0944 | Val Accuracy: 95.88%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.0948 | Val Accuracy: 94.74%
+   📅 Epoch 10 | Loss: 0.0873 | Val Accuracy: 95.51%
+   📅 Epoch 11 | Loss: 0.0831 | Val Accuracy: 95.84%
+   📅 Epoch 12 | Loss: 0.0934 | Val Accuracy: 95.26%
+   📅 Epoch 13 | Loss: 0.0836 | Val Accuracy: 95.78%
+   📅 Epoch 14 | Loss: 0.0730 | Val Accuracy: 93.38%
+   📅 Epoch 15 | Loss: 0.0851 | Val Accuracy: 95.68%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 95.88%
+💾 Best Checkpoint: ./checkpoints/full_mb-atmospheric_dust_cls_rdr_mars_mae_lr0.0001_concat_3.pth
+========================================
+

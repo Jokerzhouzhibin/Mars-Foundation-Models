@@ -1,0 +1,54 @@
+
+============================================================
+📄 Log File: ./logs/full_records/mb-frost_cls_dinov3_lvd_lr1e-05_concat_2.log
+⏰ Time: 2026-03-01 19:48:10
+============================================================
+
+🚀 Training dinov3_lvd on mb-frost_cls | Mode: FULL | LR: 1e-05
+   📂 [TRAIN] Loading 4 shards...
+   ✅ Loaded 30124 samples.
+   📂 [TEST] Loading 2 shards...
+   ✅ Loaded 12249 samples.
+   ⚙️  Config: Workers=8, BS=32, SmallData=False
+
+>>> Loading Model: dinov3_lvd (dinov3_hub)
+   🔍 Auditing weights for [dinov3_lvd]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_lvd Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: concat_2 | Input Dim: 2048
+   🔥 Mode: Full Fine-tuning (Backbone Unfrozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 50, Patience: 7)
+   📅 Epoch 1 | Loss: 0.2725 | Val Accuracy: 97.41%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.0564 | Val Accuracy: 97.66%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.0354 | Val Accuracy: 98.01%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.0255 | Val Accuracy: 98.05%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.0210 | Val Accuracy: 98.43%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.0167 | Val Accuracy: 98.58%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.0128 | Val Accuracy: 98.04%
+   📅 Epoch 8 | Loss: 0.0133 | Val Accuracy: 98.41%
+   📅 Epoch 9 | Loss: 0.0106 | Val Accuracy: 97.70%
+   📅 Epoch 10 | Loss: 0.0087 | Val Accuracy: 98.17%
+   📅 Epoch 11 | Loss: 0.0072 | Val Accuracy: 97.91%
+   📅 Epoch 12 | Loss: 0.0082 | Val Accuracy: 98.32%
+   📅 Epoch 13 | Loss: 0.0063 | Val Accuracy: 98.19%
+
+   🛑 Early Stopping triggered after 7 epochs.
+
+========================================
+🏆 Best Val Accuracy: 98.58%
+💾 Best Checkpoint: ./checkpoints/full_mb-frost_cls_dinov3_lvd_lr1e-05_concat_2.pth
+========================================
+

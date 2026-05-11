@@ -1,0 +1,81 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-landmark_cls_satmae_lr0.001_original.log
+⏰ Time: 2026-03-03 14:22:39
+============================================================
+
+🚀 Training satmae on mb-landmark_cls | Mode: LINEAR | LR: 0.001
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 6997 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1793 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: satmae (timm_mae)
+   ℹ️  Config: in_chans=3
+   🔍 Auditing weights for [satmae]...
+   ✅ [PERFECT MATCH] 294/294 layers loaded (100.0%)
+
+   🔍 [Structure Check] satmae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.8191 | Val Accuracy: 82.65%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.5652 | Val Accuracy: 83.88%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.4843 | Val Accuracy: 85.11%
+      ⭐ New Best! Saved.
+   📅 Epoch 4 | Loss: 0.4417 | Val Accuracy: 86.45%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.4119 | Val Accuracy: 86.45%
+   📅 Epoch 6 | Loss: 0.3889 | Val Accuracy: 87.28%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.3745 | Val Accuracy: 87.12%
+   📅 Epoch 8 | Loss: 0.3631 | Val Accuracy: 87.51%
+      ⭐ New Best! Saved.
+   📅 Epoch 9 | Loss: 0.3486 | Val Accuracy: 88.01%
+      ⭐ New Best! Saved.
+   📅 Epoch 10 | Loss: 0.3413 | Val Accuracy: 87.79%
+   📅 Epoch 11 | Loss: 0.3284 | Val Accuracy: 88.29%
+      ⭐ New Best! Saved.
+   📅 Epoch 12 | Loss: 0.3174 | Val Accuracy: 88.73%
+      ⭐ New Best! Saved.
+   📅 Epoch 13 | Loss: 0.3139 | Val Accuracy: 88.73%
+   📅 Epoch 14 | Loss: 0.3060 | Val Accuracy: 88.96%
+      ⭐ New Best! Saved.
+   📅 Epoch 15 | Loss: 0.3083 | Val Accuracy: 88.85%
+   📅 Epoch 16 | Loss: 0.3049 | Val Accuracy: 88.90%
+   📅 Epoch 17 | Loss: 0.2981 | Val Accuracy: 88.79%
+   📅 Epoch 18 | Loss: 0.2908 | Val Accuracy: 89.24%
+      ⭐ New Best! Saved.
+   📅 Epoch 19 | Loss: 0.2909 | Val Accuracy: 88.85%
+   📅 Epoch 20 | Loss: 0.2834 | Val Accuracy: 89.29%
+      ⭐ New Best! Saved.
+   📅 Epoch 21 | Loss: 0.2841 | Val Accuracy: 89.12%
+   📅 Epoch 22 | Loss: 0.2814 | Val Accuracy: 89.12%
+   📅 Epoch 23 | Loss: 0.2755 | Val Accuracy: 89.46%
+      ⭐ New Best! Saved.
+   📅 Epoch 24 | Loss: 0.2741 | Val Accuracy: 89.29%
+   📅 Epoch 25 | Loss: 0.2687 | Val Accuracy: 89.24%
+   📅 Epoch 26 | Loss: 0.2673 | Val Accuracy: 89.85%
+      ⭐ New Best! Saved.
+   📅 Epoch 27 | Loss: 0.2716 | Val Accuracy: 89.29%
+   📅 Epoch 28 | Loss: 0.2598 | Val Accuracy: 89.46%
+   📅 Epoch 29 | Loss: 0.2630 | Val Accuracy: 89.46%
+   📅 Epoch 30 | Loss: 0.2630 | Val Accuracy: 89.74%
+   📅 Epoch 31 | Loss: 0.2530 | Val Accuracy: 89.85%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 89.85%
+💾 Best Checkpoint: ./checkpoints/linear_mb-landmark_cls_satmae_lr0.001_original.pth
+========================================
+

@@ -1,0 +1,51 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-domars16k_dinov3_lvd_lr0.01_original.log
+⏰ Time: 2026-02-28 22:21:58
+============================================================
+
+🚀 Training dinov3_lvd on mb-domars16k | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 11305 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 1614 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: dinov3_lvd (dinov3_hub)
+   🔍 Auditing weights for [dinov3_lvd]...
+   ✅ [PERFECT MATCH] 368/368 layers loaded (100.0%)
+
+   🔍 [Structure Check] dinov3_lvd Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 256, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: CLS_only | Input Dim: 1024
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.7493 | Val Accuracy: 82.34%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.4668 | Val Accuracy: 84.82%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.4350 | Val Accuracy: 84.82%
+   📅 Epoch 4 | Loss: 0.4066 | Val Accuracy: 85.75%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.3811 | Val Accuracy: 85.87%
+      ⭐ New Best! Saved.
+   📅 Epoch 6 | Loss: 0.3751 | Val Accuracy: 86.74%
+      ⭐ New Best! Saved.
+   📅 Epoch 7 | Loss: 0.3566 | Val Accuracy: 84.94%
+   📅 Epoch 8 | Loss: 0.3671 | Val Accuracy: 85.56%
+   📅 Epoch 9 | Loss: 0.3645 | Val Accuracy: 84.88%
+   📅 Epoch 10 | Loss: 0.3559 | Val Accuracy: 86.74%
+   📅 Epoch 11 | Loss: 0.3385 | Val Accuracy: 85.01%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 86.74%
+💾 Best Checkpoint: ./checkpoints/linear_mb-domars16k_dinov3_lvd_lr0.01_original.pth
+========================================
+

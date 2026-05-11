@@ -1,0 +1,48 @@
+
+============================================================
+📄 Log File: ./logs/linear_records/mb-atmospheric_dust_cls_rdr_scale_mae_lr0.01_original.log
+⏰ Time: 2026-02-28 09:39:22
+============================================================
+
+🚀 Training scale_mae on mb-atmospheric_dust_cls_rdr | Mode: LINEAR | LR: 0.01
+   📂 [TRAIN] Loading 1 shards...
+   ✅ Loaded 9817 samples.
+   📂 [TEST] Loading 1 shards...
+   ✅ Loaded 5214 samples.
+   ⚙️  Config: Workers=8, BS=256, SmallData=False
+
+>>> Loading Model: scale_mae (scalemae)
+   🔍 Auditing weights for [scale_mae]...
+   ⚠️ [PARTIAL MATCH] 344/435 layers loaded (79.1%)
+
+   🔍 [Structure Check] scale_mae Output Analysis:
+      Type: Tuple (len=2)
+      Item 0: Shape (1, 1024)
+      Item 1: Shape (1, 196, 1024)
+      ✅ Identified: CLS=True, Patch=True
+      👉 Final Strategy: GAP_only | Input Dim: 1024
+      📏 ScaleMAE GSD: 0.3 m/px
+   ❄️  Mode: Linear Probe (Backbone Frozen)
+   🚀 Compiling model with torch.compile...
+   ⚡ AMP Precision: torch.bfloat16
+   🔄 Training Start... (Epochs: 40, Patience: 5)
+   📅 Epoch 1 | Loss: 0.6538 | Val Accuracy: 87.50%
+      ⭐ New Best! Saved.
+   📅 Epoch 2 | Loss: 0.3662 | Val Accuracy: 90.05%
+      ⭐ New Best! Saved.
+   📅 Epoch 3 | Loss: 0.3667 | Val Accuracy: 89.68%
+   📅 Epoch 4 | Loss: 0.3764 | Val Accuracy: 90.20%
+      ⭐ New Best! Saved.
+   📅 Epoch 5 | Loss: 0.3291 | Val Accuracy: 89.41%
+   📅 Epoch 6 | Loss: 0.3289 | Val Accuracy: 88.30%
+   📅 Epoch 7 | Loss: 0.3432 | Val Accuracy: 85.96%
+   📅 Epoch 8 | Loss: 0.3379 | Val Accuracy: 84.70%
+   📅 Epoch 9 | Loss: 0.2971 | Val Accuracy: 89.72%
+
+   🛑 Early Stopping triggered after 5 epochs.
+
+========================================
+🏆 Best Val Accuracy: 90.20%
+💾 Best Checkpoint: ./checkpoints/linear_mb-atmospheric_dust_cls_rdr_scale_mae_lr0.01_original.pth
+========================================
+
