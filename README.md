@@ -223,6 +223,54 @@ Generates PDF + PNG figures in `all_checkpoints/output_figures/`.
 
 ## Results
 
+### Quantitative Evaluation
+
+#### KNN Evaluation (Frozen Features)
+
+<p align="center">
+  <img src="all_checkpoints/output_figures/fig1_knn_best.png" width="90%">
+</p>
+
+#### Linear Probe
+
+<p align="center">
+  <img src="all_checkpoints/output_figures/fig2_linear_probe.png" width="90%">
+</p>
+
+#### Full Fine-tuning
+
+<p align="center">
+  <img src="all_checkpoints/output_figures/fig3_full_finetune.png" width="90%">
+</p>
+
+#### Data Efficiency
+
+<p align="center">
+  <img src="all_checkpoints/output_figures/fig4_data_efficiency.png" width="90%">
+</p>
+
+### Attention Visualization
+
+#### Exp A: DINOv3-LVD 3ch vs 1ch
+
+| Patch Cosine Similarity | Mid-Layer CLS Attention |
+|:-:|:-:|
+| ![](all_checkpoints/output_vis/ExpA_1ch_lvd/patch_cosine.png) | ![](all_checkpoints/output_vis/ExpA_1ch_lvd/mid_layer_cls.png) |
+
+#### Exp B: DINOv3-SAT 3ch vs 1ch
+
+| Patch Cosine Similarity | Mid-Layer CLS Attention |
+|:-:|:-:|
+| ![](all_checkpoints/output_vis/ExpB_1ch_sat/patch_cosine.png) | ![](all_checkpoints/output_vis/ExpB_1ch_sat/mid_layer_cls.png) |
+
+#### Exp C: Mars-MAE vs DINOv1 (Same-scale Comparison)
+
+| Patch Cosine Similarity | Mid-Layer CLS Attention |
+|:-:|:-:|
+| ![](all_checkpoints/output_vis/ExpC_Domain_vs_General/patch_cosine.png) | ![](all_checkpoints/output_vis/ExpC_Domain_vs_General/mid_layer_cls.png) |
+
+### Pre-computed CSV Results
+
 Pre-computed results are included in `all_checkpoints/`:
 
 - `knn_checkpoints/best_summary_knn.csv` — Best KNN F1 per model per dataset
