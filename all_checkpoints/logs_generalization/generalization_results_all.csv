@@ -1,4 +1,4 @@
-Dataset,Model,Datafraction,Score,Filename
+﻿Dataset,Model,Datafraction,Score,Filename
 mb-atmospheric_dust_cls_rdr,dinov1_b8,0.01,94.4,mb-atmospheric_dust_cls_rdr_dinov1_b8_frac0.01x_lr0.0001_concat_3.log
 mb-atmospheric_dust_cls_rdr,dinov1_b8,0.01,95.22,mb-atmospheric_dust_cls_rdr_dinov1_b8_frac0.01x_lr0.001_concat_3.log
 mb-atmospheric_dust_cls_rdr,dinov1_b8,0.01,69.01,mb-atmospheric_dust_cls_rdr_dinov1_b8_frac0.01x_lr1e-05_concat_3.log
@@ -134,9 +134,6 @@ mb-atmospheric_dust_cls_rdr,satmae,0.50,93.25,mb-atmospheric_dust_cls_rdr_satmae
 mb-atmospheric_dust_cls_rdr,satmae,full,94.73,mb-atmospheric_dust_cls_rdr_satmae_lr0.0001_concat_3.log
 mb-atmospheric_dust_cls_rdr,satmae,full,95.26,mb-atmospheric_dust_cls_rdr_satmae_lr0.001_concat_3.log
 mb-atmospheric_dust_cls_rdr,satmae,full,95.99,mb-atmospheric_dust_cls_rdr_satmae_lr0.01_concat_3.log
-mb-atmospheric_dust_cls_rdr,scale_mae,full,91.12,mb-atmospheric_dust_cls_rdr_scale_mae_lr0.0001_concat_3.log
-mb-atmospheric_dust_cls_rdr,scale_mae,full,92.1,mb-atmospheric_dust_cls_rdr_scale_mae_lr0.001_concat_3.log
-mb-atmospheric_dust_cls_rdr,scale_mae,full,92.44,mb-atmospheric_dust_cls_rdr_scale_mae_lr0.01_concat_3.log
 mb-atmospheric_dust_cls_rdr,siglip2,0.01,94.51,mb-atmospheric_dust_cls_rdr_siglip2_frac0.01x_lr0.0001_concat_3.log
 mb-atmospheric_dust_cls_rdr,siglip2,0.01,95.38,mb-atmospheric_dust_cls_rdr_siglip2_frac0.01x_lr0.001_concat_3.log
 mb-atmospheric_dust_cls_rdr,siglip2,0.01,58.5,mb-atmospheric_dust_cls_rdr_siglip2_frac0.01x_lr1e-05_concat_3.log
@@ -263,9 +260,6 @@ mb-change_cls_ctx,satmae,0.50,80.0,mb-change_cls_ctx_satmae_frac0.50x_lr1e-05_co
 mb-change_cls_ctx,satmae,full,80.0,mb-change_cls_ctx_satmae_lr0.0001_concat_3.log
 mb-change_cls_ctx,satmae,full,80.0,mb-change_cls_ctx_satmae_lr0.001_concat_3.log
 mb-change_cls_ctx,satmae,full,80.0,mb-change_cls_ctx_satmae_lr0.01_concat_3.log
-mb-change_cls_ctx,scale_mae,full,80.0,mb-change_cls_ctx_scale_mae_lr0.0001_concat_3.log
-mb-change_cls_ctx,scale_mae,full,80.0,mb-change_cls_ctx_scale_mae_lr0.001_concat_3.log
-mb-change_cls_ctx,scale_mae,full,80.0,mb-change_cls_ctx_scale_mae_lr0.01_concat_3.log
 mb-change_cls_ctx,siglip2,0.20,20.0,mb-change_cls_ctx_siglip2_frac0.20x_lr0.0001_concat_3.log
 mb-change_cls_ctx,siglip2,0.20,20.0,mb-change_cls_ctx_siglip2_frac0.20x_lr0.001_concat_3.log
 mb-change_cls_ctx,siglip2,0.20,25.0,mb-change_cls_ctx_siglip2_frac0.20x_lr1e-05_concat_3.log
@@ -428,9 +422,6 @@ mb-change_cls_hirise,satmae,0.50,91.94,mb-change_cls_hirise_satmae_frac0.50x_lr1
 mb-change_cls_hirise,satmae,full,95.45,mb-change_cls_hirise_satmae_lr0.0001_concat_3.log
 mb-change_cls_hirise,satmae,full,95.67,mb-change_cls_hirise_satmae_lr0.001_concat_3.log
 mb-change_cls_hirise,satmae,full,95.52,mb-change_cls_hirise_satmae_lr0.01_concat_3.log
-mb-change_cls_hirise,scale_mae,full,91.94,mb-change_cls_hirise_scale_mae_lr0.0001_concat_3.log
-mb-change_cls_hirise,scale_mae,full,91.94,mb-change_cls_hirise_scale_mae_lr0.001_concat_3.log
-mb-change_cls_hirise,scale_mae,full,94.78,mb-change_cls_hirise_scale_mae_lr0.01_concat_3.log
 mb-change_cls_hirise,siglip2,0.01,91.87,mb-change_cls_hirise_siglip2_frac0.01x_lr0.0001_concat_3.log
 mb-change_cls_hirise,siglip2,0.01,91.94,mb-change_cls_hirise_siglip2_frac0.01x_lr0.001_concat_3.log
 mb-change_cls_hirise,siglip2,0.01,8.06,mb-change_cls_hirise_siglip2_frac0.01x_lr1e-05_concat_3.log
@@ -611,9 +602,6 @@ mb-domars16k,satmae,0.50,68.22,mb-domars16k_satmae_frac0.50x_lr1e-05_concat_3.lo
 mb-domars16k,satmae,full,78.75,mb-domars16k_satmae_lr0.0001_concat_3.log
 mb-domars16k,satmae,full,84.08,mb-domars16k_satmae_lr0.001_concat_3.log
 mb-domars16k,satmae,full,82.28,mb-domars16k_satmae_lr0.01_concat_3.log
-mb-domars16k,scale_mae,full,59.23,mb-domars16k_scale_mae_lr0.0001_concat_3.log
-mb-domars16k,scale_mae,full,64.19,mb-domars16k_scale_mae_lr0.001_concat_3.log
-mb-domars16k,scale_mae,full,64.75,mb-domars16k_scale_mae_lr0.01_concat_3.log
 mb-domars16k,siglip2,0.01,33.21,mb-domars16k_siglip2_frac0.01x_lr0.0001_concat_3.log
 mb-domars16k,siglip2,0.01,51.36,mb-domars16k_siglip2_frac0.01x_lr0.001_concat_3.log
 mb-domars16k,siglip2,0.01,6.32,mb-domars16k_siglip2_frac0.01x_lr1e-05_concat_3.log
@@ -794,9 +782,6 @@ mb-frost_cls,satmae,0.50,95.26,mb-frost_cls_satmae_frac0.50x_lr1e-05_concat_3.lo
 mb-frost_cls,satmae,full,95.62,mb-frost_cls_satmae_lr0.0001_concat_3.log
 mb-frost_cls,satmae,full,96.06,mb-frost_cls_satmae_lr0.001_concat_3.log
 mb-frost_cls,satmae,full,95.5,mb-frost_cls_satmae_lr0.01_concat_3.log
-mb-frost_cls,scale_mae,full,96.1,mb-frost_cls_scale_mae_lr0.0001_concat_3.log
-mb-frost_cls,scale_mae,full,96.71,mb-frost_cls_scale_mae_lr0.001_concat_3.log
-mb-frost_cls,scale_mae,full,95.88,mb-frost_cls_scale_mae_lr0.01_concat_3.log
 mb-frost_cls,siglip2,0.01,92.63,mb-frost_cls_siglip2_frac0.01x_lr0.0001_concat_3.log
 mb-frost_cls,siglip2,0.01,94.22,mb-frost_cls_siglip2_frac0.01x_lr0.001_concat_3.log
 mb-frost_cls,siglip2,0.01,81.04,mb-frost_cls_siglip2_frac0.01x_lr1e-05_concat_3.log
@@ -977,9 +962,6 @@ mb-landmark_cls,satmae,0.50,82.54,mb-landmark_cls_satmae_frac0.50x_lr1e-05_conca
 mb-landmark_cls,satmae,full,89.01,mb-landmark_cls_satmae_lr0.0001_concat_3.log
 mb-landmark_cls,satmae,full,90.57,mb-landmark_cls_satmae_lr0.001_concat_3.log
 mb-landmark_cls,satmae,full,91.02,mb-landmark_cls_satmae_lr0.01_concat_3.log
-mb-landmark_cls,scale_mae,full,82.65,mb-landmark_cls_scale_mae_lr0.0001_concat_3.log
-mb-landmark_cls,scale_mae,full,86.39,mb-landmark_cls_scale_mae_lr0.001_concat_3.log
-mb-landmark_cls,scale_mae,full,86.78,mb-landmark_cls_scale_mae_lr0.01_concat_3.log
 mb-landmark_cls,siglip2,0.01,33.91,mb-landmark_cls_siglip2_frac0.01x_lr0.0001_concat_3.log
 mb-landmark_cls,siglip2,0.01,63.69,mb-landmark_cls_siglip2_frac0.01x_lr0.001_concat_3.log
 mb-landmark_cls,siglip2,0.01,70.38,mb-landmark_cls_siglip2_frac0.01x_lr1e-05_concat_3.log

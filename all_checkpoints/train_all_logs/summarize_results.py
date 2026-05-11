@@ -9,7 +9,7 @@ DATASETS = [
 ]
 
 MODELS = [
-    "mars_mae", "satmae", "scale_mae", "vit_l", "swin_v2",
+    "mars_mae", "satmae", "vit_l", "swin_v2",
     "siglip2", "openclip", "dinov3_lvd", "dinov3_sat",
     "dinov2_l14", "dinov1_b8", "dinov3_lvd_1cha", "dinov3_sat_1cha",
 ]

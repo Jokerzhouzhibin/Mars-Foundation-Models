@@ -51,18 +51,18 @@ class DualLogger(object):
 # ===========================
 DATASET_META = {
     # --- CTX (5m) ---
-    "mb-change_cls_ctx": {"nc": 2, "multi": False, "gsd": 5.0},
-    "mb-domars16k": {"nc": 15, "multi": False, "gsd": 5.0},
+    "mb-change_cls_ctx": {"nc": 2, "multi": False},
+    "mb-domars16k": {"nc": 15, "multi": False},
 
     # --- HiRISE (0.3m) ---
-    "mb-change_cls_hirise": {"nc": 2, "multi": False, "gsd": 0.3},
-    "mb-frost_cls": {"nc": 2, "multi": False, "gsd": 0.3},
-    "mb-landmark_cls": {"nc": 8, "multi": False, "gsd": 0.3},
-    "mb-atmospheric_dust_cls_rdr": {"nc": 2, "multi": False, "gsd": 0.3},
+    "mb-change_cls_hirise": {"nc": 2, "multi": False},
+    "mb-frost_cls": {"nc": 2, "multi": False},
+    "mb-landmark_cls": {"nc": 8, "multi": False},
+    "mb-atmospheric_dust_cls_rdr": {"nc": 2, "multi": False},
 
     # --- Rover (1m Baseline) ---
-    "mb-surface_cls": {"nc": 36, "multi": False, "gsd": 1.0},
-    "mb-surface_multi_label_cls": {"nc": 25, "multi": True, "gsd": 1.0},
+    "mb-surface_cls": {"nc": 36, "multi": False},
+    "mb-surface_multi_label_cls": {"nc": 25, "multi": True},
 }
 
 
@@ -225,14 +225,8 @@ class MarsClassifier(nn.Module):
         self.backbone_name = backbone_name.lower()
         self.backbone = load_model(backbone_name, device)
 
-        # 1. 获取该数据集的 GSD (用于 ScaleMAE)
-        self.gsd_val = 1.0
-        if dataset_name and dataset_name in DATASET_META:
-            self.gsd_val = DATASET_META[dataset_name].get('gsd', 1.0)
-
-        # 2. 识别模型特性
+        # 1. 识别模型特性
         self.is_swin = 'swin' in self.backbone_name
-        self.is_scalemae = 'scale' in self.backbone_name
 
         # 3. 策略定义 (外部传入优先)
         # 选项: "original" (按旧逻辑), "concat_2" (CLS+Mean), "concat_3" (CLS+Mean+Max)
@@ -243,8 +237,6 @@ class MarsClassifier(nn.Module):
         in_chans = cfg.get('in_chans', 3)
         dummy = torch.randn(1, in_chans, cfg['res'], cfg['res']).to(device)
         kwargs = {}
-        if self.is_scalemae:
-            kwargs['input_res'] = torch.ones(1).float().to(device)
 
         print(f"\n   🔍 [Structure Check] {backbone_name} Output Analysis:")
         with torch.no_grad():
@@ -332,8 +324,6 @@ class MarsClassifier(nn.Module):
                     self.target_strategy = "CLS_only"
 
         print(f"      👉 Final Strategy: {self.target_strategy} | Input Dim: {self.embed_dim}")
-        if self.is_scalemae:
-            print(f"      📏 ScaleMAE GSD: {self.gsd_val} m/px")
 
         # 5. 初始化分类头
         self.classifier = nn.Linear(self.embed_dim, num_classes).to(device)
@@ -347,14 +337,8 @@ class MarsClassifier(nn.Module):
             for param in self.backbone.parameters(): param.requires_grad = True
 
     def forward(self, x):
-        # 1. 准备 ScaleMAE 参数
-        kwargs = {}
-        if self.is_scalemae:
-            batch_gsd = torch.full((x.shape[0],), self.gsd_val, device=x.device, dtype=torch.float32)
-            kwargs['input_res'] = batch_gsd
-
-        # 2. Backbone Forward
-        outputs = self.backbone(x, **kwargs)
+        # 1. Backbone Forward
+        outputs = self.backbone(x)
 
         # 3. 特征提取与融合
         features_list = []

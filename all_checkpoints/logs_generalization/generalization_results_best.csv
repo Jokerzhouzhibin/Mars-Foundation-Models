@@ -1,4 +1,4 @@
-Dataset,Datafraction,Model,Score
+﻿Dataset,Datafraction,Model,Score
 mb-atmospheric_dust_cls_rdr,0.01,dinov3_sat,98.14
 mb-atmospheric_dust_cls_rdr,0.05,dinov3_sat,98.24
 mb-atmospheric_dust_cls_rdr,0.20,dinov3_sat,98.14

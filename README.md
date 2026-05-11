@@ -6,7 +6,7 @@ This repository accompanies the thesis: *Cross-Domain Feature Extraction and Ada
 
 ## Overview
 
-We benchmark **12 pretrained vision models** across **6 Mars classification datasets** from [MarsBench](https://huggingface.co/collections/BAAI/marsbench), using four evaluation protocols:
+We benchmark **12 pretrained vision models** (including 2 channel-fused variants) across **6 Mars classification datasets** from [MarsBench](https://huggingface.co/collections/BAAI/marsbench), using four evaluation protocols:
 
 - **KNN** — frozen feature clustering quality
 - **Linear Probing** — frozen backbone + trainable linear head
@@ -43,6 +43,25 @@ We benchmark **12 pretrained vision models** across **6 Mars classification data
 
 ---
 
+## Quick Start (End-to-End Workflow)
+
+```
+1. Clone repo & install deps
+2. Download datasets (MarsBench from HuggingFace)
+3. Download model weights (from official sources)
+4. Run 3to1.py to generate 1-channel variants
+5. Run evaluations:
+   - eval_knn.py          → KNN benchmark
+   - train_net.py         → Linear Probe / Full Fine-tuning
+   - eval_generalization.py → Data efficiency curves
+   - visualize.py         → Attention visualization
+   - eval_attention.py    → Quantitative attention analysis
+6. Plot figures:
+   - all_checkpoints/plot_results.py → Publication figures
+```
+
+---
+
 ## Setup
 
 ### 1. Clone the repository
@@ -54,9 +73,13 @@ cd Mars-Foundation-Models
 
 ### 2. Install dependencies
 
+Requires Python >= 3.10.
+
 ```bash
-pip install torch torchvision timm transformers scikit-learn pandas pyarrow tqdm matplotlib seaborn scipy opencv-python
+pip install -r requirements.txt
 ```
+
+> **Note:** For GPU support, install PyTorch with CUDA first following [pytorch.org](https://pytorch.org/get-started/locally/), then install the remaining dependencies.
 
 ### 3. Download datasets
 
@@ -91,7 +114,11 @@ Place all weights under `model_weights/`:
 | DINOv3-LVD | [GitHub](https://github.com/facebookresearch/dinov3) | `dinov3_lvd.pth` |
 | DINOv3-SAT | [GitHub](https://github.com/facebookresearch/dinov3) | `dinov3_sat.pth` |
 
-For DINOv2, you also need the hub code at `model_weights/dinov2/` (clone the [dinov2 repo](https://github.com/facebookresearch/dinov2) there).
+Additionally, clone the DINOv2 hub code for local model loading:
+
+```bash
+git clone https://github.com/facebookresearch/dinov2.git model_weights/dinov2
+```
 
 The DINOv3 hub code is already included at `model_weights/dinov3/`.
 
@@ -216,6 +243,7 @@ Pre-computed results are included in `all_checkpoints/`:
 ├── eval_attention.py           # Quantitative attention evaluation
 ├── visualize.py                # Attention visualization & comparison plots
 ├── 3to1.py                     # 3-channel to 1-channel weight conversion
+├── requirements.txt            # Python dependencies
 ├── all_checkpoints/            # Results, logs, and figures
 │   ├── knn_checkpoints/        # KNN results
 │   ├── train_all_logs/         # Training logs and summaries

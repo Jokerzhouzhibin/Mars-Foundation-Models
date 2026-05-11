@@ -1,4 +1,4 @@
-Dataset,Model,Pooling,K,F1_Micro,F1_Macro
+﻿Dataset,Model,Pooling,K,F1_Micro,F1_Macro
 ,,,,,
 mb-domars16k,dinov3_sat_1cha,max,1,0.8891,0.8885
 mb-domars16k,dinov3_lvd_1cha,cls,13,0.8544,0.8504
@@ -8,7 +8,6 @@ mb-domars16k,vit_l,gem,1,0.8922,0.8893
 mb-domars16k,satmae,max,1,0.8866,0.8851
 mb-domars16k,siglip2,mean,3,0.8823,0.8802
 mb-domars16k,dinov3_sat,max,1,0.8786,0.8772
-mb-domars16k,scale_mae,cls,3,0.8767,0.8772
 mb-domars16k,dinov3_lvd,cls,11,0.8488,0.8455
 mb-domars16k,swin_v2,gem,13,0.8445,0.8399
 mb-domars16k,dinov1_b8,mean,1,0.9164,0.9148
@@ -24,7 +23,6 @@ mb-atmospheric_dust_cls_rdr,openclip,mean,7,0.9718,0.9718
 mb-atmospheric_dust_cls_rdr,dinov1_b8,max,7,0.9632,0.9632
 mb-atmospheric_dust_cls_rdr,swin_v2,gem,15,0.9624,0.9624
 mb-atmospheric_dust_cls_rdr,vit_l,max,5,0.9534,0.9534
-mb-atmospheric_dust_cls_rdr,scale_mae,max,11,0.9522,0.9522
 mb-atmospheric_dust_cls_rdr,satmae,mean,9,0.9448,0.9447
 mb-atmospheric_dust_cls_rdr,mars_mae,gem,7,0.9436,0.9436
 ,,,,,
@@ -38,13 +36,11 @@ mb-change_cls_ctx,vit_l,gem,3,0.9,0.8039
 mb-change_cls_ctx,dinov2_l14,cls,1,0.85,0.7403
 mb-change_cls_ctx,dinov3_lvd,max,3,0.85,0.6571
 mb-change_cls_ctx,dinov3_sat,max,5,0.85,0.6571
-mb-change_cls_ctx,scale_mae,cls,5,0.85,0.6571
 mb-change_cls_ctx,siglip2,cls,3,0.8,0.4444
 mb-change_cls_ctx,swin_v2,cls,3,0.8,0.4444
 ,,,,,
 mb-change_cls_hirise,dinov3_sat_1cha,mean,1,0.9828,0.9418
 mb-change_cls_hirise,dinov3_lvd_1cha,cls,5,0.9791,0.9289
-mb-change_cls_hirise,scale_mae,gem,1,0.9881,0.9583
 mb-change_cls_hirise,mars_mae,mean,1,0.9858,0.9503
 mb-change_cls_hirise,dinov1_b8,cls,1,0.9813,0.934
 mb-change_cls_hirise,satmae,cls,5,0.9799,0.926
@@ -64,7 +60,6 @@ mb-frost_cls,mars_mae,cls,11,0.9373,0.9309
 mb-frost_cls,siglip2,max,13,0.9371,0.9332
 mb-frost_cls,dinov3_lvd,cls,15,0.9333,0.9293
 mb-frost_cls,openclip,mean,5,0.9321,0.9253
-mb-frost_cls,scale_mae,mean,3,0.9251,0.9197
 mb-frost_cls,vit_l,mean,15,0.9194,0.9119
 mb-frost_cls,dinov2_l14,cls,15,0.9136,0.9089
 mb-frost_cls,swin_v2,cls,13,0.8966,0.8912
@@ -82,4 +77,3 @@ mb-landmark_cls,mars_mae,max,3,0.8985,0.6512
 mb-landmark_cls,swin_v2,max,9,0.8946,0.567
 mb-landmark_cls,satmae,max,7,0.8901,0.5227
 mb-landmark_cls,dinov3_sat,cls,9,0.8885,0.5664
-mb-landmark_cls,scale_mae,max,5,0.8728,0.4952

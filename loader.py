@@ -107,7 +107,7 @@ class ModelWrapper(torch.nn.Module):
 
 
 # ==========================================
-# 加载主函数 (🔥 修改：增加 scalemae 分支)
+# 加载主函数
 # ==========================================
 def load_model(name, device='cuda'):
     cfg = MODEL_CONFIGS[name]
@@ -118,25 +118,9 @@ def load_model(name, device='cuda'):
         full_path = os.path.join(BASE_PATH, cfg['path'])
 
     # ---------------------------
-    # 🔥 新增：ScaleMAE 官方加载逻辑
-    # ---------------------------
-    if cfg['type'] == "scalemae":
-        if not HAS_SCALEMAE:
-            raise ImportError("Cannot load ScaleMAE: 'scalemae_vit.py' missing.")
-
-        # 使用官方架构初始化 (通常不需要 num_classes，因为只取特征)
-        m = mae_vit_large_patch16(img_size=cfg['res'])
-        ckpt = torch.load(full_path, map_location='cpu', weights_only=False)
-        if 'model' in ckpt: ckpt = ckpt['model']
-
-        # 审计并加载
-        m = smart_load_and_report(m, ckpt, name)
-        model = ModelWrapper(m, cfg['type'])
-
-    # ---------------------------
     # 1. Torchvision Models
     # ---------------------------
-    elif cfg['type'] == "torchvision_vit":
+    if cfg['type'] == "torchvision_vit":
         m = vit_l_16(weights=None)
         ckpt = torch.load(full_path, map_location='cpu', weights_only=False)
         m = smart_load_and_report(m, ckpt, name)
