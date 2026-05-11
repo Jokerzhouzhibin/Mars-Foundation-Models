@@ -5,15 +5,6 @@ from torchvision.models import vit_l_16, swin_v2_b
 from transformers import AutoModel, CLIPVisionModel
 from config_mars import BASE_PATH, MODEL_CONFIGS
 
-# 🔥 新增：尝试导入 ScaleMAE 官方定义
-try:
-    from model_weights.scalemae_vit import mae_vit_large_patch16
-    HAS_SCALEMAE = True
-except ImportError:
-    HAS_SCALEMAE = False
-    print("⚠️ Warning: 'scalemae_vit.py' not found. ScaleMAE will fail to load.")
-
-
 # ==========================================
 # 核心工具：加载审计函数 (保持不变)
 # ==========================================
@@ -60,29 +51,10 @@ class ModelWrapper(torch.nn.Module):
         self.model = model
         self.type = model_type
 
-    # 🔥 修改：增加 **kwargs 以接收 input_res 等额外参数
+    # 🔥 修改：增加 **kwargs 以接收额外参数
     def forward(self, x, **kwargs):
 
-        # ---------------------------
-        # 1. ScaleMAE (特殊处理)
-        # ---------------------------
-        if self.type == "scalemae":
-            # ScaleMAE 需要 input_res 参数
-            input_res = kwargs.get('input_res', None)
-            if input_res is None:
-                # 兜底：如果没有传，给个全 1 的 (模拟普通 ViT)
-                # 生产环境建议这里报错，或者打印警告
-                input_res = torch.ones(x.shape[0]).to(x.device).float()
-
-            # ScaleMAE forward 返回的是 features (B, N, D) [含CLS]
-            x = self.model(x, input_res=input_res)
-            # 拆分 CLS 和 Patch
-            return x[0], x[1]
-
-        # ---------------------------
-        # 2. 其他模型 (忽略 kwargs)
-        # ---------------------------
-        elif self.type == "torchvision_vit":
+        if self.type == "torchvision_vit":
             x = self.model._process_input(x)
             n = x.shape[0]
             batch_class_token = self.model.class_token.expand(n, -1, -1)

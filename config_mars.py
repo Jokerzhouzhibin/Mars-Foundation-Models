@@ -61,14 +61,6 @@ MODEL_CONFIGS = {
         "mean": SATMAE_MEAN,
         "std": SATMAE_STD
     },
-    "scale_mae": {
-        "type": "scalemae",
-        "arch": "vit_large_patch16_224",
-        "path": "model_weights/scale-mae.pth",
-        "res": 224,
-        "mean": IMAGENET_MEAN, # 修正：作者使用 ImageNet 统计
-        "std": IMAGENET_STD
-    },
     "mars_mae": {
         "type": "timm_mae",
         "arch": "vit_base_patch16_224",
