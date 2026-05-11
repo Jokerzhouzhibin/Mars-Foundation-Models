@@ -106,7 +106,7 @@ Place all weights under `model_weights/`:
 | ViT-L/16 | [torchvision](https://download.pytorch.org/models/vit_l_16-852ce7e3.pth) | `vit_l_16_imagenet.pth` |
 | Swin-V2-B | [torchvision](https://download.pytorch.org/models/swin_v2_b-781e5279.pth) | `swin_v2_b_imagenet.pth` |
 | SatMAE++ | [GitHub](https://github.com/techmn/satmae_pp) | `SatMAE++.pth` |
-| Mars-MAE | [HuggingFace](https://huggingface.co/BAAI/Mars-MAE) | `mars-mae.pth` |
+| Mars-MAE | [HuggingFace](https://huggingface.co/jfang/mars-vit-base-mae) | `mars-mae.pth` |
 | SigLIP2 | [HuggingFace](https://huggingface.co/google/siglip2-base-patch16-256) | `siglip2/` (folder) |
 | OpenCLIP | [HuggingFace](https://huggingface.co/laion/CLIP-ViT-L-14-laion2B-s32B-b82K) | `openclip/` (folder) |
 | DINOv1-B/8 | [GitHub](https://github.com/facebookresearch/dino) | `dinov1_b8.pth` |
